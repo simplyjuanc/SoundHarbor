@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  // url      = env("DATABASE_URL")
+  url      = "postgresql://juanvasquez:@localhost:5432/SoundHarbor?schema=SoundHarbor"
+}
+
+model User {
+  id           Int       @id @default(autoincrement())
+  username     String    @unique
+  firstName    String
+  lastName     String
+  userData     UserData?
+  topArtists   Artist[]
+  recordsOwned Records[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model UserData {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int      @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  //TODO: Add fields for tokens
+}
+
+model Artist {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  User      User?     @relation(fields: [userId], references: [id])
+  records   Records[]
+  userId    Int?
+}
+
+model Records {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  artist    Artist[]
+  tracks    Track[]
+  owners    User[]
+  userId    Int?
+}
+
+model Track {
+  id        Int      @id @default(autoincrement())
+  duration  Int
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Records   Records? @relation(fields: [recordsId], references: [id])
+  recordsId Int?
+}
