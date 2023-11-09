@@ -1,4 +1,4 @@
-import { generateRandomString } from "@/lib/utils/generateRandomString";
+import { generateRandomString } from "@/lib/utils/externalAuthUtils";
 import { redirect } from 'next/navigation';
 import querystring from 'querystring';
 

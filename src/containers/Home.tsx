@@ -1,26 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import Dashboard from '@/components/Dashboard';
+import ServiceAuth from '@/components/ServiceAuth';
+
 
 function Home() {
-  const [hasLinkedAccount, setHasLinkedAccounts] = useState(false);
-  
-  
-  
-  return (
-    <div>
-      <h1>Hi, [User]!</h1>
-      <h2>Welcome back.</h2>
+  const [hasLinkedAccounts, setHasLinkedAccounts] = useState(false);
 
-      <div>
-        <p className="option">Record Collection</p>
-      </div>
-      <div>
-        <p className="option">Marketplace</p>
-      </div>
-      <div>
-        <p className="option">Profile</p>
-      </div>
-    </div>
-  )
+  return ( 
+  <>
+  {hasLinkedAccounts ? <Dashboard /> : <ServiceAuth setHasLinkedAccounts={setHasLinkedAccounts}/> }
+  </>
+  );
 }
 
-export default Home
+export default Home;

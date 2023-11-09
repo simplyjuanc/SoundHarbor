@@ -1,5 +1,5 @@
 import querystring from 'querystring' 
-import { generateRandomString } from '../utils/generateRandomString'
+import { generateRandomString } from '../utils/externalAuthUtils'
 
 
 const client_id = process.env.SPOTIFY_CLIENT_ID!
