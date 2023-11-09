@@ -8,19 +8,18 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
-  // url      = "postgresql://juanvasquez:@localhost:5432/SoundHarbor?schema=SoundHarbor"
 }
 
 model User {
-  id           Int       @id @default(autoincrement())
-  username     String    @unique
-  firstName    String
-  lastName     String
-  userData     UserData?
-  topArtists   Artist[]
-  recordsOwned Record[]
-  createdAt    DateTime  @default(now())
-  updatedAt    DateTime  @updatedAt
+  id            Int       @id @default(autoincrement())
+  username      String    @unique
+  firstName     String
+  lastName      String
+  userData      UserData?
+  topArtists    Artist[]
+  releasesOwned Release[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
 }
 
 model UserData {
@@ -34,21 +33,21 @@ model UserData {
 }
 
 model Artist {
-  id        Int      @id @default(autoincrement())
+  id        Int       @id @default(autoincrement())
   name      String
   genres    String[]
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  records   Record[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  releases  Release[]
   listeners User[]
 }
 
-model Record {
+model Release {
   id          Int      @id @default(autoincrement())
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   label       String
-  recordType  String
+  releaseType String
   country     String
   releaseDate DateTime
   genres      String[]
@@ -65,8 +64,8 @@ model Track {
   duration   Int
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
-  spotifyUrl String
+  spotifyUrl String?
   imgUrl     String
-  Record     Record?  @relation(fields: [recordsId], references: [id])
-  recordsId  Int?
+  release    Release? @relation(fields: [releaseId], references: [id])
+  releaseId  Int?
 }
