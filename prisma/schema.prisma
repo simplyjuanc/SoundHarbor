@@ -17,7 +17,7 @@ model User {
   firstName    String
   lastName     String
   userData     UserData?
-  // topArtists   Artist[]
+  topArtists   Artist[]
   recordsOwned Record[]
   createdAt    DateTime  @default(now())
   updatedAt    DateTime  @updatedAt
@@ -30,7 +30,7 @@ model UserData {
   userId    Int      @unique
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  //TODO: Add fields for tokens
+  //TODO: Add fields for tokens?
 }
 
 model Artist {
@@ -39,9 +39,8 @@ model Artist {
   genres    String[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  // User      User?    @relation(fields: [userId], references: [id])
-  // userId    Int?
   records   Record[]
+  listeners User[]
 }
 
 model Record {
@@ -50,10 +49,13 @@ model Record {
   updatedAt   DateTime @updatedAt
   label       String
   recordType  String
+  country     String
   releaseDate DateTime
   genres      String[]
+  discogsUri  String
+  spotifyUri  String
   artist      Artist[]
-  tracks      Track[]
+  tracklist   Track[]
   owners      User[]
   userId      Int?
 }
