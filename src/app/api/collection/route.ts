@@ -8,7 +8,8 @@ export const GET = async (req: NextRequest) => {
     const params = req.nextUrl.searchParams;
     const userId = Number(params.get('user'));
     const records = await findUserReleases(userId);
-    return Response.json({ records });
+    if (!records) throw new Error('empty record response')
+    return Response.json(records);
   } catch (error) {
     console.log('GET/collection - error :>> ', error);
   }
@@ -20,12 +21,11 @@ export const POST = async (req: NextRequest) => {
     const params = req.nextUrl.searchParams;
     const userId = Number(params.get('user'));
     const releaseId = Number(params.get('releaseId'));
-
+    
     const releaseData = await fetchReleaseData(releaseId)
     if (!releaseData) throw new Error("Release not found in Discogs.");
     
     return addUserRelease(userId, releaseData)
-    // return Response;
   } catch (error) {
     console.log('POST/collection - error :>> ', error);
   }

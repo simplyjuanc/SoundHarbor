@@ -1,21 +1,12 @@
 'use client';
-
-import Login from '@/containers/Login';
-import Image from 'next/image';
-import { useState } from 'react';
-import Home from '@/containers/Home';
+import { useStore } from '@/lib/store';
 
 export default function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const isAuthenticated = useStore(state => state.isLoggedIn);
 
   return (
     <div className='App'>
       <h1>SoundHarbor Home</h1>
-      {isAuthenticated ? (
-        <Home />
-      ) : (
-        <Login setIsAuthenticated={setIsAuthenticated} />
-      )}
     </div>
   );
 }
