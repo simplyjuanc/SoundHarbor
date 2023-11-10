@@ -1,0 +1,756 @@
+{
+  "items": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6pJY5At9SiMpAOBrw9YosS"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "deep house",
+        "jazz house",
+        "lo-fi house"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6pJY5At9SiMpAOBrw9YosS",
+      "id": "6pJY5At9SiMpAOBrw9YosS",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebc4eaac48044cf10f1b0b7446",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174c4eaac48044cf10f1b0b7446",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178c4eaac48044cf10f1b0b7446",
+          "width": 160
+        }
+      ],
+      "name": "Folamour",
+      "popularity": 51,
+      "type": "artist",
+      "uri": "spotify:artist:6pJY5At9SiMpAOBrw9YosS"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "electro",
+        "filter house",
+        "rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi",
+      "id": "4tZwfgrHOc3mvqYlEYSvVi",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eba7bfd7835b5c1eee0c95fa6e",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174a7bfd7835b5c1eee0c95fa6e",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178a7bfd7835b5c1eee0c95fa6e",
+          "width": 160
+        }
+      ],
+      "name": "Daft Punk",
+      "popularity": 78,
+      "type": "artist",
+      "uri": "spotify:artist:4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/2933wDUojoQmvqSdTAE5NB"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "downtempo",
+        "electronica"
+      ],
+      "href": "https://api.spotify.com/v1/artists/2933wDUojoQmvqSdTAE5NB",
+      "id": "2933wDUojoQmvqSdTAE5NB",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb15c427ce36764b842c9f9893",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517415c427ce36764b842c9f9893",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17815c427ce36764b842c9f9893",
+          "width": 160
+        }
+      ],
+      "name": "DARKSIDE",
+      "popularity": 41,
+      "type": "artist",
+      "uri": "spotify:artist:2933wDUojoQmvqSdTAE5NB"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0cmWgDlu9CwTgxPhf403hb"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "downtempo",
+        "electronica",
+        "indietronica",
+        "instrumental hip hop",
+        "jazztronica",
+        "nu jazz",
+        "trip hop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/0cmWgDlu9CwTgxPhf403hb",
+      "id": "0cmWgDlu9CwTgxPhf403hb",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb37af35b51a7c9b689d86779a",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517437af35b51a7c9b689d86779a",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17837af35b51a7c9b689d86779a",
+          "width": 160
+        }
+      ],
+      "name": "Bonobo",
+      "popularity": 61,
+      "type": "artist",
+      "uri": "spotify:artist:0cmWgDlu9CwTgxPhf403hb"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/25KNo5GDS6ZpLkjasaecA3"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "downtempo",
+        "electronica",
+        "livetronica",
+        "trip hop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/25KNo5GDS6ZpLkjasaecA3",
+      "id": "25KNo5GDS6ZpLkjasaecA3",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb3d9378b0995517ff9f4f2354",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051743d9378b0995517ff9f4f2354",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1783d9378b0995517ff9f4f2354",
+          "width": 160
+        }
+      ],
+      "name": "Thievery Corporation",
+      "popularity": 59,
+      "type": "artist",
+      "uri": "spotify:artist:25KNo5GDS6ZpLkjasaecA3"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4UjjvkURNAGsz4GckpjMEi"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/4UjjvkURNAGsz4GckpjMEi",
+      "id": "4UjjvkURNAGsz4GckpjMEi",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb9d9abccaffd274009caef41d",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051749d9abccaffd274009caef41d",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1789d9abccaffd274009caef41d",
+          "width": 160
+        }
+      ],
+      "name": "khaderbai",
+      "popularity": 16,
+      "type": "artist",
+      "uri": "spotify:artist:4UjjvkURNAGsz4GckpjMEi"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/75nC6MXUalYZSOd7OfNkwq"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "deep house",
+        "german house",
+        "hamburg electronic",
+        "house",
+        "nu disco"
+      ],
+      "href": "https://api.spotify.com/v1/artists/75nC6MXUalYZSOd7OfNkwq",
+      "id": "75nC6MXUalYZSOd7OfNkwq",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebdd2ccf606f82581850315fff",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174dd2ccf606f82581850315fff",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178dd2ccf606f82581850315fff",
+          "width": 160
+        }
+      ],
+      "name": "Tensnake",
+      "popularity": 53,
+      "type": "artist",
+      "uri": "spotify:artist:75nC6MXUalYZSOd7OfNkwq"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/7FhRUp59cBzPaxobsRY1Nc"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "la pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/7FhRUp59cBzPaxobsRY1Nc",
+      "id": "7FhRUp59cBzPaxobsRY1Nc",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb34074c27de56175d724b9f46",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517434074c27de56175d724b9f46",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17834074c27de56175d724b9f46",
+          "width": 160
+        }
+      ],
+      "name": "Bay Ledges",
+      "popularity": 51,
+      "type": "artist",
+      "uri": "spotify:artist:7FhRUp59cBzPaxobsRY1Nc"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3MyFDtqB80WZvbtCZRsekM"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "minimal tech house",
+        "tropical house"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3MyFDtqB80WZvbtCZRsekM",
+      "id": "3MyFDtqB80WZvbtCZRsekM",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebef500ad0dd98a20da9e16102",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174ef500ad0dd98a20da9e16102",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178ef500ad0dd98a20da9e16102",
+          "width": 160
+        }
+      ],
+      "name": "Bakermat",
+      "popularity": 64,
+      "type": "artist",
+      "uri": "spotify:artist:3MyFDtqB80WZvbtCZRsekM"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4CtIbUPIIuO6xitPrCZLzf"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/4CtIbUPIIuO6xitPrCZLzf",
+      "id": "4CtIbUPIIuO6xitPrCZLzf",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb2456d2cfe44ac5d7b76733c9",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051742456d2cfe44ac5d7b76733c9",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1782456d2cfe44ac5d7b76733c9",
+          "width": 160
+        }
+      ],
+      "name": "Reid Willis",
+      "popularity": 11,
+      "type": "artist",
+      "uri": "spotify:artist:4CtIbUPIIuO6xitPrCZLzf"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/587PA35pRGL1JwQr6idJbb"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "indie soul"
+      ],
+      "href": "https://api.spotify.com/v1/artists/587PA35pRGL1JwQr6idJbb",
+      "id": "587PA35pRGL1JwQr6idJbb",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebcceff205539a8918f1b107cc",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174cceff205539a8918f1b107cc",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178cceff205539a8918f1b107cc",
+          "width": 160
+        }
+      ],
+      "name": "NEIL FRANCES",
+      "popularity": 63,
+      "type": "artist",
+      "uri": "spotify:artist:587PA35pRGL1JwQr6idJbb"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4PmxbsWP1u0TnvqcrIA9ze"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "afropop",
+        "malian blues",
+        "mande pop",
+        "world"
+      ],
+      "href": "https://api.spotify.com/v1/artists/4PmxbsWP1u0TnvqcrIA9ze",
+      "id": "4PmxbsWP1u0TnvqcrIA9ze",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb0002aeb4fe474e6e0ae26f8b",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051740002aeb4fe474e6e0ae26f8b",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1780002aeb4fe474e6e0ae26f8b",
+          "width": 160
+        }
+      ],
+      "name": "Vieux Farka Touré",
+      "popularity": 48,
+      "type": "artist",
+      "uri": "spotify:artist:4PmxbsWP1u0TnvqcrIA9ze"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0VbDAlm2KUlKI5UhXRBKWp"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "vapor soul"
+      ],
+      "href": "https://api.spotify.com/v1/artists/0VbDAlm2KUlKI5UhXRBKWp",
+      "id": "0VbDAlm2KUlKI5UhXRBKWp",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb522100b2ffb813ae62a1b46a",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174522100b2ffb813ae62a1b46a",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178522100b2ffb813ae62a1b46a",
+          "width": 160
+        }
+      ],
+      "name": "Henry Green",
+      "popularity": 47,
+      "type": "artist",
+      "uri": "spotify:artist:0VbDAlm2KUlKI5UhXRBKWp"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/2OVqg3lxC8ZIf0vHcEqaCf"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "soundtrack"
+      ],
+      "href": "https://api.spotify.com/v1/artists/2OVqg3lxC8ZIf0vHcEqaCf",
+      "id": "2OVqg3lxC8ZIf0vHcEqaCf",
+      "images": [
+        {
+          "height": 1000,
+          "url": "https://i.scdn.co/image/4074488d57f758460164a3e2bec25981a65a4284",
+          "width": 1000
+        },
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/279ea338a77d215a34be330360853e954508ee28",
+          "width": 640
+        },
+        {
+          "height": 200,
+          "url": "https://i.scdn.co/image/255c8efd6555cc41eb8ccdff70df22e700b25973",
+          "width": 200
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/a8cc0d095eb3454c414eae4df3219700c0d0adbe",
+          "width": 64
+        }
+      ],
+      "name": "Cliff Martinez",
+      "popularity": 41,
+      "type": "artist",
+      "uri": "spotify:artist:2OVqg3lxC8ZIf0vHcEqaCf"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/7zrkALJ9ayRjzysp4QYoEg"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "electronica",
+        "future garage",
+        "indie soul"
+      ],
+      "href": "https://api.spotify.com/v1/artists/7zrkALJ9ayRjzysp4QYoEg",
+      "id": "7zrkALJ9ayRjzysp4QYoEg",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebbeaea33eaf23808b73167155",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174beaea33eaf23808b73167155",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178beaea33eaf23808b73167155",
+          "width": 160
+        }
+      ],
+      "name": "Maribou State",
+      "popularity": 62,
+      "type": "artist",
+      "uri": "spotify:artist:7zrkALJ9ayRjzysp4QYoEg"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0Z5pcmXDCKTrFWLnDChC37"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "alternative dance",
+        "australian dance",
+        "australian electropop",
+        "electroclash",
+        "filter house",
+        "indietronica",
+        "neo-synthpop",
+        "nu disco"
+      ],
+      "href": "https://api.spotify.com/v1/artists/0Z5pcmXDCKTrFWLnDChC37",
+      "id": "0Z5pcmXDCKTrFWLnDChC37",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb7f617e256479689e674a2e1d",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051747f617e256479689e674a2e1d",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1787f617e256479689e674a2e1d",
+          "width": 160
+        }
+      ],
+      "name": "Miami Horror",
+      "popularity": 51,
+      "type": "artist",
+      "uri": "spotify:artist:0Z5pcmXDCKTrFWLnDChC37"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3cQA9WH8liZfeja1DxcDYE"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "big beat",
+        "classic house",
+        "deep house",
+        "disco house",
+        "filter house",
+        "house",
+        "speed garage",
+        "tribal house",
+        "uk dance",
+        "vocal house"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3cQA9WH8liZfeja1DxcDYE",
+      "id": "3cQA9WH8liZfeja1DxcDYE",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebb22d49b871ccbfa4b31331e8",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174b22d49b871ccbfa4b31331e8",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178b22d49b871ccbfa4b31331e8",
+          "width": 160
+        }
+      ],
+      "name": "Armand Van Helden",
+      "popularity": 60,
+      "type": "artist",
+      "uri": "spotify:artist:3cQA9WH8liZfeja1DxcDYE"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/497rp5TEzJffeBnUT0BeE1"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "contemporary jazz",
+        "indie jazz",
+        "modern jazz trio"
+      ],
+      "href": "https://api.spotify.com/v1/artists/497rp5TEzJffeBnUT0BeE1",
+      "id": "497rp5TEzJffeBnUT0BeE1",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebf7ab5ab64a9ddb4c93d98e13",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174f7ab5ab64a9ddb4c93d98e13",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178f7ab5ab64a9ddb4c93d98e13",
+          "width": 160
+        }
+      ],
+      "name": "Mammal Hands",
+      "popularity": 42,
+      "type": "artist",
+      "uri": "spotify:artist:497rp5TEzJffeBnUT0BeE1"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4yrO1N273PlTaixa4BNwBz"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "electra",
+        "float house"
+      ],
+      "href": "https://api.spotify.com/v1/artists/4yrO1N273PlTaixa4BNwBz",
+      "id": "4yrO1N273PlTaixa4BNwBz",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb647e80f80aca2939b645752a",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174647e80f80aca2939b645752a",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178647e80f80aca2939b645752a",
+          "width": 160
+        }
+      ],
+      "name": "Avalon Emerson",
+      "popularity": 35,
+      "type": "artist",
+      "uri": "spotify:artist:4yrO1N273PlTaixa4BNwBz"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4zAOqBfNLyWFvj1e3yvypJ"
+      },
+      "followers": {
+        "href": null,
+        "total": 0
+      },
+      "genres": [
+        "downtempo",
+        "indie dream pop",
+        "vapor twitch"
+      ],
+      "href": "https://api.spotify.com/v1/artists/4zAOqBfNLyWFvj1e3yvypJ",
+      "id": "4zAOqBfNLyWFvj1e3yvypJ",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb52489313435c3d1bdb618518",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517452489313435c3d1bdb618518",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17852489313435c3d1bdb618518",
+          "width": 160
+        }
+      ],
+      "name": "Catching Flies",
+      "popularity": 53,
+      "type": "artist",
+      "uri": "spotify:artist:4zAOqBfNLyWFvj1e3yvypJ"
+    }
+  ],
+  "total": 50,
+  "limit": 20,
+  "offset": 0,
+  "href": "https://api.spotify.com/v1/me/top/artists",
+  "next": "https://api.spotify.com/v1/me/top/artists?limit=20&offset=20",
+  "previous": null
+}

@@ -1,0 +1,235 @@
+{
+  "href": "https://api.spotify.com/v1/artists/6pJY5At9SiMpAOBrw9YosS/albums?include_groups=album,compilation&offset=0&limit=5&market=GB&locale=en-US,en;q=0.9",
+  "items": [
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6pJY5At9SiMpAOBrw9YosS"
+          },
+          "href": "https://api.spotify.com/v1/artists/6pJY5At9SiMpAOBrw9YosS",
+          "id": "6pJY5At9SiMpAOBrw9YosS",
+          "name": "Folamour",
+          "type": "artist",
+          "uri": "spotify:artist:6pJY5At9SiMpAOBrw9YosS"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4SBBGeRaboOnypEhVFRw38"
+      },
+      "href": "https://api.spotify.com/v1/albums/4SBBGeRaboOnypEhVFRw38",
+      "id": "4SBBGeRaboOnypEhVFRw38",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273731e4cea604700f6ea63e3a3",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02731e4cea604700f6ea63e3a3",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851731e4cea604700f6ea63e3a3",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "name": "Manifesto",
+      "release_date": "2023-09-14",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:4SBBGeRaboOnypEhVFRw38"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6pJY5At9SiMpAOBrw9YosS"
+          },
+          "href": "https://api.spotify.com/v1/artists/6pJY5At9SiMpAOBrw9YosS",
+          "id": "6pJY5At9SiMpAOBrw9YosS",
+          "name": "Folamour",
+          "type": "artist",
+          "uri": "spotify:artist:6pJY5At9SiMpAOBrw9YosS"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1R8SYFomn8PdIAYlGgzwjr"
+      },
+      "href": "https://api.spotify.com/v1/albums/1R8SYFomn8PdIAYlGgzwjr",
+      "id": "1R8SYFomn8PdIAYlGgzwjr",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27327f25f9eb41b42f8f027b084",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0227f25f9eb41b42f8f027b084",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485127f25f9eb41b42f8f027b084",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "name": "The Journey",
+      "release_date": "2021-06-11",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:1R8SYFomn8PdIAYlGgzwjr"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6pJY5At9SiMpAOBrw9YosS"
+          },
+          "href": "https://api.spotify.com/v1/artists/6pJY5At9SiMpAOBrw9YosS",
+          "id": "6pJY5At9SiMpAOBrw9YosS",
+          "name": "Folamour",
+          "type": "artist",
+          "uri": "spotify:artist:6pJY5At9SiMpAOBrw9YosS"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3na24PKpM5Bh0xwvIcpPms"
+      },
+      "href": "https://api.spotify.com/v1/albums/3na24PKpM5Bh0xwvIcpPms",
+      "id": "3na24PKpM5Bh0xwvIcpPms",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273891391ef7b7a14c7d938a788",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02891391ef7b7a14c7d938a788",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851891391ef7b7a14c7d938a788",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "name": "Ordinary Drugs",
+      "release_date": "2019-02-15",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:3na24PKpM5Bh0xwvIcpPms"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6pJY5At9SiMpAOBrw9YosS"
+          },
+          "href": "https://api.spotify.com/v1/artists/6pJY5At9SiMpAOBrw9YosS",
+          "id": "6pJY5At9SiMpAOBrw9YosS",
+          "name": "Folamour",
+          "type": "artist",
+          "uri": "spotify:artist:6pJY5At9SiMpAOBrw9YosS"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6om5wLwMEeQcY1Uwlh7Oel"
+      },
+      "href": "https://api.spotify.com/v1/albums/6om5wLwMEeQcY1Uwlh7Oel",
+      "id": "6om5wLwMEeQcY1Uwlh7Oel",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273808827e8c5758dbb83726083",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02808827e8c5758dbb83726083",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851808827e8c5758dbb83726083",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "name": "Umami",
+      "release_date": "2017-11-10",
+      "release_date_precision": "day",
+      "total_tracks": 9,
+      "type": "album",
+      "uri": "spotify:album:6om5wLwMEeQcY1Uwlh7Oel"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6pJY5At9SiMpAOBrw9YosS"
+          },
+          "href": "https://api.spotify.com/v1/artists/6pJY5At9SiMpAOBrw9YosS",
+          "id": "6pJY5At9SiMpAOBrw9YosS",
+          "name": "Folamour",
+          "type": "artist",
+          "uri": "spotify:artist:6pJY5At9SiMpAOBrw9YosS"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3jHf5zZ8d5MQg03YyfTa2I"
+      },
+      "href": "https://api.spotify.com/v1/albums/3jHf5zZ8d5MQg03YyfTa2I",
+      "id": "3jHf5zZ8d5MQg03YyfTa2I",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273c23e30b8f801e03855109caf",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02c23e30b8f801e03855109caf",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851c23e30b8f801e03855109caf",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "name": "4MYPPL#1",
+      "release_date": "2017-03-24",
+      "release_date_precision": "day",
+      "total_tracks": 4,
+      "type": "album",
+      "uri": "spotify:album:3jHf5zZ8d5MQg03YyfTa2I"
+    }
+  ],
+  "limit": 5,
+  "next": "https://api.spotify.com/v1/artists/6pJY5At9SiMpAOBrw9YosS/albums?include_groups=album,compilation&offset=5&limit=5&market=GB&locale=en-US,en;q=0.9",
+  "offset": 0,
+  "previous": null,
+  "total": 7
+}
