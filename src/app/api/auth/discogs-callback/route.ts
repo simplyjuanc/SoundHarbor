@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 import { writeDiscogsAuthBaseHeader } from "@/lib/utils/externalAuthUtils";
-import { useStore } from "@/lib/store";
+import { useAuthStore } from "@/lib/authStore";
 import { redirect } from "next/navigation";
 
 
@@ -13,7 +13,7 @@ export const GET = async (req:NextRequest) => {
   const params = req.nextUrl.searchParams;
   const token = params.get('oauth_token');
   const verifier = params.get('oauth_verifier');
-  const discogsNonce = useStore(state => state.discogsNonce);
+  const discogsNonce = useAuthStore(state => state.discogsNonce);
   
   if (!token || !verifier) return new Error('Not token received in callback');
   

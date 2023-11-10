@@ -1,16 +1,13 @@
 'use client';
 
-import Home from '@/components/Home';
+import LoginSpotify from '@/components/LoginSpotify';
 import Login from '@/components/Login';
 import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
+import { useAuthStore } from '@/lib/authStore';
 
 export default function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
-  
 
-
+  const isLoggedIn = useAuthStore(state => state.isLoggedIn);
 
   return (
     <div className='flex flex-col justify-center align-middle'>
@@ -21,8 +18,7 @@ export default function App() {
         height={935/7}
         className='m-5 mx-auto mt-16'
       />
-
-      {loggedIn ? <Home/> : <Login setLoggedIn={setLoggedIn}/> }
+      {isLoggedIn ? <LoginSpotify/> : <Login /> }
     </div>
   );
 }
