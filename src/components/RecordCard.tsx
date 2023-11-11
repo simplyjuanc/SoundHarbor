@@ -6,25 +6,24 @@ export default function RecordCard({ release }: { release: Release }) {
   return (
     <article className='card card-compact text-black shadow-xl bg-primary w-[250px] cursor-pointer'>
       <figure>
-        <Image src={release.spotifyUri} alt='Music!' width={250} height={250} />
+        <Image src={release.imgUrl} alt='Music!' width={250} height={250} />
       </figure>
       <div className='card-body'>
-        <h2 className='card-title'>{release.label}</h2>
+        <h2 className='card-title'>{release.title}</h2>
         <div className='flex gap-1'>
           <div>
-            <h3 className='text-sm'>Artist</h3>
+            <h3 className='text-sm font-semibold'>Artist</h3>
             <p className='text-xs'>
-              Artist Value
-              {/* {release.artist} */}
+              {release.artists.join(', ')}
             </p>
           </div>
           <div>
-            <h3 className='text-sm'>Label</h3>
-            <p className='text-xs'>Label Value</p>
+            <h3 className='text-sm font-semibold'>Label</h3>
+            <p className='text-xs'>{release.label}</p>
           </div>
           <div>
-            <h3 className='text-sm'>Release Date</h3>
-            <p className='text-xs'>Release value</p>
+            <h3 className='text-sm font-semibold'>Released</h3>
+            <p className='text-xs'>{release.releaseDate.toDateString()}</p>
           </div>
         </div>
       </div>

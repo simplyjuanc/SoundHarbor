@@ -11,7 +11,7 @@ datasource db {
 }
 
 model User {
-  id            Int       @id @unique
+  id            String    @id @unique
   username      String    @unique
   firstName     String
   lastName      String
@@ -21,41 +21,32 @@ model User {
   updatedAt     DateTime? @updatedAt
 }
 
-// model Artist {
-//   id        Int       @id @default(autoincrement())
-//   name      String
-//   genres    String[]
-//   createdAt DateTime  @default(now())
-//   updatedAt DateTime  @updatedAt
-//   releases  Release[]
-//   listeners User[]
-// }
-
 model Release {
-  id          Int      @id @default(autoincrement())
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id          String    @id
+  createdAt   DateTime? @default(now())
+  updatedAt   DateTime? @updatedAt
   title       String
   label       String
   releaseType String
-  country     String
   releaseDate DateTime
   // genres      String[]
   imgUrl      String
   spotifyUri  String
+  discogsUrl  String?
   // artist      Artist[]
   artists     String[]
   tracklist   Track[]
-  owners      User[]
-  userId      Int?
+  User        User?     @relation(fields: [userId], references: [id])
+  userId      String?
+  barcode     String
 }
 
 model Track {
-  id         Int      @id @default(autoincrement())
+  id         String   @id
   duration   Int
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
   spotifyUrl String
   release    Release? @relation(fields: [releaseId], references: [id])
-  releaseId  Int?
+  releaseId  String?
 }

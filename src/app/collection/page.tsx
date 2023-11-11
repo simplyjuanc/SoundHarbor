@@ -1,11 +1,13 @@
 import React from 'react';
-import { findUserReleases } from '@/lib/models/releases.model';
+import { findUserReleases } from '@/lib/models/users.model';
 import Image from 'next/image';
 import RecordCard from '@/components/RecordCard';
+import Link from 'next/link';
 
 export default async function Collection() {
-  const userReleases = await findUserReleases(1);
+  const releasesOwned = await findUserReleases('testUser');
 
+  // TODO: Add back button
   return (
     <>
       <Image
@@ -19,10 +21,12 @@ export default async function Collection() {
           <h1 className='text-3xl'>Collection</h1>
           <button className='btn btn-secondary max-h-4'>Add record</button>
         </div>
-        <div className='flex justify-center mt-8'>
-          {userReleases &&
-            userReleases.map((release) => (
-              <RecordCard key={release.id} release={release} />
+        <div className='flex flex-col items-center gap-6 mt-8'>
+          {releasesOwned &&
+            releasesOwned.map((release) => (
+              <Link href={`collection/${release.id}`} key={release.id}>
+                <RecordCard key={release.id} release={release} />
+              </Link>
             ))}
         </div>
       </div>

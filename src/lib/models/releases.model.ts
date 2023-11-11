@@ -1,18 +1,17 @@
 import prisma from "../db";
-import type { Release, User } from "@prisma/client";
+import type { Release } from "@prisma/client";
 
-export const getRelease = async (releaseId: number): Promise<Release | null | undefined> => {
+export const getRelease = async (releaseId: string): Promise<Release | void > => {
   try {
     const record = await prisma.release.findUnique({ where: { id: releaseId } })
-    console.log('getRelease :>> ', record);
-    return record;
+    if (record) return record;
   } catch (error) {
     console.log('getRelease - error :>> ', error);
   }
 }
 
 
-export const postRelease = async (release: Release): Promise<Release | null | undefined> => {
+export const postRelease = async (release: Release): Promise<Release | void > => {
   try {
     return await prisma.release.create({ data: release })
   } catch (error) {
@@ -22,12 +21,7 @@ export const postRelease = async (release: Release): Promise<Release | null | un
 
 
 type BatchPayload = { count: number }
-export const postReleases = async (
-  releases: Release[]):
-  Promise<BatchPayload | null | undefined> => {
-  try {
-    return await prisma.release.createMany({ data: releases })
-  } catch (error) {
-    console.log('postReleases - error :>> ', error);
-  }
+export const postReleases = async (releases: Release[]): Promise<BatchPayload | void > => {
+  console.log('MODEL - postReleases - releases[0] :>> ', releases[0]);
+  return await prisma.release.createMany({ data: releases, skipDuplicates:true })
 }
