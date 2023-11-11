@@ -1,15 +1,16 @@
-import React, { Dispatch, SetStateAction } from 'react';
+import React from 'react';
 import { useAuthStore } from '@/lib/authStore';
+import parseCookies from '@/lib/utils/parseCookies';
 
 
 export default function Login() {
 
   const setIsLoggedIn = useAuthStore(state => state.setIsLoggedIn)
-  
+
   function logIn() {
     setIsLoggedIn(true);
   }
-  
+
   return (
     <form onSubmit={logIn}>
       <div className='flex flex-col gap-5 mt-12 justify-evenly mx-12'>

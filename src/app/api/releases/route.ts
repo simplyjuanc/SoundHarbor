@@ -1,6 +1,5 @@
 import { type NextRequest } from 'next/server'
 import { getRelease, postRelease } from '@/lib/models/releases.model';
-import { fetchReleaseData } from '@/lib/services/discogsClient';
 
 
 export const GET = async (req:NextRequest) => {

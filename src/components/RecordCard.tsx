@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function RecordCard({ release }: { release: Release }) {
   return (
-    <article className='card card-compact text-black shadow-xl bg-primary w-[250px]'>
+    <article className='card card-compact text-black shadow-xl bg-primary w-[250px] cursor-pointer'>
       <figure>
         <Image src={release.spotifyUri} alt='Music!' width={250} height={250} />
       </figure>

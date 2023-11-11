@@ -15,10 +15,15 @@ export default async function Collection() {
         src={'/record-collection.jpg'}
       />
       <div className='mx-3'>
-        <h1 className='text-3xl ml-3 my-4'>Collection</h1>
-        <div className='flex justify-center'>
+        <div className='m-4 mt-6 flex flex-row justify-between align-middle'>
+          <h1 className='text-3xl'>Collection</h1>
+          <button className='btn btn-secondary max-h-4'>Add record</button>
+        </div>
+        <div className='flex justify-center mt-8'>
           {userReleases &&
-            userReleases.map((release) => <RecordCard key={release.id} release={release}/>)}
+            userReleases.map((release) => (
+              <RecordCard key={release.id} release={release} />
+            ))}
         </div>
       </div>
     </>

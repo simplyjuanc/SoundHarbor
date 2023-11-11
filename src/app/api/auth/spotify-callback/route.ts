@@ -3,6 +3,7 @@ import { type NextRequest } from "next/server";
 import { cookies } from 'next/headers';
 import { redirect } from "next/navigation";
 
+
 export async function GET(req: NextRequest) {
   const params = req.nextUrl.searchParams;
   const code = params.get('code');
@@ -19,4 +20,4 @@ export async function GET(req: NextRequest) {
     cookies().set('spotify_refresh_token', refresh_token);
   }
   redirect('/');
-} 
+}

@@ -5,7 +5,7 @@ import { Release } from "@prisma/client";
 const baseUrl = 'https://api.discogs.com/';
 const currency = 'GBP'
 
-
+// https://api.discogs.com/users/juancvasquez/collection/folders
 export const fetchReleaseData = async (id:number):Promise<Release|null|undefined> => {
   try {
     const path = `releases/${id}?${querystring.stringify({curr_abbr:currency})}`

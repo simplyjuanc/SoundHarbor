@@ -10,7 +10,8 @@ export default function LoginSpotify() {
   if (!authStore.spotifyAccessToken) {
     const cookieJar = parseCookies(document.cookie);
     const spotifyCookie = 'spotify_access_token';
-    if (cookieJar[spotifyCookie]) {
+
+    if (cookieJar && cookieJar[spotifyCookie]) {
       const token = cookieJar[spotifyCookie];
       authStore.setSpotifyAccessToken(token);
     }
