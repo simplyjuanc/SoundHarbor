@@ -11,36 +11,25 @@ datasource db {
 }
 
 model User {
-  id            Int       @id @default(autoincrement())
+  id            Int       @id @unique
   username      String    @unique
   firstName     String
   lastName      String
-  userData      UserData?
-  topArtists    Artist[]
+  // topArtists    Artist[]
   releasesOwned Release[]
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
+  createdAt     DateTime? @default(now())
+  updatedAt     DateTime? @updatedAt
 }
 
-model UserData {
-  id        Int      @id @default(autoincrement())
-  email     String   @unique
-  user      User     @relation(fields: [userId], references: [id])
-  userId    Int      @unique
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  //TODO: Add fields for tokens?
-}
-
-model Artist {
-  id        Int       @id @default(autoincrement())
-  name      String
-  genres    String[]
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-  releases  Release[]
-  listeners User[]
-}
+// model Artist {
+//   id        Int       @id @default(autoincrement())
+//   name      String
+//   genres    String[]
+//   createdAt DateTime  @default(now())
+//   updatedAt DateTime  @updatedAt
+//   releases  Release[]
+//   listeners User[]
+// }
 
 model Release {
   id          Int      @id @default(autoincrement())
@@ -51,10 +40,11 @@ model Release {
   releaseType String
   country     String
   releaseDate DateTime
-  genres      String[]
-  discogsUri  String
+  // genres      String[]
+  imgUrl      String
   spotifyUri  String
-  artist      Artist[]
+  // artist      Artist[]
+  artists     String[]
   tracklist   Track[]
   owners      User[]
   userId      Int?
@@ -65,8 +55,7 @@ model Track {
   duration   Int
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
-  spotifyUrl String?
-  imgUrl     String
+  spotifyUrl String
   release    Release? @relation(fields: [releaseId], references: [id])
   releaseId  Int?
 }
