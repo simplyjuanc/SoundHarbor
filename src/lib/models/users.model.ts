@@ -38,8 +38,6 @@ export const addUserRelease = async (userId: string, release: Release):Promise<U
 export const findUserReleases = async (userId: string):Promise<Release[] | null | undefined> => {
   try {
     const userRecords = await prisma.release.findMany({where: {userId}})
-    
-    console.log('findUserReleases :>> ', userRecords[0]);
     if (!userRecords) throw new Error("No releases");    
     return userRecords
   } catch (error) {

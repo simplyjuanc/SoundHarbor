@@ -11,9 +11,7 @@ export default async function Dashboard() {
   if (!spotifyToken) redirect('/');
   
   let userAlbums = await getSpotifyUserAlbums(spotifyToken);
-  if (userAlbums) {
-    postReleases(userAlbums).then(res =>  console.log('CREATE Album'));
-  }
+  if (userAlbums) postReleases(userAlbums);
   
   return (
     <>

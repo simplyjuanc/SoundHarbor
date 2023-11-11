@@ -1,9 +1,8 @@
 'use client';
-import LoginSpotify from '@/components/LoginSpotify';
-import Login from '@/components/Login';
+import LoginSpotify from '@/containers/LoginSpotify';
+import Login from '@/containers/Login';
 import Image from 'next/image';
 import { useAuthStore } from '@/lib/authStore';
-import { useEffect } from 'react';
 import parseCookies from '@/lib/utils/parseCookies';
 
 

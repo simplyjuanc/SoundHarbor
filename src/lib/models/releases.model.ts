@@ -22,6 +22,7 @@ export const postRelease = async (release: Release): Promise<Release | void > =>
 
 type BatchPayload = { count: number }
 export const postReleases = async (releases: Release[]): Promise<BatchPayload | void > => {
-  console.log('MODEL - postReleases - releases[0] :>> ', releases[0]);
   return await prisma.release.createMany({ data: releases, skipDuplicates:true })
 }
+
+
