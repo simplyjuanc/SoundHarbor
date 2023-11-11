@@ -43,6 +43,7 @@ model Release {
 
 model Track {
   id         String   @id
+  title      String
   duration   Int
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
