@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import LoginDiscogs from './LoginDiscogs';
 import { useAuthStore } from '@/lib/authStore';
-import parseCookies from '@/lib/utils/parseCookies';
+import {parseCookies} from '@/lib/utils/utils';
 
 export default function LoginSpotify() {
   const authStore = useAuthStore();

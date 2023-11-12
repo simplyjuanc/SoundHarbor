@@ -3,7 +3,7 @@ import LoginSpotify from '@/containers/LoginSpotify';
 import Login from '@/containers/Login';
 import Image from 'next/image';
 import { useAuthStore } from '@/lib/authStore';
-import parseCookies from '@/lib/utils/parseCookies';
+import {parseCookies} from '@/lib/utils/utils';
 
 
 export default function App() {

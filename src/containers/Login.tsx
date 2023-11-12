@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAuthStore } from '@/lib/authStore';
-import parseCookies from '@/lib/utils/parseCookies';
+import {parseCookies} from '@/lib/utils/utils';
 
 
 export default function Login() {

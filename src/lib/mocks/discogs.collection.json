@@ -1,0 +1,3725 @@
+{
+  "pagination": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 100,
+      "items": 63,
+      "urls": {}
+  },
+  "releases": [
+      {
+          "id": 14115405,
+          "instance_id": 464223911,
+          "date_added": "2020-04-30T10:19:27-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 14115405,
+              "master_id": 1602347,
+              "master_url": "https://api.discogs.com/masters/1602347",
+              "resource_url": "https://api.discogs.com/releases/14115405",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Mannigfaltig",
+              "year": 2019,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "3",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Dominik Eulberg",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 46060,
+                      "resource_url": "https://api.discogs.com/artists/46060"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "!K7 Records",
+                      "catno": "K7380LP",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 29377,
+                      "resource_url": "https://api.discogs.com/labels/29377"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno"
+              ]
+          }
+      },
+      {
+          "id": 16439865,
+          "instance_id": 547538214,
+          "date_added": "2020-12-21T13:57:29-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 16439865,
+              "master_id": 0,
+              "master_url": null,
+              "resource_url": "https://api.discogs.com/releases/16439865",
+              "thumb": "",
+              "cover_image": "",
+              "title": "040",
+              "year": 2020,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\"",
+                          "45 RPM"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Avalon Emerson",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 3632916,
+                      "resource_url": "https://api.discogs.com/artists/3632916"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "AD 93",
+                      "catno": "WHYT040",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 1872085,
+                      "resource_url": "https://api.discogs.com/labels/1872085"
+                  },
+                  {
+                      "name": "AD 93",
+                      "catno": "Whyt040",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 1872085,
+                      "resource_url": "https://api.discogs.com/labels/1872085"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno",
+                  "Experimental"
+              ]
+          }
+      },
+      {
+          "id": 24455792,
+          "instance_id": 1181974219,
+          "date_added": "2022-11-15T02:44:19-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 24455792,
+              "master_id": 27126,
+              "master_url": "https://api.discogs.com/masters/27126",
+              "resource_url": "https://api.discogs.com/releases/24455792",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Alive 2007",
+              "year": 2022,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Mixed",
+                          "Reissue"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Daft Punk",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 1289,
+                      "resource_url": "https://api.discogs.com/artists/1289"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "ADA (6)",
+                      "catno": "01902996611964",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 759127,
+                      "resource_url": "https://api.discogs.com/labels/759127"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "House",
+                  "French House"
+              ]
+          }
+      },
+      {
+          "id": 15500246,
+          "instance_id": 489013397,
+          "date_added": "2020-07-13T17:02:53-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 15500246,
+              "master_id": 75635,
+              "master_url": "https://api.discogs.com/masters/75635",
+              "resource_url": "https://api.discogs.com/releases/15500246",
+              "thumb": "",
+              "cover_image": "",
+              "title": "The Primitive Painter",
+              "year": 2020,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "text": "White",
+                      "descriptions": [
+                          "12\"",
+                          "33 ⅓ RPM",
+                          "Album",
+                          "Limited Edition",
+                          "Reissue",
+                          "Remastered"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "The Primitive Painter",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 35958,
+                      "resource_url": "https://api.discogs.com/artists/35958"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Apollo",
+                      "catno": "AMB2005",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 683,
+                      "resource_url": "https://api.discogs.com/labels/683"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "IDM",
+                  "Ambient"
+              ]
+          }
+      },
+      {
+          "id": 6246137,
+          "instance_id": 892707949,
+          "date_added": "2021-12-27T03:35:18-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 6246137,
+              "master_id": 751603,
+              "master_url": "https://api.discogs.com/masters/751603",
+              "resource_url": "https://api.discogs.com/releases/6246137",
+              "thumb": "",
+              "cover_image": "",
+              "title": "With A Little Help From My Fwends",
+              "year": 2014,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "Orange",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Limited Edition"
+                      ]
+                  },
+                  {
+                      "name": "CD",
+                      "qty": "1",
+                      "descriptions": [
+                          "Album"
+                      ]
+                  },
+                  {
+                      "name": "All Media",
+                      "qty": "1"
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "The Flaming Lips",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 67156,
+                      "resource_url": "https://api.discogs.com/artists/67156"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Bella Union",
+                      "catno": "BELLA457V",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 2201,
+                      "resource_url": "https://api.discogs.com/labels/2201"
+                  },
+                  {
+                      "name": "Lovely Sorts of Death Records",
+                      "catno": "BELLA457V",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 237976,
+                      "resource_url": "https://api.discogs.com/labels/237976"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Rock"
+              ],
+              "styles": [
+                  "Acid Rock"
+              ]
+          }
+      },
+      {
+          "id": 1786820,
+          "instance_id": 502832369,
+          "date_added": "2020-08-31T16:12:24-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 1786820,
+              "master_id": 82410,
+              "master_url": "https://api.discogs.com/masters/82410",
+              "resource_url": "https://api.discogs.com/releases/1786820",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Moderat",
+              "year": 2009,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Moderat",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 92209,
+                      "resource_url": "https://api.discogs.com/artists/92209"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "BPitch Control",
+                      "catno": "BPC 200",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 1466,
+                      "resource_url": "https://api.discogs.com/labels/1466"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Hip Hop"
+              ],
+              "styles": [
+                  "IDM",
+                  "Techno",
+                  "Dubstep",
+                  "Electro"
+              ]
+          }
+      },
+      {
+          "id": 1062367,
+          "instance_id": 540904743,
+          "date_added": "2020-12-14T02:55:54-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 1062367,
+              "master_id": 25789,
+              "master_url": "https://api.discogs.com/masters/25789",
+              "resource_url": "https://api.discogs.com/releases/1062367",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Happy Birthday!",
+              "year": 2007,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Modeselektor",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 34120,
+                      "resource_url": "https://api.discogs.com/artists/34120"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "BPitch Control",
+                      "catno": "BPC159 LP",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 1466,
+                      "resource_url": "https://api.discogs.com/labels/1466"
+                  },
+                  {
+                      "name": "BPitch Control",
+                      "catno": "BPC159",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 1466,
+                      "resource_url": "https://api.discogs.com/labels/1466"
+                  },
+                  {
+                      "name": "BPitch Control",
+                      "catno": "BPC 159",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 1466,
+                      "resource_url": "https://api.discogs.com/labels/1466"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Glitch",
+                  "IDM",
+                  "Electro",
+                  "Hip Hop"
+              ]
+          }
+      },
+      {
+          "id": 660574,
+          "instance_id": 520042994,
+          "date_added": "2020-10-29T16:12:07-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 660574,
+              "master_id": 53063,
+              "master_url": "https://api.discogs.com/masters/53063",
+              "resource_url": "https://api.discogs.com/releases/660574",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Destroy Rock & Roll",
+              "year": 2005,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Mylo",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 105042,
+                      "resource_url": "https://api.discogs.com/artists/105042"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Breastfed",
+                      "catno": "BFD007LPX",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 47428,
+                      "resource_url": "https://api.discogs.com/labels/47428"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "House",
+                  "Electro"
+              ]
+          }
+      },
+      {
+          "id": 5929392,
+          "instance_id": 762373870,
+          "date_added": "2021-07-22T09:26:20-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 5929392,
+              "master_id": 31602,
+              "master_url": "https://api.discogs.com/masters/31602",
+              "resource_url": "https://api.discogs.com/releases/5929392",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Amigos",
+              "year": 1976,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "Gatefold",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Club Edition"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Santana",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 30724,
+                      "resource_url": "https://api.discogs.com/artists/30724"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "CBS",
+                      "catno": "CBS 64497",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 3072,
+                      "resource_url": "https://api.discogs.com/labels/3072"
+                  }
+              ],
+              "genres": [
+                  "Rock"
+              ],
+              "styles": []
+          }
+      },
+      {
+          "id": 3380043,
+          "instance_id": 540902103,
+          "date_added": "2020-12-14T02:50:08-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 3380043,
+              "master_id": 305947,
+              "master_url": "https://api.discogs.com/masters/305947",
+              "resource_url": "https://api.discogs.com/releases/3380043",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Space Is Only Noise",
+              "year": 2012,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Reissue"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Nicolas Jaar",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 1096231,
+                      "resource_url": "https://api.discogs.com/artists/1096231"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Circus Company",
+                      "catno": "CCS055-2",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 6339,
+                      "resource_url": "https://api.discogs.com/labels/6339"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Downtempo",
+                  "Deep House",
+                  "Ambient"
+              ]
+          }
+      },
+      {
+          "id": 14856197,
+          "instance_id": 464223406,
+          "date_added": "2020-04-30T10:17:34-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 14856197,
+              "master_id": 1688972,
+              "master_url": "https://api.discogs.com/masters/1688972",
+              "resource_url": "https://api.discogs.com/releases/14856197",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Suddenly",
+              "year": 2020,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "Blue",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Limited Edition"
+                      ]
+                  },
+                  {
+                      "name": "CD",
+                      "qty": "1",
+                      "descriptions": [
+                          "Mixed"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Caribou",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 275841,
+                      "resource_url": "https://api.discogs.com/artists/275841"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "City Slang",
+                      "catno": "SLANG50247LP",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 2441,
+                      "resource_url": "https://api.discogs.com/labels/2441"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Rock"
+              ],
+              "styles": [
+                  "House",
+                  "Indie Rock"
+              ]
+          }
+      },
+      {
+          "id": 2235245,
+          "instance_id": 540901371,
+          "date_added": "2020-12-14T02:48:45-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 2235245,
+              "master_id": 240989,
+              "master_url": "https://api.discogs.com/masters/240989",
+              "resource_url": "https://api.discogs.com/releases/2235245",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Swim",
+              "year": 2010,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "text": "180 Gram",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Caribou",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 275841,
+                      "resource_url": "https://api.discogs.com/artists/275841"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "City Slang",
+                      "catno": "SLANG9550055",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 2441,
+                      "resource_url": "https://api.discogs.com/labels/2441"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno",
+                  "Electro",
+                  "Experimental",
+                  "Deep House",
+                  "Minimal"
+              ]
+          }
+      },
+      {
+          "id": 15511221,
+          "instance_id": 547537674,
+          "date_added": "2020-12-21T13:56:52-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 15511221,
+              "master_id": 1727923,
+              "master_url": "https://api.discogs.com/masters/1727923",
+              "resource_url": "https://api.discogs.com/releases/15511221",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Mordechai",
+              "year": 2020,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "Pink Translucent ",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Limited Edition",
+                          "Stereo"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Khruangbin",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 3565949,
+                      "resource_url": "https://api.discogs.com/artists/3565949"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Dead Oceans",
+                      "catno": "DOC193LP-C1",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 94740,
+                      "resource_url": "https://api.discogs.com/labels/94740"
+                  },
+                  {
+                      "name": "Night Time Stories",
+                      "catno": "DOC193LP-C1",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 1409593,
+                      "resource_url": "https://api.discogs.com/labels/1409593"
+                  }
+              ],
+              "genres": [
+                  "Rock",
+                  "Funk / Soul"
+              ],
+              "styles": [
+                  "Funk",
+                  "Psychedelic",
+                  "Disco",
+                  "Rhythm & Blues"
+              ]
+          }
+      },
+      {
+          "id": 592674,
+          "instance_id": 589487188,
+          "date_added": "2021-01-28T11:45:47-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 592674,
+              "master_id": 30129,
+              "master_url": "https://api.discogs.com/masters/30129",
+              "resource_url": "https://api.discogs.com/releases/592674",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Doggystyle",
+              "year": 2001,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Reissue",
+                          "Remastered"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Snoop Dogg",
+                      "anv": "Snoop Doggy Dogg",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 132084,
+                      "resource_url": "https://api.discogs.com/artists/132084"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Death Row Records (2)",
+                      "catno": "DRR 63002-1",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 19737,
+                      "resource_url": "https://api.discogs.com/labels/19737"
+                  }
+              ],
+              "genres": [
+                  "Hip Hop"
+              ],
+              "styles": [
+                  "Gangsta",
+                  "G-Funk"
+              ]
+          }
+      },
+      {
+          "id": 16253690,
+          "instance_id": 547796514,
+          "date_added": "2020-12-21T23:18:43-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 16253690,
+              "master_id": 1862658,
+              "master_url": "https://api.discogs.com/masters/1862658",
+              "resource_url": "https://api.discogs.com/releases/16253690",
+              "thumb": "",
+              "cover_image": "",
+              "title": "The Vision",
+              "year": 2020,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Deluxe Edition",
+                          "Limited Edition"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "The Vision (16)",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 7264476,
+                      "resource_url": "https://api.discogs.com/artists/7264476"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Defected",
+                      "catno": "TVIS01LP",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 98,
+                      "resource_url": "https://api.discogs.com/labels/98"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Funk / Soul"
+              ],
+              "styles": [
+                  "Soul",
+                  "Funk",
+                  "Disco",
+                  "House"
+              ]
+          }
+      },
+      {
+          "id": 11917499,
+          "instance_id": 464225022,
+          "date_added": "2020-04-30T10:23:55-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 11917499,
+              "master_id": 1357752,
+              "master_url": "https://api.discogs.com/masters/1357752",
+              "resource_url": "https://api.discogs.com/releases/11917499",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Singularity",
+              "year": 2018,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "text": "Blue (Midnight), 180 Gram",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Deluxe Edition"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Jon Hopkins",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 24056,
+                      "resource_url": "https://api.discogs.com/artists/24056"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Domino",
+                      "catno": "WIGLP352XM",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 26465,
+                      "resource_url": "https://api.discogs.com/labels/26465"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Tech House",
+                  "Electro",
+                  "Experimental",
+                  "IDM"
+              ]
+          }
+      },
+      {
+          "id": 18807385,
+          "instance_id": 882606775,
+          "date_added": "2021-12-15T06:40:02-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 18807385,
+              "master_id": 1814709,
+              "master_url": "https://api.discogs.com/masters/1814709",
+              "resource_url": "https://api.discogs.com/releases/18807385",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Love And Dancing",
+              "year": 2021,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Repress"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Horse Meat Disco",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 1349939,
+                      "resource_url": "https://api.discogs.com/artists/1349939"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Glitterbox",
+                      "catno": "DGLIB21LP2",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 954868,
+                      "resource_url": "https://api.discogs.com/labels/954868"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Funk / Soul"
+              ],
+              "styles": [
+                  "Disco",
+                  "Nu-Disco",
+                  "House"
+              ]
+          }
+      },
+      {
+          "id": 14227174,
+          "instance_id": 464223705,
+          "date_added": "2020-04-30T10:18:44-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 14227174,
+              "master_id": 1616685,
+              "master_url": "https://api.discogs.com/masters/1616685",
+              "resource_url": "https://api.discogs.com/releases/14227174",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Memory Streams",
+              "year": 2019,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Portico Quartet",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 984316,
+                      "resource_url": "https://api.discogs.com/artists/984316"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Gondwana Records",
+                      "catno": "GONDLP034",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 116373,
+                      "resource_url": "https://api.discogs.com/labels/116373"
+                  }
+              ],
+              "genres": [
+                  "Jazz"
+              ],
+              "styles": [
+                  "Contemporary Jazz"
+              ]
+          }
+      },
+      {
+          "id": 15831782,
+          "instance_id": 882607051,
+          "date_added": "2021-12-15T06:40:29-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 15831782,
+              "master_id": 1795686,
+              "master_url": "https://api.discogs.com/masters/1795686",
+              "resource_url": "https://api.discogs.com/releases/15831782",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Energy",
+              "year": 2020,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "text": "Clear, 180g",
+                      "descriptions": [
+                          "12\"",
+                          "45 RPM",
+                          "Album",
+                          "Limited Edition"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Disclosure (3)",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 2330068,
+                      "resource_url": "https://api.discogs.com/artists/2330068"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Island Records",
+                      "catno": "0878538",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 8377,
+                      "resource_url": "https://api.discogs.com/labels/8377"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Funk / Soul"
+              ],
+              "styles": [
+                  "House",
+                  "UK Garage"
+              ]
+          }
+      },
+      {
+          "id": 4962500,
+          "instance_id": 464224152,
+          "date_added": "2020-04-30T10:20:22-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 4962500,
+              "master_id": 356128,
+              "master_url": "https://api.discogs.com/masters/356128",
+              "resource_url": "https://api.discogs.com/releases/4962500",
+              "thumb": "",
+              "cover_image": "",
+              "title": "LateNightTales",
+              "year": 2013,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Compilation",
+                          "Limited Edition"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Four Tet",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 3543,
+                      "resource_url": "https://api.discogs.com/artists/3543"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "LateNightTales",
+                      "catno": "ALNLP12",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 349159,
+                      "resource_url": "https://api.discogs.com/labels/349159"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Jazz",
+                  "Rock"
+              ],
+              "styles": [
+                  "Downtempo",
+                  "Hip Hop",
+                  "Experimental",
+                  "Folk Rock",
+                  "Post Bop",
+                  "Post Rock"
+              ]
+          }
+      },
+      {
+          "id": 1687221,
+          "instance_id": 849738406,
+          "date_added": "2021-11-06T05:05:59-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 1687221,
+              "master_id": 312591,
+              "master_url": "https://api.discogs.com/masters/312591",
+              "resource_url": "https://api.discogs.com/releases/1687221",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Soca House",
+              "year": 1991,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\""
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Terra W.A.N.",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 19681,
+                      "resource_url": "https://api.discogs.com/artists/19681"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Metropol Records",
+                      "catno": "MRP-131-MX",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 18960,
+                      "resource_url": "https://api.discogs.com/labels/18960"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Reggae"
+              ],
+              "styles": [
+                  "Breakbeat"
+              ]
+          }
+      },
+      {
+          "id": 4782350,
+          "instance_id": 747382219,
+          "date_added": "2021-07-04T05:26:07-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 4782350,
+              "master_id": 580392,
+              "master_url": "https://api.discogs.com/masters/580392",
+              "resource_url": "https://api.discogs.com/releases/4782350",
+              "thumb": "",
+              "cover_image": "",
+              "title": "II",
+              "year": 2013,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "text": "Gatefold",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Deluxe Edition",
+                          "Stereo"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Moderat",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 92209,
+                      "resource_url": "https://api.discogs.com/artists/92209"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Monkeytown Records",
+                      "catno": "MTR036LP",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 149457,
+                      "resource_url": "https://api.discogs.com/labels/149457"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Downtempo",
+                  "Dubstep",
+                  "Techno"
+              ]
+          }
+      },
+      {
+          "id": 8282220,
+          "instance_id": 464224495,
+          "date_added": "2020-04-30T10:21:46-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 8282220,
+              "master_id": 979425,
+              "master_url": "https://api.discogs.com/masters/979425",
+              "resource_url": "https://api.discogs.com/releases/8282220",
+              "thumb": "",
+              "cover_image": "",
+              "title": "III",
+              "year": 2016,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Moderat",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 92209,
+                      "resource_url": "https://api.discogs.com/artists/92209"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Monkeytown Records",
+                      "catno": "MTR063LP",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 149457,
+                      "resource_url": "https://api.discogs.com/labels/149457"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno",
+                  "Electro",
+                  "Dubstep",
+                  "Downtempo",
+                  "IDM"
+              ]
+          }
+      },
+      {
+          "id": 13246616,
+          "instance_id": 495291075,
+          "date_added": "2020-08-04T16:11:04-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 13246616,
+              "master_id": 1505215,
+              "master_url": "https://api.discogs.com/masters/1505215",
+              "resource_url": "https://api.discogs.com/releases/13246616",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Who Else ",
+              "year": 2019,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Modeselektor",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 34120,
+                      "resource_url": "https://api.discogs.com/artists/34120"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Monkeytown Records",
+                      "catno": "MTR096LP",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 149457,
+                      "resource_url": "https://api.discogs.com/labels/149457"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno",
+                  "Breakbeat",
+                  "Hip Hop"
+              ]
+          }
+      },
+      {
+          "id": 13606185,
+          "instance_id": 495290640,
+          "date_added": "2020-08-04T16:09:39-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 13606185,
+              "master_id": 1546468,
+              "master_url": "https://api.discogs.com/masters/1546468",
+              "resource_url": "https://api.discogs.com/releases/13606185",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Levitation",
+              "year": 2019,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "Yellow",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Limited Edition"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Flamingods",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 2437465,
+                      "resource_url": "https://api.discogs.com/artists/2437465"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Moshi Moshi Records",
+                      "catno": "MOSHILP91X",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 7448,
+                      "resource_url": "https://api.discogs.com/labels/7448"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Rock"
+              ],
+              "styles": [
+                  "Psychedelic Rock",
+                  "Alternative Rock"
+              ]
+          }
+      },
+      {
+          "id": 25061122,
+          "instance_id": 1273116764,
+          "date_added": "2023-02-19T11:24:31-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 25061122,
+              "master_id": 82202,
+              "master_url": "https://api.discogs.com/masters/82202",
+              "resource_url": "https://api.discogs.com/releases/25061122",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Play",
+              "year": 0,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Reissue"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Moby",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 1031,
+                      "resource_url": "https://api.discogs.com/artists/1031"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Mute",
+                      "catno": "STUMM172",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 26391,
+                      "resource_url": "https://api.discogs.com/labels/26391"
+                  },
+                  {
+                      "name": "BMG",
+                      "catno": "STUMM172",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 1003,
+                      "resource_url": "https://api.discogs.com/labels/1003"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Downtempo",
+                  "Ambient",
+                  "Breakbeat"
+              ]
+          }
+      },
+      {
+          "id": 14307715,
+          "instance_id": 495291396,
+          "date_added": "2020-08-04T16:11:55-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 14307715,
+              "master_id": 1625655,
+              "master_url": "https://api.discogs.com/masters/1625655",
+              "resource_url": "https://api.discogs.com/releases/14307715",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Corra Linn",
+              "year": 2019,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\"",
+                          "EP"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Lanark Artefax",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 5166156,
+                      "resource_url": "https://api.discogs.com/artists/5166156"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Numbers.",
+                      "catno": "NMBRS63",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 105540,
+                      "resource_url": "https://api.discogs.com/labels/105540"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "IDM",
+                  "Experimental"
+              ]
+          }
+      },
+      {
+          "id": 7644509,
+          "instance_id": 852766306,
+          "date_added": "2021-11-09T11:26:20-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 7644509,
+              "master_id": 672494,
+              "master_url": "https://api.discogs.com/masters/672494",
+              "resource_url": "https://api.discogs.com/releases/7644509",
+              "thumb": "",
+              "cover_image": "",
+              "title": "It's Album Time",
+              "year": 2014,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "12\"",
+                          "45 RPM",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Todd Terje",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 132082,
+                      "resource_url": "https://api.discogs.com/artists/132082"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Olsen",
+                      "catno": "OLS006",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 339359,
+                      "resource_url": "https://api.discogs.com/labels/339359"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Rock",
+                  "Pop"
+              ],
+              "styles": [
+                  "Disco",
+                  "House"
+              ]
+          }
+      },
+      {
+          "id": 11914433,
+          "instance_id": 540903798,
+          "date_added": "2020-12-14T02:53:35-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 11914433,
+              "master_id": 34486,
+              "master_url": "https://api.discogs.com/masters/34486",
+              "resource_url": "https://api.discogs.com/releases/11914433",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Debut",
+              "year": 2015,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "180 Gram",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Reissue"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Björk",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 1373,
+                      "resource_url": "https://api.discogs.com/artists/1373"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "One Little Indian",
+                      "catno": "TPLP31",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 311,
+                      "resource_url": "https://api.discogs.com/labels/311"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Pop"
+              ],
+              "styles": [
+                  "House",
+                  "Downtempo",
+                  "Experimental"
+              ]
+          }
+      },
+      {
+          "id": 11507415,
+          "instance_id": 464224445,
+          "date_added": "2020-04-30T10:21:32-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 11507415,
+              "master_id": 1364823,
+              "master_url": "https://api.discogs.com/masters/1364823",
+              "resource_url": "https://api.discogs.com/releases/11507415",
+              "thumb": "",
+              "cover_image": "",
+              "title": "2012–2017",
+              "year": 2018,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "A.A.L. (Against All Logic)",
+                      "anv": "Against All Logic",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 3754267,
+                      "resource_url": "https://api.discogs.com/artists/3754267"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Other People",
+                      "catno": "OP048",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 586783,
+                      "resource_url": "https://api.discogs.com/labels/586783"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Experimental",
+                  "House",
+                  "Tech House",
+                  "Deep House"
+              ]
+          }
+      },
+      {
+          "id": 15318889,
+          "instance_id": 495290917,
+          "date_added": "2020-08-04T16:10:33-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 15318889,
+              "master_id": 1739333,
+              "master_url": "https://api.discogs.com/masters/1739333",
+              "resource_url": "https://api.discogs.com/releases/15318889",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Illusions Of Shameless Abundance",
+              "year": 2020,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\"",
+                          "45 RPM"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "A.A.L. (Against All Logic)",
+                      "anv": "Against All Logic",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 3754267,
+                      "resource_url": "https://api.discogs.com/artists/3754267"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Other People",
+                      "catno": "OP057",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 586783,
+                      "resource_url": "https://api.discogs.com/labels/586783"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Downtempo"
+              ]
+          }
+      },
+      {
+          "id": 12846160,
+          "instance_id": 489013091,
+          "date_added": "2020-07-13T17:01:46-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 12846160,
+              "master_id": 26647,
+              "master_url": "https://api.discogs.com/masters/26647",
+              "resource_url": "https://api.discogs.com/releases/12846160",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Discovery",
+              "year": 2018,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Reissue"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Daft Punk",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 1289,
+                      "resource_url": "https://api.discogs.com/artists/1289"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Parlophone",
+                      "catno": "7243 8496061 2",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 2294,
+                      "resource_url": "https://api.discogs.com/labels/2294"
+                  },
+                  {
+                      "name": "Parlophone",
+                      "catno": "V2940",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 2294,
+                      "resource_url": "https://api.discogs.com/labels/2294"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Rock"
+              ],
+              "styles": [
+                  "Techno",
+                  "Electro"
+              ]
+          }
+      },
+      {
+          "id": 12834057,
+          "instance_id": 494600035,
+          "date_added": "2020-08-02T07:23:18-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 12834057,
+              "master_id": 2219827,
+              "master_url": "https://api.discogs.com/masters/2219827",
+              "resource_url": "https://api.discogs.com/releases/12834057",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Paspatou",
+              "year": 2018,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Parra For Cuva",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 3415415,
+                      "resource_url": "https://api.discogs.com/artists/3415415"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Parra For Cuva",
+                      "catno": "Awal PFC 001",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 1554093,
+                      "resource_url": "https://api.discogs.com/labels/1554093"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Downtempo",
+                  "Tech House"
+              ]
+          }
+      },
+      {
+          "id": 39217,
+          "instance_id": 1204069822,
+          "date_added": "2022-12-11T16:07:04-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 39217,
+              "master_id": 69820,
+              "master_url": "https://api.discogs.com/masters/69820",
+              "resource_url": "https://api.discogs.com/releases/39217",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Born On The 24th Of July",
+              "year": 2001,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Charles Webster",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 4858,
+                      "resource_url": "https://api.discogs.com/artists/4858"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Peacefrog Records",
+                      "catno": "PF 097",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 253,
+                      "resource_url": "https://api.discogs.com/labels/253"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Deep House",
+                  "Downtempo"
+              ]
+          }
+      },
+      {
+          "id": 8926496,
+          "instance_id": 477012151,
+          "date_added": "2020-06-04T16:54:12-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 8926496,
+              "master_id": 1045391,
+              "master_url": "https://api.discogs.com/masters/1045391",
+              "resource_url": "https://api.discogs.com/releases/8926496",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Daniel Avery & BTU Reworks",
+              "year": 2016,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "White",
+                      "descriptions": [
+                          "12\"",
+                          "Limited Edition"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Beyond The Wizards Sleeve",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 416374,
+                      "resource_url": "https://api.discogs.com/artists/416374"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Phantasy Sound",
+                      "catno": "PH56",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 94402,
+                      "resource_url": "https://api.discogs.com/labels/94402"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno"
+              ]
+          }
+      },
+      {
+          "id": 11955704,
+          "instance_id": 477009782,
+          "date_added": "2020-06-04T16:47:19-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 11955704,
+              "master_id": 0,
+              "master_url": null,
+              "resource_url": "https://api.discogs.com/releases/11955704",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Connection",
+              "year": 2018,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\"",
+                          "45 RPM"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Future Four",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 3242584,
+                      "resource_url": "https://api.discogs.com/artists/3242584"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Phantasy Sound",
+                      "catno": "PH68",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 94402,
+                      "resource_url": "https://api.discogs.com/labels/94402"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno",
+                  "House"
+              ]
+          }
+      },
+      {
+          "id": 11723665,
+          "instance_id": 477012507,
+          "date_added": "2020-06-04T16:55:13-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 11723665,
+              "master_id": 1302724,
+              "master_url": "https://api.discogs.com/masters/1302724",
+              "resource_url": "https://api.discogs.com/releases/11723665",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Slow Fade (Remixes)",
+              "year": 2018,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\"",
+                          "33 ⅓ RPM",
+                          "45 RPM",
+                          "White Label"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Daniel Avery",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 2519485,
+                      "resource_url": "https://api.discogs.com/artists/2519485"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Phantasy Sound",
+                      "catno": "PH70",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 94402,
+                      "resource_url": "https://api.discogs.com/labels/94402"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno"
+              ]
+          }
+      },
+      {
+          "id": 12540044,
+          "instance_id": 477010944,
+          "date_added": "2020-06-04T16:50:45-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 12540044,
+              "master_id": 0,
+              "master_url": null,
+              "resource_url": "https://api.discogs.com/releases/12540044",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Zurich/A65",
+              "year": 2018,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "Hand stamped",
+                      "descriptions": [
+                          "12\"",
+                          "White Label"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "James Welsh",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 422841,
+                      "resource_url": "https://api.discogs.com/artists/422841"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Phantasy Sound",
+                      "catno": "PH71",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 94402,
+                      "resource_url": "https://api.discogs.com/labels/94402"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno",
+                  "Acid"
+              ]
+          }
+      },
+      {
+          "id": 12213937,
+          "instance_id": 477012047,
+          "date_added": "2020-06-04T16:53:55-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 12213937,
+              "master_id": 1397200,
+              "master_url": "https://api.discogs.com/masters/1397200",
+              "resource_url": "https://api.discogs.com/releases/12213937",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Eyes Over",
+              "year": 2018,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\"",
+                          "Single"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Gabriel Gurnsey",
+                      "anv": "Gabe Gurnsey",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 1907829,
+                      "resource_url": "https://api.discogs.com/artists/1907829"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Phantasy Sound",
+                      "catno": "PH74",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 94402,
+                      "resource_url": "https://api.discogs.com/labels/94402"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Pop"
+              ],
+              "styles": [
+                  "Dance-pop"
+              ]
+          }
+      },
+      {
+          "id": 12916432,
+          "instance_id": 477009477,
+          "date_added": "2020-06-04T16:46:30-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 12916432,
+              "master_id": 1485964,
+              "master_url": "https://api.discogs.com/masters/1485964",
+              "resource_url": "https://api.discogs.com/releases/12916432",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Terminal Madness",
+              "year": 2018,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\"",
+                          "EP"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Cowboy Rhythmbox",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 2794923,
+                      "resource_url": "https://api.discogs.com/artists/2794923"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Phantasy Sound",
+                      "catno": "PH82",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 94402,
+                      "resource_url": "https://api.discogs.com/labels/94402"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "House",
+                  "Nu-Disco"
+              ]
+          }
+      },
+      {
+          "id": 13330128,
+          "instance_id": 477010068,
+          "date_added": "2020-06-04T16:48:12-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 13330128,
+              "master_id": 1786856,
+              "master_url": "https://api.discogs.com/masters/1786856",
+              "resource_url": "https://api.discogs.com/releases/13330128",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Spectrum / Silver Echoes (Matrixxman And Machine Woman Remixes)",
+              "year": 2019,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\"",
+                          "33 ⅓ RPM",
+                          "45 RPM"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Erol Alkan",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 117051,
+                      "resource_url": "https://api.discogs.com/artists/117051"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Phantasy Sound",
+                      "catno": "PH83 RMX1",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 94402,
+                      "resource_url": "https://api.discogs.com/labels/94402"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno",
+                  "Tech House"
+              ]
+          }
+      },
+      {
+          "id": 13260874,
+          "instance_id": 477012313,
+          "date_added": "2020-06-04T16:54:40-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 13260874,
+              "master_id": 1536150,
+              "master_url": "https://api.discogs.com/masters/1536150",
+              "resource_url": "https://api.discogs.com/releases/13260874",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Coarse ",
+              "year": 2019,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\""
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Joshua James (5)",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 5101039,
+                      "resource_url": "https://api.discogs.com/artists/5101039"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Phantasy Sound",
+                      "catno": "PH85",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 94402,
+                      "resource_url": "https://api.discogs.com/labels/94402"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Acid",
+                  "Tech House"
+              ]
+          }
+      },
+      {
+          "id": 13793294,
+          "instance_id": 477011941,
+          "date_added": "2020-06-04T16:53:40-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 13793294,
+              "master_id": 0,
+              "master_url": null,
+              "resource_url": "https://api.discogs.com/releases/13793294",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Lon Lon Night Vision ",
+              "year": 2019,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\""
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Wilted Woman",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 3863248,
+                      "resource_url": "https://api.discogs.com/artists/3863248"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Phantasy Sound",
+                      "catno": "PH88",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 94402,
+                      "resource_url": "https://api.discogs.com/labels/94402"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno",
+                  "Electro",
+                  "Acid"
+              ]
+          }
+      },
+      {
+          "id": 4967829,
+          "instance_id": 645077665,
+          "date_added": "2021-03-18T08:20:42-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 4967829,
+              "master_id": 606732,
+              "master_url": "https://api.discogs.com/masters/606732",
+              "resource_url": "https://api.discogs.com/releases/4967829",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Drone Logic",
+              "year": 2013,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Daniel Avery",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 2519485,
+                      "resource_url": "https://api.discogs.com/artists/2519485"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Phantasy Sound",
+                      "catno": "PHLP002",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 94402,
+                      "resource_url": "https://api.discogs.com/labels/94402"
+                  },
+                  {
+                      "name": "Because Music",
+                      "catno": "BEC5161627",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 54379,
+                      "resource_url": "https://api.discogs.com/labels/54379"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Acid",
+                  "Acid House",
+                  "Tech House",
+                  "Dark Ambient"
+              ]
+          }
+      },
+      {
+          "id": 20761726,
+          "instance_id": 1203925495,
+          "date_added": "2022-12-11T12:57:26-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 20761726,
+              "master_id": 35930,
+              "master_url": "https://api.discogs.com/masters/35930",
+              "resource_url": "https://api.discogs.com/releases/20761726",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Super Discount",
+              "year": 2021,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "text": "25th Anniversary Edition, Gatefold",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Etienne De Crécy",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 409899,
+                      "resource_url": "https://api.discogs.com/artists/409899"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Pixadelic",
+                      "catno": "PXC075LP",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 100202,
+                      "resource_url": "https://api.discogs.com/labels/100202"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "House",
+                  "French House"
+              ]
+          }
+      },
+      {
+          "id": 12134882,
+          "instance_id": 464223771,
+          "date_added": "2020-04-30T10:18:57-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 12134882,
+              "master_id": 23992,
+              "master_url": "https://api.discogs.com/masters/23992",
+              "resource_url": "https://api.discogs.com/releases/12134882",
+              "thumb": "",
+              "cover_image": "",
+              "title": "The Last Resort",
+              "year": 2018,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "3",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Reissue"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Trentemøller",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 117914,
+                      "resource_url": "https://api.discogs.com/artists/117914"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Poker Flat Recordings",
+                      "catno": "PFRLP18X",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 779,
+                      "resource_url": "https://api.discogs.com/labels/779"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Tech House",
+                  "Ambient",
+                  "Minimal",
+                  "Techno"
+              ]
+          }
+      },
+      {
+          "id": 10856148,
+          "instance_id": 469432529,
+          "date_added": "2020-05-13T12:01:01-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 10856148,
+              "master_id": 172117,
+              "master_url": "https://api.discogs.com/masters/172117",
+              "resource_url": "https://api.discogs.com/releases/10856148",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Stand Up (Pangaea's Mix)",
+              "year": 2017,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\"",
+                          "45 RPM",
+                          "Single Sided"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Loleatta Holloway",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 17413,
+                      "resource_url": "https://api.discogs.com/artists/17413"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Salsoul Records",
+                      "catno": "SALSBMG08",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 751,
+                      "resource_url": "https://api.discogs.com/labels/751"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Funk / Soul"
+              ],
+              "styles": [
+                  "Broken Beat",
+                  "Disco"
+              ]
+          }
+      },
+      {
+          "id": 13032309,
+          "instance_id": 849398911,
+          "date_added": "2021-11-05T16:14:21-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 13032309,
+              "master_id": 1481342,
+              "master_url": "https://api.discogs.com/masters/1481342",
+              "resource_url": "https://api.discogs.com/releases/13032309",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Guitares Du Bresil",
+              "year": 1990,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Compilation"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Baden Powell",
+                      "anv": "",
+                      "join": ",",
+                      "role": "",
+                      "tracks": "",
+                      "id": 59406,
+                      "resource_url": "https://api.discogs.com/artists/59406"
+                  },
+                  {
+                      "name": "Rosinha de Valença",
+                      "anv": "",
+                      "join": ",",
+                      "role": "",
+                      "tracks": "",
+                      "id": 478643,
+                      "resource_url": "https://api.discogs.com/artists/478643"
+                  },
+                  {
+                      "name": "José Barrense-Dias",
+                      "anv": "",
+                      "join": ",",
+                      "role": "",
+                      "tracks": "",
+                      "id": 322170,
+                      "resource_url": "https://api.discogs.com/artists/322170"
+                  },
+                  {
+                      "name": "Paulinho Nogueira",
+                      "anv": "",
+                      "join": "&",
+                      "role": "",
+                      "tracks": "",
+                      "id": 982328,
+                      "resource_url": "https://api.discogs.com/artists/982328"
+                  },
+                  {
+                      "name": "Toquinho",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 23478,
+                      "resource_url": "https://api.discogs.com/artists/23478"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Sigla",
+                      "catno": "6P-032 1-2",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 62019,
+                      "resource_url": "https://api.discogs.com/labels/62019"
+                  }
+              ],
+              "genres": [
+                  "Jazz",
+                  "Latin",
+                  "Folk, World, & Country"
+              ],
+              "styles": []
+          }
+      },
+      {
+          "id": 15832082,
+          "instance_id": 502798145,
+          "date_added": "2020-08-31T14:22:50-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 15832082,
+              "master_id": 1795014,
+              "master_url": "https://api.discogs.com/masters/1795014",
+              "resource_url": "https://api.discogs.com/releases/15832082",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Inner Song",
+              "year": 2020,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "White",
+                      "descriptions": [
+                          "LP"
+                      ]
+                  },
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "White",
+                      "descriptions": [
+                          "LP",
+                          "Single Sided",
+                          "Etched"
+                      ]
+                  },
+                  {
+                      "name": "All Media",
+                      "qty": "1",
+                      "text": "White",
+                      "descriptions": [
+                          "Album",
+                          "Limited Edition"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Kelly Lee Owens",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 3143783,
+                      "resource_url": "https://api.discogs.com/artists/3143783"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Smalltown Supersound",
+                      "catno": "STS372LP",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 975,
+                      "resource_url": "https://api.discogs.com/labels/975"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Techno"
+              ]
+          }
+      },
+      {
+          "id": 10908774,
+          "instance_id": 1273115081,
+          "date_added": "2023-02-19T11:22:54-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 10908774,
+              "master_id": 55833,
+              "master_url": "https://api.discogs.com/masters/55833",
+              "resource_url": "https://api.discogs.com/releases/10908774",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Reverence",
+              "year": 2017,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "text": "180 Gram",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Reissue",
+                          "Repress"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Faithless",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 4118,
+                      "resource_url": "https://api.discogs.com/artists/4118"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Sony Music",
+                      "catno": "88985422811",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 25487,
+                      "resource_url": "https://api.discogs.com/labels/25487"
+                  },
+                  {
+                      "name": "Legacy",
+                      "catno": "88985422811",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 15491,
+                      "resource_url": "https://api.discogs.com/labels/15491"
+                  },
+                  {
+                      "name": "Cheeky Records",
+                      "catno": "88985422811",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 1669,
+                      "resource_url": "https://api.discogs.com/labels/1669"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Hip Hop"
+              ],
+              "styles": [
+                  "House",
+                  "Downtempo",
+                  "Trance",
+                  "Trip Hop"
+              ]
+          }
+      },
+      {
+          "id": 10325652,
+          "instance_id": 744253555,
+          "date_added": "2021-06-30T07:17:54-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 10325652,
+              "master_id": 1183323,
+              "master_url": "https://api.discogs.com/masters/1183323",
+              "resource_url": "https://api.discogs.com/releases/10325652",
+              "thumb": "",
+              "cover_image": "",
+              "title": "The Arc Of Tension",
+              "year": 2017,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "12\"",
+                          "33 ⅓ RPM",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Oliver Koletzki",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 278905,
+                      "resource_url": "https://api.discogs.com/artists/278905"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Stil Vor Talent",
+                      "catno": "SVT193",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 46433,
+                      "resource_url": "https://api.discogs.com/labels/46433"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Deep House",
+                  "Progressive House",
+                  "Tech House",
+                  "Techno"
+              ]
+          }
+      },
+      {
+          "id": 6961185,
+          "instance_id": 762372793,
+          "date_added": "2021-07-22T09:25:00-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 6961185,
+              "master_id": 10338,
+              "master_url": "https://api.discogs.com/masters/10338",
+              "resource_url": "https://api.discogs.com/releases/6961185",
+              "thumb": "",
+              "cover_image": "",
+              "title": "The White Stripes",
+              "year": 0,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "Black & White Labels",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Repress"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "The White Stripes",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 116345,
+                      "resource_url": "https://api.discogs.com/artists/116345"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Sympathy For The Record Industry",
+                      "catno": "SFTRI 577",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 13828,
+                      "resource_url": "https://api.discogs.com/labels/13828"
+                  }
+              ],
+              "genres": [
+                  "Rock"
+              ],
+              "styles": [
+                  "Blues Rock",
+                  "Garage Rock",
+                  "Indie Rock"
+              ]
+          }
+      },
+      {
+          "id": 15504541,
+          "instance_id": 485144304,
+          "date_added": "2020-06-30T16:05:39-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 15504541,
+              "master_id": 1762081,
+              "master_url": "https://api.discogs.com/masters/1762081",
+              "resource_url": "https://api.discogs.com/releases/15504541",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Kern Vol.5",
+              "year": 2020,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "3",
+                      "descriptions": [
+                          "12\"",
+                          "33 ⅓ RPM",
+                          "Compilation"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Helena Hauff",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 2712259,
+                      "resource_url": "https://api.discogs.com/artists/2712259"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Tresor",
+                      "catno": "KERN005LP",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 59,
+                      "resource_url": "https://api.discogs.com/labels/59"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Electro",
+                  "Techno",
+                  "Bleep",
+                  "Hardcore",
+                  "Acid",
+                  "Industrial",
+                  "Ghettotech",
+                  "Downtempo"
+              ]
+          }
+      },
+      {
+          "id": 13786456,
+          "instance_id": 464224014,
+          "date_added": "2020-04-30T10:19:52-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 13786456,
+              "master_id": 1567428,
+              "master_url": "https://api.discogs.com/masters/1567428",
+              "resource_url": "https://api.discogs.com/releases/13786456",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Atlantic Oscillations",
+              "year": 2019,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Quantic",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 9858,
+                      "resource_url": "https://api.discogs.com/artists/9858"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Tru Thoughts",
+                      "catno": "TRULP 370",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 2125,
+                      "resource_url": "https://api.discogs.com/labels/2125"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Jazz",
+                  "Latin",
+                  "Funk / Soul"
+              ],
+              "styles": [
+                  "Broken Beat"
+              ]
+          }
+      },
+      {
+          "id": 7569476,
+          "instance_id": 464223491,
+          "date_added": "2020-04-30T10:17:56-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 7569476,
+              "master_id": 825455,
+              "master_url": "https://api.discogs.com/masters/825455",
+              "resource_url": "https://api.discogs.com/releases/7569476",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Whiplash (Original Motion Picture Soundtrack)",
+              "year": 2015,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "LP",
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Various",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 194,
+                      "resource_url": ""
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Varèse Sarabande",
+                      "catno": "30206728613",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 57951,
+                      "resource_url": "https://api.discogs.com/labels/57951"
+                  }
+              ],
+              "genres": [
+                  "Jazz",
+                  "Non-Music",
+                  "Stage & Screen"
+              ],
+              "styles": [
+                  "Big Band",
+                  "Score",
+                  "Soundtrack",
+                  "Dialogue"
+              ]
+          }
+      },
+      {
+          "id": 12800683,
+          "instance_id": 540902862,
+          "date_added": "2020-12-14T02:51:43-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 12800683,
+              "master_id": 6265,
+              "master_url": "https://api.discogs.com/masters/6265",
+              "resource_url": "https://api.discogs.com/releases/12800683",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Ambient 1 (Music For Airports)",
+              "year": 2018,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "180 g",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Reissue",
+                          "Remastered",
+                          "Stereo"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Brian Eno",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 634,
+                      "resource_url": "https://api.discogs.com/artists/634"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Virgin EMI Records",
+                      "catno": "ENOLP6",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 567148,
+                      "resource_url": "https://api.discogs.com/labels/567148"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Ambient",
+                  "Minimal"
+              ]
+          }
+      },
+      {
+          "id": 9442778,
+          "instance_id": 540901827,
+          "date_added": "2020-12-14T02:49:36-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 9442778,
+              "master_id": 32618,
+              "master_url": "https://api.discogs.com/masters/32618",
+              "resource_url": "https://api.discogs.com/releases/9442778",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Blue Lines",
+              "year": 2016,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "180 gram",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Reissue",
+                          "Stereo"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Massive Attack",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 4480,
+                      "resource_url": "https://api.discogs.com/artists/4480"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Virgin",
+                      "catno": "5700960",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 750,
+                      "resource_url": "https://api.discogs.com/labels/750"
+                  },
+                  {
+                      "name": "Circa",
+                      "catno": "5700960",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 39413,
+                      "resource_url": "https://api.discogs.com/labels/39413"
+                  },
+                  {
+                      "name": "Wild Bunch Records",
+                      "catno": "5700960",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 8911,
+                      "resource_url": "https://api.discogs.com/labels/8911"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Trip Hop",
+                  "Downtempo"
+              ]
+          }
+      },
+      {
+          "id": 13611270,
+          "instance_id": 489012745,
+          "date_added": "2020-07-13T17:00:35-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 13611270,
+              "master_id": 1547012,
+              "master_url": "https://api.discogs.com/masters/1547012",
+              "resource_url": "https://api.discogs.com/releases/13611270",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Age Of The Ego",
+              "year": 2019,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "2",
+                      "descriptions": [
+                          "LP"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Crazy Penis",
+                      "anv": "Crazy P",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 82,
+                      "resource_url": "https://api.discogs.com/artists/82"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Walk Don't Walk Ltd",
+                      "catno": "WDWLP005",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 847372,
+                      "resource_url": "https://api.discogs.com/labels/847372"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "House",
+                  "Disco"
+              ]
+          }
+      },
+      {
+          "id": 8635690,
+          "instance_id": 485144499,
+          "date_added": "2020-06-30T16:06:22-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 8635690,
+              "master_id": 532,
+              "master_url": "https://api.discogs.com/masters/532",
+              "resource_url": "https://api.discogs.com/releases/8635690",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Windowlicker",
+              "year": 2016,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "12\"",
+                          "45 RPM",
+                          "Single",
+                          "Reissue"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Aphex Twin",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 45,
+                      "resource_url": "https://api.discogs.com/artists/45"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Warp Records",
+                      "catno": "WAP105",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 23528,
+                      "resource_url": "https://api.discogs.com/labels/23528"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Abstract",
+                  "Electro",
+                  "Experimental",
+                  "IDM",
+                  "Glitch",
+                  "Breakbeat"
+              ]
+          }
+      },
+      {
+          "id": 4134092,
+          "instance_id": 464224359,
+          "date_added": "2020-04-30T10:21:15-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 4134092,
+              "master_id": 16158,
+              "master_url": "https://api.discogs.com/masters/16158",
+              "resource_url": "https://api.discogs.com/releases/4134092",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Maggot Brain",
+              "year": 2004,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Reissue",
+                          "Stereo"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Funkadelic",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 29923,
+                      "resource_url": "https://api.discogs.com/artists/29923"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Westbound Records",
+                      "catno": "SEW 002",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 11643,
+                      "resource_url": "https://api.discogs.com/labels/11643"
+                  }
+              ],
+              "genres": [
+                  "Rock",
+                  "Funk / Soul"
+              ],
+              "styles": [
+                  "P.Funk",
+                  "Psychedelic Rock"
+              ]
+          }
+      },
+      {
+          "id": 16378290,
+          "instance_id": 547536585,
+          "date_added": "2020-12-21T13:55:31-08:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 16378290,
+              "master_id": 842201,
+              "master_url": "https://api.discogs.com/masters/842201",
+              "resource_url": "https://api.discogs.com/releases/16378290",
+              "thumb": "",
+              "cover_image": "",
+              "title": "In Colour",
+              "year": 2020,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "Green",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Limited Edition",
+                          "Reissue",
+                          "Remastered"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Jamie xx",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 2109856,
+                      "resource_url": "https://api.discogs.com/artists/2109856"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "Young Turks",
+                      "catno": "YT229LPE",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 82232,
+                      "resource_url": "https://api.discogs.com/labels/82232"
+                  }
+              ],
+              "genres": [
+                  "Electronic"
+              ],
+              "styles": [
+                  "Downtempo",
+                  "Indie Pop",
+                  "UK Garage"
+              ]
+          }
+      },
+      {
+          "id": 14467727,
+          "instance_id": 464224087,
+          "date_added": "2020-04-30T10:20:06-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 14467727,
+              "master_id": 0,
+              "master_url": null,
+              "resource_url": "https://api.discogs.com/releases/14467727",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Siku Reworks",
+              "year": 2019,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "text": "White",
+                      "descriptions": [
+                          "12\"",
+                          "45 RPM",
+                          "EP",
+                          "Limited Edition"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Nicola Cruz",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 3467781,
+                      "resource_url": "https://api.discogs.com/artists/3467781"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "ZZK Records",
+                      "catno": "ZZK12006",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 119283,
+                      "resource_url": "https://api.discogs.com/labels/119283"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Latin"
+              ],
+              "styles": [
+                  "Downtempo",
+                  "Cumbia",
+                  "Minimal",
+                  "Latin"
+              ]
+          }
+      },
+      {
+          "id": 7711860,
+          "instance_id": 472251452,
+          "date_added": "2020-05-21T08:01:40-07:00",
+          "rating": 0,
+          "basic_information": {
+              "id": 7711860,
+              "master_id": 927196,
+              "master_url": "https://api.discogs.com/masters/927196",
+              "resource_url": "https://api.discogs.com/releases/7711860",
+              "thumb": "",
+              "cover_image": "",
+              "title": "Prender El Alma",
+              "year": 2015,
+              "formats": [
+                  {
+                      "name": "Vinyl",
+                      "qty": "1",
+                      "descriptions": [
+                          "LP",
+                          "Album",
+                          "Limited Edition"
+                      ]
+                  },
+                  {
+                      "name": "CD",
+                      "qty": "1",
+                      "descriptions": [
+                          "Album"
+                      ]
+                  }
+              ],
+              "artists": [
+                  {
+                      "name": "Nicola Cruz",
+                      "anv": "",
+                      "join": "",
+                      "role": "",
+                      "tracks": "",
+                      "id": 3467781,
+                      "resource_url": "https://api.discogs.com/artists/3467781"
+                  }
+              ],
+              "labels": [
+                  {
+                      "name": "ZZK Records",
+                      "catno": "ZZKLP028",
+                      "entity_type": "1",
+                      "entity_type_name": "Label",
+                      "id": 119283,
+                      "resource_url": "https://api.discogs.com/labels/119283"
+                  }
+              ],
+              "genres": [
+                  "Electronic",
+                  "Latin"
+              ],
+              "styles": [
+                  "Cumbia",
+                  "Downtempo",
+                  "House",
+                  "Leftfield"
+              ]
+          }
+      }
+  ]
+}
