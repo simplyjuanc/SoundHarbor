@@ -33,12 +33,16 @@ export const GET = async (req:NextRequest) => {
       'Content-Type': 'application/x-www-form-urlencoded',
       'Authorization': headerString
     }
-  })
-  const {oauth_token, oauth_token_secret} = querystring.parse(await response.text());
+  });
+
+  const {oauth_token, oauth_token_secret} = querystring.parse(await response.text());;
 
   if (!oauth_token || !oauth_token_secret ) {
     return Response.json({status:500, message: 'No token in discogs response'});
   }
+
+  // console.log('Discogs - oauth_token :>> ', oauth_token);
+  // console.log('Discogs - oauth_token_secret :>> ', oauth_token_secret);
 
   cookies().set('discogs_access_token', oauth_token as string);
   cookies().set('discogs_token_secret', oauth_token_secret as string);

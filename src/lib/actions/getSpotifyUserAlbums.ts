@@ -29,9 +29,9 @@ export async function getSpotifyUserAlbums(accessToken: string): Promise<Release
     albumIds = albumIds.slice(0, 1);
 
     const userAlbums = await getAlbums(albumIds, accessToken);
-    console.log('userAlbums[0] :>> ', userAlbums[0]);
+    // console.log('userAlbums[0] :>> ', userAlbums[0]);
     const userReleases: Release[] = userAlbums.map((album: any) => parseAlbumToRelease(album));
-    console.log('userReleases[0] :>> ', userReleases[0]);
+    // console.log('userReleases[0] :>> ', userReleases[0]);
     return userReleases;
 
   } catch (error) {
