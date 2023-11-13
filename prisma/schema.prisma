@@ -27,11 +27,11 @@ model Release {
   updatedAt   DateTime? @updatedAt
   title       String
   label       String
-  releaseType String
-  releaseDate DateTime
+  releaseType String?
+  releaseDate DateTime?
   // genres      String[]
-  imgUrl      String
-  spotifyUri  String
+  imgUrl      String?
+  spotifyUri  String?
   discogsUrl  String?
   // artist      Artist[]
   artists     String[]

@@ -39,3 +39,4 @@ prisma/migrations/*
 
 proposal.md
 src/sandbox.ts
+.vscode/settings.json

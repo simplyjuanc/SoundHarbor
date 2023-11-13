@@ -7,6 +7,7 @@ import {parseCookies} from '@/lib/utils/utils';
 export default function LoginSpotify() {
   const authStore = useAuthStore();
 
+  // TODO: make it so I can skip the Spotify login if I have a cookie
   if (!authStore.spotifyAccessToken) {
     const cookieJar = parseCookies(document.cookie);
     const spotifyCookie = 'spotify_access_token';

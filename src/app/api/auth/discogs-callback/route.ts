@@ -24,9 +24,9 @@ export const GET = async (req:NextRequest) => {
   let headerString = writeDiscogsAuthBaseHeader(Date.now(), discogsNonce);
   headerString += `,oauth_token="${token}",oauth_verifier="${verifier}"`;
   headerString = headerString.replace(incompleteSignature, incompleteSignature + discogsSecret);
+  // console.log('headerString: callback :>> ', headerString);
   
   
-  console.log('headerString: callback :>> ', headerString);
   const response = await fetch(accessTokenUrl, {
     method: 'POST',
     headers: {
