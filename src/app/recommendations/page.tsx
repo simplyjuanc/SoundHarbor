@@ -5,10 +5,11 @@ import { getSpotifyUserAlbums } from '@/lib/actions/getSpotifyUserAlbums';
 import { getDiscogsRecommendations } from '@/lib/utils/discogsUtils';
 import { Release } from '@prisma/client';
 import Recommendation from '@/components/Recommendation';
+import { parseCookies } from '@/lib/utils/utils';
 
 export default async function Recommendations() {
-  const cookieJar = cookies();
-  const spotifyToken = cookieJar.get('spotify_access_token')?.value;
+  const spotifyToken = getSpotifyCookie();
+  // const spotifyToken = parseCookies(document.cookie)?.spotify_access_token;
   if (!spotifyToken) redirect('/');
   let userAlbums = await getSpotifyUserAlbums(spotifyToken);
   // console.log('userAlbums[0] :>> ', userAlbums[0]);
@@ -32,4 +33,11 @@ export default async function Recommendations() {
       </div>
     </div>
   );
+}
+
+
+function getSpotifyCookie(): string | undefined {
+  const cookieJar = cookies();
+  const spotifyToken = cookieJar.get('spotify_access_token')?.value;
+  return spotifyToken;
 }
