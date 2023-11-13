@@ -7,12 +7,12 @@ export const market = 'GB';
 
 export async function getSpotifyUserAlbums(accessToken: string): Promise<Release[] | void> {
   try {
-    const tracks = await getTopItems('tracks', accessToken, 1);
+    const tracks = await getTopItems('tracks', accessToken, 10);
     const trackIds = extractItemIds(tracks);
     let fullTracks;
     if (trackIds) fullTracks = await getTracksDetails(trackIds, accessToken);
 
-    const artists = await getTopItems('artists', accessToken, 1);
+    const artists = await getTopItems('artists', accessToken, 10);
     const artistsIds = extractItemIds(artists);
     let artistsTracks = await getSeveralArtistsTracks(artistsIds!, accessToken)
     if (artistsTracks) artistsTracks = artistsTracks.flat();
@@ -26,7 +26,7 @@ export async function getSpotifyUserAlbums(accessToken: string): Promise<Release
     // console.log('getSpotifyUserAlbums - albumIds :>> ', albumIds);
     
     // TODO remove once in prod
-    albumIds = albumIds.slice(0, 1);
+    albumIds = albumIds.slice(0, 5);
 
     const userAlbums = await getAlbums(albumIds, accessToken);
     // console.log('userAlbums[0] :>> ', userAlbums[0]);

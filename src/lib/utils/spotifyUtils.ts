@@ -10,6 +10,16 @@ export function shuffleArray<T>(array: T[]): void {
   }
 }
 
+async function fetchSpotifyResource<T>(path:string, query:{[key:string]:any}, accessToken:string):Promise<T> {
+  const fullPath = `${baseURL}${path}?${querystring.stringify(query)}`;
+  const res = await fetch(fullPath, {
+    headers: {
+      Authorization: 'Bearer ' + accessToken
+    }
+  });
+  return await res.json();
+}
+
 export async function getTracksDetails(trackIds: string[], accessToken: string): Promise<any[] | void> {
   try {
 
@@ -139,7 +149,6 @@ export function parseAlbumToRelease(album: any): Release {
   return release;
 }
 
-
 export async function getSeveralTracks(trackIds:string[], accessToken:string):Promise<Track> {
   const query = {
     market: market,
@@ -150,14 +159,37 @@ export async function getSeveralTracks(trackIds:string[], accessToken:string):Pr
   return data;
 }
 
-async function fetchSpotifyResource<T>(path:string, query:{[key:string]:any}, accessToken:string):Promise<T> {
-  const fullPath = `${baseURL}${path}?${querystring.stringify(query)}`;
+
+export type searchQuery = {
+  artist: string, 
+  album: string, 
+  upc?:string
+}
+
+
+// TODO: solve why this URL is not correctly fetching data - error 400
+export async function searchSpotify(query:searchQuery, type:string[], accessToken:string) {
+  
+  const albumQuery = encodeURI(query.album);
+  const artistFilter = encodeURI(`artist:${query.artist}`)
+  // let q = [] 
+  // for (const [k,v] of Object.entries(query)) q.push(`${k}:${v}`);
+  // const qString = q.join('%20').replaceAll(' ', '+');
+  
+  const qObject = {
+    type: type.join(','),
+    market: market,
+    limit: 1
+  }
+  // %20${artistFilter}       &${querystring.stringify(qObject)}
+  const fullPath = `${baseURL}search?q=${albumQuery}`;
+  console.log('fullPath :>> ', fullPath);
   const res = await fetch(fullPath, {
     headers: {
       Authorization: 'Bearer ' + accessToken
     }
   });
+  console.log('res :>> ', res);
+
   return await res.json();
 }
-
-// TODO: Implement throttling for Spotify and Discogs

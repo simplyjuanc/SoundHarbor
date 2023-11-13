@@ -1,6 +1,6 @@
 import { type NextRequest } from 'next/server'
 import { findUserReleases, addUserRelease } from '@/lib/models/users.model';
-import { fetchReleaseData } from '@/lib/utils/discogsUtils';
+import { getDiscogsRelease } from '@/lib/utils/discogsUtils';
 import { Track } from '@prisma/client';
 
 
@@ -24,7 +24,7 @@ export const POST = async (req: NextRequest) => {
     const releaseId = params.get('releaseId');
     
     let releaseData:Track;
-    if (releaseId) releaseData = await fetchReleaseData(releaseId)
+    if (releaseId) releaseData = await getDiscogsRelease(releaseId)
     if (!releaseData) throw new Error("Release not found in Discogs.");
     if (userId) return addUserRelease(userId, releaseData)
   } catch (error) {

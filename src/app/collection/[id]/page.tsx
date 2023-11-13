@@ -1,7 +1,7 @@
-import { getRelease } from '@/lib/models/releases.model';
-import { Release, Track } from '@prisma/client';
 import React from 'react';
 import Image from 'next/image';
+import { getRelease } from '@/lib/models/releases.model';
+import { Release, Track } from '@prisma/client';
 import TrackList from '@/components/TrackList';
 import { getReleaseTracks } from '@/lib/models/tracks.model';
 
@@ -14,6 +14,9 @@ export default async function IndividualRecord({
   let tracklist:Track[] = [];
   if (record) tracklist = await getReleaseTracks(record.id);
 
+  // TODO get tracklist from DB
+  // might be necessary to create the record in the DB as well from when the album is fetched from Spotify
+  // this should be done when requesting the collection
   console.log('record :>> ', record);
   return (
     <>
@@ -22,7 +25,7 @@ export default async function IndividualRecord({
       ) : (
         <>
           <Image
-            src={record.imgUrl}
+            src={record.imgUrl ? record.imgUrl : 'No image found.'}
             alt={record.title}
             width={428}
             height={428}
@@ -37,10 +40,10 @@ export default async function IndividualRecord({
                 Label: <span>{record.label}</span>
               </p>
               <p>
-                Release Type: <span>{pascalCaseSingleWord(record.releaseType)}</span>
+                Release Type: {record.releaseType ? <span>{pascalCaseSingleWord(record.releaseType)}</span> : ''}
               </p>
               <p>
-                Release Date: <span>{record.releaseDate.toDateString()}</span>
+                Release Date: <span>{record.releaseDate ? record.releaseDate.toDateString() : ''}</span>
               </p>
             </div>
           </div>
