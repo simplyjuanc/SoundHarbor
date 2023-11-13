@@ -1,22 +1,44 @@
 import React from 'react';
 import Link from 'next/link';
-import { getSpotifyUserAlbums } from '@/lib/actions/getSpotifyUserAlbums';
-import { cookies } from 'next/headers';
-import { redirect } from 'next/navigation';
-import { postReleases } from '@/lib/models/releases.model';
+import Image from 'next/image';
 
 export default async function Dashboard() {
   return (
-    <>
-      <h1>Hi, Juan</h1>
-      <div className='flex flex-col gap-5 mt-12'>
-        <Link href='/collection' className='btn btn-primary h-16 mx-4'>
+    <article className='mx-8 flex flex-col '>
+      <Image
+        src='/logo-no-background.svg'
+        alt='logo'
+        width={1500 / 7}
+        height={935 / 7}
+        className='m-5 mx-auto mt-16'
+      />
+      <h1 className='text-2xl my-5 font-extrabold'>Hi, Juan</h1>
+      <div>
+        <p>We have synced your music collection already!</p>
+        <p>
+          You can check it here in the app, or you can explore for new goodies
+          to add to it.
+        </p>
+      </div>
+
+      <div className='flex flex-col gap-8 mt-12 '>
+        <Link
+          href='/collection'
+          className='btn bg-gradient-to-r from-primary to-emerald-700 h-16'
+        >
           Music Collection
         </Link>
-        <Link href='/recommendations' className='btn btn-secondary h-16 mx-4'>
+        <Link
+          href='/recommendations'
+          className='btn bg-gradient-to-r from-secondary to-orange-700  h-16'
+        >
           Recommendations
         </Link>
       </div>
-    </>
+      <p className='text-sm mt-16'>
+        We will be working in the background so that your music is kept up to
+        date with your Discogs collection.
+      </p>
+    </article>
   );
 }

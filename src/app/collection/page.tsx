@@ -19,20 +19,22 @@ export default async function Collection() {
         alt='collection image'
         src={'/record-collection.jpg'}
       />
+       <Link href='/dashboard' className='link link-secondary font-thin text-sm ml-4 mt-8'>Back to Dashboard</Link>
       <div className='mx-3'>
         <div className='m-4 mt-6 flex flex-row justify-between align-middle'>
-          <h1 className='text-3xl'>Collection</h1>
+          <h1 className='text-3xl font-extrabold'>Collection</h1>
           <Link href={'collection/add-record'}>
-            <button className='btn btn-secondary max-h-4'>Add record</button>
+            <button className='btn btn-secondary'>Add record</button>
           </Link>
         </div>
-        <div className='flex flex-wrap mx-auto gap-6 mt-8'>
+        <div className='flex flex-wrap mx-auto gap-6 mt-8 justify-center'>
           {discogsReleasesOwned &&
             discogsReleasesOwned.map((release) => (
               <Link href={`collection/${release.id}`} key={release.id}>
                 <RecordCard
                   key={release.id}
-                  // release={release.basic_information} TODO Swithc back on once retrieving data
+                  //TODO Switch back on once retrieving data
+                  // release={release.basic_information} 
                   release={release}
                 />
               </Link>

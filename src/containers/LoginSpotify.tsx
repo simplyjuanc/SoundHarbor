@@ -28,22 +28,22 @@ export default function LoginSpotify() {
       {authStore.spotifyAccessToken ? (
         <LoginDiscogs />
       ) : (
-        <>
-          <div className='mx-12'>
-            <h1>Welcome!</h1>
-            <p>First things first, we need to get you set up!</p>
-            <p>
+        <div className='flex flex-col'>
+          <div className='mx-8'>
+            <h1 className='my-8 font-semibold'>Welcome!</h1>
+            <p className='my-6'>First things first, we need to get you set up!</p>
+            <p className='my-6'>
               This means that we will first need to connect your Spotify account
               so that we can get an idea of what kind of music you like.
             </p>
           </div>
           <Link
             href='/api/auth/spotify-login'
-            className='btn btn-primary mx-16 mt-12'
+            className='btn btn-primary mt-12 mx-auto self-center'
           >
             Connect to Spotify
           </Link>
-        </>
+        </div>
       )}
     </>
   );
