@@ -6,8 +6,8 @@ export const GET = async (req:NextRequest) => {
   try {
     // make sure i get the release id
     const params = req.nextUrl.searchParams;
-    const releaseId = Number(params.get('release'))
-    const record = await getRelease(releaseId)
+    const releaseId = params.get('release');
+    const record = await getRelease(releaseId!);
     if (!record) throw new Error("No record found.");
     return record;
   } catch (error) {

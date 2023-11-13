@@ -1,3 +1,4 @@
+import { cookies } from "next/headers";
 
 
 export const throttle = (cb:Function, delay:number = 1000) => {
@@ -43,3 +44,8 @@ export const parseCookies = (str: string) => {
   return cookieJar;
 }
 
+// export function getSpotifyCookie(): string | undefined {
+//   const cookieJar = cookies();
+//   const spotifyToken = cookieJar.get('spotify_access_token')?.value;
+//   return spotifyToken;
+// }
