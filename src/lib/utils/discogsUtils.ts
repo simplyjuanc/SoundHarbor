@@ -36,7 +36,7 @@ export const getUserItems = async (userId:string,page:number=1, per_page:number=
 }
  */
 
-export const getUserItems = fs.readFileSync('/Users/juanvasquez/Desktop/repos/codeworks/sound-harbor/src/lib/mocks/discogs.collection.json', { encoding: 'utf-8' })
+export const getUserItems = fs.readFileSync('/Users/juanvasquez/Desktop/repos/codeworks/sound-harbor/src/lib/mocks/discogs.collection.abridged.json', { encoding: 'utf-8' })
 
 
 
@@ -64,8 +64,7 @@ export const throttledSearchDiscogs = (searchFor:any[]):Promise<Release[]> => {
     minTime: 1000,
     maxConcurrent: 1
   });
-  // TODO NEXT STEP: define how to get all the releases to come in throttled successfully
-  // After that I need to figure out how to render it in the Reccomendations page
+  
   const throttledReleases = limiter.schedule(async () => (
     Promise.all(searchFor.map(async (pair) => await searchDiscogs(pair[0][0], pair[1])))
   ));
@@ -108,14 +107,20 @@ type Pagination = {
 
 export const parseDiscogsRelease = (release: IDiscogsRelease): Release => {
   const artists: string[] = release.artists.map((artist: { name: string; }) => artist.name);
+  const barcode = release['identifiers'] ? release.identifiers[0].value : '';
+  // REMOVE_START
+  // const barcode = (release['identifiers'].length) ? release.identifiers[0].value : '';
+  // const artists = release.artists;
+  // const barcode = release.barcode;
+  // REMOVE_END
   const label = (release.labels) ? release.labels[0].name : null;
   const releaseType = (release.formats) ? release.formats[0]['descriptions'][0] : null;
-  const barcode = (release['identifiers'].length) ? release.identifiers[0].value : '';
   const releaseDate = (release.year) ? new Date(release.year) :  new Date('1970-01-01');;
-  // const releaseString = releaseDate.toISOString();
+
   
   const parsedRelease: Release = {
     id: release.id.toString(),
+    // id: release.id,
     title: release.title,
     label,
     artists,

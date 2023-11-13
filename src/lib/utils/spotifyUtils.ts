@@ -168,28 +168,23 @@ export type searchQuery = {
 
 
 // TODO: solve why this URL is not correctly fetching data - error 400
-export async function searchSpotify(query:searchQuery, type:string[], accessToken:string) {
+export async function searchSpotifyAlbum(album:string, artist:string, accessToken:string):Promise<Release> {
   
-  const albumQuery = encodeURI(query.album);
-  const artistFilter = encodeURI(`artist:${query.artist}`)
-  // let q = [] 
-  // for (const [k,v] of Object.entries(query)) q.push(`${k}:${v}`);
-  // const qString = q.join('%20').replaceAll(' ', '+');
-  
-  const qObject = {
-    type: type.join(','),
+  const query = encodeURIComponent(`${album} ${artist}`);
+  const qDefault = {
+    type:'album',
     market: market,
     limit: 1
   }
-  // %20${artistFilter}       &${querystring.stringify(qObject)}
-  const fullPath = `${baseURL}search?q=${albumQuery}`;
-  console.log('fullPath :>> ', fullPath);
-  const res = await fetch(fullPath, {
-    headers: {
-      Authorization: 'Bearer ' + accessToken
-    }
-  });
-  console.log('res :>> ', res);
 
-  return await res.json();
+  const fullPath = `${baseURL}search?q=${query}&${querystring.stringify(qDefault)}`;
+  const res = await fetch(fullPath, {
+    headers: { Authorization: 'Bearer ' + accessToken }
+  });
+  const topAlbum = (await res.json()).albums.items[0]
+  const albumDetails = (await getAlbums([topAlbum.id], accessToken))[0]
+  
+
+  return parseAlbumToRelease(albumDetails);
+
 }

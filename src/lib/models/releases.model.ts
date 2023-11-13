@@ -1,7 +1,18 @@
+import fs from 'fs';
 import prisma from "../db";
 import type { Release } from "@prisma/client";
+import { IDiscogsRelease, parseDiscogsRelease, searchDiscogs, getDiscogsRelease } from "../utils/discogsUtils";
+import { searchSpotifyAlbum } from "../utils/spotifyUtils";
 
-export const getRelease = async (releaseId: string): Promise<Release | void > => {
+
+
+export const getAllReleases = async () => {
+  return await prisma.release.findMany({});
+}
+
+
+
+export const getRelease = async (releaseId: string): Promise<Release | void> => {
   try {
     const record = await prisma.release.findUnique({ where: { id: releaseId } })
     if (record) return record;
@@ -11,7 +22,7 @@ export const getRelease = async (releaseId: string): Promise<Release | void > =>
 }
 
 
-export const postRelease = async (release: Release): Promise<Release | void > => {
+export const postRelease = async (release: Release): Promise<Release | void> => {
   try {
     return await prisma.release.create({ data: release })
   } catch (error) {
@@ -20,9 +31,47 @@ export const postRelease = async (release: Release): Promise<Release | void > =>
 }
 
 
-type BatchPayload = { count: number }
-export const postReleases = async (releases: Release[]): Promise<BatchPayload | void > => {
-  return await prisma.release.createMany({ data: releases, skipDuplicates:true })
+export const upsertRelease = async (release: Release): Promise<Release | void> => {
+  try {
+    return await prisma.release.upsert({
+      where: { id: release.id },
+      create: { ...release },
+      update: { ...release }
+    })
+  } catch (error) {
+    console.log('postRelease - error :>> ', error);
+  }
 }
 
+
+type BatchPayload = { count: number }
+export const postReleases = async (releases: Release[]): Promise<BatchPayload | void> => {
+  return await prisma.release.createMany({ data: releases, skipDuplicates: true })
+};
+
+
+const normaliseReleaseData = (discogsAlbum: IDiscogsRelease, spotifyAlbum: Release): Release => {
+  const { imgUrl, spotifyUri, releaseDate, barcode } = spotifyAlbum;
+  return Object.assign(parseDiscogsRelease(discogsAlbum), { imgUrl, spotifyUri, releaseDate, barcode });
+};
+
+
+export const getFullReleaseData = async (artist: string, title: string, spotifyToken: string) => {
+  // const discogsId = (await searchDiscogs(artist, title)).id;
+  // const discogsResult = await getDiscogsRelease(discogsId);
+  // const spotifyResult = await searchSpotifyAlbum(discogsResult.artists[0], discogsResult.title, spotifyToken);
+  // return normaliseReleaseData(discogsResult, spotifyResult);
+  
+  // REMOVE_START
+  const releasesMock = JSON.parse(fs.readFileSync('/Users/juanvasquez/Desktop/repos/codeworks/sound-harbor/src/lib/mocks/discogs.collection.abridged.json', 'utf-8')).releases
+  const discogsResults:any[] = releasesMock.map((i: { basic_information: any; }) => i.basic_information);
+  const discogInfo = discogsResults.filter(i => i.artists[0].name === artist)[0]
+  // console.log('discogInfo :>> ', discogInfo);
+  // discogInfo.artists = {name: discogInfo[0].artists};
+  // console.log('discogInfo.artists :>> ', discogInfo.artists);
+  const spotifyResult = await searchSpotifyAlbum(discogInfo.artists[0].name, discogInfo.title, spotifyToken);
+  // console.log('spotifyResult :>> ', spotifyResult);
+  return normaliseReleaseData(discogInfo, spotifyResult);
+  // REMOVE_END
+}
 

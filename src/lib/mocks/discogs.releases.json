@@ -1,0 +1,3286 @@
+{
+  "releases": [
+    {
+      "id": 24455792,
+      "status": "Accepted",
+      "year": 2022,
+      "resource_url": "https://api.discogs.com/releases/24455792",
+      "uri": "https://www.discogs.com/release/24455792-Daft-Punk-Alive-2007",
+      "artists": [
+        {
+          "name": "Daft Punk",
+          "anv": "",
+          "join": "",
+          "role": "",
+          "tracks": "",
+          "id": 1289,
+          "resource_url": "https://api.discogs.com/artists/1289",
+          "thumbnail_url": "https://i.discogs.com/NYuUU2eM2J_zEZ1jlONFlzhnTc8uCVnYUXMLsyZAOZ4/rs:fit/g:sm/q:40/h:438/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEyODkt/MTYxNTQ4NDUyOS00/Mjg0LmpwZWc.jpeg"
+        }
+      ],
+      "artists_sort": "Daft Punk",
+      "labels": [
+        {
+          "name": "ADA (6)",
+          "catno": "01902996611964",
+          "entity_type": "1",
+          "entity_type_name": "Label",
+          "id": 759127,
+          "resource_url": "https://api.discogs.com/labels/759127",
+          "thumbnail_url": "https://i.discogs.com/UKdc2D-KnSPBNSaTByGR4PgYdgk3Uig5APtFLfTd5J8/rs:fit/g:sm/q:40/h:433/w:504/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTc1OTEy/Ny0xNjQxNzUzNDYx/LTE2NjkuanBlZw.jpeg"
+        }
+      ],
+      "series": [],
+      "companies": [
+        {
+          "name": "Daft Life Ltd.",
+          "catno": "",
+          "entity_type": "13",
+          "entity_type_name": "Phonographic Copyright (p)",
+          "id": 327896,
+          "resource_url": "https://api.discogs.com/labels/327896",
+          "thumbnail_url": "https://i.discogs.com/qV1PUtHGUz16HeBon0hN1vWGKxc_r9YUXUP_mxdDv6A/rs:fit/g:sm/q:40/h:55/w:320/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMyNzg5/Ni0xNTkwOTcyNjcy/LTc5MDkuanBlZw.jpeg"
+        },
+        {
+          "name": "Daft Life Ltd.",
+          "catno": "",
+          "entity_type": "14",
+          "entity_type_name": "Copyright (c)",
+          "id": 327896,
+          "resource_url": "https://api.discogs.com/labels/327896",
+          "thumbnail_url": "https://i.discogs.com/qV1PUtHGUz16HeBon0hN1vWGKxc_r9YUXUP_mxdDv6A/rs:fit/g:sm/q:40/h:55/w:320/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMyNzg5/Ni0xNTkwOTcyNjcy/LTc5MDkuanBlZw.jpeg"
+        },
+        {
+          "name": "Palais Omnisports Paris-Bercy",
+          "catno": "",
+          "entity_type": "23",
+          "entity_type_name": "Recorded At",
+          "id": 313586,
+          "resource_url": "https://api.discogs.com/labels/313586",
+          "thumbnail_url": "https://i.discogs.com/hZ2C8Uof4ea4v9N_Ip-s7sC1nmG3nPlpD75Up7vUBBI/rs:fit/g:sm/q:40/h:333/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMxMzU4/Ni0xMzI2Mzg0MTQy/LmpwZWc.jpeg"
+        },
+        {
+          "name": "Warner Music Group",
+          "catno": "",
+          "entity_type": "4",
+          "entity_type_name": "Record Company",
+          "id": 2345,
+          "resource_url": "https://api.discogs.com/labels/2345",
+          "thumbnail_url": "https://i.discogs.com/A-iJ-lmyHl0Epzp5-LlDjmNn6gFvxVzekinl87PYDqw/rs:fit/g:sm/q:40/h:273/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTIzNDUt/MTQ5NjE3MDI4Ni02/MTM0LnBuZw.jpeg"
+        },
+        {
+          "name": "Warner Music France",
+          "catno": "",
+          "entity_type": "9",
+          "entity_type_name": "Distributed By",
+          "id": 29158,
+          "resource_url": "https://api.discogs.com/labels/29158",
+          "thumbnail_url": "https://i.discogs.com/CcSCdt6cuvUkS-ToryKezFMADn2VBNqEZD2Gp12sLFI/rs:fit/g:sm/q:40/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTI5MTU4/LTE2NDAzNTk4ODEt/NzI4NS5qcGVn.jpeg"
+        },
+        {
+          "name": "ADA France",
+          "catno": "",
+          "entity_type": "9",
+          "entity_type_name": "Distributed By",
+          "id": 2443267,
+          "resource_url": "https://api.discogs.com/labels/2443267",
+          "thumbnail_url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": ["LP", "Album", "Mixed", "Reissue"]
+        }
+      ],
+      "data_quality": "Needs Vote",
+      "community": {
+        "have": 5071,
+        "want": 915,
+        "rating": {
+          "count": 263,
+          "average": 4.76
+        },
+        "submitter": {
+          "username": "FrequencesDisquaire",
+          "resource_url": "https://api.discogs.com/users/FrequencesDisquaire"
+        },
+        "contributors": [
+          {
+            "username": "FrequencesDisquaire",
+            "resource_url": "https://api.discogs.com/users/FrequencesDisquaire"
+          },
+          {
+            "username": "_jules",
+            "resource_url": "https://api.discogs.com/users/_jules"
+          },
+          {
+            "username": "ArnaudLandry",
+            "resource_url": "https://api.discogs.com/users/ArnaudLandry"
+          },
+          {
+            "username": "Kiemzaa",
+            "resource_url": "https://api.discogs.com/users/Kiemzaa"
+          },
+          {
+            "username": "Opdiner",
+            "resource_url": "https://api.discogs.com/users/Opdiner"
+          },
+          {
+            "username": "jaf1599",
+            "resource_url": "https://api.discogs.com/users/jaf1599"
+          },
+          {
+            "username": "albertroschier",
+            "resource_url": "https://api.discogs.com/users/albertroschier"
+          },
+          {
+            "username": "Long-player808",
+            "resource_url": "https://api.discogs.com/users/Long-player808"
+          },
+          {
+            "username": "AustinSimard",
+            "resource_url": "https://api.discogs.com/users/AustinSimard"
+          },
+          {
+            "username": "t8ortot",
+            "resource_url": "https://api.discogs.com/users/t8ortot"
+          }
+        ],
+        "data_quality": "Needs Vote",
+        "status": "Accepted"
+      },
+      "format_quantity": 2,
+      "date_added": "2022-09-08T14:47:39-07:00",
+      "date_changed": "2023-07-06T15:40:35-07:00",
+      "num_for_sale": 73,
+      "lowest_price": 24.38,
+      "master_id": 27126,
+      "master_url": "https://api.discogs.com/masters/27126",
+      "title": "Alive 2007",
+      "country": "Worldwide",
+      "released": "2022-09-09",
+      "notes": "2022 reissue distributed in a tri-gatefold sleeve.\n\n[...] Made in Netherlands\n\nCAT# on spine and back cover : 01902996611964\n\nSides A & C have the pyramid labels, and sides B & D have the track list labels. Runouts are only way to identify sides by letter.",
+      "released_formatted": "09 Sep 2022",
+      "identifiers": [
+        {
+          "type": "Barcode",
+          "value": "0 190296 611964",
+          "description": "Text"
+        },
+        {
+          "type": "Barcode",
+          "value": "190296611964",
+          "description": "Scanned (UPC-A)"
+        },
+        {
+          "type": "Rights Society",
+          "value": "GEMA/BIEM"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "825646225378 A Club ☆ 10568 1A",
+          "description": "Etched & stamped (\"10568 1A\") runout, side A"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "825646225378 B Club ☆ 10568 1B ",
+          "description": "Etched & stamped (\"10568 1B\") runout, side B"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "825646225378 C Club ☆ 10568 2C",
+          "description": "Etched & stamped (\"10568 2C\") runout, side C"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "825646225378 D1 Club ",
+          "description": "Etched runout, side D"
+        }
+      ],
+      "genres": ["Electronic"],
+      "styles": ["House", "French House"],
+      "tracklist": [
+        {
+          "position": "A1a",
+          "type_": "track",
+          "title": "Robot Rock",
+          "extraartists": [
+            {
+              "name": "Kae Williams Jr.",
+              "anv": "Kae Williams",
+              "join": "",
+              "role": "Music By, Lyrics By",
+              "tracks": "",
+              "id": 113016,
+              "resource_url": "https://api.discogs.com/artists/113016"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "A1b",
+          "type_": "track",
+          "title": "Oh Yeah",
+          "duration": ""
+        },
+        {
+          "position": "A2a",
+          "type_": "track",
+          "title": "Touch It",
+          "extraartists": [
+            {
+              "name": "Brian Lodato",
+              "anv": "",
+              "join": "",
+              "role": "Engineer [Mix]",
+              "tracks": "",
+              "id": 538027,
+              "resource_url": "https://api.discogs.com/artists/538027"
+            },
+            {
+              "name": "Glen Marchese",
+              "anv": "",
+              "join": "",
+              "role": "Engineer [Mix]",
+              "tracks": "",
+              "id": 318376,
+              "resource_url": "https://api.discogs.com/artists/318376"
+            },
+            {
+              "name": "Bram Tobey",
+              "anv": "",
+              "join": "",
+              "role": "Mixed By [Mix Assistant]",
+              "tracks": "",
+              "id": 492973,
+              "resource_url": "https://api.discogs.com/artists/492973"
+            },
+            {
+              "name": "Busta Rhymes",
+              "anv": "",
+              "join": "",
+              "role": "Performer",
+              "tracks": "",
+              "id": 37906,
+              "resource_url": "https://api.discogs.com/artists/37906"
+            },
+            {
+              "name": "Swizz Beatz",
+              "anv": "",
+              "join": "",
+              "role": "Producer, Mixed By",
+              "tracks": "",
+              "id": 173279,
+              "resource_url": "https://api.discogs.com/artists/173279"
+            },
+            {
+              "name": "Brian Lodato",
+              "anv": "",
+              "join": "",
+              "role": "Recorded By",
+              "tracks": "",
+              "id": 538027,
+              "resource_url": "https://api.discogs.com/artists/538027"
+            },
+            {
+              "name": "Guy-Manuel de Homem-Christo",
+              "anv": "",
+              "join": "",
+              "role": "Written-By",
+              "tracks": "",
+              "id": 424278,
+              "resource_url": "https://api.discogs.com/artists/424278"
+            },
+            {
+              "name": "Swizz Beatz",
+              "anv": "",
+              "join": "",
+              "role": "Written-By",
+              "tracks": "",
+              "id": 173279,
+              "resource_url": "https://api.discogs.com/artists/173279"
+            },
+            {
+              "name": "Thomas Bangalter",
+              "anv": "",
+              "join": "",
+              "role": "Written-By",
+              "tracks": "",
+              "id": 3775,
+              "resource_url": "https://api.discogs.com/artists/3775"
+            },
+            {
+              "name": "Trevor Smith (4)",
+              "anv": "T. Smith",
+              "join": "",
+              "role": "Written-By",
+              "tracks": "",
+              "id": 640089,
+              "resource_url": "https://api.discogs.com/artists/640089"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "A2b",
+          "type_": "track",
+          "title": "Technologic",
+          "duration": ""
+        },
+        {
+          "position": "A3a",
+          "type_": "track",
+          "title": "Television Rules The Nation",
+          "duration": ""
+        },
+        {
+          "position": "A3b",
+          "type_": "track",
+          "title": "Crescendolls",
+          "duration": ""
+        },
+        {
+          "position": "B1a",
+          "type_": "track",
+          "title": "Too Long",
+          "extraartists": [
+            {
+              "name": "Anthony Wayne Moore",
+              "anv": "Anthony Moore",
+              "join": "",
+              "role": "Music By, Lyrics By",
+              "tracks": "",
+              "id": 1282901,
+              "resource_url": "https://api.discogs.com/artists/1282901"
+            },
+            {
+              "name": "Daft Punk",
+              "anv": "",
+              "join": "",
+              "role": "Producer",
+              "tracks": "",
+              "id": 1289,
+              "resource_url": "https://api.discogs.com/artists/1289"
+            },
+            {
+              "name": "Romanthony",
+              "anv": "",
+              "join": "",
+              "role": "Producer",
+              "tracks": "",
+              "id": 2583,
+              "resource_url": "https://api.discogs.com/artists/2583"
+            },
+            {
+              "name": "Romanthony",
+              "anv": "",
+              "join": "",
+              "role": "Vocals",
+              "tracks": "",
+              "id": 2583,
+              "resource_url": "https://api.discogs.com/artists/2583"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "B1b",
+          "type_": "track",
+          "title": "Steam Machine",
+          "duration": ""
+        },
+        {
+          "position": "B2a",
+          "type_": "track",
+          "title": "Around The World",
+          "duration": ""
+        },
+        {
+          "position": "B2b",
+          "type_": "track",
+          "title": "Harder Better Faster Stronger",
+          "extraartists": [
+            {
+              "name": "Edwin Birdsong",
+              "anv": "E. Birdsong",
+              "join": "",
+              "role": "Music By, Lyrics By",
+              "tracks": "",
+              "id": 141386,
+              "resource_url": "https://api.discogs.com/artists/141386"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "B3a",
+          "type_": "track",
+          "title": "Burnin'",
+          "duration": ""
+        },
+        {
+          "position": "B3b",
+          "type_": "track",
+          "title": "Too Long",
+          "extraartists": [
+            {
+              "name": "Anthony Wayne Moore",
+              "anv": "Anthony Moore",
+              "join": "",
+              "role": "Music By, Lyrics By",
+              "tracks": "",
+              "id": 1282901,
+              "resource_url": "https://api.discogs.com/artists/1282901"
+            },
+            {
+              "name": "Daft Punk",
+              "anv": "",
+              "join": "",
+              "role": "Producer",
+              "tracks": "",
+              "id": 1289,
+              "resource_url": "https://api.discogs.com/artists/1289"
+            },
+            {
+              "name": "Romanthony",
+              "anv": "",
+              "join": "",
+              "role": "Producer",
+              "tracks": "",
+              "id": 2583,
+              "resource_url": "https://api.discogs.com/artists/2583"
+            },
+            {
+              "name": "Romanthony",
+              "anv": "",
+              "join": "",
+              "role": "Vocals",
+              "tracks": "",
+              "id": 2583,
+              "resource_url": "https://api.discogs.com/artists/2583"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "C1a",
+          "type_": "track",
+          "title": "Face To Face",
+          "extraartists": [
+            {
+              "name": "Daft Punk",
+              "anv": "",
+              "join": "",
+              "role": "Producer",
+              "tracks": "",
+              "id": 1289,
+              "resource_url": "https://api.discogs.com/artists/1289"
+            },
+            {
+              "name": "Todd Edwards",
+              "anv": "",
+              "join": "",
+              "role": "Producer",
+              "tracks": "",
+              "id": 161,
+              "resource_url": "https://api.discogs.com/artists/161"
+            },
+            {
+              "name": "Todd Edwards",
+              "anv": "",
+              "join": "",
+              "role": "Vocals",
+              "tracks": "",
+              "id": 161,
+              "resource_url": "https://api.discogs.com/artists/161"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "C1b",
+          "type_": "track",
+          "title": "Short Circuit",
+          "duration": ""
+        },
+        {
+          "position": "C2a",
+          "type_": "track",
+          "title": "One More Time",
+          "extraartists": [
+            {
+              "name": "Romanthony",
+              "anv": "",
+              "join": "",
+              "role": "Vocals",
+              "tracks": "",
+              "id": 2583,
+              "resource_url": "https://api.discogs.com/artists/2583"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "C2b",
+          "type_": "track",
+          "title": "Aerodynamic",
+          "duration": ""
+        },
+        {
+          "position": "C3a",
+          "type_": "track",
+          "title": "Aerodynamic Beats",
+          "duration": ""
+        },
+        {
+          "position": "C3b",
+          "type_": "track",
+          "title": "Forget About The World",
+          "extraartists": [
+            {
+              "name": "Ben Barson",
+              "anv": "Barson",
+              "join": "",
+              "role": "Music By, Lyrics By",
+              "tracks": "",
+              "id": 271304,
+              "resource_url": "https://api.discogs.com/artists/271304"
+            },
+            {
+              "name": "Ben Wolff & Andy Dean",
+              "anv": "Dean, Wolff",
+              "join": "",
+              "role": "Music By, Lyrics By",
+              "tracks": "",
+              "id": 24410,
+              "resource_url": "https://api.discogs.com/artists/24410"
+            },
+            {
+              "name": "Gabrielle",
+              "anv": "",
+              "join": "",
+              "role": "Music By, Lyrics By",
+              "tracks": "",
+              "id": 5393,
+              "resource_url": "https://api.discogs.com/artists/5393"
+            },
+            {
+              "name": "Gabrielle",
+              "anv": "",
+              "join": "",
+              "role": "Performer",
+              "tracks": "",
+              "id": 5393,
+              "resource_url": "https://api.discogs.com/artists/5393"
+            },
+            {
+              "name": "The Boilerhouse Boys",
+              "anv": "",
+              "join": "",
+              "role": "Producer",
+              "tracks": "",
+              "id": 35157,
+              "resource_url": "https://api.discogs.com/artists/35157"
+            },
+            {
+              "name": "Christopher Marc Potter",
+              "anv": "Chris Potter",
+              "join": "",
+              "role": "Recorded By, Mixed By",
+              "tracks": "",
+              "id": 321378,
+              "resource_url": "https://api.discogs.com/artists/321378"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "D1a",
+          "type_": "track",
+          "title": "Prime Time Of Your Life",
+          "duration": ""
+        },
+        {
+          "position": "D1b",
+          "type_": "track",
+          "title": "Brainwasher",
+          "duration": ""
+        },
+        {
+          "position": "D1c",
+          "type_": "track",
+          "title": "Rollin' And Scratchin'",
+          "duration": ""
+        },
+        {
+          "position": "D1d",
+          "type_": "track",
+          "title": "Alive",
+          "duration": ""
+        },
+        {
+          "position": "D2a",
+          "type_": "track",
+          "title": "Da Funk",
+          "duration": ""
+        },
+        {
+          "position": "D2b",
+          "type_": "track",
+          "title": "Daftendirekt",
+          "duration": ""
+        },
+        {
+          "position": "D3a",
+          "type_": "track",
+          "title": "Superheroes",
+          "extraartists": [
+            {
+              "name": "Barry Manilow",
+              "anv": "B. Manilow",
+              "join": "",
+              "role": "Music By, Lyrics By",
+              "tracks": "",
+              "id": 79091,
+              "resource_url": "https://api.discogs.com/artists/79091"
+            },
+            {
+              "name": "Marty Panzer",
+              "anv": "",
+              "join": "",
+              "role": "Music By, Lyrics By",
+              "tracks": "",
+              "id": 759652,
+              "resource_url": "https://api.discogs.com/artists/759652"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "D3b",
+          "type_": "track",
+          "title": "Human After All",
+          "duration": ""
+        },
+        {
+          "position": "D3c",
+          "type_": "track",
+          "title": "Rock'n Roll",
+          "duration": ""
+        }
+      ],
+      "extraartists": [],
+      "images": [
+        {
+          "type": "primary",
+          "uri": "https://i.discogs.com/S5o-KKITGwHPKOUL7QfPRyjx0v6MCgubR04cA4ralC4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1Mjcw/MjctMjEzOC5wbmc.jpeg",
+          "resource_url": "https://i.discogs.com/S5o-KKITGwHPKOUL7QfPRyjx0v6MCgubR04cA4ralC4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1Mjcw/MjctMjEzOC5wbmc.jpeg",
+          "uri150": "https://i.discogs.com/NOomqsPHwsrsXJj_KAmSXOParcSboTwznr56YG4yv_k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1Mjcw/MjctMjEzOC5wbmc.jpeg",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/zJJzrrFzXggecyn6F720fh6sid4JZ6bGopt2FHUVUdk/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/MjYtNzQyNS5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/zJJzrrFzXggecyn6F720fh6sid4JZ6bGopt2FHUVUdk/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/MjYtNzQyNS5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/w960gJpFdiYTbqv1o2jFPo8VZcoOSO4RU_amr068yNU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/MjYtNzQyNS5qcGVn.jpeg",
+          "width": 600,
+          "height": 597
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/u2Pn9PfcnTJTihjlYtSz2GU-Ik2-0yVyPCCVF-WRpkw/rs:fit/g:sm/q:90/h:606/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/MjktNDIyNS5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/u2Pn9PfcnTJTihjlYtSz2GU-Ik2-0yVyPCCVF-WRpkw/rs:fit/g:sm/q:90/h:606/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/MjktNDIyNS5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/OL678jnkGVvQtq47BikPD6xDiRPGaGgDK2jBkVg69nA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/MjktNDIyNS5qcGVn.jpeg",
+          "width": 600,
+          "height": 606
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/pgoY_9br3nMHE2NTk4y66pA1u8i-LAT1tYu2WYq06FA/rs:fit/g:sm/q:90/h:582/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/OTctNDkzMi5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/pgoY_9br3nMHE2NTk4y66pA1u8i-LAT1tYu2WYq06FA/rs:fit/g:sm/q:90/h:582/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/OTctNDkzMi5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/MIcPZ0BqSt6okZ_dLZM5qJW2YzeapDhnlGmhlWcCbMU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/OTctNDkzMi5qcGVn.jpeg",
+          "width": 600,
+          "height": 582
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/y_D3cnMgcLpEM_WlHaFvQ9ETkrLfv6s19p9aRLRrYQs/rs:fit/g:sm/q:90/h:584/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/OTctNjc3OC5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/y_D3cnMgcLpEM_WlHaFvQ9ETkrLfv6s19p9aRLRrYQs/rs:fit/g:sm/q:90/h:584/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/OTctNjc3OC5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/mkCGYhC5vjO5O8_zJIQcvl_m2-QP9X3UyD_L9zR8kgg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/OTctNjc3OC5qcGVn.jpeg",
+          "width": 600,
+          "height": 584
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/ivecrIYSEgPtotyZy84L73FVlz6jACwbbl_UVrtop6c/rs:fit/g:sm/q:90/h:601/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/OTctMzA4OC5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/ivecrIYSEgPtotyZy84L73FVlz6jACwbbl_UVrtop6c/rs:fit/g:sm/q:90/h:601/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/OTctMzA4OC5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/Vl7rh_szJP8JZBgGdh5KzDZZTQyIKLRnKM0H3XKL5qo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjU5/OTctMzA4OC5qcGVn.jpeg",
+          "width": 600,
+          "height": 601
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/rB-fmx4B5uEiHJ_KW67K0zfT1eHL2t1iQf_P90dd_CA/rs:fit/g:sm/q:90/h:604/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/MTktNDM2Ny5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/rB-fmx4B5uEiHJ_KW67K0zfT1eHL2t1iQf_P90dd_CA/rs:fit/g:sm/q:90/h:604/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/MTktNDM2Ny5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/sHW1Dpc3qQM9YHCM6MpZPlU0CA4W76L59hhiuI2kouE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/MTktNDM2Ny5qcGVn.jpeg",
+          "width": 600,
+          "height": 604
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/s-1RxXrPvRTWnZWwhwMjC_0Pt0QW8kGP0MGHySRtuMQ/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/MTktNDgyMS5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/s-1RxXrPvRTWnZWwhwMjC_0Pt0QW8kGP0MGHySRtuMQ/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/MTktNDgyMS5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/e6D99miEMHytKRrJlY1SNZLLeH0p0y2cyGMoqvhsZeM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/MTktNDgyMS5qcGVn.jpeg",
+          "width": 600,
+          "height": 596
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/fCFvFodX0aUWG4oBE_gNiXGUYyutV_q7hhxE-Fi2p50/rs:fit/g:sm/q:90/h:602/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/MTktNTU4NC5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/fCFvFodX0aUWG4oBE_gNiXGUYyutV_q7hhxE-Fi2p50/rs:fit/g:sm/q:90/h:602/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/MTktNTU4NC5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/MD8ZVlkVg_tqB7JAzjyS0nxSo9ufRyBhiVmfJtVwK6c/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/MTktNTU4NC5qcGVn.jpeg",
+          "width": 600,
+          "height": 602
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/oqXzoeTu7eUWNpMDnCgfA3kWCiFL_V6Vqw__-lcm_fw/rs:fit/g:sm/q:90/h:247/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/NDYtMzYwOS5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/oqXzoeTu7eUWNpMDnCgfA3kWCiFL_V6Vqw__-lcm_fw/rs:fit/g:sm/q:90/h:247/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/NDYtMzYwOS5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/z9lZ4CWIwK_hroah7cqEBOPRtAtJRurFd_TJMzhUGaI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1MjYw/NDYtMzYwOS5qcGVn.jpeg",
+          "width": 600,
+          "height": 247
+        }
+      ],
+      "thumb": "https://i.discogs.com/NOomqsPHwsrsXJj_KAmSXOParcSboTwznr56YG4yv_k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1Mjcw/MjctMjEzOC5wbmc.jpeg",
+      "estimated_weight": 460,
+      "blocked_from_sale": false
+    },
+    {
+      "id": 15500246,
+      "status": "Accepted",
+      "year": 2020,
+      "resource_url": "https://api.discogs.com/releases/15500246",
+      "uri": "https://www.discogs.com/release/15500246-The-Primitive-Painter-The-Primitive-Painter",
+      "artists": [
+        {
+          "name": "The Primitive Painter",
+          "anv": "",
+          "join": "",
+          "role": "",
+          "tracks": "",
+          "id": 35958,
+          "resource_url": "https://api.discogs.com/artists/35958",
+          "thumbnail_url": "https://i.discogs.com/fcACsvEH8-L0aXSpJYcUxckPIbqSmFgRrTAaPt4UypU/rs:fit/g:sm/q:40/h:411/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM1OTU4/LTE2MTY3Nzc2MDEt/NTU3OC5qcGVn.jpeg"
+        }
+      ],
+      "artists_sort": "Primitive Painter, The",
+      "labels": [
+        {
+          "name": "Apollo",
+          "catno": "AMB2005",
+          "entity_type": "1",
+          "entity_type_name": "Label",
+          "id": 683,
+          "resource_url": "https://api.discogs.com/labels/683",
+          "thumbnail_url": "https://i.discogs.com/8SANviTXSElE4QyzcEknj1jJR37rPtVRo3hoFTuvqkc/rs:fit/g:sm/q:40/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTY4My0x/NTEyNjQxNTY4LTM1/MjgucG5n.jpeg"
+        }
+      ],
+      "series": [],
+      "companies": [
+        {
+          "name": "Klangfabrik",
+          "catno": "",
+          "entity_type": "26",
+          "entity_type_name": "Produced At",
+          "id": 296216,
+          "resource_url": "https://api.discogs.com/labels/296216",
+          "thumbnail_url": "https://i.discogs.com/J1h-kX1V9K9rpW9lAM7byWnikuGNVdxx-HekfWcjboQ/rs:fit/g:sm/q:40/h:446/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTI5NjIx/Ni0xMzQzNjYzMDMy/LTc4ODgucG5n.jpeg"
+        },
+        {
+          "name": "R & S Records",
+          "catno": "",
+          "entity_type": "21",
+          "entity_type_name": "Published By",
+          "id": 245,
+          "resource_url": "https://api.discogs.com/labels/245",
+          "thumbnail_url": "https://i.discogs.com/qJBFesiD8Xo7DMbvVZ5PryIig2up2DjCVX--bP3z23c/rs:fit/g:sm/q:40/h:940/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTI0NS0x/NjEyNTM1NDYzLTI4/NjUuanBlZw.jpeg"
+        },
+        {
+          "name": "Calyx Mastering",
+          "catno": "",
+          "entity_type": "30",
+          "entity_type_name": "Lacquer Cut At",
+          "id": 269429,
+          "resource_url": "https://api.discogs.com/labels/269429",
+          "thumbnail_url": "https://i.discogs.com/MD32X7t8RJZOUOZzNO_UVexbGk8xc4RJYqvC9fA68Gc/rs:fit/g:sm/q:40/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTI2OTQy/OS0xNDk5MDAzOTk3/LTM1MzgucG5n.jpeg"
+        },
+        {
+          "name": "MPO",
+          "catno": "",
+          "entity_type": "17",
+          "entity_type_name": "Pressed By",
+          "id": 56025,
+          "resource_url": "https://api.discogs.com/labels/56025",
+          "thumbnail_url": "https://i.discogs.com/B4O4f4Fu26_6Hf9DpAC4Q0s5dIDBSaPHgaWLwHO8pzs/rs:fit/g:sm/q:40/h:336/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTU2MDI1/LTEzMTQ2OTg5ODQu/anBlZw.jpeg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "text": "White",
+          "descriptions": [
+            "12\"",
+            "33 ⅓ RPM",
+            "Album",
+            "Limited Edition",
+            "Reissue",
+            "Remastered"
+          ]
+        }
+      ],
+      "data_quality": "Needs Vote",
+      "community": {
+        "have": 167,
+        "want": 283,
+        "rating": {
+          "count": 38,
+          "average": 4.87
+        },
+        "submitter": {
+          "username": "sunshower",
+          "resource_url": "https://api.discogs.com/users/sunshower"
+        },
+        "contributors": [
+          {
+            "username": "sunshower",
+            "resource_url": "https://api.discogs.com/users/sunshower"
+          },
+          {
+            "username": "apregov",
+            "resource_url": "https://api.discogs.com/users/apregov"
+          },
+          {
+            "username": "oneseven",
+            "resource_url": "https://api.discogs.com/users/oneseven"
+          },
+          {
+            "username": "mayday",
+            "resource_url": "https://api.discogs.com/users/mayday"
+          }
+        ],
+        "data_quality": "Needs Vote",
+        "status": "Accepted"
+      },
+      "format_quantity": 2,
+      "date_added": "2020-06-19T06:06:50-07:00",
+      "date_changed": "2020-10-27T06:33:46-07:00",
+      "num_for_sale": 8,
+      "lowest_price": 25.99,
+      "master_id": 75635,
+      "master_url": "https://api.discogs.com/masters/75635",
+      "title": "The Primitive Painter",
+      "country": "Belgium",
+      "released": "2020-06-05",
+      "notes": "Bleep exclusive. 300 copies.",
+      "released_formatted": "05 Jun 2020",
+      "identifiers": [
+        {
+          "type": "Barcode",
+          "value": "5055274709857"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "AMB2005 A 33 ⅓ RPM MPO® 20 165130 Loop-o/2020",
+          "description": "Etching / Machine stamp runout side A"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "AMB2005 MPO® 20 165129 B 33 ⅓ RPM Loop-o/2020",
+          "description": "Etching / Machine stamp runout side B"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "AMB2005 C MPO® 20 165132 33 ⅓ RPM Loop-o/2020",
+          "description": "Etching / Machine stamp runout side C"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "AMB2005 D 33 ⅓ RPM MPO® 20 165154 Loop-o/2020",
+          "description": "Etching / Machine stamp runout side D"
+        }
+      ],
+      "videos": [
+        {
+          "uri": "https://www.youtube.com/watch?v=OOWcVUV4Mv8",
+          "title": "The Primitive Painter - Hope",
+          "description": "Taken from the The Primitive Painter LP - https://smarturl.it/ThePrimitivePainter\n\n----------------------------------------­----------\n\nSubscribe to the Apollo YouTube channel - https://apollorecs.lnk.to/subscribe\n\nApollo was founded in 1992 as the Ambien",
+          "duration": 0,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=BZZYyjubrpc",
+          "title": "The Primitive Painter - Disfigured Phantasy",
+          "description": "Taken from the The Primitive Painter LP - https://smarturl.it/ThePrimitivePainter\n\n----------------------------------------­----------\n\nSubscribe to the Apollo YouTube channel - https://apollorecs.lnk.to/subscribe\n\nApollo was founded in 1992 as the Ambien",
+          "duration": 353,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=cBBK1S5ZiYI",
+          "title": "The Primitive Painter - Levitation",
+          "description": "Taken from the The Primitive Painter LP - https://smarturl.it/ThePrimitivePainter\n\n----------------------------------------­----------\n\nSubscribe to the Apollo YouTube channel - https://apollorecs.lnk.to/subscribe\n\nApollo was founded in 1992 as the Ambien",
+          "duration": 497,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=p6NmON4eHtQ",
+          "title": "The Primitive Painter - Psycho Kinesis",
+          "description": "Taken from the The Primitive Painter LP - https://smarturl.it/ThePrimitivePainter\n\n----------------------------------------­----------\n\nSubscribe to the Apollo YouTube channel - https://apollorecs.lnk.to/subscribe\n\nApollo was founded in 1992 as the Ambien",
+          "duration": 325,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=OBubp6zIHH4",
+          "title": "The Primitive Painter - Cathedral",
+          "description": "Taken from the The Primitive Painter LP - https://smarturl.it/ThePrimitivePainter\n\n----------------------------------------­----------\n\nSubscribe to the Apollo YouTube channel - https://apollorecs.lnk.to/subscribe\n\nApollo was founded in 1992 as the Ambien",
+          "duration": 0,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=WHc6HldBu3M",
+          "title": "The Primitive Painter - Invisible Landscapes",
+          "description": "Click here to subscribe - https://apollorecs.lnk.to/subscribe\n\nApollo was founded in 1992 as the Ambient division of R&S Records.\n\nhttp://randsrecords.greedbag.com/dept/~apollo\nhttps://twitter.com/Apollo_Records \nhttp://www.youtube.com/user/ApolloRecrds \n",
+          "duration": 483,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=dmCRe3CAu_k",
+          "title": "The Primitive Painter - Click Song",
+          "description": "Taken from the The Primitive Painter LP - https://smarturl.it/ThePrimitivePainter\n\n----------------------------------------­----------\n\nSubscribe to the Apollo YouTube channel - https://apollorecs.lnk.to/subscribe\n\nApollo was founded in 1992 as the Ambien",
+          "duration": 377,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=QvUBx3Y6qKI",
+          "title": "The Primitive Painter - A Pagan Place",
+          "description": "Taken from the The Primitive Painter LP - https://smarturl.it/ThePrimitivePainter\n\n----------------------------------------­----------\n\nSubscribe to the Apollo YouTube channel - https://apollorecs.lnk.to/subscribe\n\nApollo was founded in 1992 as the Ambien",
+          "duration": 454,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=u9Mu61wVSHY",
+          "title": "The Primitive Painter - Orgon Akkumulator",
+          "description": "Taken from the The Primitive Painter LP - https://smarturl.it/ThePrimitivePainter\n\n----------------------------------------­----------\n\nSubscribe to the Apollo YouTube channel - https://apollorecs.lnk.to/subscribe\n\nApollo was founded in 1992 as the Ambien",
+          "duration": 445,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=JQcX6eFDoTM",
+          "title": "The Primitive Painter - Stoned Soul Picnic",
+          "description": "Taken from the The Primitive Painter LP - https://smarturl.it/ThePrimitivePainter\n\n----------------------------------------­----------\n\nSubscribe to the Apollo YouTube channel - https://apollorecs.lnk.to/subscribe\n\nApollo was founded in 1992 as the Ambien",
+          "duration": 410,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=FpSTEdjKOeQ",
+          "title": "The Primitive Painter - Testing",
+          "description": "Taken from the The Primitive Painter LP - https://smarturl.it/ThePrimitivePainter\n\n----------------------------------------­----------\n\nSubscribe to the Apollo YouTube channel - https://apollorecs.lnk.to/subscribe\n\nApollo was founded in 1992 as the Ambien",
+          "duration": 431,
+          "embed": true
+        }
+      ],
+      "genres": ["Electronic"],
+      "styles": ["IDM", "Ambient"],
+      "tracklist": [
+        {
+          "position": "A1",
+          "type_": "track",
+          "title": "Hope",
+          "duration": "10:59"
+        },
+        {
+          "position": "A2",
+          "type_": "track",
+          "title": "Disfigured Phantasy",
+          "duration": "5:51"
+        },
+        {
+          "position": "B1",
+          "type_": "track",
+          "title": "Levitation",
+          "duration": "8:14"
+        },
+        {
+          "position": "B2",
+          "type_": "track",
+          "title": "Psycho Kinesis",
+          "duration": "5:20"
+        },
+        {
+          "position": "B3",
+          "type_": "track",
+          "title": "Stoned Soul Picnic",
+          "duration": "6:49"
+        },
+        {
+          "position": "C1",
+          "type_": "track",
+          "title": "Cathedral",
+          "duration": "10:02"
+        },
+        {
+          "position": "C2",
+          "type_": "track",
+          "title": "Invisible Landscapes",
+          "duration": "7:50"
+        },
+        {
+          "position": "D1",
+          "type_": "track",
+          "title": "Click Song",
+          "duration": "6:13"
+        },
+        {
+          "position": "D2",
+          "type_": "track",
+          "title": "A Pagan Place",
+          "duration": "7:31"
+        },
+        {
+          "position": "D3",
+          "type_": "track",
+          "title": "Orgon Akkumulator",
+          "duration": "7:24"
+        }
+      ],
+      "extraartists": [
+        {
+          "name": "Loop-o",
+          "anv": "",
+          "join": "",
+          "role": "Lacquer Cut By",
+          "tracks": "",
+          "id": 105754,
+          "resource_url": "https://api.discogs.com/artists/105754"
+        },
+        {
+          "name": "Ralf Hiemisch",
+          "anv": "",
+          "join": "",
+          "role": "Painting",
+          "tracks": "",
+          "id": 1882997,
+          "resource_url": "https://api.discogs.com/artists/1882997"
+        },
+        {
+          "name": "Jörn Elling Wuttke",
+          "anv": "",
+          "join": "",
+          "role": "Producer, Written-By",
+          "tracks": "",
+          "id": 20742,
+          "resource_url": "https://api.discogs.com/artists/20742"
+        },
+        {
+          "name": "Roman Flügel",
+          "anv": "",
+          "join": "",
+          "role": "Producer, Written-By",
+          "tracks": "",
+          "id": 13111,
+          "resource_url": "https://api.discogs.com/artists/13111"
+        },
+        {
+          "name": "Andreas Lubich",
+          "anv": "",
+          "join": "",
+          "role": "Remastered By",
+          "tracks": "",
+          "id": 488082,
+          "resource_url": "https://api.discogs.com/artists/488082"
+        }
+      ],
+      "images": [
+        {
+          "type": "primary",
+          "uri": "https://i.discogs.com/Wdzjk7AARgSfIhGisKawFxW-2qPEXlYtJn4UNDB5iEY/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTAw/MjQ2LTE1OTI1Nzc1/NTUtNjA2Ni5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/Wdzjk7AARgSfIhGisKawFxW-2qPEXlYtJn4UNDB5iEY/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTAw/MjQ2LTE1OTI1Nzc1/NTUtNjA2Ni5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/3cw5ckScAJ7hCpqJsDmGasnwtg0coa7GyHX64Q6_Xxc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTAw/MjQ2LTE1OTI1Nzc1/NTUtNjA2Ni5qcGVn.jpeg",
+          "width": 600,
+          "height": 593
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/lvafDGYrqTI451VC976QVRt-GRczhFaZr8xa4KNOYr8/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTAw/MjQ2LTE1OTI1Nzc1/NDctMjgxMC5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/lvafDGYrqTI451VC976QVRt-GRczhFaZr8xa4KNOYr8/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTAw/MjQ2LTE1OTI1Nzc1/NDctMjgxMC5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/_4bseP3Q2yLm2JV7eBtbKeZD02XFOC0DdHdJ1Ta599I/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTAw/MjQ2LTE1OTI1Nzc1/NDctMjgxMC5qcGVn.jpeg",
+          "width": 600,
+          "height": 591
+        }
+      ],
+      "thumb": "https://i.discogs.com/3cw5ckScAJ7hCpqJsDmGasnwtg0coa7GyHX64Q6_Xxc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTAw/MjQ2LTE1OTI1Nzc1/NTUtNjA2Ni5qcGVn.jpeg",
+      "estimated_weight": 460,
+      "blocked_from_sale": false
+    },
+    {
+      "id": 6246137,
+      "status": "Accepted",
+      "year": 2014,
+      "resource_url": "https://api.discogs.com/releases/6246137",
+      "uri": "https://www.discogs.com/release/6246137-The-Flaming-Lips-With-A-Little-Help-From-My-Fwends",
+      "artists": [
+        {
+          "name": "The Flaming Lips",
+          "anv": "",
+          "join": "",
+          "role": "",
+          "tracks": "",
+          "id": 67156,
+          "resource_url": "https://api.discogs.com/artists/67156",
+          "thumbnail_url": "https://i.discogs.com/8aQcZjfoN8rF3b8gmWEofjijNho4qbfVSvAElrTNAYc/rs:fit/g:sm/q:40/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTY3MTU2/LTE2OTE5MjAyMDIt/MzEwMC5qcGVn.jpeg"
+        }
+      ],
+      "artists_sort": "Flaming Lips, The",
+      "labels": [
+        {
+          "name": "Bella Union",
+          "catno": "BELLA457V",
+          "entity_type": "1",
+          "entity_type_name": "Label",
+          "id": 2201,
+          "resource_url": "https://api.discogs.com/labels/2201",
+          "thumbnail_url": "https://i.discogs.com/vqTcB3uFOdc4e_9hx7u0jfQ_uRjvlr3mLKsdCrBl_p8/rs:fit/g:sm/q:40/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTIyMDEt/MTQ5ODE1NjM5OS03/OTg2LnBuZw.jpeg"
+        },
+        {
+          "name": "Lovely Sorts of Death Records",
+          "catno": "BELLA457V",
+          "entity_type": "1",
+          "entity_type_name": "Label",
+          "id": 237976,
+          "resource_url": "https://api.discogs.com/labels/237976",
+          "thumbnail_url": "https://i.discogs.com/hE-xC7ooL13h35pNdPzoW1MSAEvI8QjpGOPZXnIYtgQ/rs:fit/g:sm/q:40/h:241/w:244/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTIzNzk3/Ni0xMzEzNzg3NzE4/LmpwZWc.jpeg"
+        }
+      ],
+      "series": [],
+      "companies": [
+        {
+          "name": "Tarbox Road Studios",
+          "catno": "",
+          "entity_type": "29",
+          "entity_type_name": "Mastered At",
+          "id": 276819,
+          "resource_url": "https://api.discogs.com/labels/276819",
+          "thumbnail_url": "https://i.discogs.com/To9crRQwnwkOSwqJHw15t9xj7VygDyDVvaAOWOW7vDM/rs:fit/g:sm/q:40/h:320/w:471/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTI3Njgx/OS0xMzQ2NzcyODQ3/LTEwNjcuanBlZw.jpeg"
+        },
+        {
+          "name": "The Flaming Lips",
+          "catno": "",
+          "entity_type": "13",
+          "entity_type_name": "Phonographic Copyright (p)",
+          "id": 447529,
+          "resource_url": "https://api.discogs.com/labels/447529",
+          "thumbnail_url": ""
+        },
+        {
+          "name": "The Flaming Lips",
+          "catno": "",
+          "entity_type": "14",
+          "entity_type_name": "Copyright (c)",
+          "id": 447529,
+          "resource_url": "https://api.discogs.com/labels/447529",
+          "thumbnail_url": ""
+        },
+        {
+          "name": "Bella Union",
+          "catno": "",
+          "entity_type": "5",
+          "entity_type_name": "Licensed To",
+          "id": 2201,
+          "resource_url": "https://api.discogs.com/labels/2201",
+          "thumbnail_url": "https://i.discogs.com/vqTcB3uFOdc4e_9hx7u0jfQ_uRjvlr3mLKsdCrBl_p8/rs:fit/g:sm/q:40/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTIyMDEt/MTQ5ODE1NjM5OS03/OTg2LnBuZw.jpeg"
+        },
+        {
+          "name": "Optimal Media GmbH",
+          "catno": "BE61835",
+          "entity_type": "17",
+          "entity_type_name": "Pressed By",
+          "id": 313190,
+          "resource_url": "https://api.discogs.com/labels/313190",
+          "thumbnail_url": "https://i.discogs.com/3xVehYZ_UVUcULH6NuyQ8zYGD6_QPo7tJw4FZvME5fg/rs:fit/g:sm/q:40/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMxMzE5/MC0xNTE2MzgxNjk2/LTIzMTgucG5n.jpeg"
+        },
+        {
+          "name": "Optimal Media GmbH",
+          "catno": "",
+          "entity_type": "30",
+          "entity_type_name": "Lacquer Cut At",
+          "id": 313190,
+          "resource_url": "https://api.discogs.com/labels/313190",
+          "thumbnail_url": "https://i.discogs.com/3xVehYZ_UVUcULH6NuyQ8zYGD6_QPo7tJw4FZvME5fg/rs:fit/g:sm/q:40/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTMxMzE5/MC0xNTE2MzgxNjk2/LTIzMTgucG5n.jpeg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "text": "Orange",
+          "descriptions": ["LP", "Album", "Limited Edition"]
+        },
+        {
+          "name": "CD",
+          "qty": "1",
+          "descriptions": ["Album"]
+        },
+        {
+          "name": "All Media",
+          "qty": "1"
+        }
+      ],
+      "data_quality": "Needs Vote",
+      "community": {
+        "have": 1245,
+        "want": 248,
+        "rating": {
+          "count": 101,
+          "average": 3.92
+        },
+        "submitter": {
+          "username": "ak27856",
+          "resource_url": "https://api.discogs.com/users/ak27856"
+        },
+        "contributors": [
+          {
+            "username": "ak27856",
+            "resource_url": "https://api.discogs.com/users/ak27856"
+          },
+          {
+            "username": "drpaine",
+            "resource_url": "https://api.discogs.com/users/drpaine"
+          },
+          {
+            "username": "supwrman",
+            "resource_url": "https://api.discogs.com/users/supwrman"
+          },
+          {
+            "username": "DiscogsUpdateBot",
+            "resource_url": "https://api.discogs.com/users/DiscogsUpdateBot"
+          },
+          {
+            "username": "cbkbstudio",
+            "resource_url": "https://api.discogs.com/users/cbkbstudio"
+          },
+          {
+            "username": "MissingPlanet",
+            "resource_url": "https://api.discogs.com/users/MissingPlanet"
+          },
+          {
+            "username": "Opdiner",
+            "resource_url": "https://api.discogs.com/users/Opdiner"
+          },
+          {
+            "username": "rshaw00000",
+            "resource_url": "https://api.discogs.com/users/rshaw00000"
+          },
+          {
+            "username": "MurrayScott",
+            "resource_url": "https://api.discogs.com/users/MurrayScott"
+          },
+          {
+            "username": "mjk37",
+            "resource_url": "https://api.discogs.com/users/mjk37"
+          },
+          {
+            "username": "frogteeth0725",
+            "resource_url": "https://api.discogs.com/users/frogteeth0725"
+          }
+        ],
+        "data_quality": "Needs Vote",
+        "status": "Accepted"
+      },
+      "format_quantity": 2,
+      "date_added": "2014-10-30T04:25:25-07:00",
+      "date_changed": "2021-07-20T20:30:17-07:00",
+      "num_for_sale": 23,
+      "lowest_price": 13.09,
+      "master_id": 751603,
+      "master_url": "https://api.discogs.com/masters/751603",
+      "title": "With A Little Help From My Fwends",
+      "country": "UK & Europe",
+      "released": "2014-11-03",
+      "notes": "A portion of proceeds go to The Bella Foundation (SPCA).\n\nLimited to 2000 copies in the UK and only available to buy from independent retailers.",
+      "released_formatted": "03 Nov 2014",
+      "identifiers": [
+        {
+          "type": "Barcode",
+          "value": "5051083084857"
+        },
+        {
+          "type": "Barcode",
+          "value": "5 051083 084857",
+          "description": "Text"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "BELLA457V BE61835-01 A1 HL",
+          "description": "Side A runout, etched"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "BELLA457V BE61835-01 B1 HL",
+          "description": "Side B runout, etched"
+        }
+      ],
+      "genres": ["Electronic", "Rock"],
+      "styles": ["Acid Rock"],
+      "tracklist": [
+        {
+          "position": "A1",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "My Morning Jacket",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 100346,
+              "resource_url": "https://api.discogs.com/artists/100346"
+            },
+            {
+              "name": "Fever The Ghost",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 3534107,
+              "resource_url": "https://api.discogs.com/artists/3534107"
+            },
+            {
+              "name": "J Mascis",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 97679,
+              "resource_url": "https://api.discogs.com/artists/97679"
+            }
+          ],
+          "title": "Sgt Pepper's Lonely Hearts Club Band",
+          "extraartists": [
+            {
+              "name": "Chris Steffen",
+              "anv": "",
+              "join": "",
+              "role": "Engineer [Fever The Ghost]",
+              "tracks": "",
+              "id": 531226,
+              "resource_url": "https://api.discogs.com/artists/531226"
+            },
+            {
+              "name": "Peter Holmström",
+              "anv": "",
+              "join": "",
+              "role": "Engineer [J Mascis]",
+              "tracks": "",
+              "id": 3863277,
+              "resource_url": "https://api.discogs.com/artists/3863277"
+            },
+            {
+              "name": "Jim James",
+              "anv": "",
+              "join": "",
+              "role": "Musical Assistance [My Morning Jacket], Producer [My Morning Jacket], Engineer [My Morning Jacket]",
+              "tracks": "",
+              "id": 286040,
+              "resource_url": "https://api.discogs.com/artists/286040"
+            },
+            {
+              "name": "Fever The Ghost",
+              "anv": "",
+              "join": "",
+              "role": "Producer [Fever The Ghost]",
+              "tracks": "",
+              "id": 3534107,
+              "resource_url": "https://api.discogs.com/artists/3534107"
+            },
+            {
+              "name": "Kevin Ratterman",
+              "anv": "",
+              "join": "",
+              "role": "Recorded By [My Morning Jacket]",
+              "tracks": "",
+              "id": 324382,
+              "resource_url": "https://api.discogs.com/artists/324382"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Black Pus",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 800053,
+              "resource_url": "https://api.discogs.com/artists/800053"
+            },
+            {
+              "name": "The Autumn Defense",
+              "anv": "Autumn Defense",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 896572,
+              "resource_url": "https://api.discogs.com/artists/896572"
+            }
+          ],
+          "title": "With A Little Help From My Friends",
+          "extraartists": [
+            {
+              "name": "Joshua Shapera",
+              "anv": "",
+              "join": "",
+              "role": "Producer [Autumn Defense], Engineer [Autumn Defense]",
+              "tracks": "",
+              "id": 685521,
+              "resource_url": "https://api.discogs.com/artists/685521"
+            },
+            {
+              "name": "Pat Sansone",
+              "anv": "Patrick Sansone",
+              "join": "",
+              "role": "Producer [Autumn Defense], Engineer [Autumn Defense]",
+              "tracks": "",
+              "id": 322705,
+              "resource_url": "https://api.discogs.com/artists/322705"
+            },
+            {
+              "name": "Black Pus",
+              "anv": "",
+              "join": "",
+              "role": "Recorded By [Black Pus]",
+              "tracks": "",
+              "id": 800053,
+              "resource_url": "https://api.discogs.com/artists/800053"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Miley Cyrus",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 676432,
+              "resource_url": "https://api.discogs.com/artists/676432"
+            },
+            {
+              "name": "Moby",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 1031,
+              "resource_url": "https://api.discogs.com/artists/1031"
+            }
+          ],
+          "title": "Lucy In The Sky With Diamonds",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Dr. Dog",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 418479,
+              "resource_url": "https://api.discogs.com/artists/418479"
+            },
+            {
+              "name": "Chuck Inglish",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 1042255,
+              "resource_url": "https://api.discogs.com/artists/1042255"
+            },
+            {
+              "name": "Morgan Delt",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 3296154,
+              "resource_url": "https://api.discogs.com/artists/3296154"
+            }
+          ],
+          "title": "Getting Better",
+          "extraartists": [
+            {
+              "name": "Dr. Dog",
+              "anv": "",
+              "join": "",
+              "role": "Engineer [Dr. Dog]",
+              "tracks": "",
+              "id": 418479,
+              "resource_url": "https://api.discogs.com/artists/418479"
+            },
+            {
+              "name": "James Dean (15)",
+              "anv": "",
+              "join": "",
+              "role": "Engineer [Dr. Dog]",
+              "tracks": "",
+              "id": 4166649,
+              "resource_url": "https://api.discogs.com/artists/4166649"
+            },
+            {
+              "name": "Nathan Sabatino",
+              "anv": "",
+              "join": "",
+              "role": "Engineer [Dr. Dog]",
+              "tracks": "",
+              "id": 807886,
+              "resource_url": "https://api.discogs.com/artists/807886"
+            },
+            {
+              "name": "Tom Beach",
+              "anv": "",
+              "join": "",
+              "role": "Engineer [Dr. Dog]",
+              "tracks": "",
+              "id": 2590542,
+              "resource_url": "https://api.discogs.com/artists/2590542"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Electric Würms",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 3946441,
+              "resource_url": "https://api.discogs.com/artists/3946441"
+            }
+          ],
+          "title": "Fixing A Hole",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Phantogram",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 1484130,
+              "resource_url": "https://api.discogs.com/artists/1484130"
+            },
+            {
+              "name": "Julianna Barwick",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 584243,
+              "resource_url": "https://api.discogs.com/artists/584243"
+            },
+            {
+              "name": "Spaceface (2)",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 683542,
+              "resource_url": "https://api.discogs.com/artists/683542"
+            }
+          ],
+          "title": "She's Leaving Home",
+          "extraartists": [
+            {
+              "name": "Josh Carter",
+              "anv": "",
+              "join": "",
+              "role": "Producer [Phantogram]",
+              "tracks": "",
+              "id": 1552161,
+              "resource_url": "https://api.discogs.com/artists/1552161"
+            },
+            {
+              "name": "Julianna Barwick",
+              "anv": "JB",
+              "join": "",
+              "role": "Recorded By [Julianna Barwick]",
+              "tracks": "",
+              "id": 584243,
+              "resource_url": "https://api.discogs.com/artists/584243"
+            },
+            {
+              "name": "Matthew Strong (2)",
+              "anv": "Matt Strong",
+              "join": "",
+              "role": "Recorded By [Spaceface]",
+              "tracks": "",
+              "id": 4166648,
+              "resource_url": "https://api.discogs.com/artists/4166648"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "A7",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Maynard James Keenan",
+              "anv": "MJ Keenan",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 251558,
+              "resource_url": "https://api.discogs.com/artists/251558"
+            },
+            {
+              "name": "Puscifer",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 279194,
+              "resource_url": "https://api.discogs.com/artists/279194"
+            },
+            {
+              "name": "Sunbears!",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 1681538,
+              "resource_url": "https://api.discogs.com/artists/1681538"
+            }
+          ],
+          "title": "Being For The Benefit Of Mr. Kite!",
+          "extraartists": [
+            {
+              "name": "Stardeath And White Dwarfs",
+              "anv": "SDWD",
+              "join": "",
+              "role": "Recorded By",
+              "tracks": "",
+              "id": 1262070,
+              "resource_url": "https://api.discogs.com/artists/1262070"
+            },
+            {
+              "name": "Mat Mitchell",
+              "anv": "",
+              "join": "",
+              "role": "Recorded By [MJ Keenan & Puscifer]",
+              "tracks": "",
+              "id": 430113,
+              "resource_url": "https://api.discogs.com/artists/430113"
+            },
+            {
+              "name": "Sunbears!",
+              "anv": "",
+              "join": "",
+              "role": "Recorded By [Sunbears!]",
+              "tracks": "",
+              "id": 1681538,
+              "resource_url": "https://api.discogs.com/artists/1681538"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Birdflower",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 4070457,
+              "resource_url": "https://api.discogs.com/artists/4070457"
+            },
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Morgan Delt",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 3296154,
+              "resource_url": "https://api.discogs.com/artists/3296154"
+            }
+          ],
+          "title": "Within You Without You",
+          "extraartists": [
+            {
+              "name": "Birdflower",
+              "anv": "",
+              "join": "",
+              "role": "Recorded By [Birdflower]",
+              "tracks": "",
+              "id": 4070457,
+              "resource_url": "https://api.discogs.com/artists/4070457"
+            },
+            {
+              "name": "George Harrison",
+              "anv": "",
+              "join": "",
+              "role": "Written-By",
+              "tracks": "",
+              "id": 243955,
+              "resource_url": "https://api.discogs.com/artists/243955"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Def Rain",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 3469520,
+              "resource_url": "https://api.discogs.com/artists/3469520"
+            },
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Pitchwafuzz",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 4070456,
+              "resource_url": "https://api.discogs.com/artists/4070456"
+            }
+          ],
+          "title": "When I'm Sixty Four",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Tegan and Sara",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 308450,
+              "resource_url": "https://api.discogs.com/artists/308450"
+            },
+            {
+              "name": "Stardeath And White Dwarfs",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 1262070,
+              "resource_url": "https://api.discogs.com/artists/1262070"
+            }
+          ],
+          "title": "Lovely Rita",
+          "extraartists": [
+            {
+              "name": "Stardeath And White Dwarfs",
+              "anv": "SDWD",
+              "join": "",
+              "role": "Recorded By [Stardeath And White Dwarfs]",
+              "tracks": "",
+              "id": 1262070,
+              "resource_url": "https://api.discogs.com/artists/1262070"
+            },
+            {
+              "name": "Tegan and Sara",
+              "anv": "",
+              "join": "",
+              "role": "Recorded By [Tegan And Sara]",
+              "tracks": "",
+              "id": 308450,
+              "resource_url": "https://api.discogs.com/artists/308450"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Zorch",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 1610882,
+              "resource_url": "https://api.discogs.com/artists/1610882"
+            },
+            {
+              "name": "Grace Potter",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 796323,
+              "resource_url": "https://api.discogs.com/artists/796323"
+            },
+            {
+              "name": "Treasure Mammal",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 1023036,
+              "resource_url": "https://api.discogs.com/artists/1023036"
+            }
+          ],
+          "title": "Good Morning Good Morning",
+          "extraartists": [
+            {
+              "name": "Zorch",
+              "anv": "",
+              "join": "",
+              "role": "Composed By [Zorch], Producer [Zorch], Recorded By [Zorch]",
+              "tracks": "",
+              "id": 1610882,
+              "resource_url": "https://api.discogs.com/artists/1610882"
+            },
+            {
+              "name": "Ryan Breen",
+              "anv": "",
+              "join": "",
+              "role": "Engineer [Treasure Mammal], Producer [Treasure Mammal]",
+              "tracks": "",
+              "id": 175711,
+              "resource_url": "https://api.discogs.com/artists/175711"
+            },
+            {
+              "name": "Treasure Mammal",
+              "anv": "",
+              "join": "",
+              "role": "Engineer [Treasure Mammal], Producer [Treasure Mammal]",
+              "tracks": "",
+              "id": 1023036,
+              "resource_url": "https://api.discogs.com/artists/1023036"
+            },
+            {
+              "name": "Evan Kleinecke",
+              "anv": "",
+              "join": "",
+              "role": "Engineer [Zorch], Mixed By [Zorch]",
+              "tracks": "",
+              "id": 1496149,
+              "resource_url": "https://api.discogs.com/artists/1496149"
+            },
+            {
+              "name": "Grace Potter",
+              "anv": "",
+              "join": "",
+              "role": "Vocals [Grace Potter], Producer [Grace Potter], Engineer [Grace Potter]",
+              "tracks": "",
+              "id": 796323,
+              "resource_url": "https://api.discogs.com/artists/796323"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Foxygen",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 2769573,
+              "resource_url": "https://api.discogs.com/artists/2769573"
+            },
+            {
+              "name": "Ben Goldwasser",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 1051262,
+              "resource_url": "https://api.discogs.com/artists/1051262"
+            }
+          ],
+          "title": "Sgt Pepper's Lonely Hearts Club Band (Reprise)",
+          "extraartists": [
+            {
+              "name": "Davey Jewell",
+              "anv": "",
+              "join": "",
+              "role": "Engineer",
+              "tracks": "",
+              "id": 2795706,
+              "resource_url": "https://api.discogs.com/artists/2795706"
+            },
+            {
+              "name": "Jonathan Rado",
+              "anv": "",
+              "join": "",
+              "role": "Producer",
+              "tracks": "",
+              "id": 3106163,
+              "resource_url": "https://api.discogs.com/artists/3106163"
+            }
+          ],
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Miley Cyrus",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 676432,
+              "resource_url": "https://api.discogs.com/artists/676432"
+            },
+            {
+              "name": "New Fumes",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 2507230,
+              "resource_url": "https://api.discogs.com/artists/2507230"
+            }
+          ],
+          "title": "A Day In The Life",
+          "duration": ""
+        },
+        {
+          "position": "CD-1",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "My Morning Jacket",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 100346,
+              "resource_url": "https://api.discogs.com/artists/100346"
+            },
+            {
+              "name": "Fever The Ghost",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 3534107,
+              "resource_url": "https://api.discogs.com/artists/3534107"
+            },
+            {
+              "name": "J Mascis",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 97679,
+              "resource_url": "https://api.discogs.com/artists/97679"
+            }
+          ],
+          "title": "Sgt Pepper's Lonely Hearts Club Band",
+          "duration": "2:45"
+        },
+        {
+          "position": "CD-2",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Black Pus",
+              "anv": "",
+              "join": ",",
+              "role": "",
+              "tracks": "",
+              "id": 800053,
+              "resource_url": "https://api.discogs.com/artists/800053"
+            },
+            {
+              "name": "The Autumn Defense",
+              "anv": "Autumn Defense",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 896572,
+              "resource_url": "https://api.discogs.com/artists/896572"
+            }
+          ],
+          "title": "With A Little Help From My Friends",
+          "duration": "3:34"
+        },
+        {
+          "position": "CD-3",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Miley Cyrus",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 676432,
+              "resource_url": "https://api.discogs.com/artists/676432"
+            },
+            {
+              "name": "Moby",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 1031,
+              "resource_url": "https://api.discogs.com/artists/1031"
+            }
+          ],
+          "title": "Lucy In The Sky With Diamonds",
+          "duration": "5:42"
+        },
+        {
+          "position": "CD-4",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Dr. Dog",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 418479,
+              "resource_url": "https://api.discogs.com/artists/418479"
+            },
+            {
+              "name": "Chuck Inglish",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 1042255,
+              "resource_url": "https://api.discogs.com/artists/1042255"
+            },
+            {
+              "name": "Morgan Delt",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 3296154,
+              "resource_url": "https://api.discogs.com/artists/3296154"
+            }
+          ],
+          "title": "Getting Better",
+          "duration": "4:07"
+        },
+        {
+          "position": "CD-5",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Electric Würms",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 3946441,
+              "resource_url": "https://api.discogs.com/artists/3946441"
+            }
+          ],
+          "title": "Fixing A Hole",
+          "duration": "3:48"
+        },
+        {
+          "position": "CD-6",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Phantogram",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 1484130,
+              "resource_url": "https://api.discogs.com/artists/1484130"
+            },
+            {
+              "name": "Julianna Barwick",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 584243,
+              "resource_url": "https://api.discogs.com/artists/584243"
+            },
+            {
+              "name": "Spaceface (2)",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 683542,
+              "resource_url": "https://api.discogs.com/artists/683542"
+            }
+          ],
+          "title": "She's Leaving Home",
+          "duration": "3:12"
+        },
+        {
+          "position": "CD-7",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Maynard James Keenan",
+              "anv": "MJ Keenan",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 251558,
+              "resource_url": "https://api.discogs.com/artists/251558"
+            },
+            {
+              "name": "Puscifer",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 279194,
+              "resource_url": "https://api.discogs.com/artists/279194"
+            },
+            {
+              "name": "Sunbears!",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 1681538,
+              "resource_url": "https://api.discogs.com/artists/1681538"
+            }
+          ],
+          "title": "Being For The Benefit Of Mr. Kite!",
+          "duration": "2:34"
+        },
+        {
+          "position": "CD-8",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Birdflower",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 4070457,
+              "resource_url": "https://api.discogs.com/artists/4070457"
+            },
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Morgan Delt",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 3296154,
+              "resource_url": "https://api.discogs.com/artists/3296154"
+            }
+          ],
+          "title": "Within You Without You",
+          "duration": "4:39"
+        },
+        {
+          "position": "CD-9",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Def Rain",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 3469520,
+              "resource_url": "https://api.discogs.com/artists/3469520"
+            },
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Pitchwafuzz",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 4070456,
+              "resource_url": "https://api.discogs.com/artists/4070456"
+            }
+          ],
+          "title": "When I'm Sixty-Four",
+          "duration": "3:19"
+        },
+        {
+          "position": "CD-10",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Tegan and Sara",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 308450,
+              "resource_url": "https://api.discogs.com/artists/308450"
+            },
+            {
+              "name": "Stardeath And White Dwarfs",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 1262070,
+              "resource_url": "https://api.discogs.com/artists/1262070"
+            }
+          ],
+          "title": "Lovely Rita",
+          "duration": "4:19"
+        },
+        {
+          "position": "CD-11",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Zorch",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 1610882,
+              "resource_url": "https://api.discogs.com/artists/1610882"
+            },
+            {
+              "name": "Grace Potter",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 796323,
+              "resource_url": "https://api.discogs.com/artists/796323"
+            },
+            {
+              "name": "Treasure Mammal",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 1023036,
+              "resource_url": "https://api.discogs.com/artists/1023036"
+            }
+          ],
+          "title": "Good Morning Good Morning",
+          "duration": "3:15"
+        },
+        {
+          "position": "CD-12",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "Foxygen",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 2769573,
+              "resource_url": "https://api.discogs.com/artists/2769573"
+            },
+            {
+              "name": "Ben Goldwasser",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 1051262,
+              "resource_url": "https://api.discogs.com/artists/1051262"
+            }
+          ],
+          "title": "Sgt. Pepper's Lonely Hearts Club Band (Reprise)",
+          "duration": "5:14"
+        },
+        {
+          "position": "CD-13",
+          "type_": "track",
+          "artists": [
+            {
+              "name": "The Flaming Lips",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 67156,
+              "resource_url": "https://api.discogs.com/artists/67156"
+            },
+            {
+              "name": "Miley Cyrus",
+              "anv": "",
+              "join": "&",
+              "role": "",
+              "tracks": "",
+              "id": 676432,
+              "resource_url": "https://api.discogs.com/artists/676432"
+            },
+            {
+              "name": "New Fumes",
+              "anv": "",
+              "join": "",
+              "role": "",
+              "tracks": "",
+              "id": 2507230,
+              "resource_url": "https://api.discogs.com/artists/2507230"
+            }
+          ],
+          "title": "A Day In The Life",
+          "duration": "4:55"
+        }
+      ],
+      "extraartists": [
+        {
+          "name": "Oliver Hibert",
+          "anv": "",
+          "join": "",
+          "role": "Artwork [Cover Art]",
+          "tracks": "",
+          "id": 3551474,
+          "resource_url": "https://api.discogs.com/artists/3551474"
+        },
+        {
+          "name": "Wayne Coyne",
+          "anv": "",
+          "join": "",
+          "role": "Artwork [Production Notes Doodle Art], Design, Layout",
+          "tracks": "",
+          "id": 42612,
+          "resource_url": "https://api.discogs.com/artists/42612"
+        },
+        {
+          "name": "George Salisbury",
+          "anv": "George",
+          "join": "",
+          "role": "Design, Layout",
+          "tracks": "",
+          "id": 1392981,
+          "resource_url": "https://api.discogs.com/artists/1392981"
+        },
+        {
+          "name": "Heino Leja",
+          "anv": "HL",
+          "join": "",
+          "role": "Lacquer Cut By",
+          "tracks": "",
+          "id": 4567417,
+          "resource_url": "https://api.discogs.com/artists/4567417"
+        },
+        {
+          "name": "Scott Booker",
+          "anv": "",
+          "join": "",
+          "role": "Producer",
+          "tracks": "",
+          "id": 300323,
+          "resource_url": "https://api.discogs.com/artists/300323"
+        },
+        {
+          "name": "The Flaming Lips",
+          "anv": "",
+          "join": "",
+          "role": "Producer",
+          "tracks": "",
+          "id": 67156,
+          "resource_url": "https://api.discogs.com/artists/67156"
+        },
+        {
+          "name": "Dave Fridmann",
+          "anv": "",
+          "join": "",
+          "role": "Recorded By, Mixed By, Mastered By, Producer",
+          "tracks": "",
+          "id": 208546,
+          "resource_url": "https://api.discogs.com/artists/208546"
+        },
+        {
+          "name": "Lennon-McCartney",
+          "anv": "",
+          "join": "",
+          "role": "Written-By",
+          "tracks": "A1 to A7, B2 to B6",
+          "id": 779927,
+          "resource_url": "https://api.discogs.com/artists/779927"
+        }
+      ],
+      "images": [
+        {
+          "type": "primary",
+          "uri": "https://i.discogs.com/AChkYsw6ReYBJLp_-4vrzh79zPTH6mK-K--JHIqGc8s/rs:fit/g:sm/q:90/h:604/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/Mi00ODUxLmpwZWc.jpeg",
+          "resource_url": "https://i.discogs.com/AChkYsw6ReYBJLp_-4vrzh79zPTH6mK-K--JHIqGc8s/rs:fit/g:sm/q:90/h:604/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/Mi00ODUxLmpwZWc.jpeg",
+          "uri150": "https://i.discogs.com/U9XNddA6GFgbShJsZzsIc5CLvpA_hVndtH2mv-mMTdQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/Mi00ODUxLmpwZWc.jpeg",
+          "width": 600,
+          "height": 604
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/nC1AtrtLKukJUCRDHiG-IQI7TM8MVDMCAa0CyyBN1h4/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/My04NzE4LmpwZWc.jpeg",
+          "resource_url": "https://i.discogs.com/nC1AtrtLKukJUCRDHiG-IQI7TM8MVDMCAa0CyyBN1h4/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/My04NzE4LmpwZWc.jpeg",
+          "uri150": "https://i.discogs.com/NCVWsP9l7rsRjNR5tFDDsnuqJ_Zxv2aFDMMJyRxsW3g/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/My04NzE4LmpwZWc.jpeg",
+          "width": 600,
+          "height": 589
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/akMjPeVCkLQ1db1f1l8JWIBvKqI7B2234hxWMIJLLHw/rs:fit/g:sm/q:90/h:287/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/MC03MjQxLmpwZWc.jpeg",
+          "resource_url": "https://i.discogs.com/akMjPeVCkLQ1db1f1l8JWIBvKqI7B2234hxWMIJLLHw/rs:fit/g:sm/q:90/h:287/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/MC03MjQxLmpwZWc.jpeg",
+          "uri150": "https://i.discogs.com/WoPjI3aC54HlExt2vY8sgfBIlxY-ZfoMzechM_lwzrc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/MC03MjQxLmpwZWc.jpeg",
+          "width": 600,
+          "height": 287
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/FOVybVCOhpKCerCc-xQ20W598XL-dQ4WvhfNFP5TJH8/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/My02ODE3LmpwZWc.jpeg",
+          "resource_url": "https://i.discogs.com/FOVybVCOhpKCerCc-xQ20W598XL-dQ4WvhfNFP5TJH8/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/My02ODE3LmpwZWc.jpeg",
+          "uri150": "https://i.discogs.com/Q4_TjHYTZFomQR9p1ZQoxhJ6ut0KegAXF0_UUEgBJQ4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/My02ODE3LmpwZWc.jpeg",
+          "width": 600,
+          "height": 592
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/zO0xgcsVdlmB9ZatJPyWQ1aYOxQNEQbTwR2pu8K1YO0/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/My02NDgyLmpwZWc.jpeg",
+          "resource_url": "https://i.discogs.com/zO0xgcsVdlmB9ZatJPyWQ1aYOxQNEQbTwR2pu8K1YO0/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/My02NDgyLmpwZWc.jpeg",
+          "uri150": "https://i.discogs.com/3C1xhkDiHaNDUWegnF148UbD6klmVqQfRTRMIJNOYi4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/My02NDgyLmpwZWc.jpeg",
+          "width": 600,
+          "height": 596
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/k5EuKEgUr63tCszAPY2Dy-2p8hMqv2bX2Z37utOZ1aE/rs:fit/g:sm/q:90/h:583/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/Ni00MzYzLmpwZWc.jpeg",
+          "resource_url": "https://i.discogs.com/k5EuKEgUr63tCszAPY2Dy-2p8hMqv2bX2Z37utOZ1aE/rs:fit/g:sm/q:90/h:583/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/Ni00MzYzLmpwZWc.jpeg",
+          "uri150": "https://i.discogs.com/f-EwrvUO9SUjDukkIaZew4gvfmRo1A4a8Zkrc2xeiXE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/Ni00MzYzLmpwZWc.jpeg",
+          "width": 600,
+          "height": 583
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/L2BznwJ5HAvEBQpxeI41URGdP9al3epEL0H_5pbceLY/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/Ni0xMzE1LmpwZWc.jpeg",
+          "resource_url": "https://i.discogs.com/L2BznwJ5HAvEBQpxeI41URGdP9al3epEL0H_5pbceLY/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/Ni0xMzE1LmpwZWc.jpeg",
+          "uri150": "https://i.discogs.com/nquqygbsw1YzGOyOciJsVtSeK7kvDmeYcUwr4kcLaec/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/Ni0xMzE1LmpwZWc.jpeg",
+          "width": 600,
+          "height": 588
+        }
+      ],
+      "thumb": "https://i.discogs.com/U9XNddA6GFgbShJsZzsIc5CLvpA_hVndtH2mv-mMTdQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDYx/MzctMTYyNjgzODE2/Mi00ODUxLmpwZWc.jpeg",
+      "estimated_weight": 545,
+      "blocked_from_sale": false
+    },
+    {
+      "id": 16439865,
+      "status": "Accepted",
+      "year": 2020,
+      "resource_url": "https://api.discogs.com/releases/16439865",
+      "uri": "https://www.discogs.com/release/16439865-Avalon-Emerson-040",
+      "artists": [
+        {
+          "name": "Avalon Emerson",
+          "anv": "",
+          "join": "",
+          "role": "",
+          "tracks": "",
+          "id": 3632916,
+          "resource_url": "https://api.discogs.com/artists/3632916",
+          "thumbnail_url": "https://i.discogs.com/O44qKGcjTsDEcw9lMQleQGoIxI6oSTbG4dlrZjUuL80/rs:fit/g:sm/q:40/h:408/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTM2MzI5/MTYtMTUxNDk3NzIw/NC04OTY5LmpwZWc.jpeg"
+        }
+      ],
+      "artists_sort": "Avalon Emerson",
+      "labels": [
+        {
+          "name": "AD 93",
+          "catno": "WHYT040",
+          "entity_type": "1",
+          "entity_type_name": "Label",
+          "id": 1872085,
+          "resource_url": "https://api.discogs.com/labels/1872085",
+          "thumbnail_url": "https://i.discogs.com/5ah1fPi1xEhl2LNdNCoLZN-MHaxlLTP6Vp3C8l-evb4/rs:fit/g:sm/q:40/h:192/w:192/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTE4NzIw/ODUtMTU5ODM5MzQ0/MS00MjczLnBuZw.jpeg"
+        },
+        {
+          "name": "AD 93",
+          "catno": "Whyt040",
+          "entity_type": "1",
+          "entity_type_name": "Label",
+          "id": 1872085,
+          "resource_url": "https://api.discogs.com/labels/1872085",
+          "thumbnail_url": "https://i.discogs.com/5ah1fPi1xEhl2LNdNCoLZN-MHaxlLTP6Vp3C8l-evb4/rs:fit/g:sm/q:40/h:192/w:192/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTE4NzIw/ODUtMTU5ODM5MzQ0/MS00MjczLnBuZw.jpeg"
+        }
+      ],
+      "series": [],
+      "companies": [
+        {
+          "name": "AD93 Recordings Ltd.",
+          "catno": "",
+          "entity_type": "14",
+          "entity_type_name": "Copyright (c)",
+          "id": 2022225,
+          "resource_url": "https://api.discogs.com/labels/2022225",
+          "thumbnail_url": ""
+        },
+        {
+          "name": "Dubplates & Mastering",
+          "catno": "",
+          "entity_type": "29",
+          "entity_type_name": "Mastered At",
+          "id": 264266,
+          "resource_url": "https://api.discogs.com/labels/264266",
+          "thumbnail_url": "https://i.discogs.com/6ml6TPtsmYgpfTOsKAxYBKN6x2r6xePApNvRVSkRYdg/rs:fit/g:sm/q:40/h:33/w:281/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTI2NDI2/Ni0xMzE0Njg2NjQy/LmdpZg.jpeg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": ["12\"", "45 RPM"]
+        }
+      ],
+      "data_quality": "Needs Vote",
+      "community": {
+        "have": 357,
+        "want": 167,
+        "rating": {
+          "count": 46,
+          "average": 4.43
+        },
+        "submitter": {
+          "username": "sptnk",
+          "resource_url": "https://api.discogs.com/users/sptnk"
+        },
+        "contributors": [
+          {
+            "username": "sptnk",
+            "resource_url": "https://api.discogs.com/users/sptnk"
+          },
+          {
+            "username": "Weirdcore",
+            "resource_url": "https://api.discogs.com/users/Weirdcore"
+          },
+          {
+            "username": "kiphazard",
+            "resource_url": "https://api.discogs.com/users/kiphazard"
+          },
+          {
+            "username": "josteih",
+            "resource_url": "https://api.discogs.com/users/josteih"
+          }
+        ],
+        "data_quality": "Needs Vote",
+        "status": "Accepted"
+      },
+      "format_quantity": 1,
+      "date_added": "2020-12-12T02:12:46-08:00",
+      "date_changed": "2021-12-27T05:01:46-08:00",
+      "num_for_sale": 11,
+      "lowest_price": 6.97,
+      "title": "040",
+      "country": "UK",
+      "released": "2020-12-11",
+      "notes": "Three track 12\" written and produced by Avalon Emerson\n'Whyt040' mastered and cut by Helmut Erler at D&M\n\nAvalon Emerson for AD93 Recordings Ltd.\n© AD93 Recordings Ltd. 2020",
+      "released_formatted": "11 Dec 2020",
+      "identifiers": [
+        {
+          "type": "Matrix / Runout",
+          "value": "WHYT 040 A ≠ D&M. 45rpm.",
+          "description": "Side A, Etched"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "WHYT 040 B ≠ D&M. 45rpm.",
+          "description": "Side B, Etched"
+        }
+      ],
+      "videos": [
+        {
+          "uri": "https://www.youtube.com/watch?v=v0QFinJgTbI",
+          "title": "Avalon Emerson - Rotting Hills",
+          "description": "040\nBuy - https://avalonemerson.bandcamp.com/album/040",
+          "duration": 405,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=84hlBeT4Xb8",
+          "title": "Avalon Emerson - Winter and Water",
+          "description": "040\nBuy - https://avalonemerson.bandcamp.com/album/040",
+          "duration": 314,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=_HB5G5NnBZ8",
+          "title": "Avalon Emerson - One Long Day Till I See You Again",
+          "description": "040\nBuy - https://avalonemerson.bandcamp.com/album/040",
+          "duration": 258,
+          "embed": true
+        }
+      ],
+      "genres": ["Electronic"],
+      "styles": ["Techno", "Experimental"],
+      "tracklist": [
+        {
+          "position": "A",
+          "type_": "track",
+          "title": "Rotting Hills",
+          "duration": "6:45"
+        },
+        {
+          "position": "B1",
+          "type_": "track",
+          "title": "Winter And Water",
+          "duration": "5:13"
+        },
+        {
+          "position": "B2",
+          "type_": "track",
+          "title": "One Long Day Till I See You Again",
+          "duration": "4:17"
+        }
+      ],
+      "extraartists": [
+        {
+          "name": "Alex McCullough (2)",
+          "anv": "",
+          "join": "",
+          "role": "Design",
+          "tracks": "",
+          "id": 6045971,
+          "resource_url": "https://api.discogs.com/artists/6045971"
+        },
+        {
+          "name": "Noah Baker",
+          "anv": "",
+          "join": "",
+          "role": "Design",
+          "tracks": "",
+          "id": 7285723,
+          "resource_url": "https://api.discogs.com/artists/7285723"
+        },
+        {
+          "name": "Helmut Erler",
+          "anv": "",
+          "join": "",
+          "role": "Mastered By, Lacquer Cut By",
+          "tracks": "",
+          "id": 524708,
+          "resource_url": "https://api.discogs.com/artists/524708"
+        },
+        {
+          "name": "≠",
+          "anv": "",
+          "join": "",
+          "role": "Mastered By, Lacquer Cut By",
+          "tracks": "",
+          "id": 509563,
+          "resource_url": "https://api.discogs.com/artists/509563"
+        },
+        {
+          "name": "Avalon Emerson",
+          "anv": "",
+          "join": "",
+          "role": "Written By, Producer",
+          "tracks": "",
+          "id": 3632916,
+          "resource_url": "https://api.discogs.com/artists/3632916"
+        }
+      ],
+      "images": [
+        {
+          "type": "primary",
+          "uri": "https://i.discogs.com/JopB76Kn8rMVY6z7PrfxC1fK54kmwVa3iPL7KyNN0kc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDM5/ODY1LTE2MDc3Njk5/ODYtMzIzNy5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/JopB76Kn8rMVY6z7PrfxC1fK54kmwVa3iPL7KyNN0kc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDM5/ODY1LTE2MDc3Njk5/ODYtMzIzNy5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/n3amOu-rkBhDCgClG5z1Ecx8_LOfKSmFaJwQjvTYcws/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDM5/ODY1LTE2MDc3Njk5/ODYtMzIzNy5qcGVn.jpeg",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/9XXQAog-cAlGi9yoSWRQWe4Eps1QPZxjFYO3T3Iij5M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDM5/ODY1LTE2MDc3Njk5/OTAtNDgyNy5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/9XXQAog-cAlGi9yoSWRQWe4Eps1QPZxjFYO3T3Iij5M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDM5/ODY1LTE2MDc3Njk5/OTAtNDgyNy5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/YP3nBdMSY61A8uqy19J4m9zvItp1CsZpv67Xwq6JgME/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDM5/ODY1LTE2MDc3Njk5/OTAtNDgyNy5qcGVn.jpeg",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "thumb": "https://i.discogs.com/n3amOu-rkBhDCgClG5z1Ecx8_LOfKSmFaJwQjvTYcws/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NDM5/ODY1LTE2MDc3Njk5/ODYtMzIzNy5qcGVn.jpeg",
+      "estimated_weight": 230,
+      "blocked_from_sale": false
+    },
+    {
+      "id": 14115405,
+      "status": "Accepted",
+      "year": 2019,
+      "resource_url": "https://api.discogs.com/releases/14115405",
+      "uri": "https://www.discogs.com/release/14115405-Dominik-Eulberg-Mannigfaltig",
+      "artists": [
+        {
+          "name": "Dominik Eulberg",
+          "anv": "",
+          "join": "",
+          "role": "",
+          "tracks": "",
+          "id": 46060,
+          "resource_url": "https://api.discogs.com/artists/46060",
+          "thumbnail_url": "https://i.discogs.com/uqgJB9q4sg2ClKceLYdJJB0XYtCQEKPREL0vHDuzqFI/rs:fit/g:sm/q:40/h:490/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ2MDYw/LTE2Nzk3NDk3Nzgt/NzE5Ny5qcGVn.jpeg"
+        }
+      ],
+      "artists_sort": "Dominik Eulberg",
+      "labels": [
+        {
+          "name": "!K7 Records",
+          "catno": "K7380LP",
+          "entity_type": "1",
+          "entity_type_name": "Label",
+          "id": 29377,
+          "resource_url": "https://api.discogs.com/labels/29377",
+          "thumbnail_url": "https://i.discogs.com/M7c8xe8Ed_KBble1O4fhF9AyI6L6JMqXqDKYph9-nwE/rs:fit/g:sm/q:40/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTI5Mzc3/LTE2NTAzNjM2MTEt/MTIyNy5qcGVn.jpeg"
+        }
+      ],
+      "series": [],
+      "companies": [
+        {
+          "name": "K7 Music GmbH",
+          "catno": "",
+          "entity_type": "13",
+          "entity_type_name": "Phonographic Copyright (p)",
+          "id": 1066614,
+          "resource_url": "https://api.discogs.com/labels/1066614",
+          "thumbnail_url": ""
+        },
+        {
+          "name": "K7 Music GmbH",
+          "catno": "",
+          "entity_type": "14",
+          "entity_type_name": "Copyright (c)",
+          "id": 1066614,
+          "resource_url": "https://api.discogs.com/labels/1066614",
+          "thumbnail_url": ""
+        },
+        {
+          "name": "Calyx Mastering",
+          "catno": "",
+          "entity_type": "30",
+          "entity_type_name": "Lacquer Cut At",
+          "id": 269429,
+          "resource_url": "https://api.discogs.com/labels/269429",
+          "thumbnail_url": "https://i.discogs.com/MD32X7t8RJZOUOZzNO_UVexbGk8xc4RJYqvC9fA68Gc/rs:fit/g:sm/q:40/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTI2OTQy/OS0xNDk5MDAzOTk3/LTM1MzgucG5n.jpeg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "3",
+          "descriptions": ["LP", "Album"]
+        }
+      ],
+      "data_quality": "Correct",
+      "community": {
+        "have": 772,
+        "want": 181,
+        "rating": {
+          "count": 114,
+          "average": 4.71
+        },
+        "submitter": {
+          "username": "dubsteplin",
+          "resource_url": "https://api.discogs.com/users/dubsteplin"
+        },
+        "contributors": [
+          {
+            "username": "dubsteplin",
+            "resource_url": "https://api.discogs.com/users/dubsteplin"
+          },
+          {
+            "username": "Jafs",
+            "resource_url": "https://api.discogs.com/users/Jafs"
+          },
+          {
+            "username": "SpindizzyRecords",
+            "resource_url": "https://api.discogs.com/users/SpindizzyRecords"
+          },
+          {
+            "username": "dark_soul",
+            "resource_url": "https://api.discogs.com/users/dark_soul"
+          },
+          {
+            "username": "CbJack68",
+            "resource_url": "https://api.discogs.com/users/CbJack68"
+          },
+          {
+            "username": "HugoZeips",
+            "resource_url": "https://api.discogs.com/users/HugoZeips"
+          },
+          {
+            "username": "d_electronique",
+            "resource_url": "https://api.discogs.com/users/d_electronique"
+          },
+          {
+            "username": "daxare",
+            "resource_url": "https://api.discogs.com/users/daxare"
+          }
+        ],
+        "data_quality": "Correct",
+        "status": "Accepted"
+      },
+      "format_quantity": 3,
+      "date_added": "2019-09-10T08:58:19-07:00",
+      "date_changed": "2022-03-18T07:18:41-07:00",
+      "num_for_sale": 13,
+      "lowest_price": 15.06,
+      "master_id": 1602347,
+      "master_url": "https://api.discogs.com/masters/1602347",
+      "title": "Mannigfaltig",
+      "country": "Germany",
+      "released": "2019-09-06",
+      "notes": "Made in the EU\n(P) & © K7 Music GmbH\n",
+      "released_formatted": "06 Sep 2019",
+      "identifiers": [
+        {
+          "type": "Barcode",
+          "value": "730003738012",
+          "description": "scanned"
+        },
+        {
+          "type": "Barcode",
+          "value": "7 3000373801 2",
+          "description": "printed"
+        },
+        {
+          "type": "Label Code",
+          "value": "LC07306"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "K7 380 A 33 ⅓ RPM 0438508-A-1 FMW>NN>CALYX 2019",
+          "description": "Side A"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "K7 380 B 33 ⅓ RPM 0438508-B-1 FMW>NN>CALYX 2019",
+          "description": "Side B"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "K7 380 C 33 ⅓ RPM 0438546-C-1 FMW>NN>CALYX 2019",
+          "description": "Side C"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "K7 380 D 33 ⅓ RPM 0438546-D-1 FMW>NN>CALYX 2019",
+          "description": "Side D"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "K7 380 E 33 ⅓ RPM 0438584-E-1 FMW>NN>CALYX 2019",
+          "description": "Side E"
+        },
+        {
+          "type": "Matrix / Runout",
+          "value": "K7 380 F 33 ⅓ RPM 0438584-F-1 FMW>NN>CALYX 2019",
+          "description": "Side F"
+        }
+      ],
+      "videos": [
+        {
+          "uri": "https://www.youtube.com/watch?v=iQ8yh74x_bY",
+          "title": "Dominik Eulberg - Goldene Acht",
+          "description": "From the album ‘Mannigfaltig’ out now on !K7 Records:\nhttps://K7.lnk.to/DominikEulberg\n\nVideo by Jan Haft \n\nFollow Dominik Eulberg:\nhttps://www.facebook.com/dominik.eulberg/\nhttps://twitter.com/dominikeulberg\nhttps://www.instagram.com/dominikeulberg/\n",
+          "duration": 533,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=nTLJaA2hl-8",
+          "title": "Dreizehnspecht (Nathan Fake Remix)",
+          "description": "Provided to YouTube by K7 Records GmbH\n\nDreizehnspecht (Nathan Fake Remix) · Dominik Eulberg\n\nMannigfaltig Remixes (Pt. 1)\n\n℗ 2020 K7 Music GmbH\n\nReleased on: 2020-05-29\n\nMusic  Publisher: Copyright Control\nComposer: Dominik Eulberg\nLyricist: Dominik Eulb",
+          "duration": 494,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=LBH-TlYLQ9Q",
+          "title": "Eintagsfliege",
+          "description": "Provided to YouTube by K7 Records GmbH\n\nEintagsfliege · Dominik Eulberg\n\nMannigfaltig\n\n℗ 2019 K7 Music GmbH\n\nReleased on: 2019-09-06\n\nMusic  Publisher: Copyright Control\nComposer: Dominik Eulberg\nLyricist: Dominik Eulberg\n\nAuto-generated by YouTube.",
+          "duration": 429,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=TxYywu7F7BQ",
+          "title": "Siebenschläfer",
+          "description": "Provided to YouTube by K7 Records GmbH\n\nSiebenschläfer · Dominik Eulberg\n\nMannigfaltig\n\n℗ 2019 K7 Music GmbH\n\nReleased on: 2019-09-06\n\nMusic  Publisher: Copyright Control\nComposer: Dominik Eulberg\nLyricist: Dominik Eulberg\n\nAuto-generated by YouTube.",
+          "duration": 362,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=aCc3tF8Y1Y8",
+          "title": "Zweibrütiger Scheckenfalter",
+          "description": "Provided to YouTube by K7 Records GmbH\n\nZweibrütiger Scheckenfalter · Dominik Eulberg\n\nMannigfaltig\n\n℗ 2019 K7 Music GmbH\n\nReleased on: 2019-09-06\n\nMusic  Publisher: Copyright Control\nComposer: Dominik Eulberg\nLyricist: Dominik Eulberg\n\nAuto-generated by ",
+          "duration": 434,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=c9Y9Hq23eQE",
+          "title": "Elfenbein-Flechtenbärchen",
+          "description": "Provided to YouTube by K7 Records GmbH\n\nElfenbein-Flechtenbärchen · Dominik Eulberg\n\nMannigfaltig\n\n℗ 2019 K7 Music GmbH\n\nReleased on: 2019-09-06\n\nMusic  Publisher: Copyright Control\nComposer: Dominik Eulberg\nLyricist: Dominik Eulberg\n\nAuto-generated by Yo",
+          "duration": 421,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=TAbrIVJfhmA",
+          "title": "Zwölfpunkt-Spargelkäfer",
+          "description": "Provided to YouTube by K7 Records GmbH\n\nZwölfpunkt-Spargelkäfer · Dominik Eulberg\n\nMannigfaltig\n\n℗ 2019 K7 Music GmbH\n\nReleased on: 2019-09-06\n\nMusic  Publisher: Copyright Control\nComposer: Dominik Eulberg\nLyricist: Dominik Eulberg\n\nAuto-generated by YouT",
+          "duration": 284,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=IUtg_oOy1F4",
+          "title": "Zehnpunkt-Marienkäfer",
+          "description": "Provided to YouTube by K7 Records GmbH\n\nZehnpunkt-Marienkäfer · Dominik Eulberg\n\nMannigfaltig\n\n℗ 2019 K7 Music GmbH\n\nReleased on: 2019-09-06\n\nMusic  Publisher: Copyright Control\nComposer: Dominik Eulberg\nLyricist: Dominik Eulberg\n\nAuto-generated by YouTub",
+          "duration": 0,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=3SLuqcDjRqU",
+          "title": "Vierfleck",
+          "description": "Provided to YouTube by K7 Records GmbH\n\nVierfleck · Dominik Eulberg\n\nMannigfaltig\n\n℗ 2019 K7 Music GmbH\n\nReleased on: 2019-09-06\n\nMusic  Publisher: Copyright Control\nComposer: Dominik Eulberg\nLyricist: Dominik Eulberg\n\nAuto-generated by YouTube.",
+          "duration": 373,
+          "embed": true
+        },
+        {
+          "uri": "https://www.youtube.com/watch?v=s87nTC1rGf4",
+          "title": "Sechslinien-Bodeneule",
+          "description": "Provided to YouTube by K7 Records GmbH\n\nSechslinien-Bodeneule · Dominik Eulberg\n\nMannigfaltig\n\n℗ 2019 K7 Music GmbH\n\nReleased on: 2019-09-06\n\nMusic  Publisher: Copyright Control\nComposer: Dominik Eulberg\nLyricist: Dominik Eulberg\n\nAuto-generated by YouTub",
+          "duration": 517,
+          "embed": true
+        }
+      ],
+      "genres": ["Electronic"],
+      "styles": ["Techno"],
+      "tracklist": [
+        {
+          "position": "A1",
+          "type_": "track",
+          "title": "Eintagsfliege",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "type_": "track",
+          "title": "Zweibrütiger Scheckenfalter",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "type_": "track",
+          "title": "Dreizehenspecht",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "type_": "track",
+          "title": "Vierfleck",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "type_": "track",
+          "title": "Fünffleck-Widderchen",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "type_": "track",
+          "title": "Sechslinien-Bodeneule",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "type_": "track",
+          "title": "Siebenschläfer",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "type_": "track",
+          "title": "Goldene Acht",
+          "duration": ""
+        },
+        {
+          "position": "E1",
+          "type_": "track",
+          "title": "Neuntöter",
+          "duration": ""
+        },
+        {
+          "position": "E2",
+          "type_": "track",
+          "title": "Zehnpunkt-Marienkäfer",
+          "duration": ""
+        },
+        {
+          "position": "F1",
+          "type_": "track",
+          "title": "Elfenbein-Flechtenbärchen",
+          "duration": ""
+        },
+        {
+          "position": "F2",
+          "type_": "track",
+          "title": "Zwölfpunkt-Spargelkäfer",
+          "duration": ""
+        }
+      ],
+      "extraartists": [
+        {
+          "name": "Götz Gramlich",
+          "anv": "",
+          "join": "",
+          "role": "Artwork",
+          "tracks": "",
+          "id": 6568777,
+          "resource_url": "https://api.discogs.com/artists/6568777"
+        },
+        {
+          "name": "FMW (2)",
+          "anv": "",
+          "join": "",
+          "role": "Lacquer Cut By",
+          "tracks": "",
+          "id": 4954699,
+          "resource_url": "https://api.discogs.com/artists/4954699"
+        },
+        {
+          "name": "Norman Nitzsche",
+          "anv": "NN",
+          "join": "",
+          "role": "Lacquer Cut By",
+          "tracks": "",
+          "id": 280167,
+          "resource_url": "https://api.discogs.com/artists/280167"
+        },
+        {
+          "name": "Christopher Schmidt (2)",
+          "anv": "",
+          "join": "",
+          "role": "Painting [Drawings]",
+          "tracks": "",
+          "id": 7310286,
+          "resource_url": "https://api.discogs.com/artists/7310286"
+        },
+        {
+          "name": "Dominik Eulberg",
+          "anv": "",
+          "join": "",
+          "role": "Producer, Written-By",
+          "tracks": "",
+          "id": 46060,
+          "resource_url": "https://api.discogs.com/artists/46060"
+        }
+      ],
+      "images": [
+        {
+          "type": "primary",
+          "uri": "https://i.discogs.com/hrAWCASekSUYFtAXQpYNw-lsWvLMCSN-2ip09kMKHYE/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTktNDQ4Ni5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/hrAWCASekSUYFtAXQpYNw-lsWvLMCSN-2ip09kMKHYE/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTktNDQ4Ni5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/y-H1WnsrMKYwt_9v-7iC5WSe8Jszi3yV9IBlT3uh9JE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTktNDQ4Ni5qcGVn.jpeg",
+          "width": 600,
+          "height": 592
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/XBnDWQ-45Y1UnHKJTdnJhx0FLgZFxIgIm4wQLQQRTj4/rs:fit/g:sm/q:90/h:605/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtNzU4OS5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/XBnDWQ-45Y1UnHKJTdnJhx0FLgZFxIgIm4wQLQQRTj4/rs:fit/g:sm/q:90/h:605/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtNzU4OS5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/kxk33kbwbY1f1dViECIZQeQa0ywk7pK-MPO7iK7Fqe8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtNzU4OS5qcGVn.jpeg",
+          "width": 600,
+          "height": 605
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/0JsnTDnwBzIc5FFO941lsJcLWmMhvmpaFoEskVy5eTg/rs:fit/g:sm/q:90/h:574/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTktMjUxMC5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/0JsnTDnwBzIc5FFO941lsJcLWmMhvmpaFoEskVy5eTg/rs:fit/g:sm/q:90/h:574/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTktMjUxMC5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/9pZpPB-y7zTPNjZG6zHehVWxv6v9OqlP17JSvdRVzS0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTktMjUxMC5qcGVn.jpeg",
+          "width": 600,
+          "height": 574
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/0bNj29NW9V8qhsfWWe8T7lkc1xhGAl07ra8H0qC6b1c/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTYtMzI5My5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/0bNj29NW9V8qhsfWWe8T7lkc1xhGAl07ra8H0qC6b1c/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTYtMzI5My5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/3AK6HohxtZIhYBuWvvgty5L9Ok4CwY0aKqUat8cCE2g/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTYtMzI5My5qcGVn.jpeg",
+          "width": 600,
+          "height": 590
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/SaYFf7i4yUQATD5r2a-66agJRjqc5BRWEkLbFmw1R8o/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtNjYyNS5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/SaYFf7i4yUQATD5r2a-66agJRjqc5BRWEkLbFmw1R8o/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtNjYyNS5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/2K38u0cwrGfQKreZXvVeetBbSqKuFN7NbaI2Tw6jwV4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtNjYyNS5qcGVn.jpeg",
+          "width": 600,
+          "height": 594
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/LLcQw3OZSu3JUGVJR048iSM1r-xIxwPzpuZdV_ZcDDQ/rs:fit/g:sm/q:90/h:581/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTYtMzI0OS5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/LLcQw3OZSu3JUGVJR048iSM1r-xIxwPzpuZdV_ZcDDQ/rs:fit/g:sm/q:90/h:581/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTYtMzI0OS5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/mSZNPTa_g6Neu8YeF4I0AAA7GlwETVj237UKoEgRsyE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTYtMzI0OS5qcGVn.jpeg",
+          "width": 600,
+          "height": 581
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/FHwl_fQ3OjozgHw24QZXVOwlaaLk6x-Z7HvTSSw6txQ/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtNjQxMS5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/FHwl_fQ3OjozgHw24QZXVOwlaaLk6x-Z7HvTSSw6txQ/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtNjQxMS5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/HFCct5Lqd9KHrwVypofuXyptgeT1xbVKuWDZRuGg8d0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtNjQxMS5qcGVn.jpeg",
+          "width": 600,
+          "height": 588
+        },
+        {
+          "type": "secondary",
+          "uri": "https://i.discogs.com/oBeZ7_JRXJ9AejCvthKocS25jFbc6fLFvdmIWI_kINs/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtODg2My5qcGVn.jpeg",
+          "resource_url": "https://i.discogs.com/oBeZ7_JRXJ9AejCvthKocS25jFbc6fLFvdmIWI_kINs/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtODg2My5qcGVn.jpeg",
+          "uri150": "https://i.discogs.com/0MgBSo6hMktIzXsITmKW_GuiFAfc7wjwkeOXWFV8tTU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTgtODg2My5qcGVn.jpeg",
+          "width": 600,
+          "height": 576
+        }
+      ],
+      "thumb": "https://i.discogs.com/y-H1WnsrMKYwt_9v-7iC5WSe8Jszi3yV9IBlT3uh9JE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTE1/NDA1LTE2MjQ3OTg3/OTktNDQ4Ni5qcGVn.jpeg",
+      "estimated_weight": 690,
+      "blocked_from_sale": false
+    }
+  ]
+}
