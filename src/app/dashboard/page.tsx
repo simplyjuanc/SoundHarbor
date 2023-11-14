@@ -1,8 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { addNewReleases } from '@/lib/actions/addNewReleases';
+import { cookies } from 'next/headers';
 
 export default async function Dashboard() {
+  const spotifyToken = cookies().get('spotify_access_token')?.value;
+  const discogsReleasesOwned: any[] = await addNewReleases(spotifyToken!);
+  console.log('discogsReleasesOwned[0] :>> ', discogsReleasesOwned[0]);
+
   return (
     <article className='mx-8 flex flex-col '>
       <Image

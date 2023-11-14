@@ -7,7 +7,7 @@ import { searchSpotifyAlbum } from "../utils/spotifyUtils";
 
 
 export const getAllReleases = async () => {
-  return await prisma.release.findMany({});
+  return await prisma.release.findMany({orderBy: {artists:'asc'}});
 }
 
 
@@ -56,15 +56,17 @@ const normaliseReleaseData = (discogsAlbum: IDiscogsRelease, spotifyAlbum: Relea
 };
 
 
+
+//TODO currently  working with mock data, need to amke sure I can get all the info from both services
 export const getFullReleaseData = async (artist: string, title: string, spotifyToken: string) => {
   // const discogsId = (await searchDiscogs(artist, title)).id;
   // const discogsResult = await getDiscogsRelease(discogsId);
   // const spotifyResult = await searchSpotifyAlbum(discogsResult.artists[0], discogsResult.title, spotifyToken);
   // return normaliseReleaseData(discogsResult, spotifyResult);
-  
+
   // REMOVE_START
   const releasesMock = JSON.parse(fs.readFileSync('/Users/juanvasquez/Desktop/repos/codeworks/sound-harbor/src/lib/mocks/discogs.collection.abridged.json', 'utf-8')).releases
-  const discogsResults:any[] = releasesMock.map((i: { basic_information: any; }) => i.basic_information);
+  const discogsResults: any[] = releasesMock.map((i: { basic_information: any; }) => i.basic_information);
   const discogInfo = discogsResults.filter(i => i.artists[0].name === artist)[0]
   // console.log('discogInfo :>> ', discogInfo);
   // discogInfo.artists = {name: discogInfo[0].artists};
@@ -75,3 +77,6 @@ export const getFullReleaseData = async (artist: string, title: string, spotifyT
   // REMOVE_END
 }
 
+export const deleteRelease = async (id: string) => {
+  return await prisma.release.delete({ where: { id } })
+}

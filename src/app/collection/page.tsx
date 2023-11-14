@@ -2,14 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import RecordCard from '@/components/RecordCard';
 import Link from 'next/link';
-import { cookies } from 'next/headers';
-import { addNewReleases } from '../../lib/actions/addNewReleases';
+import { getAllReleases } from '@/lib/models/releases.model';
+import { Release } from '@prisma/client';
 
 export default async function Collection() {
 
-  const spotifyToken = cookies().get('spotify_access_token')?.value;
-  const discogsReleasesOwned: any[] = await addNewReleases(spotifyToken!);
-  console.log('discogsReleasesOwned[0] :>> ', discogsReleasesOwned[0]);
+  // const spotifyToken = cookies().get('spotify_access_token')?.value;
+  const releases: Release[] = await getAllReleases();
+  // console.log('discogsReleasesOwned[0] :>> ', discogsReleasesOwned[0]);
 
   return (
     <>
@@ -27,9 +27,9 @@ export default async function Collection() {
             <button className='btn btn-secondary'>Add record</button>
           </Link>
         </div>
-        <div className='flex flex-wrap mx-auto gap-6 mt-8 justify-center'>
-          {discogsReleasesOwned &&
-            discogsReleasesOwned.map((release) => (
+        <div className='flex flex-wrap mx-auto gap-6 my-8 justify-center'>
+          {releases &&
+            releases.map((release) => (
               <Link href={`collection/${release.id}`} key={release.id}>
                 <RecordCard
                   key={release.id}

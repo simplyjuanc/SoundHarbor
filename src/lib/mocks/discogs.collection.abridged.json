@@ -1,316 +1,722 @@
 {
   "pagination": {
-      "page": 1,
-      "pages": 1,
-      "per_page": 100,
-      "items": 63,
-      "urls": {}
+    "page": 1,
+    "pages": 1,
+    "per_page": 100,
+    "items": 63,
+    "urls": {}
   },
   "releases": [
-      {
-          "id": 14115405,
-          "instance_id": 464223911,
-          "date_added": "2020-04-30T10:19:27-07:00",
-          "rating": 0,
-          "basic_information": {
-              "id": 14115405,
-              "master_id": 1602347,
-              "master_url": "https://api.discogs.com/masters/1602347",
-              "resource_url": "https://api.discogs.com/releases/14115405",
-              "thumb": "",
-              "cover_image": "",
-              "title": "Mannigfaltig",
-              "year": 2019,
-              "formats": [
-                  {
-                      "name": "Vinyl",
-                      "qty": "3",
-                      "descriptions": [
-                          "LP",
-                          "Album"
-                      ]
-                  }
-              ],
-              "artists": [
-                  {
-                      "name": "Dominik Eulberg",
-                      "anv": "",
-                      "join": "",
-                      "role": "",
-                      "tracks": "",
-                      "id": 46060,
-                      "resource_url": "https://api.discogs.com/artists/46060"
-                  }
-              ],
-              "labels": [
-                  {
-                      "name": "!K7 Records",
-                      "catno": "K7380LP",
-                      "entity_type": "1",
-                      "entity_type_name": "Label",
-                      "id": 29377,
-                      "resource_url": "https://api.discogs.com/labels/29377"
-                  }
-              ],
-              "genres": [
-                  "Electronic"
-              ],
-              "styles": [
-                  "Techno"
-              ]
+    {
+      "id": 14115405,
+      "instance_id": 464223911,
+      "date_added": "2020-04-30T10:19:27-07:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 14115405,
+        "master_id": 1602347,
+        "master_url": "https://api.discogs.com/masters/1602347",
+        "resource_url": "https://api.discogs.com/releases/14115405",
+        "thumb": "",
+        "cover_image": "",
+        "title": "Mannigfaltig",
+        "year": 2019,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "3",
+            "descriptions": ["LP", "Album"]
           }
-      },
-      {
-          "id": 16439865,
-          "instance_id": 547538214,
-          "date_added": "2020-12-21T13:57:29-08:00",
-          "rating": 0,
-          "basic_information": {
-              "id": 16439865,
-              "master_id": 0,
-              "master_url": null,
-              "resource_url": "https://api.discogs.com/releases/16439865",
-              "thumb": "",
-              "cover_image": "",
-              "title": "040",
-              "year": 2020,
-              "formats": [
-                  {
-                      "name": "Vinyl",
-                      "qty": "1",
-                      "descriptions": [
-                          "12\"",
-                          "45 RPM"
-                      ]
-                  }
-              ],
-              "artists": [
-                  {
-                      "name": "Avalon Emerson",
-                      "anv": "",
-                      "join": "",
-                      "role": "",
-                      "tracks": "",
-                      "id": 3632916,
-                      "resource_url": "https://api.discogs.com/artists/3632916"
-                  }
-              ],
-              "labels": [
-                  {
-                      "name": "AD 93",
-                      "catno": "WHYT040",
-                      "entity_type": "1",
-                      "entity_type_name": "Label",
-                      "id": 1872085,
-                      "resource_url": "https://api.discogs.com/labels/1872085"
-                  },
-                  {
-                      "name": "AD 93",
-                      "catno": "Whyt040",
-                      "entity_type": "1",
-                      "entity_type_name": "Label",
-                      "id": 1872085,
-                      "resource_url": "https://api.discogs.com/labels/1872085"
-                  }
-              ],
-              "genres": [
-                  "Electronic"
-              ],
-              "styles": [
-                  "Techno",
-                  "Experimental"
-              ]
+        ],
+        "artists": [
+          {
+            "name": "Dominik Eulberg",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 46060,
+            "resource_url": "https://api.discogs.com/artists/46060"
           }
-      },
-      {
-          "id": 24455792,
-          "instance_id": 1181974219,
-          "date_added": "2022-11-15T02:44:19-08:00",
-          "rating": 0,
-          "basic_information": {
-              "id": 24455792,
-              "master_id": 27126,
-              "master_url": "https://api.discogs.com/masters/27126",
-              "resource_url": "https://api.discogs.com/releases/24455792",
-              "thumb": "",
-              "cover_image": "",
-              "title": "Alive 2007",
-              "year": 2022,
-              "formats": [
-                  {
-                      "name": "Vinyl",
-                      "qty": "2",
-                      "descriptions": [
-                          "LP",
-                          "Album",
-                          "Mixed",
-                          "Reissue"
-                      ]
-                  }
-              ],
-              "artists": [
-                  {
-                      "name": "Daft Punk",
-                      "anv": "",
-                      "join": "",
-                      "role": "",
-                      "tracks": "",
-                      "id": 1289,
-                      "resource_url": "https://api.discogs.com/artists/1289"
-                  }
-              ],
-              "labels": [
-                  {
-                      "name": "ADA (6)",
-                      "catno": "01902996611964",
-                      "entity_type": "1",
-                      "entity_type_name": "Label",
-                      "id": 759127,
-                      "resource_url": "https://api.discogs.com/labels/759127"
-                  }
-              ],
-              "genres": [
-                  "Electronic"
-              ],
-              "styles": [
-                  "House",
-                  "French House"
-              ]
+        ],
+        "labels": [
+          {
+            "name": "!K7 Records",
+            "catno": "K7380LP",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 29377,
+            "resource_url": "https://api.discogs.com/labels/29377"
           }
-      },
-      {
-          "id": 15500246,
-          "instance_id": 489013397,
-          "date_added": "2020-07-13T17:02:53-07:00",
-          "rating": 0,
-          "basic_information": {
-              "id": 15500246,
-              "master_id": 75635,
-              "master_url": "https://api.discogs.com/masters/75635",
-              "resource_url": "https://api.discogs.com/releases/15500246",
-              "thumb": "",
-              "cover_image": "",
-              "title": "The Primitive Painter",
-              "year": 2020,
-              "formats": [
-                  {
-                      "name": "Vinyl",
-                      "qty": "2",
-                      "text": "White",
-                      "descriptions": [
-                          "12\"",
-                          "33 ⅓ RPM",
-                          "Album",
-                          "Limited Edition",
-                          "Reissue",
-                          "Remastered"
-                      ]
-                  }
-              ],
-              "artists": [
-                  {
-                      "name": "The Primitive Painter",
-                      "anv": "",
-                      "join": "",
-                      "role": "",
-                      "tracks": "",
-                      "id": 35958,
-                      "resource_url": "https://api.discogs.com/artists/35958"
-                  }
-              ],
-              "labels": [
-                  {
-                      "name": "Apollo",
-                      "catno": "AMB2005",
-                      "entity_type": "1",
-                      "entity_type_name": "Label",
-                      "id": 683,
-                      "resource_url": "https://api.discogs.com/labels/683"
-                  }
-              ],
-              "genres": [
-                  "Electronic"
-              ],
-              "styles": [
-                  "IDM",
-                  "Ambient"
-              ]
-          }
-      },
-      {
-          "id": 6246137,
-          "instance_id": 892707949,
-          "date_added": "2021-12-27T03:35:18-08:00",
-          "rating": 0,
-          "basic_information": {
-              "id": 6246137,
-              "master_id": 751603,
-              "master_url": "https://api.discogs.com/masters/751603",
-              "resource_url": "https://api.discogs.com/releases/6246137",
-              "thumb": "",
-              "cover_image": "",
-              "title": "With A Little Help From My Fwends",
-              "year": 2014,
-              "formats": [
-                  {
-                      "name": "Vinyl",
-                      "qty": "1",
-                      "text": "Orange",
-                      "descriptions": [
-                          "LP",
-                          "Album",
-                          "Limited Edition"
-                      ]
-                  },
-                  {
-                      "name": "CD",
-                      "qty": "1",
-                      "descriptions": [
-                          "Album"
-                      ]
-                  },
-                  {
-                      "name": "All Media",
-                      "qty": "1"
-                  }
-              ],
-              "artists": [
-                  {
-                      "name": "The Flaming Lips",
-                      "anv": "",
-                      "join": "",
-                      "role": "",
-                      "tracks": "",
-                      "id": 67156,
-                      "resource_url": "https://api.discogs.com/artists/67156"
-                  }
-              ],
-              "labels": [
-                  {
-                      "name": "Bella Union",
-                      "catno": "BELLA457V",
-                      "entity_type": "1",
-                      "entity_type_name": "Label",
-                      "id": 2201,
-                      "resource_url": "https://api.discogs.com/labels/2201"
-                  },
-                  {
-                      "name": "Lovely Sorts of Death Records",
-                      "catno": "BELLA457V",
-                      "entity_type": "1",
-                      "entity_type_name": "Label",
-                      "id": 237976,
-                      "resource_url": "https://api.discogs.com/labels/237976"
-                  }
-              ],
-              "genres": [
-                  "Electronic",
-                  "Rock"
-              ],
-              "styles": [
-                  "Acid Rock"
-              ]
-          }
+        ],
+        "genres": ["Electronic"],
+        "styles": ["Techno"]
       }
+    },
+    {
+      "id": 16439865,
+      "instance_id": 547538214,
+      "date_added": "2020-12-21T13:57:29-08:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 16439865,
+        "master_id": 0,
+        "master_url": null,
+        "resource_url": "https://api.discogs.com/releases/16439865",
+        "thumb": "",
+        "cover_image": "",
+        "title": "040",
+        "year": 2020,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "1",
+            "descriptions": ["12\"", "45 RPM"]
+          }
+        ],
+        "artists": [
+          {
+            "name": "Avalon Emerson",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 3632916,
+            "resource_url": "https://api.discogs.com/artists/3632916"
+          }
+        ],
+        "labels": [
+          {
+            "name": "AD 93",
+            "catno": "WHYT040",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 1872085,
+            "resource_url": "https://api.discogs.com/labels/1872085"
+          },
+          {
+            "name": "AD 93",
+            "catno": "Whyt040",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 1872085,
+            "resource_url": "https://api.discogs.com/labels/1872085"
+          }
+        ],
+        "genres": ["Electronic"],
+        "styles": ["Techno", "Experimental"]
+      }
+    },
+    {
+      "id": 24455792,
+      "instance_id": 1181974219,
+      "date_added": "2022-11-15T02:44:19-08:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 24455792,
+        "master_id": 27126,
+        "master_url": "https://api.discogs.com/masters/27126",
+        "resource_url": "https://api.discogs.com/releases/24455792",
+        "thumb": "",
+        "cover_image": "",
+        "title": "Alive 2007",
+        "year": 2022,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "2",
+            "descriptions": ["LP", "Album", "Mixed", "Reissue"]
+          }
+        ],
+        "artists": [
+          {
+            "name": "Daft Punk",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 1289,
+            "resource_url": "https://api.discogs.com/artists/1289"
+          }
+        ],
+        "labels": [
+          {
+            "name": "ADA (6)",
+            "catno": "01902996611964",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 759127,
+            "resource_url": "https://api.discogs.com/labels/759127"
+          }
+        ],
+        "genres": ["Electronic"],
+        "styles": ["House", "French House"]
+      }
+    },
+    {
+      "id": 15500246,
+      "instance_id": 489013397,
+      "date_added": "2020-07-13T17:02:53-07:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 15500246,
+        "master_id": 75635,
+        "master_url": "https://api.discogs.com/masters/75635",
+        "resource_url": "https://api.discogs.com/releases/15500246",
+        "thumb": "",
+        "cover_image": "",
+        "title": "The Primitive Painter",
+        "year": 2020,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "2",
+            "text": "White",
+            "descriptions": [
+              "12\"",
+              "33 ⅓ RPM",
+              "Album",
+              "Limited Edition",
+              "Reissue",
+              "Remastered"
+            ]
+          }
+        ],
+        "artists": [
+          {
+            "name": "The Primitive Painter",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 35958,
+            "resource_url": "https://api.discogs.com/artists/35958"
+          }
+        ],
+        "labels": [
+          {
+            "name": "Apollo",
+            "catno": "AMB2005",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 683,
+            "resource_url": "https://api.discogs.com/labels/683"
+          }
+        ],
+        "genres": ["Electronic"],
+        "styles": ["IDM", "Ambient"]
+      }
+    },
+    {
+      "id": 6246137,
+      "instance_id": 892707949,
+      "date_added": "2021-12-27T03:35:18-08:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 6246137,
+        "master_id": 751603,
+        "master_url": "https://api.discogs.com/masters/751603",
+        "resource_url": "https://api.discogs.com/releases/6246137",
+        "thumb": "",
+        "cover_image": "",
+        "title": "With A Little Help From My Fwends",
+        "year": 2014,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "1",
+            "text": "Orange",
+            "descriptions": ["LP", "Album", "Limited Edition"]
+          },
+          {
+            "name": "CD",
+            "qty": "1",
+            "descriptions": ["Album"]
+          },
+          {
+            "name": "All Media",
+            "qty": "1"
+          }
+        ],
+        "artists": [
+          {
+            "name": "The Flaming Lips",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 67156,
+            "resource_url": "https://api.discogs.com/artists/67156"
+          }
+        ],
+        "labels": [
+          {
+            "name": "Bella Union",
+            "catno": "BELLA457V",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 2201,
+            "resource_url": "https://api.discogs.com/labels/2201"
+          },
+          {
+            "name": "Lovely Sorts of Death Records",
+            "catno": "BELLA457V",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 237976,
+            "resource_url": "https://api.discogs.com/labels/237976"
+          }
+        ],
+        "genres": ["Electronic", "Rock"],
+        "styles": ["Acid Rock"]
+      }
+    },
+    {
+      "id": 1786820,
+      "instance_id": 502832369,
+      "date_added": "2020-08-31T16:12:24-07:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 1786820,
+        "master_id": 82410,
+        "master_url": "https://api.discogs.com/masters/82410",
+        "resource_url": "https://api.discogs.com/releases/1786820",
+        "thumb": "",
+        "cover_image": "",
+        "title": "Moderat",
+        "year": 2009,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "1",
+            "descriptions": ["LP", "Album"]
+          }
+        ],
+        "artists": [
+          {
+            "name": "Moderat",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 92209,
+            "resource_url": "https://api.discogs.com/artists/92209"
+          }
+        ],
+        "labels": [
+          {
+            "name": "BPitch Control",
+            "catno": "BPC 200",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 1466,
+            "resource_url": "https://api.discogs.com/labels/1466"
+          }
+        ],
+        "genres": ["Electronic", "Hip Hop"],
+        "styles": ["IDM", "Techno", "Dubstep", "Electro"]
+      }
+    },
+    {
+      "id": 1062367,
+      "instance_id": 540904743,
+      "date_added": "2020-12-14T02:55:54-08:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 1062367,
+        "master_id": 25789,
+        "master_url": "https://api.discogs.com/masters/25789",
+        "resource_url": "https://api.discogs.com/releases/1062367",
+        "thumb": "",
+        "cover_image": "",
+        "title": "Happy Birthday!",
+        "year": 2007,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "2",
+            "descriptions": ["LP", "Album"]
+          }
+        ],
+        "artists": [
+          {
+            "name": "Modeselektor",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 34120,
+            "resource_url": "https://api.discogs.com/artists/34120"
+          }
+        ],
+        "labels": [
+          {
+            "name": "BPitch Control",
+            "catno": "BPC159 LP",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 1466,
+            "resource_url": "https://api.discogs.com/labels/1466"
+          },
+          {
+            "name": "BPitch Control",
+            "catno": "BPC159",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 1466,
+            "resource_url": "https://api.discogs.com/labels/1466"
+          },
+          {
+            "name": "BPitch Control",
+            "catno": "BPC 159",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 1466,
+            "resource_url": "https://api.discogs.com/labels/1466"
+          }
+        ],
+        "genres": ["Electronic"],
+        "styles": ["Glitch", "IDM", "Electro", "Hip Hop"]
+      }
+    },
+    {
+      "id": 660574,
+      "instance_id": 520042994,
+      "date_added": "2020-10-29T16:12:07-07:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 660574,
+        "master_id": 53063,
+        "master_url": "https://api.discogs.com/masters/53063",
+        "resource_url": "https://api.discogs.com/releases/660574",
+        "thumb": "",
+        "cover_image": "",
+        "title": "Destroy Rock & Roll",
+        "year": 2005,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "2",
+            "descriptions": ["LP", "Album"]
+          }
+        ],
+        "artists": [
+          {
+            "name": "Mylo",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 105042,
+            "resource_url": "https://api.discogs.com/artists/105042"
+          }
+        ],
+        "labels": [
+          {
+            "name": "Breastfed",
+            "catno": "BFD007LPX",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 47428,
+            "resource_url": "https://api.discogs.com/labels/47428"
+          }
+        ],
+        "genres": ["Electronic"],
+        "styles": ["House", "Electro"]
+      }
+    },
+    {
+      "id": 5929392,
+      "instance_id": 762373870,
+      "date_added": "2021-07-22T09:26:20-07:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 5929392,
+        "master_id": 31602,
+        "master_url": "https://api.discogs.com/masters/31602",
+        "resource_url": "https://api.discogs.com/releases/5929392",
+        "thumb": "",
+        "cover_image": "",
+        "title": "Amigos",
+        "year": 1976,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "1",
+            "text": "Gatefold",
+            "descriptions": ["LP", "Album", "Club Edition"]
+          }
+        ],
+        "artists": [
+          {
+            "name": "Santana",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 30724,
+            "resource_url": "https://api.discogs.com/artists/30724"
+          }
+        ],
+        "labels": [
+          {
+            "name": "CBS",
+            "catno": "CBS 64497",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 3072,
+            "resource_url": "https://api.discogs.com/labels/3072"
+          }
+        ],
+        "genres": ["Rock"],
+        "styles": []
+      }
+    },
+    {
+      "id": 3380043,
+      "instance_id": 540902103,
+      "date_added": "2020-12-14T02:50:08-08:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 3380043,
+        "master_id": 305947,
+        "master_url": "https://api.discogs.com/masters/305947",
+        "resource_url": "https://api.discogs.com/releases/3380043",
+        "thumb": "",
+        "cover_image": "",
+        "title": "Space Is Only Noise",
+        "year": 2012,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "1",
+            "descriptions": ["LP", "Album", "Reissue"]
+          }
+        ],
+        "artists": [
+          {
+            "name": "Nicolas Jaar",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 1096231,
+            "resource_url": "https://api.discogs.com/artists/1096231"
+          }
+        ],
+        "labels": [
+          {
+            "name": "Circus Company",
+            "catno": "CCS055-2",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 6339,
+            "resource_url": "https://api.discogs.com/labels/6339"
+          }
+        ],
+        "genres": ["Electronic"],
+        "styles": ["Downtempo", "Deep House", "Ambient"]
+      }
+    },
+    {
+      "id": 14856197,
+      "instance_id": 464223406,
+      "date_added": "2020-04-30T10:17:34-07:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 14856197,
+        "master_id": 1688972,
+        "master_url": "https://api.discogs.com/masters/1688972",
+        "resource_url": "https://api.discogs.com/releases/14856197",
+        "thumb": "",
+        "cover_image": "",
+        "title": "Suddenly",
+        "year": 2020,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "1",
+            "text": "Blue",
+            "descriptions": ["LP", "Album", "Limited Edition"]
+          },
+          {
+            "name": "CD",
+            "qty": "1",
+            "descriptions": ["Mixed"]
+          }
+        ],
+        "artists": [
+          {
+            "name": "Caribou",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 275841,
+            "resource_url": "https://api.discogs.com/artists/275841"
+          }
+        ],
+        "labels": [
+          {
+            "name": "City Slang",
+            "catno": "SLANG50247LP",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 2441,
+            "resource_url": "https://api.discogs.com/labels/2441"
+          }
+        ],
+        "genres": ["Electronic", "Rock"],
+        "styles": ["House", "Indie Rock"]
+      }
+    },
+    {
+      "id": 2235245,
+      "instance_id": 540901371,
+      "date_added": "2020-12-14T02:48:45-08:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 2235245,
+        "master_id": 240989,
+        "master_url": "https://api.discogs.com/masters/240989",
+        "resource_url": "https://api.discogs.com/releases/2235245",
+        "thumb": "",
+        "cover_image": "",
+        "title": "Swim",
+        "year": 2010,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "2",
+            "text": "180 Gram",
+            "descriptions": ["LP", "Album"]
+          }
+        ],
+        "artists": [
+          {
+            "name": "Caribou",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 275841,
+            "resource_url": "https://api.discogs.com/artists/275841"
+          }
+        ],
+        "labels": [
+          {
+            "name": "City Slang",
+            "catno": "SLANG9550055",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 2441,
+            "resource_url": "https://api.discogs.com/labels/2441"
+          }
+        ],
+        "genres": ["Electronic"],
+        "styles": ["Techno", "Electro", "Experimental", "Deep House", "Minimal"]
+      }
+    },
+    {
+      "id": 15511221,
+      "instance_id": 547537674,
+      "date_added": "2020-12-21T13:56:52-08:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 15511221,
+        "master_id": 1727923,
+        "master_url": "https://api.discogs.com/masters/1727923",
+        "resource_url": "https://api.discogs.com/releases/15511221",
+        "thumb": "",
+        "cover_image": "",
+        "title": "Mordechai",
+        "year": 2020,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "1",
+            "text": "Pink Translucent ",
+            "descriptions": ["LP", "Album", "Limited Edition", "Stereo"]
+          }
+        ],
+        "artists": [
+          {
+            "name": "Khruangbin",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 3565949,
+            "resource_url": "https://api.discogs.com/artists/3565949"
+          }
+        ],
+        "labels": [
+          {
+            "name": "Dead Oceans",
+            "catno": "DOC193LP-C1",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 94740,
+            "resource_url": "https://api.discogs.com/labels/94740"
+          },
+          {
+            "name": "Night Time Stories",
+            "catno": "DOC193LP-C1",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 1409593,
+            "resource_url": "https://api.discogs.com/labels/1409593"
+          }
+        ],
+        "genres": ["Rock", "Funk / Soul"],
+        "styles": ["Funk", "Psychedelic", "Disco", "Rhythm & Blues"]
+      }
+    },
+    {
+      "id": 592674,
+      "instance_id": 589487188,
+      "date_added": "2021-01-28T11:45:47-08:00",
+      "rating": 0,
+      "basic_information": {
+        "id": 592674,
+        "master_id": 30129,
+        "master_url": "https://api.discogs.com/masters/30129",
+        "resource_url": "https://api.discogs.com/releases/592674",
+        "thumb": "",
+        "cover_image": "",
+        "title": "Doggystyle",
+        "year": 2001,
+        "formats": [
+          {
+            "name": "Vinyl",
+            "qty": "2",
+            "descriptions": ["LP", "Album", "Reissue", "Remastered"]
+          }
+        ],
+        "artists": [
+          {
+            "name": "Snoop Dogg",
+            "anv": "Snoop Doggy Dogg",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 132084,
+            "resource_url": "https://api.discogs.com/artists/132084"
+          }
+        ],
+        "labels": [
+          {
+            "name": "Death Row Records (2)",
+            "catno": "DRR 63002-1",
+            "entity_type": "1",
+            "entity_type_name": "Label",
+            "id": 19737,
+            "resource_url": "https://api.discogs.com/labels/19737"
+          }
+        ],
+        "genres": ["Hip Hop"],
+        "styles": ["Gangsta", "G-Funk"]
+      }
+    }
   ]
 }

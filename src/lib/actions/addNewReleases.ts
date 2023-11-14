@@ -10,18 +10,18 @@ import {
 } from '@/lib/models/releases.model';
 import { Release } from '@prisma/client';
 
+//TODO currently  working with mock data, need to amke sure I can get all the info from both services
 export async function addNewReleases(spotifyToken: string): Promise<Release[]> {
-  const releasesOwned = await getAllReleases();
+  // const releasesOwned = await getAllReleases();
+  // const releasesIds: string[] = releasesOwned.map((release) => release.id);
+  // const userCollection: any[] = JSON.parse(getUserItems).releases;
+  // const discogsReleasesIds: string[] = userCollection.map(
+  //   (release) => release.id
+  // );
 
-  const releasesIds: string[] = releasesOwned.map((release) => release.id);
-  const userCollection: any[] = JSON.parse(getUserItems).releases;
-  const discogsReleasesIds: string[] = userCollection.map(
-    (release) => release.id
-  );
-
-  const newReleasesIds = discogsReleasesIds.filter(
-    (id) => releasesIds.indexOf(id) === -1
-  );
+  // const newReleasesIds = discogsReleasesIds.filter(
+  //   (id) => releasesIds.indexOf(id) === -1
+  // );
   // const newReleases = await getDiscogsReleasesThrottled(newReleasesIds);
   // const parsedReleases = newReleasesOwned.map((release) => parseDiscogsRelease(release));
   
@@ -33,8 +33,8 @@ export async function addNewReleases(spotifyToken: string): Promise<Release[]> {
     newReleases.map((item) => getFullReleaseData(item.artists[0].name, item.title, spotifyToken)
     )
   );
+  // REMOVE_END
 
-// REMOVE_END
   // const newReleasesData: Release[] = await Promise.all(
   //   newReleases.map((item) => getFullReleaseData(item.artists[0], item.title, spotifyToken)
   //   )
