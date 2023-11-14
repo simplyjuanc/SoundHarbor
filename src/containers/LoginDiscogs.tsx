@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 
-
-
 export default function LoginDiscogs() {
   const [isDiscogsConnected, setIsDiscogsConnected] = useState(false);
 
@@ -12,7 +10,7 @@ export default function LoginDiscogs() {
 
   return (
     <>
-      <div className='mx-12'>
+      <div className='flex flex-col mx-8'>
         <h1>Fantastic!</h1>{' '}
         <p>
           {/* eslint-disable-next-line react/no-unescaped-entities */}
@@ -20,10 +18,14 @@ export default function LoginDiscogs() {
           up with Discogs so that we can find music you might want to add to
           your collection!
         </p>
+        <Link
+          href='/api/auth/discogs-login'
+          className='btn btn-primary mt-12 mx-auto self-center'
+          onClick={connectDiscogs}
+        >
+          Connect to Discogs
+        </Link>
       </div>
-      <Link href='/api/auth/discogs-login' className='btn btn-primary mx-16 mt-12' onClick={connectDiscogs}>
-        Connect to Discogs
-      </Link>
     </>
   );
 }

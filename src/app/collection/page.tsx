@@ -6,7 +6,7 @@ import { cookies } from 'next/headers';
 import { addNewReleases } from '../../lib/actions/addNewReleases';
 
 export default async function Collection() {
-  // TODO: Add back button
+
   const spotifyToken = cookies().get('spotify_access_token')?.value;
   const discogsReleasesOwned: any[] = await addNewReleases(spotifyToken!);
   console.log('discogsReleasesOwned[0] :>> ', discogsReleasesOwned[0]);

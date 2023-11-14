@@ -32,7 +32,7 @@ export default async function Recommendations() {
         src={'/record-recommendations.jpg'}
       />
       <Link href='/dashboard' className='link link-secondary font-thin text-sm ml-4 mt-8'>Back to Dashboard</Link>
-      <div className='m-4 mt-6 flex flex-col justify-between align-middle'>
+      <div className='mx-8 mt-6 flex flex-col justify-between align-middle'>
         <h1 className='text-3xl font-extrabold'>Recommendations</h1>
         <div className='flex flex-col gap-3 mt-8'>
           {discogsRecommendations &&
