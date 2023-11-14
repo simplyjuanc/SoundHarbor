@@ -31,16 +31,11 @@ export const postRelease = async (release: Release): Promise<Release | void> => 
 }
 
 
-export const upsertRelease = async (release: Release): Promise<Release | void> => {
-  try {
-    return await prisma.release.upsert({
-      where: { id: release.id },
-      create: { ...release },
-      update: { ...release }
+export const updateRelease = async (id:string, updateFields:{[k:string]:string | string[]}): Promise<Release> => {
+    return await prisma.release.update({
+      where: { id },
+      data: { ...updateFields }
     })
-  } catch (error) {
-    console.log('postRelease - error :>> ', error);
-  }
 }
 
 

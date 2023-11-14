@@ -4,6 +4,7 @@ import RecordCard from '@/components/RecordCard';
 import Link from 'next/link';
 import { getAllReleases } from '@/lib/models/releases.model';
 import { Release } from '@prisma/client';
+import LogoView from '@/components/LogoView';
 
 export default async function Collection() {
 
@@ -41,6 +42,7 @@ export default async function Collection() {
             ))}
         </div>
       </div>
+      <LogoView></LogoView>
     </>
   );
 }

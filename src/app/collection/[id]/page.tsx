@@ -1,21 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
-import { deleteRelease, getRelease } from '@/lib/models/releases.model';
-import { Release, Track } from '@prisma/client';
 import Link from 'next/link';
-// import TrackList from '@/components/TrackList';
-import { getReleaseTracks } from '@/lib/models/tracks.model';
-import RecordView from '@/components/RecordView';
 import { redirect } from 'next/navigation';
+import { Release, Track } from '@prisma/client';
+import { deleteRelease, getRelease } from '@/lib/models/releases.model';
+// import { getReleaseTracks } from '@/lib/models/tracks.model';
+// import TrackList from '@/components/TrackList';
+import RecordView from '@/components/RecordView';
 
 export default async function IndividualRecord({
   params,
 }: {
-  params: Release['id'];
+  params: {id:string}
 }) {
   const record: Release = await getRelease(params['id']);
-  let tracklist: Track[] = [];
-  if (record) tracklist = await getReleaseTracks(record.id);
+  // let tracklist: Track[] = [];
+  // if (record) tracklist = await getReleaseTracks(record.id);
 
   const deleteRecord = async () => {
     'use server';
@@ -48,7 +48,7 @@ export default async function IndividualRecord({
           <div className='flex flex-row flex-nowrap gap-4 justify-center mb-12'>
             <Link
               className='btn btn-warning'
-              href={`/api/collection/${record.id}/edit`}
+              href={`/collection/${record.id}/edit`}
             >
               Edit Record
             </Link>

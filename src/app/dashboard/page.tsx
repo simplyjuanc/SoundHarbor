@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { addNewReleases } from '@/lib/actions/addNewReleases';
 import { cookies } from 'next/headers';
+import LogoView from '@/components/LogoView';
 
 export default async function Dashboard() {
   const spotifyToken = cookies().get('spotify_access_token')?.value;
@@ -11,13 +12,7 @@ export default async function Dashboard() {
 
   return (
     <article className='mx-8 flex flex-col '>
-      <Image
-        src='/logo-no-background.svg'
-        alt='logo'
-        width={1500 / 7}
-        height={935 / 7}
-        className='m-5 mx-auto mt-16'
-      />
+      <LogoView></LogoView>
       <h1 className='text-2xl my-5 font-extrabold'>Hi, Juan</h1>
       <div>
         <p>We have synced your music collection already!</p>

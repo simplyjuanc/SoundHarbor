@@ -44,8 +44,12 @@ export const parseCookies = (str: string) => {
   return cookieJar;
 }
 
-// export function getSpotifyCookie(): string | undefined {
-//   const cookieJar = cookies();
-//   const spotifyToken = cookieJar.get('spotify_access_token')?.value;
-//   return spotifyToken;
-// }
+export const pascalCaseSingleWord = (str: string): string => {
+  return str[0].toUpperCase() + str.slice(1);
+}
+
+
+
+export const truncate = (str:string, maxLength: number) => {
+  return str.length > maxLength ? str.substring(0, maxLength-3) + "..." : str;
+}

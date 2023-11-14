@@ -1,5 +1,6 @@
 import React from 'react';
 import { IDiscogsRelease } from '@/lib/utils/discogsUtils';
+import { truncate } from '@/lib/utils/utils';
 
 
 
@@ -21,6 +22,3 @@ export default function Recommendation({ recommendation }:{recommendation:IDisco
 }
 
 
-function truncate(str:string, maxLength: number) {
-  return str.length > maxLength ? str.substring(0, maxLength-3) + "..." : str;
-}
