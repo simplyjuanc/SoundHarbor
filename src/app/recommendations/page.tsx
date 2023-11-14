@@ -3,10 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
-import Recommendation from '@/components/Recommendation';
 import { getSpotifyUserAlbums } from '@/lib/actions/getSpotifyUserAlbums';
 import { getDiscogsRecommendations } from '@/lib/utils/discogsUtils';
 import { Release } from '@prisma/client';
+import Recommendation from '@/components/Recommendation';
+import LogoView from '@/components/LogoView';
 
 
 
@@ -18,21 +19,22 @@ export default async function Recommendations() {
   // console.log('userAlbums[0] :>> ', userAlbums[0]);
 
   let discogsRecommendations: Release[] = [];
-  if (userAlbums)
-    discogsRecommendations = await getDiscogsRecommendations(userAlbums);
-
+  if (userAlbums) discogsRecommendations = await getDiscogsRecommendations(userAlbums);
   console.log('discogsRecommendations[0] :>> ', discogsRecommendations[0]);
+  // console.log('userAlbums[0] :>> ', (userAlbums) ? userAlbums[0].title : 'NO ALBUMS');
+  // console.log('discogsRecommendations.length :>> ', discogsRecommendations.length);
+
 
   return (
     <>
       <Image
         width={4912 / 10}
         height={3264 / 10}
-        alt='collection image'
+        alt='Collection image'
         src={'/record-recommendations.jpg'}
       />
       <Link href='/dashboard' className='link link-secondary font-thin text-sm ml-4 mt-8'>Back to Dashboard</Link>
-      <div className='mx-8 mt-6 flex flex-col justify-between align-middle'>
+      <div className='mx-12 mt-6 flex flex-col justify-between align-middle'>
         <h1 className='text-3xl font-extrabold'>Recommendations</h1>
         <div className='flex flex-col gap-3 mt-8'>
           {discogsRecommendations &&
@@ -44,6 +46,7 @@ export default async function Recommendations() {
             ))}
         </div>
       </div>
+      <LogoView></LogoView>
     </>
   );
 }
