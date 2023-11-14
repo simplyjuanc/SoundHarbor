@@ -1,24 +1,47 @@
 import React from 'react';
 import { useAuthStore } from '@/lib/authStore';
-import {parseCookies} from '@/lib/utils/utils';
-
+import { parseCookies } from '@/lib/utils/utils';
 
 export default function Login() {
+  const authStore = useAuthStore();
 
-  const setIsLoggedIn = useAuthStore(state => state.setIsLoggedIn)
+  const spotifyCookie = 'spotify_access_token';
+  const discogsCookie = 'discogs_secret';
+  const cookieJar = parseCookies(document.cookie);
 
   function logIn() {
-    setIsLoggedIn(true);
+    authStore.setIsLoggedIn(true);
   }
 
+  if (!authStore.discogsAccessToken && cookieJar) {
+    if (cookieJar[discogsCookie]) authStore.setDiscogsAccessToken(cookieJar[discogsCookie]);
+  }
+  if (!authStore.spotifyAccessToken && cookieJar) {
+    if (cookieJar[spotifyCookie]) {
+      authStore.setSpotifyAccessToken(cookieJar[spotifyCookie])
+      authStore.setIsLoggedIn(true);
+    };
+  }
+  
+  //   if (cookieJar && cookieJar[discogsCookie]) {
+  //     authStore.setSpotifyAccessToken(cookieJar[discogsCookie]);
+  //   }
+  // }
+
+  console.log(
+    'authStore.spotifyAccessToken :>> ',
+    authStore.spotifyAccessToken
+  );
+
   return (
+    
     <form onSubmit={logIn}>
-      <div className='flex flex-col gap-5 mt-12 justify-evenly  '>
+      <div className='flex flex-col gap-6 mt-12 justify-evenly  '>
         <input
           type='email'
           name='email'
           id='email'
-          placeholder='rick.astley@sh.music'
+          placeholder='rick.astley@soundharbor.music'
           required
           className='rounded px-2'
         />

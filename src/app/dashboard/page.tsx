@@ -8,7 +8,7 @@ import LogoView from '@/components/LogoView';
 export default async function Dashboard() {
   const spotifyToken = cookies().get('spotify_access_token')?.value;
   const discogsReleasesOwned: any[] = await addNewReleases(spotifyToken!);
-  console.log('discogsReleasesOwned[0] :>> ', discogsReleasesOwned[0]);
+  // console.log('discogsReleasesOwned[0] :>> ', discogsReleasesOwned[0]);
 
   return (
     <article className='mx-8 flex flex-col '>
@@ -22,7 +22,7 @@ export default async function Dashboard() {
         </p>
       </div>
 
-      <div className='flex flex-col gap-8 mt-12 '>
+      <div className='flex flex-col gap-8 mt-12 mx-10'>
         <Link
           href='/collection'
           className='btn bg-gradient-to-r from-primary to-emerald-700 h-16'
