@@ -2,26 +2,34 @@ import { cookies } from "next/headers";
 
 
 export const throttle = (cb:Function, delay:number = 1000) => {
-  let shouldWait = false;
-  let waitingArgs: any;
+  let nextPossibleCallTime: number = 0;
+
+  // let waitingArgs: any[] = [];
   
-  const timeoutFunc = () => {
-    if (waitingArgs === null) shouldWait = false;
-    else {
-      cb(...waitingArgs)
-      waitingArgs = null;
-      setTimeout(timeoutFunc, delay)
+  // const timeoutFunc = () => {
+  //   if (waitingArgs === null) shouldWait = false;
+  //   else {
+  //     cb(...waitingArgs)
+  //     waitingArgs = null;
+  //     setTimeout(timeoutFunc, delay)
+  //   }
+  // }
+  
+  return async (...args: any) => {
+    if (Date.now() > nextPossibleCallTime) {
+      console.log('no delay')
+      nextPossibleCallTime = Date.now() + delay;
+      return (await cb(...args));
+    } else {
+      console.log('delay')
+      const newDelay = nextPossibleCallTime - Date.now();
+      nextPossibleCallTime = nextPossibleCallTime + delay;
+      return new Promise((res, rej)=>{
+        setTimeout(async ()=>{
+          res(await cb(...args));
+        }, newDelay)
+      })
     }
-  }
-  
-  return (...args: any) => {
-    if (shouldWait) {
-      waitingArgs = args
-      return;
-    };
-    cb(...args);
-    shouldWait = true;
-    setTimeout(timeoutFunc, delay);
   }
 }
 
@@ -52,4 +60,10 @@ export const pascalCaseSingleWord = (str: string): string => {
 
 export const truncate = (str:string, maxLength: number) => {
   return str.length > maxLength ? str.substring(0, maxLength-3) + "..." : str;
+}
+export function shuffleArray<T>(array: T[]): void {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
 }

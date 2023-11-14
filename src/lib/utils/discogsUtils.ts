@@ -1,7 +1,7 @@
-import querystring from 'querystring';
 import fs from 'fs'
-import Bottleneck from "bottleneck";
+import querystring from 'querystring';
 import { Release } from "@prisma/client";
+import { shuffleArray, throttle } from './utils';
 
 
 const baseUrl = 'https://api.discogs.com/';
@@ -38,8 +38,6 @@ export const getUserItems = async (userId:string,page:number=1, per_page:number=
 
 export const getUserItems = fs.readFileSync('/Users/juanvasquez/Desktop/repos/codeworks/sound-harbor/src/lib/mocks/discogs.collection.abridged.json', { encoding: 'utf-8' })
 
-
-
 export const getDiscogsRelease = async (id: string): Promise<IDiscogsRelease> => {
   const path = `releases/${id}?${querystring.stringify({ curr_abbr: CURRENCY, token: ACCESS_TOKEN })}`
   // console.log('getDiscogsRelease - path :>> ', path);
@@ -55,23 +53,9 @@ export const getDiscogsReleasesThrottled = (ids: string[]) => {
   const throttledReleases = limiter.schedule(async () => {
     return Promise.all(ids.map(async id => await getDiscogsRelease(id)));
   });
+  console.log('throttledReleases :>> ', throttledReleases);
   return throttledReleases;
 }
-
-
-export const throttledSearchDiscogs = (searchFor:any[]):Promise<Release[]> => {
-  const limiter = new Bottleneck({
-    minTime: 1000,
-    maxConcurrent: 1
-  });
-  
-  const throttledReleases = limiter.schedule(async () => (
-    Promise.all(searchFor.map(async (pair) => await searchDiscogs(pair[0][0], pair[1])))
-  ));
-  return throttledReleases;
-}
-
-
 
 export const searchDiscogs = async (artist:string, album:string): Promise<Release> => {
   artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ')
@@ -81,30 +65,14 @@ export const searchDiscogs = async (artist:string, album:string): Promise<Releas
   return (await fetchDiscogsResource(path)).results[0];
 }
 
-
+export const throttledSearchDiscogs = throttle(searchDiscogs, 1100)
 
 async function fetchDiscogsResource(path: string) {
   const res = await fetch(baseUrl + path);
   return await res.json();
 }
 
-
 // TODO: no priority - implement pagination (search, getUserItems methods)
-type Pagination = {
-  page: number;
-  pages: number;
-  items: number;
-  per_page: number;
-  urls: {
-    first: string;
-    prev: string;
-    next: string;
-    last: string;
-  };
-};
-
-
-
 export const parseDiscogsRelease = (release: IDiscogsRelease): Release => {
   const artists: string[] = release.artists.map((artist: { name: string; }) => artist.name);
   const barcode = release['identifiers'] ? release.identifiers[0].value : '';
@@ -138,12 +106,15 @@ export const parseDiscogsRelease = (release: IDiscogsRelease): Release => {
   return parsedRelease;
 }
 
-
-
-
 export async function getDiscogsRecommendations(userAlbums: Release[]) {
   const searchTuples = userAlbums.map((album) => [album.artists[0], album.title]);
-  // console.log('searchTuples[0] :>> ', searchTuples[0]);
-  return (await throttledSearchDiscogs(searchTuples))
-    .filter((item) => item && Object.hasOwn(item, 'id'));
+  shuffleArray(searchTuples);
+  // console.log('searchTuples :>> ', searchTuples);
+  const searchDiscogs = []
+  for (let tuple of searchTuples) {
+    const searchDiscog = await throttledSearchDiscogs(...tuple)
+    if (searchDiscog) searchDiscogs.push(searchDiscog);
+    if (searchDiscogs.length >= 10) break;
+  }
+  return searchDiscogs.filter((item) => item && Object.hasOwn(item, 'id'));
 }

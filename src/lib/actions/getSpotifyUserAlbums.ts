@@ -1,5 +1,5 @@
 import { Release } from '@prisma/client';
-import { getTopItems, extractItemIds, getTracksDetails, getSeveralArtistsTracks, shuffleArray, getAlbums, parseAlbumToRelease } from '../utils/spotifyUtils';
+import { getTopItems, extractItemIds, getTracksDetails, getSeveralArtistsTracks, getAlbums, parseAlbumToRelease } from '../utils/spotifyUtils';
 
 export const baseURL = 'https://api.spotify.com/v1/';
 export const market = 'GB';
@@ -19,14 +19,10 @@ export async function getSpotifyUserAlbums(accessToken: string): Promise<Release
     // console.log('artistTracks[0] :>> ', artistsTracks![0]);
 
     const uniqueTracks = Array.from(new Set([...fullTracks!, ...artistsTracks!]))
-    // console.log('uniqueTracks[1] :>> ', uniqueTracks[1]);
-
-    let albumIds: any[] = uniqueTracks.map(track => track.album.id);
-    shuffleArray(albumIds);
-    // console.log('getSpotifyUserAlbums - albumIds :>> ', albumIds);
+    // console.log('uniqueTracks[0] :>> ', uniqueTracks[0]);
     
-    // TODO remove once in prod
-    albumIds = albumIds.slice(0, 5);
+    const albumIds: string[] = Array.from(new Set(uniqueTracks.map(track => track.album.id)));
+    // console.log('getSpotifyUserAlbums - albumIds :>> ', albumIds);
 
     const userAlbums = await getAlbums(albumIds, accessToken);
     // console.log('userAlbums[0] :>> ', userAlbums[0]);

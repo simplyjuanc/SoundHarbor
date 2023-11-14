@@ -1,14 +1,8 @@
 import { Release, Track } from '@prisma/client';
 import querystring from 'querystring';
 import { market, baseURL } from '../actions/getSpotifyUserAlbums';
+import { shuffleArray } from './utils';
 
-
-export function shuffleArray<T>(array: T[]): void {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
 
 async function fetchSpotifyResource<T>(path:string, query:{[key:string]:any}, accessToken:string):Promise<T> {
   const fullPath = `${baseURL}${path}?${querystring.stringify(query)}`;
@@ -107,8 +101,9 @@ async function getArtistTopTracks(id: string, accessToken: string) {
 export async function getAlbums(ids: string[], accessToken: string) {
   try {
     if (!ids) return;
+    shuffleArray(ids);
     const query = querystring.stringify({
-      ids: ids.join(','),
+      ids: ids.slice(0,20).join(','),
       market: market
     });
 
@@ -118,6 +113,7 @@ export async function getAlbums(ids: string[], accessToken: string) {
       }
     });
     const data = (await res.json());
+    // console.log('getAlbums - data :>> ', data);
     return data.albums;
   } catch (error) {
     console.log('ERROR - getAlbums', error);
