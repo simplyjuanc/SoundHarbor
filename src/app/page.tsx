@@ -4,6 +4,7 @@ import Login from '@/containers/Login';
 import Image from 'next/image';
 import { useAuthStore } from '@/lib/authStore';
 import {parseCookies} from '@/lib/utils/utils';
+import LogoView from '@/components/LogoView';
 
 
 export default function App() {
@@ -26,14 +27,8 @@ export default function App() {
   // }, [isLoggedIn, setIsLoggedIn]);
 
   return (
-    <div className='flex flex-col mx-8 h-full'>
-      <Image
-        src='/logo-no-background.svg'
-        alt='logo'
-        width={1500 / 7}
-        height={935 / 7}
-        className='m-5 mx-auto mt-16'
-      />
+    <div className='flex flex-col mx-16 mt-28 h-full'>
+      <LogoView></LogoView>
       <article className=''>
       {isLoggedIn ? <LoginSpotify /> : <Login />}
       </article>

@@ -5,7 +5,7 @@ type State = {
   spotifyAccessToken: string
   spotifyRefreshToken: string
   // discogsNonce: string
-  // discogsAccessToken: string
+  discogsAccessToken: string
   // discogsRefreshToken: string
 }
 
@@ -15,7 +15,7 @@ type Actions = {
   setSpotifyAccessToken: (token:string) => void
   setSpotifyRefreshToken: (token:string) => void
   // setDiscogsNonce: (nonce:string) => void
-  // setDiscogsAccessToken: (token:string) => void
+  setDiscogsAccessToken: (token:string) => void
   // setDiscogsRefreshToken: (token:string) => void
   reset: () => void
 }
@@ -25,7 +25,7 @@ const initialState:State = {
   spotifyAccessToken: '',
   spotifyRefreshToken: '',
   // discogsNonce: '',
-  // discogsAccessToken: '',
+  discogsAccessToken: '',
   // discogsRefreshToken: '',
 }
 
@@ -34,10 +34,8 @@ export const useAuthStore = create<State & Actions>((set) => ({
   setSpotifyAccessToken: (token) => set(() => ({spotifyAccessToken: token})),
   setSpotifyRefreshToken: (token) => set(() => ({spotifyRefreshToken: token})),
   setIsLoggedIn: (bool) => set(() => ({isLoggedIn: bool})),
+  setDiscogsAccessToken: (token) => set(() => ({discogsAccessToken: token})),
   // setDiscogsNonce: (nonce) => set(() => ({discogsNonce: nonce})),
-  // setDiscogsAccessToken: (token) => set(() => ({discogsAccessToken: token})),
   // setDiscogsRefreshToken: (token) => set(() => ({discogsRefreshToken: token})),
-  reset: () => {
-    set(initialState)
-  },
+  reset: () => set(initialState),
 }))
