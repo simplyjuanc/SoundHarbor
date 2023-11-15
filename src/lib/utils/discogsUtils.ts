@@ -45,7 +45,7 @@ export const getDiscogsRelease = async (id: string): Promise<IDiscogsRelease> =>
   return data;
 }
 
-export const getDiscogsReleasesThrottled = (ids: string[]) => {
+/* export const getDiscogsReleasesThrottled = (ids: string[]) => {
   const limiter = new Bottleneck({
     minTime: 1000,
     maxConcurrent: 1
@@ -55,7 +55,7 @@ export const getDiscogsReleasesThrottled = (ids: string[]) => {
   });
   console.log('throttledReleases :>> ', throttledReleases);
   return throttledReleases;
-}
+} */
 
 export const searchDiscogs = async (artist:string, album:string): Promise<Release> => {
   artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ')
@@ -65,7 +65,7 @@ export const searchDiscogs = async (artist:string, album:string): Promise<Releas
   return (await fetchDiscogsResource(path)).results[0];
 }
 
-export const throttledSearchDiscogs = throttle(searchDiscogs, 1100)
+export const throttledSearchDiscogs = throttle(searchDiscogs, 1000)
 
 async function fetchDiscogsResource(path: string) {
   const res = await fetch(baseUrl + path);
