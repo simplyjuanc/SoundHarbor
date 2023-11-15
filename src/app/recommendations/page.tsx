@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { getSpotifyUserAlbums } from '@/lib/actions/getSpotifyUserAlbums';
-import { getDiscogsRecommendations } from '@/lib/utils/discogsUtils';
+import { IDiscogsRelease, getDiscogsRecommendations } from '@/lib/utils/discogsUtils';
 import { Release } from '@prisma/client';
 import Recommendation from '@/components/Recommendation';
 import LogoView from '@/components/LogoView';
@@ -18,7 +18,7 @@ export default async function Recommendations() {
   let userAlbums = await getSpotifyUserAlbums(spotifyToken);
   // console.log('userAlbums[0] :>> ', userAlbums[0]);
 
-  let discogsRecommendations: Release[] = [];
+  let discogsRecommendations: IDiscogsRelease[] = [];
   if (userAlbums) discogsRecommendations = await getDiscogsRecommendations(userAlbums);
   console.log('discogsRecommendations[0] :>> ', discogsRecommendations[0]);
   // console.log('userAlbums[0] :>> ', (userAlbums) ? userAlbums[0].title : 'NO ALBUMS');
@@ -40,7 +40,7 @@ export default async function Recommendations() {
           {discogsRecommendations &&
             discogsRecommendations.map((reco, index) => (
               <Recommendation
-                key={reco.id || index}
+                key={reco.id}
                 recommendation={reco}
               ></Recommendation>
             ))}

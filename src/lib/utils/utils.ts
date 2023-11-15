@@ -1,30 +1,17 @@
-import { cookies } from "next/headers";
 
 
-export const throttle = (cb:Function, delay:number = 1000) => {
+
+export const throttle = <T>(cb:(...args: any[]) => Promise<T>, delay:number = 1000) => {
   let nextPossibleCallTime: number = 0;
 
-  // let waitingArgs: any[] = [];
-  
-  // const timeoutFunc = () => {
-  //   if (waitingArgs === null) shouldWait = false;
-  //   else {
-  //     cb(...waitingArgs)
-  //     waitingArgs = null;
-  //     setTimeout(timeoutFunc, delay)
-  //   }
-  // }
-  
-  return async (...args: any) => {
+  return async (...args: any[]): Promise<T> => {
     if (Date.now() > nextPossibleCallTime) {
-      console.log('no delay')
       nextPossibleCallTime = Date.now() + delay;
       return (await cb(...args));
     } else {
-      console.log('delay')
       const newDelay = nextPossibleCallTime - Date.now();
       nextPossibleCallTime = nextPossibleCallTime + delay;
-      return new Promise((res, rej)=>{
+      return new Promise<T>((res, rej)=>{
         setTimeout(async ()=>{
           res(await cb(...args));
         }, newDelay)
@@ -39,7 +26,8 @@ export const parseCookies = (str: string) => {
   if (!str || str === '') return;
   const cookies = str.split(';').map(v => v ? v.split('=') : null);
   if (!cookies) return;
-  const cookieJar = cookies.reduce((acc, v) => {
+  const cookieJar = cookies.reduce<{[k:string]:string}>((acc, v) => {
+    if (!v) return acc
     acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());
     return acc;
   }, {});

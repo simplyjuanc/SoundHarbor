@@ -7,7 +7,7 @@ export default function Login() {
 
   const spotifyCookie = 'spotify_access_token';
   const discogsCookie = 'discogs_secret';
-  const cookieJar = parseCookies(document.cookie);
+  const cookieJar = typeof window !== "undefined" && parseCookies(document.cookie);
 
   function logIn() {
     authStore.setIsLoggedIn(true);

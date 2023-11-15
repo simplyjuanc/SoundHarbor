@@ -8,7 +8,8 @@ import querystring from 'querystring'
 const authUrl = 'https://api.discogs.com/oauth/';
 const accessTokenUrl = authUrl + 'access_token';
 
-
+// TODO althought implemented properly, this is currently not necessary as the app is using a personal token to access only a single account
+// need to enable to incorporate multiple users
 export const GET = async (req:NextRequest) => {
   const params = req.nextUrl.searchParams;
   const token = params.get('oauth_token');
@@ -16,7 +17,10 @@ export const GET = async (req:NextRequest) => {
   const discogsNonce = cookies().get('discogsNonce')!.value;
   const discogsSecret = cookies().get('discogs_secret')!.value;
   
-  if (!token || !verifier) return new Error('Not token received in callback');
+  if (!token || !verifier) {
+    return Response.json({message: 'No Auth Token in Discogs response'});
+  }
+  // return new Error('Not token received in callback');
   
 
   // Refer to this for the below: https://www.discogs.com/forum/thread/785104?message_id=8307207#7793236
@@ -38,7 +42,7 @@ export const GET = async (req:NextRequest) => {
   const {oauth_token, oauth_token_secret} = querystring.parse(await response.text());;
 
   if (!oauth_token || !oauth_token_secret ) {
-    return Response.json({status:500, message: 'No token in discogs response'});
+    return Response.json({status:500, message: 'No Access Token in Discogs response'});
   }
 
   // console.log('Discogs - oauth_token :>> ', oauth_token);

@@ -20,6 +20,7 @@ export default function AddRecord () {
         Please input the artist and record title, we will retrieve it from Discogs and add it to your collection
       </p>
       <p className='mx-8'>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         The more data you put in the easier it will be for us to find the right record.<span className='text-xs'>(Don't worry, you can edit it later)</span>
       </p>
       <form

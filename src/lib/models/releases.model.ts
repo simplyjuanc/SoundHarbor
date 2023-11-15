@@ -7,35 +7,30 @@ import { searchSpotifyAlbum } from "../utils/spotifyUtils";
 
 
 export const getAllReleases = async () => {
-  return await prisma.release.findMany({orderBy: {artists:'asc'}});
+  return await prisma.release.findMany({ orderBy: { artists: 'asc' } });
 }
 
 
 
-export const getRelease = async (releaseId: string): Promise<Release | void> => {
-  try {
-    const record = await prisma.release.findUnique({ where: { id: releaseId } })
-    if (record) return record;
-  } catch (error) {
-    console.log('getRelease - error :>> ', error);
-  }
+export const getRelease = async (releaseId: string): Promise<Release> => {
+  const record = await prisma.release.findUnique({ where: { id: releaseId } })
+  if (!record) throw Error('getRelease - no release found in DB')
+  return record;
 }
 
 
-export const postRelease = async (release: Release): Promise<Release | void> => {
-  try {
-    return await prisma.release.create({ data: release })
-  } catch (error) {
-    console.log('postRelease - error :>> ', error);
-  }
+export const postRelease = async (release: Release): Promise<Release> => {
+  const newRecord = await prisma.release.create({ data: release })
+  if (!newRecord) throw Error('getRelease - no release found in DB')
+  return newRecord
 }
 
 
-export const updateRelease = async (id:string, updateFields:{[k:string]:string | string[]}): Promise<Release> => {
-    return await prisma.release.update({
-      where: { id },
-      data: { ...updateFields }
-    })
+export const updateRelease = async (id: string, updateFields: { [k: string]: string | string[] }): Promise<Release> => {
+  return await prisma.release.update({
+    where: { id },
+    data: { ...updateFields }
+  })
 }
 
 

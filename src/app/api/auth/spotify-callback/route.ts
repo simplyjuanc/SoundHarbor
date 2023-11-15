@@ -7,7 +7,7 @@ import { redirect } from "next/navigation";
 export async function GET(req: NextRequest) {
   const params = req.nextUrl.searchParams;
   const code = params.get('code');
-  if (!code) return 'Error retrieving code in Spotify Callback URL';
+  if (!code) return Response.json({message: 'Error retrieving code in Spotify Callback URL'});
 
   const state = params.get('state');
   if (state) cookies().set('state', state);
