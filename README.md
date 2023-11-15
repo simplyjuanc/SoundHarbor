@@ -1,8 +1,32 @@
+# Overview
+
+SoundHarbor is a music shopping recommendation engine leveraging your Spotify music profile. It's a marketplace application (currently only with the buy-side user flow) that enables end users to grow their physical record collection by buying records from Discogs, record shops or directly from other users. Demo video and an abridged version of the project proposal below.
+
+- [Demo video](https://youtu.be/ZdokbTWFBEQ)
+
+## Project description
+
+- A marketplace application that enables end users to grow their physical record collection by buying records from Discogs, record shops or directly from other users.
+- For the buy side, the differential advantage is that the shopping behaviour is enhanced by a recommendation engine that takes as input their Spotify music taste.
+- For the sell side, the differential advantage is that aggregated insights from the shopping (Discogs) and listening (Spotify) behaviour can guide their own commercial strategy.
+
+
+## MVP
+
+- The user can access and view their music collection on-app.
+- The user can CRUD records to their collection.
+- The user can search a record to buy based on pre-determined fields (album title, artist, label).
+
+
+ 
+# Getting Started
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+First, install the required packages: `npm i`
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -15,10 +39,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
