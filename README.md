@@ -4,6 +4,22 @@ SoundHarbor is a music shopping recommendation engine leveraging your Spotify mu
 
 - [Demo video](https://youtu.be/ZdokbTWFBEQ)
 
+
+The app heavily relies on the Spotify and Discogs API, which means you need to create the apps in their API service and configure the env variables below.
+
+- SPOTIFY_CLIENT_ID
+- SPOTIFY_CLIENT_SECRET
+- SPOTIFY_REDIRECT_URI
+- SPOTIFY_SCOPE
+- DISCOGS_TOKEN  - it's the personal token, for proper Oauth implementation (to be done) it's not required.
+- DISCOGS_CONSUMER_KEY
+- DISCOGS_CLIENT_SECRET
+- DISCOGS_REDIRECT_URI
+
+
+
+
+
 ## Project description
 
 - A marketplace application that enables end users to grow their physical record collection by buying records from Discogs, record shops or directly from other users.
