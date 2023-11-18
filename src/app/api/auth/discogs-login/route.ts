@@ -11,9 +11,9 @@ const redirect_uri = process.env.DISCOGS_REDIRECT_URI!;
 
 
 export const GET = async (req: Request) => {
-
+  const oneDay = 24 * 60 * 60 * 1000
   const discogsNonce = generateRandomString()
-  cookies().set('discogsNonce', discogsNonce);
+  cookies().set('discogsNonce', discogsNonce, {expires: new Date(Date.now() + oneDay)});
   
   let headerString = writeDiscogsAuthBaseHeader(Date.now(), discogsNonce);
   headerString += `,oauth_callback="${redirect_uri}"`
@@ -38,7 +38,7 @@ export const GET = async (req: Request) => {
     return Response.json({status:500, message: 'No token in discogs response'});
   }
 
-  cookies().set('discogs_secret', oauth_token_secret as string);
+  cookies().set('discogs_secret', oauth_token_secret as string, {expires: new Date(Date.now() + oneDay)});
   const authUrl  = 'https://discogs.com/oauth/authorize?' + querystring.stringify({oauth_token});
   
   // console.log('authUrl :>> ', authUrl);

@@ -48,8 +48,10 @@ export const GET = async (req:NextRequest) => {
   // console.log('Discogs - oauth_token :>> ', oauth_token);
   // console.log('Discogs - oauth_token_secret :>> ', oauth_token_secret);
 
-  cookies().set('discogs_access_token', oauth_token as string);
-  cookies().set('discogs_token_secret', oauth_token_secret as string);
+  const oneDay = 24 * 60 * 60 * 1000
+
+  cookies().set('discogs_access_token', oauth_token as string, {expires: new Date(Date.now() + oneDay)});
+  cookies().set('discogs_token_secret', oauth_token_secret as string, {expires: new Date(Date.now() + oneDay)});
   redirect('/dashboard');
 }
 
