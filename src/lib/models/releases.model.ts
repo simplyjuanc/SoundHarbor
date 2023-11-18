@@ -1,5 +1,5 @@
-import fs from 'fs';
 import prisma from "../db";
+import discogsColJson from '../mocks/discogs.collection.abridged.json'
 import type { Release } from "@prisma/client";
 import { IDiscogsRelease, parseDiscogsRelease, searchDiscogs, getDiscogsRelease } from "../utils/discogsUtils";
 import { searchSpotifyAlbum } from "../utils/spotifyUtils";
@@ -55,7 +55,7 @@ export const getFullReleaseData = async (artist: string, title: string, spotifyT
   // return normaliseReleaseData(discogsResult, spotifyResult);
 
   // REMOVE_START
-  const releasesMock = JSON.parse(fs.readFileSync('/Users/juanvasquez/Desktop/repos/codeworks/sound-harbor/src/lib/mocks/discogs.collection.abridged.json', 'utf-8')).releases
+  const releasesMock = discogsColJson.releases
   const discogsResults: any[] = releasesMock.map((i: { basic_information: any; }) => i.basic_information);
   const discogInfo = discogsResults.filter(i => i.artists[0].name === artist)[0]
   // console.log('discogInfo :>> ', discogInfo);

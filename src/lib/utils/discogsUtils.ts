@@ -1,4 +1,4 @@
-import fs from 'fs'
+import discogsColJson from '../mocks/discogs.collection.abridged.json'
 import querystring from 'querystring';
 import { Release } from "@prisma/client";
 import { shuffleArray, throttle } from './utils';
@@ -28,9 +28,7 @@ export interface IDiscogsRelease {
 
 // TODO Understand why this feth is not returning data even if POstman does
 
-export const getUserItems = fs.readFileSync(
-  '/Users/juanvasquez/Desktop/repos/codeworks/sound-harbor/src/lib/mocks/discogs.collection.abridged.json', { encoding: 'utf-8' }
-)
+export const getUserItems = () => discogsColJson
 
 export const getDiscogsRelease = async (id: string): Promise<IDiscogsRelease> => {
   const path = `releases/${id}?${querystring.stringify({ curr_abbr: CURRENCY, token: ACCESS_TOKEN })}`

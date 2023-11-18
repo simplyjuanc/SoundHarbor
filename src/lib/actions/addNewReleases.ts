@@ -1,4 +1,4 @@
-import fs from 'fs';
+import discogsColJson from '../mocks/discogs.collection.abridged.json'
 import {
   getFullReleaseData,
   postReleases
@@ -19,9 +19,9 @@ export async function addNewReleases(spotifyToken: string): Promise<Release[]> {
   // );
   // const newReleases = await getDiscogsReleasesThrottled(newReleasesIds);
   // const parsedReleases = newReleasesOwned.map((release) => parseDiscogsRelease(release));
-  
+
   // REMOVE_START
-  const newReleasesResponse = JSON.parse(fs.readFileSync('/Users/juanvasquez/Desktop/repos/codeworks/sound-harbor/src/lib/mocks/discogs.collection.abridged.json', 'utf-8')).releases;
+  const newReleasesResponse = discogsColJson.releases;
   const newReleases = newReleasesResponse.map((i:any) => i['basic_information']);
   // console.log('newReleases :>> ', newReleases[0]);
   const newReleasesData: Release[] = await Promise.all(
