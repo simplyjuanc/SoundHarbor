@@ -1,5 +1,5 @@
-import { Release, Track } from '@prisma/client';
-import { shuffleArray } from './utils';
+import { Release } from '@prisma/client';
+import { shuffleArray } from '@/lib/utils/utils';
 
 import {
   fetchTracksDetails,

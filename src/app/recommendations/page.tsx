@@ -8,7 +8,6 @@ import {
   IDiscogsRelease,
   getDiscogsRecommendations,
 } from '@/lib/utils/discogsUtils';
-import { Release } from '@prisma/client';
 import Recommendation from '@/components/Recommendation';
 import LogoView from '@/components/LogoView';
 

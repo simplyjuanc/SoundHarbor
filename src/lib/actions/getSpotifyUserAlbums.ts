@@ -5,11 +5,8 @@ import {
   getTracksDetails,
   getSeveralArtistsTracks,
   getAlbums,
-} from '../utils/spotifyUtils';
+} from '@/lib/utils/spotifyUtils';
 import { parseSpotifyAlbumToRelease } from '@/lib/utils/releaseUtils';
-
-export const baseURL = 'https://api.spotify.com/v1/';
-export const market = 'GB';
 
 export async function getSpotifyUserAlbums(
   accessToken: string

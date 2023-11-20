@@ -38,7 +38,7 @@ export const getFullReleaseData = async (
   return fullReleaseData;
 };
 
-export function parseSpotifyAlbumToRelease(album: any): Release {
+export const parseSpotifyAlbumToRelease = (album: any): Release => {
   const artists: string[] = album.artists.map(
     (artist: { name: string }) => artist.name
   );
@@ -64,4 +64,4 @@ export function parseSpotifyAlbumToRelease(album: any): Release {
 
   // TODO change the userId assignemtn so it doesn't overwrite existing things in the DB.
   return release;
-}
+};
