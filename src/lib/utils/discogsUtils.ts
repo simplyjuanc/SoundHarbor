@@ -97,3 +97,17 @@ export async function getDiscogsRecommendations(userAlbums: Release[]): Promise<
   return searchDiscogs
     .filter((item) => item && Object.hasOwn(item, 'id'));
 }
+
+export const getDiscogsReleasesBasicInfo = (releases:any[]) => {
+  return releases.map(release => release.basic_information);
+}
+
+export const searchDiscogsAlbum = async(name: string) => {
+//TODO currently  working with mock data, need to make sure I can get all the info from both services
+  const releasesMock = discogsColJson.releases;
+
+  const discogsResults: any[] = getDiscogsReleasesBasicInfo(releasesMock);
+  const album = discogsResults.filter(i => i.artists[0].name === name)[0];
+
+  return album;
+}

@@ -1,8 +1,9 @@
 import prisma from "../db";
 import discogsColJson from '../mocks/discogs.collection.abridged.json'
 import type { Release } from "@prisma/client";
-import { IDiscogsRelease, parseDiscogsRelease, searchDiscogs, getDiscogsRelease } from "../utils/discogsUtils";
+import { IDiscogsRelease, parseDiscogsRelease, searchDiscogs, getDiscogsRelease, getDiscogsReleasesBasicInfo, searchDiscogsAlbum } from "../utils/discogsUtils";
 import { searchSpotifyAlbum } from "../utils/spotifyUtils";
+import { normaliseReleaseData } from '@/lib/utils/releaseUtils'
 
 
 
@@ -40,31 +41,15 @@ export const postReleases = async (releases: Release[]): Promise<BatchPayload | 
 };
 
 
-const normaliseReleaseData = (discogsAlbum: IDiscogsRelease, spotifyAlbum: Release): Release => {
-  const { imgUrl, spotifyUri, releaseDate, barcode } = spotifyAlbum;
-  return Object.assign(parseDiscogsRelease(discogsAlbum), { imgUrl, spotifyUri, releaseDate, barcode });
-};
+// keep for imports path in other use cases
+export const getFullReleaseData = async (name: string, title: string, spotifyToken: string) => {
+  const discogsAlbum = await searchDiscogsAlbum(name)
+  const spotifyAlbum = await searchSpotifyAlbum(name, title, spotifyToken);
+  // console.log('spotifyResult :>> ', spotifyAlbum);
 
+  const fullReleaseData = normaliseReleaseData(discogsAlbum, spotifyAlbum);
 
-
-//TODO currently  working with mock data, need to amke sure I can get all the info from both services
-export const getFullReleaseData = async (artist: string, title: string, spotifyToken: string) => {
-  // const discogsId = (await searchDiscogs(artist, title)).id;
-  // const discogsResult = await getDiscogsRelease(discogsId);
-  // const spotifyResult = await searchSpotifyAlbum(discogsResult.artists[0], discogsResult.title, spotifyToken);
-  // return normaliseReleaseData(discogsResult, spotifyResult);
-
-  // REMOVE_START
-  const releasesMock = discogsColJson.releases
-  const discogsResults: any[] = releasesMock.map((i: { basic_information: any; }) => i.basic_information);
-  const discogInfo = discogsResults.filter(i => i.artists[0].name === artist)[0]
-  // console.log('discogInfo :>> ', discogInfo);
-  // discogInfo.artists = {name: discogInfo[0].artists};
-  // console.log('discogInfo.artists :>> ', discogInfo.artists);
-  const spotifyResult = await searchSpotifyAlbum(discogInfo.artists[0].name, discogInfo.title, spotifyToken);
-  // console.log('spotifyResult :>> ', spotifyResult);
-  return normaliseReleaseData(discogInfo, spotifyResult);
-  // REMOVE_END
+  return fullReleaseData
 }
 
 export const deleteRelease = async (id: string) => {
