@@ -3,11 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
-import { getSpotifyUserAlbums } from '@/lib/actions/getSpotifyUserAlbums';
 import {
   IDiscogsRelease,
   getDiscogsRecommendations,
 } from '@/lib/utils/discogsUtils';
+import { getSpotifyUserAlbums } from '@/lib/utils/spotifyUtils';
 import Recommendation from '@/components/Recommendation';
 import LogoView from '@/components/LogoView';
 
