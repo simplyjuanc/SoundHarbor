@@ -6,7 +6,7 @@ import { getDiscogsReleasesBasicInfo } from '@/lib/utils/discogsUtils'
 import { getFullReleaseData } from '@/lib/utils/releaseUtils'
 
 //TODO currently  working with mock data, need to make sure I can get all the info from both services
-export async function addNewReleases(spotifyToken: string): Promise<Release[]> {
+export async function syncReleases(spotifyToken: string): Promise<Release[]> {
   const newReleasesResponse = getDiscogsReleases();
   const newReleases = getDiscogsReleasesBasicInfo(newReleasesResponse);
   // console.log('newReleases :>> ', newReleases[0]);

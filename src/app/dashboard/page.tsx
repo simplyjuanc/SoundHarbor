@@ -1,13 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { addNewReleases } from '@/lib/actions/addNewReleases';
+import { syncReleases } from '@/lib/actions/syncReleases';
 import { cookies } from 'next/headers';
 import LogoView from '@/components/LogoView';
 
 export default async function Dashboard() {
   const spotifyToken = cookies().get('spotify_access_token')?.value;
-  const discogsReleasesOwned: any[] = await addNewReleases(spotifyToken!);
+  const discogsReleasesOwned: any[] = await syncReleases(spotifyToken!);
   // console.log('discogsReleasesOwned[0] :>> ', discogsReleasesOwned[0]);
 
   return (
