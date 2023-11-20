@@ -1,5 +1,9 @@
 import type { Release } from '@prisma/client';
-import { IDiscogsRelease, searchDiscogsAlbum } from '@/lib/utils/discogsUtils';
+import {
+  IDiscogsRelease,
+  searchDiscogsAlbum,
+  searchDiscogsForManualRecord,
+} from '@/lib/utils/discogsUtils';
 import { searchSpotifyAlbum } from '@/lib/utils/spotifyUtils';
 
 export const parseSpotifyAlbumToRelease = (album: any): Release => {
@@ -87,6 +91,19 @@ export const getFullReleaseData = async (
   const discogsAlbum = await searchDiscogsAlbum(name);
   const spotifyAlbum = await searchSpotifyAlbum(name, title, spotifyToken);
   // console.log('spotifyResult :>> ', spotifyResult);
+
+  const fullReleaseData = normaliseReleaseData(discogsAlbum, spotifyAlbum);
+
+  return fullReleaseData;
+};
+
+export const getFullReleaseDataForManualRecord = async (
+  name: string,
+  title: string,
+  spotifyToken: string
+) => {
+  const discogsAlbum = await searchDiscogsForManualRecord(name, title);
+  const spotifyAlbum = await searchSpotifyAlbum(name, title, spotifyToken);
 
   const fullReleaseData = normaliseReleaseData(discogsAlbum, spotifyAlbum);
 

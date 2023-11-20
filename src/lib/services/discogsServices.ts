@@ -27,9 +27,17 @@ export const fetchDiscogsRelease = async (
   });
   const path = `releases/${id}?${query}`;
 
-  const { results } = await fetchDiscogs(path);
+  const data = await fetchDiscogs(path);
 
-  return results;
+  return data;
+};
+
+export const fetchDiscogsMasterRelease = async (id: string): Promise<any> => {
+  const path = `masters/${id}`;
+
+  const data = await fetchDiscogs(path);
+
+  return data;
 };
 
 export const searchDiscogsRelease = async (
@@ -38,6 +46,23 @@ export const searchDiscogsRelease = async (
 ): Promise<IDiscogsRelease[]> => {
   const query = querystring.stringify({
     artist,
+    release_title: album,
+    token: ACCESS_TOKEN,
+  });
+  const path = `database/search?${query}`;
+
+  const { results } = await fetchDiscogs(path);
+
+  return results;
+};
+
+export const searchDiscogsMasterRelease = async (
+  artist: string,
+  album: string
+): Promise<any[]> => {
+  const query = querystring.stringify({
+    artist,
+    type: 'master',
     release_title: album,
     token: ACCESS_TOKEN,
   });

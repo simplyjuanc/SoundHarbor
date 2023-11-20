@@ -4,6 +4,8 @@ import { shuffleArray, throttle } from '@/lib/utils/utils';
 import {
   fetchDiscogsRelease,
   searchDiscogsRelease,
+  fetchDiscogsMasterRelease,
+  searchDiscogsMasterRelease,
 } from '@/lib/services/discogsServices';
 
 export interface IDiscogsRelease {
@@ -46,6 +48,31 @@ export const searchDiscogs = async (
   const data = await searchDiscogsRelease(artist, album);
 
   return data[0];
+};
+
+export const searchDiscogsForManualRecord = async (
+  artist: string,
+  album: string
+): Promise<IDiscogsRelease> => {
+  artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ');
+  album = album.replace(/[^a-zA-Z0-9]+/g, ' ');
+
+  let releaseId;
+  const master = await searchDiscogsMasterRelease(artist, album);
+
+  if (master.length !== 0) {
+    const masterId = master[0]['master_id'];
+    const masterRelease = await fetchDiscogsMasterRelease(masterId);
+
+    releaseId = masterRelease['main_release'];
+  } else {
+    const data = await searchDiscogsRelease(artist, album);
+    releaseId = data[0]['id'];
+  }
+
+  const release = await fetchDiscogsRelease(releaseId);
+
+  return release;
 };
 
 export const throttledSearchDiscogs = throttle<IDiscogsRelease>(
