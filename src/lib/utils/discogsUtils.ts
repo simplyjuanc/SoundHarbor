@@ -1,11 +1,10 @@
-import discogsColJson from '../mocks/discogs.collection.abridged.json'
+import discogsColJson from '../mocks/discogs.collection.abridged.json';
 import querystring from 'querystring';
-import { Release } from "@prisma/client";
+import { Release } from '@prisma/client';
 import { shuffleArray, throttle } from './utils';
 
-
 const baseUrl = 'https://api.discogs.com/';
-const CURRENCY = 'GBP'
+const CURRENCY = 'GBP';
 const ACCESS_TOKEN = process.env.DISCOGS_TOKEN;
 
 export interface IDiscogsRelease {
@@ -19,33 +18,48 @@ export interface IDiscogsRelease {
   released: string;
   notes: string;
   identifiers: any[];
-  formats: any[],
-  year: number
+  formats: any[];
+  year: number;
   // genres: string[];
-};
+}
 
 // TODO: no priority - implement pagination (search, getUserItems methods)
 
 // TODO Understand why this feth is not returning data even if POstman does
 
-export const getUserItems = () => discogsColJson
+export const getUserItems = () => discogsColJson;
 
-export const getDiscogsRelease = async (id: string): Promise<IDiscogsRelease> => {
-  const path = `releases/${id}?${querystring.stringify({ curr_abbr: CURRENCY, token: ACCESS_TOKEN })}`
+export const getDiscogsRelease = async (
+  id: string
+): Promise<IDiscogsRelease> => {
+  const path = `releases/${id}?${querystring.stringify({
+    curr_abbr: CURRENCY,
+    token: ACCESS_TOKEN,
+  })}`;
   // console.log('getDiscogsRelease - path :>> ', path);
   const data = await fetchDiscogsResource(path);
   return data;
-}
+};
 
-export const searchDiscogs = async (artist: string, album: string): Promise<IDiscogsRelease> => {
-  artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ')
-  album = album.replace(/[^a-zA-Z0-9]+/g, ' ')
-  const path = `database/search?${querystring.stringify({ artist, release_title: album, token: ACCESS_TOKEN })}`
+export const searchDiscogs = async (
+  artist: string,
+  album: string
+): Promise<IDiscogsRelease> => {
+  artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ');
+  album = album.replace(/[^a-zA-Z0-9]+/g, ' ');
+  const path = `database/search?${querystring.stringify({
+    artist,
+    release_title: album,
+    token: ACCESS_TOKEN,
+  })}`;
   // console.log('searchDiscogs - path :>> ', path);
   return (await fetchDiscogsResource(path)).results[0];
-}
+};
 
-export const throttledSearchDiscogs = throttle<IDiscogsRelease>(searchDiscogs, 1000)
+export const throttledSearchDiscogs = throttle<IDiscogsRelease>(
+  searchDiscogs,
+  1000
+);
 
 async function fetchDiscogsResource(path: string) {
   const res = await fetch(baseUrl + path);
@@ -53,17 +67,22 @@ async function fetchDiscogsResource(path: string) {
 }
 
 export const parseDiscogsRelease = (release: IDiscogsRelease): Release => {
-  const artists: string[] = release.artists.map((artist: { name: string; }) => artist.name);
+  const artists: string[] = release.artists.map(
+    (artist: { name: string }) => artist.name
+  );
   const barcode = release['identifiers'] ? release.identifiers[0].value : '';
   // REMOVE_START
   // const barcode = (release['identifiers'].length) ? release.identifiers[0].value : '';
   // const artists = release.artists;
   // const barcode = release.barcode;
   // REMOVE_END
-  const label = (release.labels) ? release.labels[0].name : null;
-  const releaseType = (release.formats) ? release.formats[0]['descriptions'][0] : null;
-  const releaseDate = (release.year) ? new Date(release.year) : new Date('1970-01-01');;
-
+  const label = release.labels ? release.labels[0].name : null;
+  const releaseType = release.formats
+    ? release.formats[0]['descriptions'][0]
+    : null;
+  const releaseDate = release.year
+    ? new Date(release.year)
+    : new Date('1970-01-01');
 
   const parsedRelease: Release = {
     id: release.id.toString(),
@@ -79,35 +98,36 @@ export const parseDiscogsRelease = (release: IDiscogsRelease): Release => {
     barcode,
     imgUrl: '',
     spotifyUri: '',
-    userId: null
-  }
+    userId: null,
+  };
 
   return parsedRelease;
-}
+};
 
-export async function getDiscogsRecommendations(userAlbums: Release[]): Promise<IDiscogsRelease[]> {
-  const searchTuples = userAlbums.map((album) => [album.artists[0], album.title]);
+export async function getDiscogsRecommendations(
+  userAlbums: Release[]
+): Promise<IDiscogsRelease[]> {
+  const searchTuples = userAlbums.map(album => [album.artists[0], album.title]);
   shuffleArray(searchTuples);
-  const searchDiscogs = []
+  const searchDiscogs = [];
   for (let tuple of searchTuples) {
-    const searchDiscog = await throttledSearchDiscogs(...tuple)
+    const searchDiscog = await throttledSearchDiscogs(...tuple);
     if (searchDiscog) searchDiscogs.push(searchDiscog);
     if (searchDiscogs.length >= 10) break;
   }
-  return searchDiscogs
-    .filter((item) => item && Object.hasOwn(item, 'id'));
+  return searchDiscogs.filter(item => item && Object.hasOwn(item, 'id'));
 }
 
-export const getDiscogsReleasesBasicInfo = (releases:any[]) => {
+export const getDiscogsReleasesBasicInfo = (releases: any[]) => {
   return releases.map(release => release.basic_information);
-}
+};
 
-export const searchDiscogsAlbum = async(name: string) => {
-//TODO currently  working with mock data, need to make sure I can get all the info from both services
+export const searchDiscogsAlbum = async (name: string) => {
+  //TODO currently  working with mock data, need to make sure I can get all the info from both services
   const releasesMock = discogsColJson.releases;
 
   const discogsResults: any[] = getDiscogsReleasesBasicInfo(releasesMock);
   const album = discogsResults.filter(i => i.artists[0].name === name)[0];
 
   return album;
-}
+};
