@@ -1,15 +1,7 @@
 import prisma from '../db';
-import discogsColJson from '../mocks/discogs.collection.abridged.json';
 import type { Release } from '@prisma/client';
-import {
-  IDiscogsRelease,
-  parseDiscogsRelease,
-  searchDiscogs,
-  getDiscogsRelease,
-  getDiscogsReleasesBasicInfo,
-  searchDiscogsAlbum,
-} from '../utils/discogsUtils';
-import { searchSpotifyAlbum } from '../utils/spotifyUtils';
+import { searchDiscogsAlbum } from '@/lib/utils/discogsUtils';
+import { searchSpotifyAlbum } from '@/lib/utils/spotifyUtils';
 import { normaliseReleaseData } from '@/lib/utils/releaseUtils';
 
 export const getAllReleases = async () => {

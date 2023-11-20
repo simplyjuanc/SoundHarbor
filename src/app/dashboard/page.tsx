@@ -1,8 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { syncReleases } from '@/lib/actions/syncReleases';
 import { cookies } from 'next/headers';
+import { syncReleases } from '@/lib/actions/syncReleases';
 import LogoView from '@/components/LogoView';
 
 export default async function Dashboard() {

@@ -1,7 +1,7 @@
-import discogsColJson from '../mocks/discogs.collection.abridged.json';
 import querystring from 'querystring';
-import { Release } from '@prisma/client';
-import { shuffleArray, throttle } from './utils';
+import type { Release } from '@prisma/client';
+import discogsColJson from '@/lib/mocks/discogs.collection.abridged.json';
+import { shuffleArray, throttle } from '@/lib/utils/utils';
 
 const baseUrl = 'https://api.discogs.com/';
 const CURRENCY = 'GBP';
