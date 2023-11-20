@@ -44,7 +44,7 @@ export const searchDiscogs = async (
   album = album.replace(/[^a-zA-Z0-9]+/g, ' ');
 
   const data = await searchDiscogsRelease(artist, album);
-  // console.log('searchDiscogs - path :>> ', path);
+
   return data[0];
 };
 
@@ -62,9 +62,15 @@ export async function getDiscogsRecommendations(
   const searchDiscogs = [];
   for (let tuple of searchTuples) {
     const searchDiscog = await throttledSearchDiscogs(...tuple);
-    if (searchDiscog) searchDiscogs.push(searchDiscog);
-    if (searchDiscogs.length >= 10) break;
+
+    if (searchDiscog) {
+      searchDiscogs.push(searchDiscog);
+    }
+    if (searchDiscogs.length >= 10) {
+      break;
+    }
   }
+
   return searchDiscogs.filter(item => item && Object.hasOwn(item, 'id'));
 }
 

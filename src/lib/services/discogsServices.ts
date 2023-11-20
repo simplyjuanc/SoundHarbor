@@ -43,7 +43,7 @@ export const searchDiscogsRelease = async (
   });
   const path = `database/search?${query}`;
 
-  const data = await fetchDiscogs(path);
+  const { results } = await fetchDiscogs(path);
 
-  return data;
+  return results;
 };
