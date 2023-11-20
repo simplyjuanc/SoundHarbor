@@ -1,7 +1,10 @@
 import type { Release } from '@prisma/client';
 import discogsColJson from '@/lib/mocks/discogs.collection.abridged.json';
 import { shuffleArray, throttle } from '@/lib/utils/utils';
-import { fetchDiscogsRelease, searchDiscogsRelease } from '@/lib/services/discogsServices'
+import {
+  fetchDiscogsRelease,
+  searchDiscogsRelease,
+} from '@/lib/services/discogsServices';
 
 export interface IDiscogsRelease {
   id: number;
@@ -28,7 +31,6 @@ export const getUserItems = () => discogsColJson;
 export const getDiscogsRelease = async (
   id: string
 ): Promise<IDiscogsRelease> => {
-
   const res = await fetchDiscogsRelease(id);
 
   return res;
@@ -41,7 +43,7 @@ export const searchDiscogs = async (
   artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ');
   album = album.replace(/[^a-zA-Z0-9]+/g, ' ');
 
-  const data = await searchDiscogsRelease(artist, album)
+  const data = await searchDiscogsRelease(artist, album);
   // console.log('searchDiscogs - path :>> ', path);
   return data[0];
 };
