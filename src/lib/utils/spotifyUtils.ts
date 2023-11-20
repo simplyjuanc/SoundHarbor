@@ -98,9 +98,7 @@ export async function searchSpotifyAlbum(
   artist: string,
   accessToken: string
 ): Promise<Release> {
-  const res = await searchAlbum(album, artist, accessToken);
-
-  const topAlbum = res.albums.items[0];
+  const topAlbum = await searchAlbum(album, artist, accessToken);
   const topAlbumDetail = await fetchAlbum(topAlbum.id, accessToken);
 
   return parseSpotifyAlbumToRelease(topAlbumDetail);

@@ -69,11 +69,8 @@ export const fetchArtistTopTracks = async (id: string, accessToken: string) => {
 
 export const fetchAlbum = async (id: string, accessToken: string) => {
   try {
-    const query = querystring.stringify({
-      id,
-      market,
-    });
-    const url = `${baseURL}albums/?${query}`;
+    const query = querystring.stringify({ market });
+    const url = `${baseURL}albums/${id}?${query}`;
     const headers = generateSpotifyHeader(accessToken);
 
     const res = await fetch(url, { headers });
@@ -113,7 +110,7 @@ export const searchAlbum = async (
     const query = encodeURIComponent(`${album} ${artist}`);
     const qDefault = querystring.stringify({
       type: 'album',
-      market: market,
+      market,
       limit: 1,
     });
 
@@ -121,8 +118,9 @@ export const searchAlbum = async (
     const headers = generateSpotifyHeader(accessToken);
 
     const res = await fetch(url, { headers });
+    const { albums } = await res.json();
 
-    return res;
+    return albums.items[0];
   } catch (error) {
     console.log('FETCH ERROR - searchAlbums', error);
   }
