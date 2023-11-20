@@ -1,11 +1,7 @@
-import querystring from 'querystring';
 import type { Release } from '@prisma/client';
 import discogsColJson from '@/lib/mocks/discogs.collection.abridged.json';
 import { shuffleArray, throttle } from '@/lib/utils/utils';
-
-const baseUrl = 'https://api.discogs.com/';
-const CURRENCY = 'GBP';
-const ACCESS_TOKEN = process.env.DISCOGS_TOKEN;
+import { fetchDiscogsRelease, searchDiscogsRelease } from '@/lib/services/discogsServices'
 
 export interface IDiscogsRelease {
   id: number;
@@ -32,13 +28,10 @@ export const getUserItems = () => discogsColJson;
 export const getDiscogsRelease = async (
   id: string
 ): Promise<IDiscogsRelease> => {
-  const path = `releases/${id}?${querystring.stringify({
-    curr_abbr: CURRENCY,
-    token: ACCESS_TOKEN,
-  })}`;
-  // console.log('getDiscogsRelease - path :>> ', path);
-  const data = await fetchDiscogsResource(path);
-  return data;
+
+  const res = await fetchDiscogsRelease(id);
+
+  return res;
 };
 
 export const searchDiscogs = async (
@@ -47,13 +40,10 @@ export const searchDiscogs = async (
 ): Promise<IDiscogsRelease> => {
   artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ');
   album = album.replace(/[^a-zA-Z0-9]+/g, ' ');
-  const path = `database/search?${querystring.stringify({
-    artist,
-    release_title: album,
-    token: ACCESS_TOKEN,
-  })}`;
+
+  const data = await searchDiscogsRelease(artist, album)
   // console.log('searchDiscogs - path :>> ', path);
-  return (await fetchDiscogsResource(path)).results[0];
+  return data[0];
 };
 
 export const throttledSearchDiscogs = throttle<IDiscogsRelease>(
@@ -61,54 +51,12 @@ export const throttledSearchDiscogs = throttle<IDiscogsRelease>(
   1000
 );
 
-async function fetchDiscogsResource(path: string) {
-  const res = await fetch(baseUrl + path);
-  return await res.json();
-}
-
-export const parseDiscogsRelease = (release: IDiscogsRelease): Release => {
-  const artists: string[] = release.artists.map(
-    (artist: { name: string }) => artist.name
-  );
-  const barcode = release['identifiers'] ? release.identifiers[0].value : '';
-  // REMOVE_START
-  // const barcode = (release['identifiers'].length) ? release.identifiers[0].value : '';
-  // const artists = release.artists;
-  // const barcode = release.barcode;
-  // REMOVE_END
-  const label = release.labels ? release.labels[0].name : null;
-  const releaseType = release.formats
-    ? release.formats[0]['descriptions'][0]
-    : null;
-  const releaseDate = release.year
-    ? new Date(release.year)
-    : new Date('1970-01-01');
-
-  const parsedRelease: Release = {
-    id: release.id.toString(),
-    // id: release.id,
-    title: release.title,
-    label,
-    artists,
-    releaseDate: releaseDate,
-    createdAt: null,
-    updatedAt: null,
-    releaseType,
-    discogsUrl: release.uri,
-    barcode,
-    imgUrl: '',
-    spotifyUri: '',
-    userId: null,
-  };
-
-  return parsedRelease;
-};
-
 export async function getDiscogsRecommendations(
   userAlbums: Release[]
 ): Promise<IDiscogsRelease[]> {
   const searchTuples = userAlbums.map(album => [album.artists[0], album.title]);
   shuffleArray(searchTuples);
+
   const searchDiscogs = [];
   for (let tuple of searchTuples) {
     const searchDiscog = await throttledSearchDiscogs(...tuple);
