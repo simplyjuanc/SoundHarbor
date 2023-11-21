@@ -1,3 +1,7 @@
+export interface IMasterRelease {
+  main_release: number;
+}
+
 // https://developer.spotify.com/documentation/web-api/reference/get-an-album
 export interface ISpotifyAlbum {
   id: string;

@@ -1,6 +1,7 @@
 import querystring from 'querystring';
 import discogsColJson from '@/lib/mocks/discogs.collection.abridged.json';
 import { IDiscogsRelease } from '@/lib/utils/discogsUtils';
+import { IMasterRelease } from '@/lib/utils/types';
 
 const baseUrl = 'https://api.discogs.com/';
 const CURRENCY = 'GBP';
@@ -19,7 +20,7 @@ export const fetchDiscogs = async (path: string) => {
 };
 
 export const fetchDiscogsRelease = async (
-  id: string
+  id: string | number
 ): Promise<IDiscogsRelease> => {
   const query = querystring.stringify({
     curr_abbr: CURRENCY,
@@ -32,7 +33,9 @@ export const fetchDiscogsRelease = async (
   return data;
 };
 
-export const fetchDiscogsMasterRelease = async (id: string): Promise<any> => {
+export const fetchDiscogsMasterRelease = async (
+  id: number
+): Promise<IMasterRelease> => {
   const path = `masters/${id}`;
 
   const data = await fetchDiscogs(path);
@@ -59,7 +62,7 @@ export const searchDiscogsRelease = async (
 export const searchDiscogsMasterRelease = async (
   artist: string,
   album: string
-): Promise<any[]> => {
+): Promise<IDiscogsRelease[]> => {
   const query = querystring.stringify({
     artist,
     type: 'master',
