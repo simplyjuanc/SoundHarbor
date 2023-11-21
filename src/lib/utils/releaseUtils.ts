@@ -5,14 +5,11 @@ import {
   searchDiscogsForManualRecord,
 } from '@/lib/utils/discogsUtils';
 import { searchSpotifyAlbum } from '@/lib/utils/spotifyUtils';
+import { ISpotifyAlbum } from '@/lib/utils/types';
 
-export const parseSpotifyAlbumToRelease = (album: any): Release => {
-  const artists: string[] = album.artists.map(
-    (artist: { name: string }) => artist.name
-  );
-  const barcode: string = album.external_ids.upc
-    ? album.external_ids.upc
-    : album.external_ids.ean;
+export const parseSpotifyAlbumToRelease = (album: ISpotifyAlbum): Release => {
+  const artists = album.artists.map(artist => artist.name);
+  const barcode = album.external_ids.upc || album.external_ids.ean;
 
   const release: Release = {
     id: album.id,
