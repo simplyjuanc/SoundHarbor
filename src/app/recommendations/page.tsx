@@ -10,6 +10,7 @@ import {
 import { getSpotifyUserAlbums } from '@/lib/utils/spotifyUtils';
 import Recommendation from '@/components/Recommendation';
 import LogoView from '@/components/LogoView';
+import Header from '@/components/Header';
 
 export default async function Recommendations() {
   const spotifyToken = getSpotifyCookie();
@@ -25,20 +26,17 @@ export default async function Recommendations() {
   // console.log('userAlbums[0] :>> ', (userAlbums) ? userAlbums[0].title : 'NO ALBUMS');
   // console.log('discogsRecommendations.length :>> ', discogsRecommendations.length);
 
+  const imgInfo = {
+    width: 4912 / 10,
+    height: 3264 / 10,
+    alt: 'Collection image',
+    src: '/record-recommendations.jpg',
+  };
+
   return (
     <>
-      <Image
-        width={4912 / 10}
-        height={3264 / 10}
-        alt="Collection image"
-        src={'/record-recommendations.jpg'}
-      />
-      <Link
-        href="/dashboard"
-        className="link link-secondary font-thin text-sm ml-4 mt-8"
-      >
-        Back to Dashboard
-      </Link>
+      <Header img={imgInfo} type="dashboard" />
+
       <div className="mx-12 mt-6 flex flex-col justify-between align-middle">
         <h1 className="text-3xl font-extrabold">Recommendations</h1>
         <div className="flex flex-col gap-3 mt-8">

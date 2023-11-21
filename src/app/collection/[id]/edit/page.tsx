@@ -1,8 +1,8 @@
 import { getRelease, updateRelease } from '@/lib/models/releases.model';
 import { Release } from '@prisma/client';
 import React from 'react';
-import Image from 'next/image';
 import { redirect } from 'next/navigation';
+import Header from '@/components/Header'
 
 export default async function RecordEdit({
   params,
@@ -24,19 +24,20 @@ export default async function RecordEdit({
       else updateFields[pair[0]] = pair[1].toString();
     }
     // console.log('RecordEdit - updateRecord - updateFields :>> ', updateFields);
-    await updateRelease(params.id, updateFields); 
+    await updateRelease(params.id, updateFields);
     redirect(`/collection/${params.id}`);
   }
 
-  return (
-    <article>
-      <Image
-        src={record.imgUrl ? record.imgUrl : '/record-generic.jpg'}
-        alt={record.title}
-        width={428}
-        height={428}
-      />
+  const imgInfo={
+    width:428,
+    height:428,
+    alt:record.title,
+    src:record.imgUrl || '/record-generic.jpg'
+  }
 
+  return (
+    <>
+      <Header img={imgInfo} type="record" backTo={`collection/${params.id}`} />
       <div className='px-12'>
         <h1 className='text-2xl my-5 font-extrabold'>{record.title}</h1>
         <form action={updateRecord} className='flex flex-col flex-nowrap gap-2'>
@@ -85,6 +86,6 @@ export default async function RecordEdit({
           </button>
         </form>
       </div>
-    </article>
+    </>
   );
 }

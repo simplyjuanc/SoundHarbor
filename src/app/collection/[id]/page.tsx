@@ -1,10 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { deleteRelease, getRelease } from '@/lib/models/releases.model';
 import RecordView from '@/components/RecordView';
 import RecordActions from '@/components/RecordActions';
+import Header from '@/components/Header';
 
 type Props = {
   params: {
@@ -30,20 +29,16 @@ const IndividualRecord = async ({ params: { id: recordId } }: Props) => {
     }
   };
 
+  const imgInfo = {
+    width: 428,
+    height: 428,
+    alt: title,
+    src: imgUrl || '/record-generic.jpg',
+  };
+
   return (
     <>
-      <Image
-        src={imgUrl || '/record-generic.jpg'}
-        alt={title}
-        width={428}
-        height={428}
-      />
-      <Link
-        href="/collection"
-        className="link link-secondary font-thin text-sm ml-4 mt-8"
-      >
-        Back to Collection
-      </Link>
+      <Header img={imgInfo} type="collection" />
       <RecordView record={record} />
       <RecordActions
         spotifyUri={spotifyUri}
