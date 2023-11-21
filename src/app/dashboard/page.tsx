@@ -1,8 +1,8 @@
 import React from 'react';
-import Link from 'next/link';
 import { cookies } from 'next/headers';
 import { syncReleases } from '@/lib/actions/syncReleases';
 import LogoView from '@/components/LogoView';
+import Button from '@/components/Button';
 
 export default async function Dashboard() {
   const spotifyToken = cookies().get('spotify_access_token')?.value;
@@ -22,18 +22,18 @@ export default async function Dashboard() {
       </div>
 
       <div className="flex flex-col gap-8 mt-12 mx-10">
-        <Link
+        <Button
+          text="Music Collection"
+          btnClasses="w-full bg-gradient-to-r from-primary to-emerald-700 h-16"
+          link
           href="/collection"
-          className="btn bg-gradient-to-r from-primary to-emerald-700 h-16"
-        >
-          Music Collection
-        </Link>
-        <Link
+        />
+        <Button
+          text="Recommendations"
+          btnClasses="w-full bg-gradient-to-r from-secondary to-orange-700 h-16"
+          link
           href="/recommendations"
-          className="btn bg-gradient-to-r from-secondary to-orange-700  h-16"
-        >
-          Recommendations
-        </Link>
+        />
       </div>
       <p className="text-sm mt-16">
         We will be working in the background so that your music is kept up to

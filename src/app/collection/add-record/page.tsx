@@ -3,8 +3,8 @@ import LogoView from '@/components/LogoView';
 import createRecord from '@/lib/actions/createManualRecord';
 // import { getSpotifyCookie } from '@/lib/utils/utils';
 import { cookies } from 'next/headers';
-import Link from 'next/link';
 import React from 'react';
+import Button from '@/components/Button'
 
 
 export default function AddRecord () {
@@ -31,29 +31,29 @@ export default function AddRecord () {
           <label htmlFor='title' className='min-w-[20%] max-w-[20%]'>Title*</label>
           <input type='text' name='title' className='rounded px-2 ' required/>
         </div>
-        
         <div className='flex flex-nowrap justify-around gap-2'>
           <label htmlFor='artist' className='min-w-[20%] max-w-[20%]'>Artist*</label>
           <input type='text' name='artist' className='rounded px-2 ' required/>
         </div>
-        
         <div className='flex flex-nowrap justify-around gap-2'>
           <label htmlFor='label' className='min-w-[20%] max-w-[20%]'>Label</label>
           <input type='text' name='label' className='rounded px-2 '/>
         </div>
-        
         <div className='flex flex-nowrap justify-around gap-2'>
           <label htmlFor='releaseDate' className='min-w-[20%] max-w-[20%]'>Released</label>
           <input type='text' name='releaseDate' className='rounded px-2 '/>
         </div>
         <div className='flex flex-row flex-nowrap gap-4 w-full justify-center'>
-        <Link className='btn btn-info max-h-4 mt-8 w-[30%]' href='/collection'> 
-          Back
-        </Link>
-        <button type='submit' className='btn btn-secondary max-h-4 mt-8 w-[30%]'> 
+        <Button
+            info
+            text="Back"
+            btnClasses="max-h-4 mt-8"
+            link
+            href="/collection"
+          />
+        <button type='submit' className='btn btn-secondary max-h-4 mt-8 w-[30%]'>
           Add
         </button>
-
         </div>
       </form>
       <LogoView></LogoView>

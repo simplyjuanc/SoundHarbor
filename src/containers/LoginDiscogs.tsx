@@ -1,8 +1,9 @@
 import { useAuthStore } from '@/lib/authStore';
 import { parseCookies } from '@/lib/utils/utils';
-import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import React, { useState } from 'react';
+import Button from '@/components/Button'
+
 
 export default function LoginDiscogs() {
   const authStore = useAuthStore();
@@ -36,13 +37,8 @@ export default function LoginDiscogs() {
             set up with Discogs so that we can find music you might want to add
             to your collection!
           </p>
-          <Link
-            href='/api/auth/discogs-login'
-            className='btn btn-primary mt-12 mx-auto self-center'
-            onClick={connectDiscogs}
-          >
-            Connect to Discogs
-          </Link>
+          <Button text='Connect to Discogs' primary btnClasses='mt-12 mx-auto self-center' onClick={connectDiscogs} link href='/api/auth/discogs-login' />
+
         </div>
       )}
     </>

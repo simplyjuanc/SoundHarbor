@@ -1,8 +1,8 @@
 import React from 'react';
-import Link from 'next/link';
 import LoginDiscogs from './LoginDiscogs';
 import { useAuthStore } from '@/lib/authStore';
 import {parseCookies} from '@/lib/utils/utils';
+import Button from '@/components/Button'
 
 export default function LoginSpotify() {
   const authStore = useAuthStore();
@@ -37,12 +37,7 @@ export default function LoginSpotify() {
               so that we can get an idea of what kind of music you like.
             </p>
           </div>
-          <Link
-            href='/api/auth/spotify-login'
-            className='btn btn-primary mt-12 mx-auto self-center'
-          >
-            Connect to Spotify
-          </Link>
+          <Button text='Connect to Spotify' primary btnClasses='mt-12 mx-auto self-center' link href='/api/auth/spotify-login' />
         </div>
       )}
     </>
