@@ -21,7 +21,7 @@ export interface IDiscogsRelease {
   identifiers: any[];
   formats: any[];
   year: number;
-  // genres: string[];
+  cover_image?: string;
 }
 
 // TODO: no priority - implement pagination (search, getUserItems methods)
