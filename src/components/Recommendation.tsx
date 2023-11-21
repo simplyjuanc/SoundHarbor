@@ -29,7 +29,7 @@ export default function Recommendation({
           secondary
           small
           text="Buy"
-          btnClasses="justify-self-end absolute right-2"
+          btnClasses="absolute top-6 right-2"
           link
           href={'https://www.discogs.com' + recommendation.uri}
           blank
