@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAuthStore } from '@/lib/authStore';
 import { parseCookies } from '@/lib/utils/utils';
+import Button from '@/components/Button';
 
 export default function Login() {
   const authStore = useAuthStore();
@@ -14,15 +15,16 @@ export default function Login() {
   }
 
   if (!authStore.discogsAccessToken && cookieJar) {
-    if (cookieJar[discogsCookie]) authStore.setDiscogsAccessToken(cookieJar[discogsCookie]);
+    if (cookieJar[discogsCookie])
+      authStore.setDiscogsAccessToken(cookieJar[discogsCookie]);
   }
   if (!authStore.spotifyAccessToken && cookieJar) {
     if (cookieJar[spotifyCookie]) {
-      authStore.setSpotifyAccessToken(cookieJar[spotifyCookie])
+      authStore.setSpotifyAccessToken(cookieJar[spotifyCookie]);
       authStore.setIsLoggedIn(true);
-    };
+    }
   }
-  
+
   //   if (cookieJar && cookieJar[discogsCookie]) {
   //     authStore.setSpotifyAccessToken(cookieJar[discogsCookie]);
   //   }
@@ -34,33 +36,28 @@ export default function Login() {
   );
 
   return (
-    
     <form onSubmit={logIn}>
-      <div className='flex flex-col gap-6 mt-12 justify-evenly  '>
+      <div className="flex flex-col gap-6 mt-12 justify-evenly  ">
         <input
-          type='email'
-          name='email'
-          id='email'
-          placeholder='rick.astley@soundharbor.music'
+          type="email"
+          name="email"
+          id="email"
+          placeholder="rick.astley@soundharbor.music"
           required
-          className='rounded px-2'
+          className="rounded p-2"
         />
         <input
-          type='password'
-          name='password'
-          id='password'
-          placeholder='Never gonna...'
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Never gonna..."
           required
-          className='rounded px-2'
+          className="rounded p-2"
         />
       </div>
-      <div className='flex flex-row mt-12 w-full items-center justify-around gap-4'>
-        <button type='submit' className='btn btn-primary h-16'>
-          Log In
-        </button>
-        <button type='submit' className='btn btn-primary h-16'>
-          Sign Up
-        </button>
+      <div className="flex flex-row mt-12 w-full items-center justify-around ">
+        <Button primary text="Log In" type="submit" btnClasses="h-16" />
+        <Button primary text="Sign Up" type="submit" btnClasses="h-16" />
       </div>
     </form>
   );

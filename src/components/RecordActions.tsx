@@ -23,7 +23,7 @@ const RecordActions = ({ spotifyUri, id, deleteRecord }: Props) => {
       {/* break line */}
       <div className="h-0 basis-full" />
       <Button warning text="Edit Record" link href={`/collection/${id}/edit`} />
-      <Button error text=" Delete Record" onClick={deleteRecord} />
+      <Button error text="Delete Record" onClick={deleteRecord} />
     </div>
   );
 };

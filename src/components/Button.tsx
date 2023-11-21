@@ -11,6 +11,7 @@ type Props = {
   error?: Boolean;
   info?: Boolean;
   small?: Boolean;
+  type?: 'button' | 'submit';
   onClick?: Function;
   btnClasses?: string;
   link?: Boolean;
@@ -26,6 +27,7 @@ const Button = ({
   error,
   info,
   small,
+  type = 'button',
   onClick,
   btnClasses,
   link,
@@ -59,7 +61,7 @@ const Button = ({
   };
 
   return (
-    <button onClick={handleClick} className={btnClassnames}>
+    <button type={type} onClick={handleClick} className={btnClassnames}>
       {text}
     </button>
   );

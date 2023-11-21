@@ -59,12 +59,12 @@ export default function AddRecord() {
             link
             href="/collection"
           />
-          <button
+          <Button
+            secondary
+            text="Add"
             type="submit"
-            className="btn btn-secondary max-h-4 mt-8 w-[30%]"
-          >
-            Add
-          </button>
+            btnClasses="max-h-4 mt-8"
+          />
         </div>
       </form>
       <LogoView></LogoView>

@@ -1,8 +1,8 @@
 import { getRelease, updateRelease } from '@/lib/models/releases.model';
-import { Release } from '@prisma/client';
 import React from 'react';
 import { redirect } from 'next/navigation';
 import Header from '@/components/Header';
+import Button from '@/components/Button';
 
 type Props = {
   params: { id: string };
@@ -112,12 +112,12 @@ const RecordEdit = async ({ params }: Props) => {
               className="rounded px-2"
             />
           </div>
-          <button
+          <Button
+            secondary
+            text="Save Record"
             type="submit"
-            className="btn btn-secondary mt-8 w-4/5 mx-auto"
-          >
-            Save Record
-          </button>
+            btnClasses="mt-8 w-4/5 mx-auto"
+          />
         </form>
       </div>
     </>
