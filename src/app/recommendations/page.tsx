@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import {
@@ -8,9 +6,9 @@ import {
   getDiscogsRecommendations,
 } from '@/lib/utils/discogsUtils';
 import { getSpotifyUserAlbums } from '@/lib/utils/spotifyUtils';
-import Recommendation from '@/components/Recommendation';
 import LogoView from '@/components/LogoView';
 import Header from '@/components/Header';
+import RecommendationList from '@/components/RecommendationList';
 
 export default async function Recommendations() {
   const spotifyToken = getSpotifyCookie();
@@ -36,20 +34,15 @@ export default async function Recommendations() {
   return (
     <>
       <Header img={imgInfo} type="dashboard" />
-
       <div className="mx-12 mt-6 flex flex-col justify-between align-middle">
         <h1 className="text-3xl font-extrabold">Recommendations</h1>
         <div className="flex flex-col gap-3 mt-8">
-          {discogsRecommendations &&
-            discogsRecommendations.map((reco, index) => (
-              <Recommendation
-                key={reco.id}
-                recommendation={reco}
-              ></Recommendation>
-            ))}
+          {discogsRecommendations && (
+            <RecommendationList recommendations={discogsRecommendations} />
+          )}
         </div>
       </div>
-      <LogoView></LogoView>
+      <LogoView />
     </>
   );
 }

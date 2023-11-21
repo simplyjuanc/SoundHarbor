@@ -1,12 +1,10 @@
 import React from 'react';
-import Image from 'next/image';
-import RecordCard from '@/components/RecordCard';
-import Link from 'next/link';
 import { getAllReleases } from '@/lib/models/releases.model';
 import { Release } from '@prisma/client';
 import LogoView from '@/components/LogoView';
 import Button from '@/components/Button';
 import Header from '@/components/Header';
+import CollectionList from '@/components/CollectionList';
 
 export default async function Collection() {
   // const spotifyToken = cookies().get('spotify_access_token')?.value;
@@ -34,20 +32,10 @@ export default async function Collection() {
           />
         </div>
         <div className="flex flex-wrap mx-auto gap-6 my-8 justify-center">
-          {releases &&
-            releases.map(release => (
-              <Link href={`collection/${release.id}`} key={release.id}>
-                <RecordCard
-                  key={release.id}
-                  //TODO Switch back on once retrieving data
-                  // release={release.basic_information}
-                  release={release}
-                />
-              </Link>
-            ))}
+          {releases && <CollectionList releases={releases} />}
         </div>
       </div>
-      <LogoView></LogoView>
+      <LogoView />
     </>
   );
 }
