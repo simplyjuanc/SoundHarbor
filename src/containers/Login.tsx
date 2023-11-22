@@ -1,43 +1,45 @@
-import React from 'react';
+'use client';
+
+import { useEffect } from 'react';
 import { useAuthStore } from '@/lib/authStore';
 import { parseCookies } from '@/lib/utils/utils';
 import Button from '@/components/Button';
 
 export default function Login() {
-  const authStore = useAuthStore();
+  const {
+    spotifyAccessToken,
+    setSpotifyAccessToken,
+    discogsAccessToken,
+    setDiscogsAccessToken,
+    setIsLoggedIn,
+  } = useAuthStore();
 
-  const spotifyCookie = 'spotify_access_token';
-  const discogsCookie = 'discogs_secret';
-  const cookieJar = parseCookies(document.cookie);
+  const handleSubmit = () => {
+    setIsLoggedIn(true);
+  };
 
-  function logIn() {
-    authStore.setIsLoggedIn(true);
-  }
+  useEffect(() => {
+    const cookieJar = parseCookies(document.cookie);
 
-  if (!authStore.discogsAccessToken && cookieJar) {
-    if (cookieJar[discogsCookie])
-      authStore.setDiscogsAccessToken(cookieJar[discogsCookie]);
-  }
-  if (!authStore.spotifyAccessToken && cookieJar) {
-    if (cookieJar[spotifyCookie]) {
-      authStore.setSpotifyAccessToken(cookieJar[spotifyCookie]);
-      authStore.setIsLoggedIn(true);
+    if (!cookieJar) {
+      return;
     }
-  }
 
-  //   if (cookieJar && cookieJar[discogsCookie]) {
-  //     authStore.setSpotifyAccessToken(cookieJar[discogsCookie]);
-  //   }
-  // }
+    const { spotifyCookie, discogsCookie } = cookieJar;
 
-  console.log(
-    'authStore.spotifyAccessToken :>> ',
-    authStore.spotifyAccessToken
-  );
+    if (!discogsAccessToken && discogsCookie) {
+      setDiscogsAccessToken(discogsCookie);
+    }
+
+    if (!spotifyAccessToken && spotifyCookie) {
+      setSpotifyAccessToken(spotifyCookie);
+      setIsLoggedIn(true);
+    }
+  }, []);
 
   return (
-    <form className="w-full" onSubmit={logIn}>
-      <div className="flex flex-col gap-6 mt-12 justify-evenly">
+    <form className="w-full" onSubmit={handleSubmit}>
+      <div className="flex flex-col gap-6 mt-12 justify-evenly  ">
         <input
           type="email"
           name="email"
