@@ -1,4 +1,5 @@
 import { Release } from '@prisma/client';
+import { cookies } from 'next/headers';
 import {
   fetchTracksDetails,
   fetchTopItems,
@@ -9,6 +10,12 @@ import {
 } from '@/lib/services/spotifyServices';
 import { shuffleArray } from '@/lib/utils/utils';
 import { parseSpotifyAlbumToRelease } from '@/lib/utils/releaseUtils';
+
+export const getSpotifyCookie = (): string | undefined => {
+  const cookieJar = cookies();
+  const spotifyToken = cookieJar.get('spotify_access_token')?.value;
+  return spotifyToken;
+};
 
 export async function getTracksDetails(
   trackIds: string[],
