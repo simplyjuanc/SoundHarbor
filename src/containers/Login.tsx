@@ -1,43 +1,15 @@
 'use client';
 
-import { useEffect } from 'react';
 import { useAuthStore } from '@/lib/authStore';
-import { parseCookies } from '@/lib/utils/utils';
 import Button from '@/components/Button';
 
 export default function Login() {
-  const {
-    spotifyAccessToken,
-    setSpotifyAccessToken,
-    discogsAccessToken,
-    setDiscogsAccessToken,
-    setIsLoggedIn,
-  } = useAuthStore();
+  const { setIsLoggedIn } = useAuthStore();
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     setIsLoggedIn(true);
   };
-
-  useEffect(() => {
-    const cookieJar = parseCookies(document.cookie);
-
-    if (cookieJar) {
-      const {
-        spotify_access_token: spotifyCookie,
-        discogs_secret: discogsCookie,
-      } = cookieJar;
-
-      if (!discogsAccessToken && discogsCookie) {
-        setDiscogsAccessToken(discogsCookie);
-      }
-
-      if (!spotifyAccessToken && spotifyCookie) {
-        setSpotifyAccessToken(spotifyCookie);
-        setIsLoggedIn(true);
-      }
-    }
-  }, []);
 
   return (
     <form className="w-full" onSubmit={handleSubmit}>
