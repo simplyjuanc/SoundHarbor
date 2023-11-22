@@ -1,28 +1,17 @@
-import React from 'react';
-import { cookies } from 'next/headers';
+import { Suspense } from 'react';
 import { redirect } from 'next/navigation';
-import {
-  IDiscogsRelease,
-  getDiscogsRecommendations,
-} from '@/lib/utils/discogsUtils';
-import { getSpotifyUserAlbums } from '@/lib/utils/spotifyUtils';
+
+import { getSpotifyCookie } from '@/lib/utils/spotifyUtils';
 import LogoView from '@/components/LogoView';
+import LogoViewSpinner from '@/components/LogoViewSpinner';
 import Header from '@/components/Header';
 import RecommendationList from '@/components/RecommendationList';
 
 export default async function Recommendations() {
   const spotifyToken = getSpotifyCookie();
-  // const spotifyToken = parseCookies(document.cookie)?.spotify_access_token;
-  if (!spotifyToken) redirect('/');
-  let userAlbums = await getSpotifyUserAlbums(spotifyToken);
-  // console.log('userAlbums[0] :>> ', userAlbums[0]);
-
-  let discogsRecommendations: IDiscogsRelease[] = [];
-  if (userAlbums)
-    discogsRecommendations = await getDiscogsRecommendations(userAlbums);
-  console.log('discogsRecommendations[0] :>> ', discogsRecommendations[0]);
-  // console.log('userAlbums[0] :>> ', (userAlbums) ? userAlbums[0].title : 'NO ALBUMS');
-  // console.log('discogsRecommendations.length :>> ', discogsRecommendations.length);
+  if (!spotifyToken) {
+    redirect('/');
+  }
 
   const imgInfo = {
     width: 4912 / 10,
@@ -34,21 +23,15 @@ export default async function Recommendations() {
   return (
     <>
       <Header img={imgInfo} type="dashboard" />
-      <div className="mx-12 mt-6 flex flex-col justify-between align-middle">
+      <div className="mx-12 mt-6 flex flex-col justify-between items-center">
         <h1 className="text-3xl font-extrabold">Recommendations</h1>
-        <div className="flex flex-col gap-3 mt-8">
-          {discogsRecommendations && (
-            <RecommendationList recommendations={discogsRecommendations} />
-          )}
-        </div>
+        <Suspense fallback={<LogoViewSpinner />}>
+          <div className="w-full flex flex-col gap-3 mt-8">
+            <RecommendationList />
+          </div>
+          <LogoView />
+        </Suspense>
       </div>
-      <LogoView />
     </>
   );
-}
-
-function getSpotifyCookie(): string | undefined {
-  const cookieJar = cookies();
-  const spotifyToken = cookieJar.get('spotify_access_token')?.value;
-  return spotifyToken;
 }
