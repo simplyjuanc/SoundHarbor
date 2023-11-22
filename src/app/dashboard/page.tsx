@@ -1,12 +1,10 @@
-import React from 'react';
-import { cookies } from 'next/headers';
-import { syncReleases } from '@/lib/actions/syncReleases';
+import { getSpotifyToken } from '@/lib/utils/spotifyUtils';
 import LogoView from '@/components/LogoView';
 import Button from '@/components/Button';
 
 export default async function Dashboard() {
-  const spotifyToken = cookies().get('spotify_access_token')?.value;
-  const discogsReleasesOwned: any[] = await syncReleases(spotifyToken!);
+  const spotifyToken = getSpotifyToken();
+  // const discogsReleasesOwned: any[] = await syncReleases(spotifyToken!);
   // console.log('discogsReleasesOwned[0] :>> ', discogsReleasesOwned[0]);
 
   return (

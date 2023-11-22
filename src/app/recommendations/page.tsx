@@ -1,14 +1,14 @@
 import { Suspense } from 'react';
 import { redirect } from 'next/navigation';
 
-import { getSpotifyCookie } from '@/lib/utils/spotifyUtils';
+import { getSpotifyToken } from '@/lib/utils/spotifyUtils';
 import LogoView from '@/components/LogoView';
 import LogoViewSpinner from '@/components/LogoViewSpinner';
 import Header from '@/components/Header';
 import RecommendationList from '@/components/RecommendationList';
 
 export default async function Recommendations() {
-  const spotifyToken = getSpotifyCookie();
+  const spotifyToken = getSpotifyToken();
   if (!spotifyToken) {
     redirect('/');
   }

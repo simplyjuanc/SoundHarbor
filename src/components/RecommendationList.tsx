@@ -3,13 +3,13 @@ import {
   getDiscogsRecommendations,
 } from '@/lib/utils/discogsUtils';
 import {
-  getSpotifyCookie,
+  getSpotifyToken,
   getSpotifyUserAlbums,
 } from '@/lib/utils/spotifyUtils';
 import Recommendation from '@/components/Recommendation';
 
 const RecommendationList = async () => {
-  const spotifyToken = getSpotifyCookie();
+  const spotifyToken = getSpotifyToken();
 
   let userAlbums = await getSpotifyUserAlbums(spotifyToken!);
   let recommendations: IDiscogsRelease[] = [];

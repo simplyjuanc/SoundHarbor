@@ -11,7 +11,7 @@ import {
 import { shuffleArray } from '@/lib/utils/utils';
 import { parseSpotifyAlbumToRelease } from '@/lib/utils/releaseUtils';
 
-export const getSpotifyCookie = (): string | undefined => {
+export const getSpotifyToken = (): string | undefined => {
   const cookieJar = cookies();
   const spotifyToken = cookieJar.get('spotify_access_token')?.value;
   return spotifyToken;
