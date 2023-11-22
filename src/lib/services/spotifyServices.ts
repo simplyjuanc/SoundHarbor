@@ -3,7 +3,7 @@ import querystring from 'querystring';
 const baseURL = 'https://api.spotify.com/v1/';
 const market = 'GB';
 
-const generateSpotifyHeader = (accessToken: string) => {
+export const generateSpotifyHeader = (accessToken: string) => {
   const headers = {
     Authorization: 'Bearer ' + accessToken,
   };

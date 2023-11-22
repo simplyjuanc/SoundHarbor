@@ -68,12 +68,14 @@ describe('Recommendation Component', () => {
     };
     render(<Recommendation recommendation={mockRecommendation} />);
 
-    const buyButton = screen.getByRole('link', { name: /buy/i });
+    const buyButton = screen.getByRole('button', { name: /buy/i });
     expect(buyButton).toBeInTheDocument();
-    expect(buyButton).toHaveAttribute(
+
+    const linkInButton = screen.getByRole('link', { name: /buy/i });
+    expect(linkInButton).toHaveAttribute(
       'href',
       'https://www.discogs.com' + mockRecommendation.uri
     );
-    expect(buyButton).toHaveAttribute('target', '_blank');
+    expect(linkInButton).toHaveAttribute('target', '_blank');
   });
 });
