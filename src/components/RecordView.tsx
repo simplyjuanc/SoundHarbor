@@ -11,7 +11,7 @@ export default function RecordView({ record }: Props) {
 
   return (
     <div className="px-6 mb-10">
-      <h1 className="text-2xl my-5 font-extrabold">{title}</h1>
+      <h1 className="text-center text-2xl my-5 font-extrabold">{title}</h1>
       <RecordTable title="Release Info" record={record} />
     </div>
   );

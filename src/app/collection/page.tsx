@@ -31,7 +31,7 @@ export default async function Collection() {
             href="collection/add-record"
           />
         </div>
-        <div className="flex flex-wrap mx-auto gap-6 my-8 justify-center">
+        <div className="flex flex-wrap px-2 mx-auto gap-6 my-8 justify-center">
           {releases && <CollectionList releases={releases} />}
         </div>
       </div>

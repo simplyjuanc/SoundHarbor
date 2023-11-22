@@ -39,12 +39,14 @@ const IndividualRecord = async ({ params: { id: recordId } }: Props) => {
   return (
     <>
       <Header img={imgInfo} type="collection" />
-      <RecordView record={record} />
-      <RecordActions
-        spotifyUri={spotifyUri}
-        id={id}
-        deleteRecord={deleteRecord}
-      />
+      <div className="max-w-md mx-auto">
+        <RecordView record={record} />
+        <RecordActions
+          spotifyUri={spotifyUri}
+          id={id}
+          deleteRecord={deleteRecord}
+        />
+      </div>
     </>
   );
 };

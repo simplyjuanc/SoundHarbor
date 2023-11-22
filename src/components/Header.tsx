@@ -25,7 +25,13 @@ const Header = ({ img, type, backTo }: Props) => {
 
   return (
     <div className="header">
-      <Image width={width} height={height} alt={alt} src={src} />
+      <Image
+        width={width}
+        height={height}
+        alt={alt}
+        src={src}
+        className="w-full h-64 object-cover"
+      />
       <CustomLink secondary text={text} href={href[type]} />
     </div>
   );

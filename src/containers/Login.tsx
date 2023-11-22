@@ -36,8 +36,8 @@ export default function Login() {
   );
 
   return (
-    <form onSubmit={logIn}>
-      <div className="flex flex-col gap-6 mt-12 justify-evenly  ">
+    <form className="w-full" onSubmit={logIn}>
+      <div className="flex flex-col gap-6 mt-12 justify-evenly">
         <input
           type="email"
           name="email"
@@ -55,9 +55,9 @@ export default function Login() {
           className="rounded p-2"
         />
       </div>
-      <div className="flex flex-row mt-12 w-full items-center justify-around ">
-        <Button primary text="Log In" type="submit" btnClasses="h-16" />
-        <Button primary text="Sign Up" type="submit" btnClasses="h-16" />
+      <div className="flex flex-col gap-4 mt-12 w-full items-center justify-center ">
+        <Button primary text="Log In" type="submit" btnClasses="w-10/12 h-6" />
+        <Button primary text="Sign Up" type="submit" btnClasses="w-10/12 h-8" />
       </div>
     </form>
   );

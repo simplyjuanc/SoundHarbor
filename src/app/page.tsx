@@ -3,16 +3,13 @@ import LoginSpotify from '@/containers/LoginSpotify';
 import Login from '@/containers/Login';
 import Image from 'next/image';
 import { useAuthStore } from '@/lib/authStore';
-import {parseCookies} from '@/lib/utils/utils';
+import { parseCookies } from '@/lib/utils/utils';
 import LogoView from '@/components/LogoView';
 
-
 export default function App() {
-  const isLoggedIn = useAuthStore((state) => state.isLoggedIn);
-  const setIsLoggedIn = useAuthStore((state) => state.setIsLoggedIn);
-  
-  
-  
+  const isLoggedIn = useAuthStore(state => state.isLoggedIn);
+  const setIsLoggedIn = useAuthStore(state => state.setIsLoggedIn);
+
   // TODO next step is to avoid Spotify to show up after log in
   // useEffect(() => {
   //   const cookieJar = parseCookies(document.cookie);
@@ -27,11 +24,11 @@ export default function App() {
   // }, [isLoggedIn, setIsLoggedIn]);
 
   return (
-    <div className='flex flex-col mx-16 mt-28 h-full'>
-      <LogoView></LogoView>
-      <article className=''>
-      {isLoggedIn ? <LoginSpotify /> : <Login />}
-      </article>
+    <div className="text-center">
+      <div className="max-w-sm w-9/12 flex flex-col mx-auto mt-10 h-full">
+        <LogoView />
+        {isLoggedIn ? <LoginSpotify /> : <Login />}
+      </div>
     </div>
   );
 }

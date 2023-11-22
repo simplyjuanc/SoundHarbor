@@ -52,10 +52,10 @@ const RecordEdit = async ({ params }: Props) => {
   return (
     <>
       <Header img={imgInfo} type="record" backTo={`collection/${id}`} />
-      <div className="px-12">
-        <h1 className="text-2xl my-5 font-extrabold">{title}</h1>
+      <div className="max-w-md mx-auto px-12">
+        <h1 className="text-2xl mt-4 mb-2 font-extrabold">{title}</h1>
         <form action={updateRecord} className="flex flex-col flex-nowrap gap-2">
-          <div className="flex flex-nowrap justify-around gap-2">
+          <div className="flex flex-col gap-2">
             <label
               htmlFor="artists"
               className="min-w-[20%] max-w-[20%] mr-auto"
@@ -67,10 +67,10 @@ const RecordEdit = async ({ params }: Props) => {
               name="artists"
               id="artists"
               placeholder={artists.join(', ')}
-              className="rounded px-2"
+              className="rounded w-full p-2"
             />
           </div>
-          <div className="flex flex-nowrap justify-around gap-2">
+          <div className="flex flex-col gap-2">
             <label htmlFor="label" className="min-w-[20%] max-w-[20%] mr-auto">
               Label
             </label>
@@ -79,10 +79,10 @@ const RecordEdit = async ({ params }: Props) => {
               name="label"
               id="label"
               placeholder={label}
-              className="rounded px-2"
+              className="rounded w-full p-2"
             />
           </div>
-          <div className="flex flex-nowrap justify-around gap-2">
+          <div className="flex flex-col gap-2">
             <label
               htmlFor="releaseType"
               className="min-w-[20%] max-w-[20%] mr-auto"
@@ -94,10 +94,10 @@ const RecordEdit = async ({ params }: Props) => {
               name="releaseType"
               id="releaseType"
               placeholder={releaseType}
-              className="rounded px-2"
+              className="rounded w-full p-2"
             />
           </div>
-          <div className="flex flex-nowrap justify-around gap-2">
+          <div className="flex flex-col gap-2">
             <label
               htmlFor="releaseDate"
               className="min-w-[20%] max-w-[20%] mr-auto"
@@ -109,7 +109,7 @@ const RecordEdit = async ({ params }: Props) => {
               name="releaseDate"
               id="releaseDate"
               placeholder={releaseDate}
-              className="rounded px-2"
+              className="rounded w-full p-2"
             />
           </div>
           <Button
