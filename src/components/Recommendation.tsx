@@ -11,7 +11,7 @@ export default function Recommendation({
   recommendation: IDiscogsRelease;
 }) {
   return (
-    <div className="flex flex-row flex-nowrap flex-shrink bg-neutral justify-stretch pl-0 py-0 pr-3 rounded-lg relative">
+    <div className="flex flex-row flex-nowrap bg-neutral justify-stretch pl-0 py-0 pr-3 rounded-lg relative">
       <Image
         src={
           recommendation.cover_image
@@ -21,6 +21,7 @@ export default function Recommendation({
         alt={recommendation.title + ' image.'}
         width={75}
         height={75}
+        style={{ maxHeight: '75px' }}
         className="ml-0 my-0 rounded-tl-lg rounded-bl-lg"
       ></Image>
       <div className="flex flex-row flex-nowrap flex-shrink items-center justify-between w-max">
