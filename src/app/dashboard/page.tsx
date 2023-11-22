@@ -1,15 +1,20 @@
+import { redirect } from 'next/navigation';
+import { syncReleases } from '@/lib/actions/syncReleases';
 import { getSpotifyToken } from '@/lib/utils/spotifyUtils';
 import LogoView from '@/components/LogoView';
 import Button from '@/components/Button';
 
 export default async function Dashboard() {
   const spotifyToken = getSpotifyToken();
-  // const discogsReleasesOwned: any[] = await syncReleases(spotifyToken!);
-  // console.log('discogsReleasesOwned[0] :>> ', discogsReleasesOwned[0]);
+  if (!spotifyToken) {
+    redirect('/');
+  }
+
+  await syncReleases(spotifyToken!);
 
   return (
     <article className="mx-8 flex flex-col ">
-      <LogoView></LogoView>
+      <LogoView />
       <h1 className="text-2xl my-5 font-extrabold">Hi, Juan</h1>
       <div>
         <p>We have synced your music collection already!</p>
