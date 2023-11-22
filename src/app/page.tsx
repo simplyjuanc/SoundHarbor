@@ -1,33 +1,63 @@
 'use client';
+import { useEffect, useState } from 'react';
 import LoginSpotify from '@/containers/LoginSpotify';
+import LoginDiscogs from '@/containers/LoginDiscogs';
 import Login from '@/containers/Login';
-import Image from 'next/image';
 import { useAuthStore } from '@/lib/authStore';
 import { parseCookies } from '@/lib/utils/utils';
+
 import LogoView from '@/components/LogoView';
 
 export default function App() {
-  const isLoggedIn = useAuthStore(state => state.isLoggedIn);
-  const setIsLoggedIn = useAuthStore(state => state.setIsLoggedIn);
+  const [isLoading, setIsLoading] = useState(true);
+  const {
+    isLoggedIn,
+    setIsLoggedIn,
+    spotifyAccessToken,
+    setSpotifyAccessToken,
+    discogsAccessToken,
+    setDiscogsAccessToken,
+  } = useAuthStore();
 
-  // TODO next step is to avoid Spotify to show up after log in
-  // useEffect(() => {
-  //   const cookieJar = parseCookies(document.cookie);
+  useEffect(() => {
+    const cookieJar = parseCookies(document.cookie);
 
-  //   let spotifyCookie;
-  //   if (cookieJar) spotifyCookie = cookieJar['spotify_access_token'];
+    if (cookieJar) {
+      const {
+        spotify_access_token: spotifyCookie,
+        discogs_secret: discogsCookie,
+      } = cookieJar;
 
-  //   console.log('cookieJar :>> ', cookieJar);
-  //   if (!isLoggedIn || !spotifyCookie) {
-  //     setIsLoggedIn(false);
-  //   }
-  // }, [isLoggedIn, setIsLoggedIn]);
+      if (!discogsAccessToken && discogsCookie) {
+        setDiscogsAccessToken(discogsCookie);
+      }
+
+      if (!spotifyAccessToken && spotifyCookie) {
+        setSpotifyAccessToken(spotifyCookie);
+        setIsLoggedIn(true);
+      }
+    }
+
+    setIsLoading(false);
+  }, []);
+
+  if (isLoading) {
+    return null;
+  }
 
   return (
     <div className="text-center">
       <div className="max-w-sm w-9/12 flex flex-col mx-auto mt-10 h-full">
         <LogoView />
-        {isLoggedIn ? <LoginSpotify /> : <Login />}
+        {isLoggedIn ? (
+          spotifyAccessToken ? (
+            <LoginDiscogs />
+          ) : (
+            <LoginSpotify />
+          )
+        ) : (
+          <Login />
+        )}
       </div>
     </div>
   );
