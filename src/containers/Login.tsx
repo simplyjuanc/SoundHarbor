@@ -14,26 +14,28 @@ export default function Login() {
     setIsLoggedIn,
   } = useAuthStore();
 
-  const handleSubmit = () => {
+  const handleSubmit = (e: React.SyntheticEvent) => {
+    e.preventDefault();
     setIsLoggedIn(true);
   };
 
   useEffect(() => {
     const cookieJar = parseCookies(document.cookie);
 
-    if (!cookieJar) {
-      return;
-    }
+    if (cookieJar) {
+      const {
+        spotify_access_token: spotifyCookie,
+        discogs_secret: discogsCookie,
+      } = cookieJar;
 
-    const { spotifyCookie, discogsCookie } = cookieJar;
+      if (!discogsAccessToken && discogsCookie) {
+        setDiscogsAccessToken(discogsCookie);
+      }
 
-    if (!discogsAccessToken && discogsCookie) {
-      setDiscogsAccessToken(discogsCookie);
-    }
-
-    if (!spotifyAccessToken && spotifyCookie) {
-      setSpotifyAccessToken(spotifyCookie);
-      setIsLoggedIn(true);
+      if (!spotifyAccessToken && spotifyCookie) {
+        setSpotifyAccessToken(spotifyCookie);
+        setIsLoggedIn(true);
+      }
     }
   }, []);
 
