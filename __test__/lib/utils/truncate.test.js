@@ -1,4 +1,4 @@
-import { truncate } from '../../src/lib/utils/utils.ts';
+import { truncate } from '../../../src/lib/utils/utils.ts';
 import '@testing-library/jest-dom';
 
 describe('truncate function', () => {
