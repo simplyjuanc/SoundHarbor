@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { truncate } from '@/lib/utils/utils';
 
 export default function RecordCard({ release }: { release: Release }) {
-  const artistNames = release.artists;
   return (
     <article className="card card-compact text-black shadow-xl bg-primary w-[150px] h-[150px] cursor-pointer">
       <figure>
