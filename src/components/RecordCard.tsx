@@ -1,10 +1,8 @@
-import { Release } from '@prisma/client';
-import React from 'react';
 import Image from 'next/image';
+import type { Release } from '@prisma/client';
 import { truncate } from '@/lib/utils/utils';
 
 export default function RecordCard({ release }: { release: Release }) {
-  const artistNames = release.artists;
   return (
     <article className="card card-compact text-black shadow-xl bg-primary w-[150px] h-[150px] cursor-pointer">
       <figure>

@@ -53,7 +53,6 @@ export async function getTopItems(
 ) {
   try {
     const items = await fetchTopItems(type, accessToken, limit);
-    // console.log(type, ' - items :>> ', items[0]);
 
     if (items) return items;
     else throw new Error('empty items');
@@ -65,7 +64,7 @@ export async function getTopItems(
 export function extractItemIds(items: any[]): string[] | void {
   try {
     if (!items) throw new Error('extractItemIds - No items');
-    // console.log('extractItemIds - items :>> ', items[0]);
+
     const itemIds = [];
     for (let item of items) itemIds.push(item.id);
 
@@ -132,19 +131,16 @@ export const getSpotifyUserAlbums = async (
     const uniqueTracks = Array.from(
       new Set([...fullTracks!, ...artistsTracks!])
     );
-    // console.log('uniqueTracks[0] :>> ', uniqueTracks[0]);
 
     const albumIds: string[] = Array.from(
       new Set(uniqueTracks.map(track => track.album.id))
     );
-    // console.log('getSpotifyUserAlbums - albumIds :>> ', albumIds);
 
     const userAlbums = await getAlbums(albumIds, accessToken);
-    // console.log('userAlbums[0] :>> ', userAlbums[0]);
+
     const userReleases: Release[] = userAlbums.map((album: any) =>
       parseSpotifyAlbumToRelease(album)
     );
-    // console.log('userReleases[0] :>> ', userReleases[0]);
 
     return userReleases;
   } catch (error) {

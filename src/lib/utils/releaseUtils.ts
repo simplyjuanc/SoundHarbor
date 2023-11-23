@@ -87,7 +87,6 @@ export const getFullReleaseData = async (
 ) => {
   const discogsAlbum = await searchDiscogsAlbum(name);
   const spotifyAlbum = await searchSpotifyAlbum(name, title, spotifyToken);
-  // console.log('spotifyResult :>> ', spotifyResult);
 
   const fullReleaseData = normaliseReleaseData(discogsAlbum, spotifyAlbum);
 

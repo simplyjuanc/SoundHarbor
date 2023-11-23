@@ -1,5 +1,5 @@
-import prisma from '../db';
 import type { Release } from '@prisma/client';
+import prisma from '@/lib/db';
 import { searchDiscogsAlbum } from '@/lib/utils/discogsUtils';
 import { searchSpotifyAlbum } from '@/lib/utils/spotifyUtils';
 import { normaliseReleaseData } from '@/lib/utils/releaseUtils';
@@ -48,7 +48,6 @@ export const getFullReleaseData = async (
 ) => {
   const discogsAlbum = await searchDiscogsAlbum(name);
   const spotifyAlbum = await searchSpotifyAlbum(name, title, spotifyToken);
-  // console.log('spotifyResult :>> ', spotifyAlbum);
 
   const fullReleaseData = normaliseReleaseData(discogsAlbum, spotifyAlbum);
 

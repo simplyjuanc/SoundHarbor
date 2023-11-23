@@ -1,5 +1,4 @@
 'use client';
-
 import Button from '@/components/Button';
 
 type Props = {

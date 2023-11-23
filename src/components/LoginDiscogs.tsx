@@ -1,5 +1,5 @@
-import { useAuthStore } from '@/lib/authStore';
 import { redirect } from 'next/navigation';
+import { useAuthStore } from '@/lib/authStore';
 import Button from '@/components/Button';
 
 export default function LoginDiscogs() {

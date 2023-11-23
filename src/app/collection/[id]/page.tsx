@@ -1,9 +1,8 @@
-import React from 'react';
 import { redirect } from 'next/navigation';
 import { deleteRelease, getRelease } from '@/lib/models/releases.model';
-import RecordView from '@/components/RecordView';
-import RecordActions from '@/components/RecordActions';
 import Header from '@/components/Header';
+import RecordActions from '@/components/RecordActions';
+import RecordView from '@/components/RecordView';
 
 type Props = {
   params: {

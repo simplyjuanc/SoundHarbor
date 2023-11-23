@@ -1,6 +1,5 @@
-import { getRelease, updateRelease } from '@/lib/models/releases.model';
-import React from 'react';
 import { redirect } from 'next/navigation';
+import { getRelease, updateRelease } from '@/lib/models/releases.model';
 import Header from '@/components/Header';
 import Button from '@/components/Button';
 
@@ -36,7 +35,6 @@ const RecordEdit = async ({ params }: Props) => {
       }
     }
 
-    // console.log('RecordEdit - updateRecord - updateFields :>> ', updateFields);
     await updateRelease(id, updateFields);
 
     redirect(`/collection/${id}`);

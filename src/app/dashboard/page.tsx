@@ -1,8 +1,8 @@
 import { redirect } from 'next/navigation';
 import { syncReleases } from '@/lib/actions/syncReleases';
 import { getSpotifyToken } from '@/lib/utils/spotifyUtils';
-import LogoView from '@/components/LogoView';
 import Button from '@/components/Button';
+import LogoView from '@/components/LogoView';
 
 export default async function Dashboard() {
   const spotifyToken = getSpotifyToken();

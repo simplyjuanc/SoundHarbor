@@ -1,11 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
-import LoginSpotify from '@/containers/LoginSpotify';
-import LoginDiscogs from '@/containers/LoginDiscogs';
-import Login from '@/containers/Login';
 import { useAuthStore } from '@/lib/authStore';
 import { parseCookies } from '@/lib/utils/utils';
-
+import Login from '@/components/Login';
+import LoginDiscogs from '@/components/LoginDiscogs';
+import LoginSpotify from '@/components/LoginSpotify';
 import LogoView from '@/components/LogoView';
 
 export default function App() {

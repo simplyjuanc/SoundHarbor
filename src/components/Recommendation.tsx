@@ -1,7 +1,6 @@
-import React from 'react';
+import Image from 'next/image';
 import { IDiscogsRelease } from '@/lib/utils/discogsUtils';
 import { truncate } from '@/lib/utils/utils';
-import Image from 'next/image';
 import Button from '@/components/Button';
 
 // TODO add button to listen on Spotify

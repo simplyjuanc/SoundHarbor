@@ -1,10 +1,9 @@
 import { Suspense } from 'react';
 import { redirect } from 'next/navigation';
-
 import { getSpotifyToken } from '@/lib/utils/spotifyUtils';
+import Header from '@/components/Header';
 import LogoView from '@/components/LogoView';
 import LogoViewSpinner from '@/components/LogoViewSpinner';
-import Header from '@/components/Header';
 import RecommendationList from '@/components/RecommendationList';
 
 export default async function Recommendations() {
