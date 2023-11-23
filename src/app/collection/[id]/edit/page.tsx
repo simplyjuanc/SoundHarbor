@@ -36,7 +36,6 @@ const RecordEdit = async ({ params }: Props) => {
       }
     }
 
-    // console.log('RecordEdit - updateRecord - updateFields :>> ', updateFields);
     await updateRelease(id, updateFields);
 
     redirect(`/collection/${id}`);

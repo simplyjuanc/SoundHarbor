@@ -7,9 +7,7 @@ import Header from '@/components/Header';
 import CollectionList from '@/components/CollectionList';
 
 export default async function Collection() {
-  // const spotifyToken = cookies().get('spotify_access_token')?.value;
   const releases: Release[] = await getAllReleases();
-  // console.log('discogsReleasesOwned[0] :>> ', discogsReleasesOwned[0]);
 
   const imgInfo = {
     width: 4912 / 10,

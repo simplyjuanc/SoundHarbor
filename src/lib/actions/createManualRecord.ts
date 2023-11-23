@@ -10,7 +10,7 @@ export default async function createRecord(
 ) {
   const title = data.get('title')?.toString();
   const artist = data.get('artist')?.toString();
-  console.log('artist :>> ', artist);
+
   /*
   TODO: These two are currently just for show, need to integrate them into the Discogs search method
   const label = data.get('label')?.toString();
@@ -22,7 +22,7 @@ export default async function createRecord(
     title,
     spotifyToken
   );
-  // console.log('release :>> ', release);
+
   postRelease(release);
   redirect('/collection');
 }

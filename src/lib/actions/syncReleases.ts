@@ -9,7 +9,6 @@ import { getFullReleaseData } from '@/lib/utils/releaseUtils';
 export async function syncReleases(spotifyToken: string): Promise<Release[]> {
   const newReleasesResponse = getDiscogsReleases();
   const newReleases = getDiscogsReleasesBasicInfo(newReleasesResponse);
-  // console.log('newReleases :>> ', newReleases[0]);
 
   const newReleasesData: Release[] = await Promise.all(
     newReleases.map((release: { artists: { name: string }[]; title: string }) =>
