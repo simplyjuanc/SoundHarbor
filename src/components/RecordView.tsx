@@ -1,5 +1,4 @@
-import { Release } from '@prisma/client';
-import React from 'react';
+import type { Release } from '@prisma/client';
 import RecordTable from '@/components/RecordTable';
 
 type Props = {

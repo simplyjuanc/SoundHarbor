@@ -1,10 +1,9 @@
-import React from 'react';
-import { getAllReleases } from '@/lib/models/releases.model';
 import { Release } from '@prisma/client';
-import LogoView from '@/components/LogoView';
+import { getAllReleases } from '@/lib/models/releases.model';
 import Button from '@/components/Button';
-import Header from '@/components/Header';
 import CollectionList from '@/components/CollectionList';
+import Header from '@/components/Header';
+import LogoView from '@/components/LogoView';
 
 export default async function Collection() {
   const releases: Release[] = await getAllReleases();

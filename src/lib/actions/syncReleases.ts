@@ -1,7 +1,6 @@
 import type { Release } from '@prisma/client';
-
-import { getDiscogsReleases } from '@/lib/services/discogsServices';
 import { postReleases } from '@/lib/models/releases.model';
+import { getDiscogsReleases } from '@/lib/services/discogsServices';
 import { getDiscogsReleasesBasicInfo } from '@/lib/utils/discogsUtils';
 import { getFullReleaseData } from '@/lib/utils/releaseUtils';
 

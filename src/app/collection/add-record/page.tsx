@@ -1,9 +1,7 @@
-import LogoView from '@/components/LogoView';
-import createRecord from '@/lib/actions/createManualRecord';
-// import { getSpotifyCookie } from '@/lib/utils/utils';
 import { cookies } from 'next/headers';
-import React from 'react';
+import createRecord from '@/lib/actions/createManualRecord';
 import Button from '@/components/Button';
+import LogoView from '@/components/LogoView';
 
 export default function AddRecord() {
   const cookieJar = cookies();

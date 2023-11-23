@@ -1,6 +1,5 @@
-import { Release } from '@prisma/client';
-import React from 'react';
 import Image from 'next/image';
+import type { Release } from '@prisma/client';
 import { truncate } from '@/lib/utils/utils';
 
 export default function RecordCard({ release }: { release: Release }) {

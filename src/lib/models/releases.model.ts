@@ -1,5 +1,5 @@
-import prisma from '../db';
 import type { Release } from '@prisma/client';
+import prisma from '@/lib/db';
 import { searchDiscogsAlbum } from '@/lib/utils/discogsUtils';
 import { searchSpotifyAlbum } from '@/lib/utils/spotifyUtils';
 import { normaliseReleaseData } from '@/lib/utils/releaseUtils';

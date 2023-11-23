@@ -1,10 +1,10 @@
+import querystring from 'querystring';
+import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import {
   generateRandomString,
   writeDiscogsAuthBaseHeader,
 } from '@/lib/utils/externalAuthUtils';
-import querystring from 'querystring';
-import { cookies } from 'next/headers';
 
 const authUrl = 'https://api.discogs.com/oauth/';
 const requestTokenUrl = authUrl + 'request_token';

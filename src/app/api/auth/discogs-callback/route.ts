@@ -1,8 +1,8 @@
+import querystring from 'querystring';
 import { NextRequest } from 'next/server';
-import { writeDiscogsAuthBaseHeader } from '@/lib/utils/externalAuthUtils';
 import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
-import querystring from 'querystring';
+import { writeDiscogsAuthBaseHeader } from '@/lib/utils/externalAuthUtils';
 
 const authUrl = 'https://api.discogs.com/oauth/';
 const accessTokenUrl = authUrl + 'access_token';

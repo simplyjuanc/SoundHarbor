@@ -1,7 +1,6 @@
 'use server';
-
 import { redirect } from 'next/navigation';
-import { postRelease } from '../models/releases.model';
+import { postRelease } from '@/lib/models/releases.model';
 import { getFullReleaseDataForManualRecord } from '@/lib/utils/releaseUtils';
 
 export default async function createRecord(
