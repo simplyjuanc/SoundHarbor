@@ -42,13 +42,13 @@ Open http://localhost:3000 in your browser to see the result.
 
 **Note**: This application heavily relies on the Spotify and Discogs APIs. Ensure you create apps in their respective API services and configure the following environment variables:
 
-SPOTIFY_CLIENT_ID
-SPOTIFY_CLIENT_SECRET
-SPOTIFY_REDIRECT_URI
-SPOTIFY_SCOPE
-DISCOGS_CONSUMER_KEY
-DISCOGS_CLIENT_SECRET
-DISCOGS_REDIRECT_URI
+- SPOTIFY_CLIENT_ID
+- SPOTIFY_CLIENT_SECRET
+- SPOTIFY_REDIRECT_URI
+- SPOTIFY_SCOPE
+- DISCOGS_CONSUMER_KEY
+- DISCOGS_CLIENT_SECRET
+- DISCOGS_REDIRECT_URI
 
 
 ## Learn More
