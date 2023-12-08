@@ -1,41 +1,34 @@
-import { create } from 'zustand'
+import { create } from 'zustand';
 
 type State = {
-  isLoggedIn: boolean
-  spotifyAccessToken: string
-  spotifyRefreshToken: string
-  // discogsNonce: string
-  discogsAccessToken: string
-  // discogsRefreshToken: string
-}
-
+  isLoggedIn: boolean;
+  spotifyAccessToken: string;
+  spotifyRefreshToken: string;
+  discogsAccessToken: string;
+};
 
 type Actions = {
-  setIsLoggedIn: (state:boolean) => void
-  setSpotifyAccessToken: (token:string) => void
-  setSpotifyRefreshToken: (token:string) => void
-  // setDiscogsNonce: (nonce:string) => void
-  setDiscogsAccessToken: (token:string) => void
-  // setDiscogsRefreshToken: (token:string) => void
-  reset: () => void
-}
+  setIsLoggedIn: (state: boolean) => void;
+  setSpotifyAccessToken: (token: string) => void;
+  setSpotifyRefreshToken: (token: string) => void;
+  setDiscogsAccessToken: (token: string) => void;
+  reset: () => void;
+};
 
-const initialState:State = {
+const initialState: State = {
   isLoggedIn: false,
   spotifyAccessToken: '',
   spotifyRefreshToken: '',
-  // discogsNonce: '',
   discogsAccessToken: '',
-  // discogsRefreshToken: '',
-}
+};
 
-export const useAuthStore = create<State & Actions>((set) => ({
+export const useAuthStore = create<State & Actions>(set => ({
   ...initialState,
-  setSpotifyAccessToken: (token) => set(() => ({spotifyAccessToken: token})),
-  setSpotifyRefreshToken: (token) => set(() => ({spotifyRefreshToken: token})),
-  setIsLoggedIn: (bool) => set(() => ({isLoggedIn: bool})),
-  setDiscogsAccessToken: (token) => set(() => ({discogsAccessToken: token})),
-  // setDiscogsNonce: (nonce) => set(() => ({discogsNonce: nonce})),
-  // setDiscogsRefreshToken: (token) => set(() => ({discogsRefreshToken: token})),
+  setSpotifyAccessToken: token => set(() => ({ spotifyAccessToken: token })),
+  setSpotifyRefreshToken: token => set(() => ({ spotifyRefreshToken: token })),
+  setIsLoggedIn: bool => set(() => ({ isLoggedIn: bool })),
+  setDiscogsAccessToken: token => set(() => ({ discogsAccessToken: token })),
   reset: () => set(initialState),
-}))
+}));
+
+// TODO?: discogsNonce, setDiscogsRefreshToken

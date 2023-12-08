@@ -1,12 +1,12 @@
-import fs from 'fs'
-import querystring from 'querystring';
-import { Release } from "@prisma/client";
-import { shuffleArray, throttle } from './utils';
-
-
-const baseUrl = 'https://api.discogs.com/';
-const CURRENCY = 'GBP'
-const ACCESS_TOKEN = process.env.DISCOGS_TOKEN;
+import type { Release } from '@prisma/client';
+import discogsColJson from '@/lib/mocks/discogs.collection.abridged.json';
+import { shuffleArray, throttle } from '@/lib/utils/utils';
+import {
+  fetchDiscogsRelease,
+  searchDiscogsRelease,
+  fetchDiscogsMasterRelease,
+  searchDiscogsMasterRelease,
+} from '@/lib/services/discogsServices';
 
 export interface IDiscogsRelease {
   id: number;
@@ -19,83 +19,98 @@ export interface IDiscogsRelease {
   released: string;
   notes: string;
   identifiers: any[];
-  formats: any[],
-  year: number
-  // genres: string[];
-};
+  formats: any[];
+  year: number;
+  cover_image?: string;
+}
 
 // TODO: no priority - implement pagination (search, getUserItems methods)
 
 // TODO Understand why this feth is not returning data even if POstman does
 
-export const getUserItems = fs.readFileSync(
-  '/Users/juanvasquez/Desktop/repos/codeworks/sound-harbor/src/lib/mocks/discogs.collection.abridged.json', { encoding: 'utf-8' }
-)
+export const getUserItems = () => discogsColJson;
 
-export const getDiscogsRelease = async (id: string): Promise<IDiscogsRelease> => {
-  const path = `releases/${id}?${querystring.stringify({ curr_abbr: CURRENCY, token: ACCESS_TOKEN })}`
-  // console.log('getDiscogsRelease - path :>> ', path);
-  const data = await fetchDiscogsResource(path);
-  return data;
-}
+export const getDiscogsRelease = async (
+  id: string
+): Promise<IDiscogsRelease> => {
+  const res = await fetchDiscogsRelease(id);
 
-export const searchDiscogs = async (artist: string, album: string): Promise<IDiscogsRelease> => {
-  artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ')
-  album = album.replace(/[^a-zA-Z0-9]+/g, ' ')
-  const path = `database/search?${querystring.stringify({ artist, release_title: album, token: ACCESS_TOKEN })}`
-  // console.log('searchDiscogs - path :>> ', path);
-  return (await fetchDiscogsResource(path)).results[0];
-}
+  return res;
+};
 
-export const throttledSearchDiscogs = throttle<IDiscogsRelease>(searchDiscogs, 1000)
+export const searchDiscogs = async (
+  artist: string,
+  album: string
+): Promise<IDiscogsRelease> => {
+  artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ');
+  album = album.replace(/[^a-zA-Z0-9]+/g, ' ');
 
-async function fetchDiscogsResource(path: string) {
-  const res = await fetch(baseUrl + path);
-  return await res.json();
-}
+  const data = await searchDiscogsRelease(artist, album);
 
-export const parseDiscogsRelease = (release: IDiscogsRelease): Release => {
-  const artists: string[] = release.artists.map((artist: { name: string; }) => artist.name);
-  const barcode = release['identifiers'] ? release.identifiers[0].value : '';
-  // REMOVE_START
-  // const barcode = (release['identifiers'].length) ? release.identifiers[0].value : '';
-  // const artists = release.artists;
-  // const barcode = release.barcode;
-  // REMOVE_END
-  const label = (release.labels) ? release.labels[0].name : null;
-  const releaseType = (release.formats) ? release.formats[0]['descriptions'][0] : null;
-  const releaseDate = (release.year) ? new Date(release.year) : new Date('1970-01-01');;
+  return data[0];
+};
 
+export const searchDiscogsForManualRecord = async (
+  artist: string,
+  album: string
+): Promise<IDiscogsRelease> => {
+  artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ');
+  album = album.replace(/[^a-zA-Z0-9]+/g, ' ');
 
-  const parsedRelease: Release = {
-    id: release.id.toString(),
-    // id: release.id,
-    title: release.title,
-    label,
-    artists,
-    releaseDate: releaseDate,
-    createdAt: null,
-    updatedAt: null,
-    releaseType,
-    discogsUrl: release.uri,
-    barcode,
-    imgUrl: '',
-    spotifyUri: '',
-    userId: null
+  let releaseId;
+  const master = await searchDiscogsMasterRelease(artist, album);
+
+  if (master.length !== 0) {
+    const masterId = master[0]['master_id'];
+    const masterRelease = await fetchDiscogsMasterRelease(masterId);
+
+    releaseId = masterRelease['main_release'];
+  } else {
+    const data = await searchDiscogsRelease(artist, album);
+    releaseId = data[0]['id'];
   }
 
-  return parsedRelease;
-}
+  const release = await fetchDiscogsRelease(releaseId);
 
-export async function getDiscogsRecommendations(userAlbums: Release[]): Promise<IDiscogsRelease[]> {
-  const searchTuples = userAlbums.map((album) => [album.artists[0], album.title]);
+  return release;
+};
+
+export const throttledSearchDiscogs = throttle<IDiscogsRelease>(
+  searchDiscogs,
+  1000
+);
+
+export async function getDiscogsRecommendations(
+  userAlbums: Release[]
+): Promise<IDiscogsRelease[]> {
+  const searchTuples = userAlbums.map(album => [album.artists[0], album.title]);
   shuffleArray(searchTuples);
-  const searchDiscogs = []
+
+  const searchDiscogs = [];
   for (let tuple of searchTuples) {
-    const searchDiscog = await throttledSearchDiscogs(...tuple)
-    if (searchDiscog) searchDiscogs.push(searchDiscog);
-    if (searchDiscogs.length >= 10) break;
+    const searchDiscog = await throttledSearchDiscogs(...tuple);
+
+    if (searchDiscog) {
+      searchDiscogs.push(searchDiscog);
+    }
+    if (searchDiscogs.length >= 10) {
+      break;
+    }
   }
-  return searchDiscogs
-    .filter((item) => item && Object.hasOwn(item, 'id'));
+
+  return searchDiscogs.filter(item => item && Object.hasOwn(item, 'id'));
 }
+
+export const getDiscogsReleasesBasicInfo = (releases: any[]) => {
+  return releases.map(release => release.basic_information);
+};
+
+export const searchDiscogsAlbum = async (name: string) => {
+  //TODO currently  working with mock data, need to make sure I can get all the info from both services
+  const releasesMock = discogsColJson.releases;
+
+  const discogsResults: any[] = getDiscogsReleasesBasicInfo(releasesMock);
+  const album = discogsResults.filter(i => i.artists[0].name === name)[0];
+
+  return album;
+};
