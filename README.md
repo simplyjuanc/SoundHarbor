@@ -1,25 +1,33 @@
-# Overview
+# SoundHarbor
+SoundHarbor is a unique music shopping recommendation engine that harnesses the power of your Spotify music profile. This marketplace application, currently featuring the buy-side user flow, allows users to expand their physical record collection by purchasing records from Discogs, record shops, or directly from other users.
 
-SoundHarbor is a music shopping recommendation engine leveraging your Spotify music profile. It's a marketplace application (currently only with the buy-side user flow) that enables end users to grow their physical record collection by buying records from Discogs, record shops or directly from other users. Demo video and an abridged version of the project proposal below.
-
-- [Demo video](https://youtu.be/ZdokbTWFBEQ)
+Explore the application through the [Demo video](https://youtu.be/ZdokbTWFBEQ)
 
 ## Features
-- The user can access and view their music collection on-app.
-- The user can CRUD records to their collection.
-- The user can search a record to buy based on pre-determined fields (album title, artist, label).
+- View and manage your music collection within the app.
+- Perform CRUD operations on records in your collection.
+- Search for records to buy based on pre-determined fields such as album title, artist, and label.
 
- 
-# Getting Started
+## Getting Started
+This project is built with Next.js and bootstrapped using `create-next-app`.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-
-First, install the required packages: `npm i`
-
-Then, run the development server:
+### Installation
+First, install the required packages:
 
 ```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+### Run the Development Server
+
+```bash
+Copy code
 npm run dev
 # or
 yarn dev
@@ -29,32 +37,21 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to see the result.
 
+**Note**: This application heavily relies on the Spotify and Discogs APIs. Ensure you create apps in their respective API services and configure the following environment variables:
 
-The app heavily relies on the Spotify and Discogs API, which means you need to create the apps in their API service and configure the env variables below.
-
-- SPOTIFY_CLIENT_ID
-- SPOTIFY_CLIENT_SECRET
-- SPOTIFY_REDIRECT_URI
-- SPOTIFY_SCOPE
-- DISCOGS_CONSUMER_KEY
-- DISCOGS_CLIENT_SECRET
-- DISCOGS_REDIRECT_URI
-
+SPOTIFY_CLIENT_ID
+SPOTIFY_CLIENT_SECRET
+SPOTIFY_REDIRECT_URI
+SPOTIFY_SCOPE
+DISCOGS_CONSUMER_KEY
+DISCOGS_CLIENT_SECRET
+DISCOGS_REDIRECT_URI
 
 
 ## Learn More
+To delve deeper into Next.js, explore the following resources:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Next.js Documentation - Learn about Next.js features and APIs.
+Learn Next.js - An interactive Next.js tutorial.
