@@ -26,8 +26,9 @@ bun install
 
 ### Run the Development Server
 
+Copy code and from within the root folder run:
+
 ```bash
-Copy code
 npm run dev
 # or
 yarn dev
