@@ -38,7 +38,7 @@ export default function App() {
     }
 
     setIsLoading(false);
-  }, []);
+  }, [discogsAccessToken, setDiscogsAccessToken, setIsLoggedIn, setSpotifyAccessToken, spotifyAccessToken]);
 
   if (isLoading) {
     return null;
