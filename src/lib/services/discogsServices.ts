@@ -1,7 +1,6 @@
 import querystring from 'querystring';
 import discogsColJson from '@/lib/mocks/discogs.collection.abridged.json';
-import { IDiscogsRelease } from '@/lib/utils/discogsUtils';
-import { IMasterRelease } from '@/lib/utils/types';
+import { IMasterRelease, IDiscogsRelease } from '@/@types';
 
 const baseUrl = 'https://api.discogs.com/';
 const CURRENCY = 'GBP';

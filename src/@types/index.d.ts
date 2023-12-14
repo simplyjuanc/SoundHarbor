@@ -23,3 +23,20 @@ export interface ISpotifyAlbum {
     url: string;
   }[];
 }
+
+
+export interface IDiscogsRelease {
+  id: number;
+  status: string;
+  uri: string;
+  labels: any[];
+  artists: any[];
+  master_id: number;
+  title: string;
+  released: string;
+  notes: string;
+  identifiers: any[];
+  formats: any[];
+  year: number;
+  cover_image?: string;
+}
