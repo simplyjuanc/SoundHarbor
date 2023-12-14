@@ -16,6 +16,7 @@ type Props = {
   link?: Boolean;
   href?: string;
   blank?: Boolean;
+  name?: string;
 };
 
 const Button = ({
@@ -32,6 +33,7 @@ const Button = ({
   link,
   href,
   blank,
+  name,
 }: Props) => {
   const btnClassnames = classNames('btn', btnClasses, {
     'btn-primary': primary,
@@ -60,7 +62,7 @@ const Button = ({
   };
 
   return (
-    <button type={type} onClick={handleClick} className={btnClassnames}>
+    <button type={type} onClick={handleClick} className={btnClassnames} name={name}>
       {text}
     </button>
   );

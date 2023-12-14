@@ -40,13 +40,11 @@ export default function App() {
     setIsLoading(false);
   }, [discogsAccessToken, setDiscogsAccessToken, setIsLoggedIn, setSpotifyAccessToken, spotifyAccessToken]);
 
-  if (isLoading) {
-    return null;
-  }
+  if (isLoading) return null;
 
   return (
     <div className="text-center">
-      <div className="max-w-sm w-9/12 flex flex-col mx-auto mt-10 h-full">
+      <div className="flex flex-col w-9/12 h-full max-w-sm mx-auto mt-10">
         <LogoView />
         {isLoggedIn ? (
           spotifyAccessToken ? (
