@@ -21,7 +21,7 @@ export default function AddRecord() {
           The more data you put in the easier it will be for us to find the
           right record.
           <br />
-          <span className="text-xs">(Don't worry, you can edit it later)</span>
+          <span className="text-xs">(Don&apos;t worry, you can edit it later)</span>
         </p>
       </div>
       <form
