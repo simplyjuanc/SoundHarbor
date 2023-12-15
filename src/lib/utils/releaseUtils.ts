@@ -5,7 +5,7 @@ import {
   searchDiscogsForManualRecord,
 } from '@/lib/utils/discogsUtils';
 import { searchSpotifyAlbum } from '@/lib/utils/spotifyUtils';
-import { ISpotifyAlbum } from '@/lib/utils/types';
+import { ISpotifyAlbum } from '@/@types';
 
 export const parseSpotifyAlbumToRelease = (album: ISpotifyAlbum): Release => {
   const artists = album.artists.map(artist => artist.name);

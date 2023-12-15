@@ -29,6 +29,5 @@ export async function POST(request: NextRequest) {
       password: hashedPassword
     }
   })
-  console.log('register - new user :>> ', user);
   return NextResponse.json(user);
 }

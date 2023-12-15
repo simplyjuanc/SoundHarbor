@@ -17,7 +17,7 @@ export default function LoginSpotify() {
           primary
           btnClasses="mt-12 mx-auto self-center"
           link
-          href="/api/auth/spotify-login"
+          href="/api/spotify/login"
         />
       </div>
     </>
