@@ -14,8 +14,7 @@ export default function LoginDiscogs() {
       <div className="flex flex-col mx-8">
         <h1>Fantastic!</h1>{' '}
         <p>
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
-          Now that we have connected to your Spotify account, let's get you set
+          Now that we have connected to your Spotify account, let&apos;s get you set
           up with Discogs so that we can find music you might want to add to
           your collection!
         </p>
@@ -24,7 +23,7 @@ export default function LoginDiscogs() {
           primary
           btnClasses="mt-12 mx-auto self-center"
           link
-          href="/api/auth/discogs-login"
+          href="/api/discogs/login"
         />
       </div>
     </>
