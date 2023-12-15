@@ -2,6 +2,7 @@ import querystring from 'querystring';
 import discogsColJson from '@/lib/mocks/discogs.collection.abridged.json';
 import { IMasterRelease, IDiscogsRelease } from '@/@types';
 import { writeDiscogsAuthBaseHeader } from "@/lib/utils/externalAuthUtils";
+import { accessTokenUrl } from '@/app/api/discogs/callback/route';
 
 
 
@@ -44,7 +45,31 @@ export async function getDiscogsAuthToken(discogsNonce: string) {
   }
 }
 
+export async function getDiscogsAccessToken(headerString: string) {
+  try {
+    const response = await fetch(accessTokenUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        Authorization: headerString,
+      },
+    });
 
+    // Discogs
+    const { oauth_token, oauth_token_secret } = querystring.parse(
+      await response.text()
+    );
+
+    if (!oauth_token || !oauth_token_secret) throw new Error('No Access Token in Discogs response');
+    return {
+      oauth_token: oauth_token as string,
+      oauth_token_secret: oauth_token_secret as string
+    };
+  } catch (error) {
+    console.log(error);
+
+  }
+}
 
 //TODO currently  working with mock data, need to make sure I can get all the info from both services
 export const getDiscogsReleases = () => {
