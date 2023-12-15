@@ -1,14 +1,14 @@
 'use client';
 import { useAuthStore } from '@/lib/authStore';
-// import { useRouter } from 'next/navigation';
 import Button from '@/components/Button';
-import { ChangeEvent, useState } from 'react';
+import { useState } from 'react';
 import { baseUrl } from '@/lib/config';
+import { signIn } from 'next-auth/react';
+import { User } from '@prisma/client';
+
 
 export default function Login() {
-  // const router = useRouter();
   const [userData, setUserData] = useState({
-    username: '',
     email: '',
     password: '',
   });
@@ -42,48 +42,28 @@ export default function Login() {
         body: JSON.stringify(userData)
       })
 
-      if (!res.ok) throw new Error('No valid server response.')
+      if (res.status >= 400) throw new Error(res.statusText)
+      
+      const data:User = await res.json();
 
-      const data = await res.json();
       console.log('registerUser - data :>> ', data);
-      // TODO store user info and session
+      signIn('credentials', {...userData, redirect: false})
       setIsLoggedIn(true);
     } catch (error) {
       console.error(error);
     }
   }
-
+  
   const loginUser = async () => {
-
+    signIn('credentials', {...userData, redirect: false})
+    setIsLoggedIn(true);
   }
-
-  const handleUsernameChange = async (e:ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    const regex = /^[a-zA-Z0-9]*$/;
-    if (regex.test(value)) {
-      if (showUsernameWarning) setShowUsernameWarning(false);
-      setUserData({ ...userData, username: value });
-    } else setShowUsernameWarning(true);
-  }
-
 
 
   return (
     <form className="w-full" onSubmit={handleSubmit}>
       <div className="flex flex-col gap-6 mt-12 justify-evenly ">
-        <input
-          type="text"
-          name="username"
-          id="username"
-          placeholder="RickAstley001"
-          required
-          className="p-2 rounded"
-          value={userData.username}
-          onChange={handleUsernameChange}
-          />
 
-        {showUsernameWarning && <p>Username can only contain alphanumeric characters!</p>}
-        
         <input
           type="email"
           name="email"
