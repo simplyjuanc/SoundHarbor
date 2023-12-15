@@ -1,7 +1,6 @@
 import { type NextRequest } from 'next/server'
-import { findUserReleases, addUserRelease } from '@/lib/models/users.model';
-import { IDiscogsRelease, getDiscogsRelease } from '@/lib/utils/discogsUtils';
-import { Track } from '@prisma/client';
+import { findUserReleases } from '@/lib/models/users.model';
+import { getDiscogsRelease } from '@/lib/utils/discogsUtils';
 
 
 export const GET = async (req: NextRequest) => {

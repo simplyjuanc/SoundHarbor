@@ -1,15 +1,11 @@
 import querystring from 'querystring';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
-import {
-  generateRandomString,
-  writeDiscogsAuthBaseHeader,
-} from '@/lib/utils/externalAuthUtils';
+import { generateRandomString } from '@/lib/utils/externalAuthUtils';
+import { NextResponse } from 'next/server';
+import { getDiscogsAuthToken } from '@/lib/services/discogsServices';
 
-const authUrl = 'https://api.discogs.com/oauth/';
-const requestTokenUrl = authUrl + 'request_token';
 
-const redirect_uri = process.env.DISCOGS_REDIRECT_URI!;
 
 export const GET = async (req: Request) => {
   const oneDay = 24 * 60 * 60 * 1000;
@@ -18,34 +14,26 @@ export const GET = async (req: Request) => {
     expires: new Date(Date.now() + oneDay),
   });
 
-  let headerString = writeDiscogsAuthBaseHeader(Date.now(), discogsNonce);
-  headerString += `,oauth_callback="${redirect_uri}"`;
+  const tokenPayload = await getDiscogsAuthToken(discogsNonce);
 
-  const res = await fetch(requestTokenUrl, {
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-      Authorization: headerString,
-    },
-  });
-
-  if (res.status !== 200) return Response.json({ message: 'Response not ok' });
-
-  const { oauth_token, oauth_token_secret, oauth_callback_confirmed } =
-    querystring.parse(await res.text());
-
-  if (!oauth_token || !oauth_token_secret || !oauth_callback_confirmed) {
-    return Response.json({
-      status: 500,
-      message: 'No token in discogs response',
-    });
+  if (!tokenPayload) {
+    return NextResponse.json({ 
+    status: 500, 
+    message: 'Error retrieving Discogs auth token' 
+    })
   }
 
-  cookies().set('discogs_secret', oauth_token_secret as string, {
+  const { oauth_token, oauth_token_secret } = tokenPayload
+
+  cookies().set('discogs_secret', oauth_token_secret, {
     expires: new Date(Date.now() + oneDay),
   });
-  const authUrl =
+  const accessTokenUrl =
     'https://discogs.com/oauth/authorize?' +
     querystring.stringify({ oauth_token });
 
-  redirect(authUrl);
+  redirect(accessTokenUrl);
 };
+
+
+
