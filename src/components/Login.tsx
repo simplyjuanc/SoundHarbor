@@ -6,15 +6,12 @@ import { baseUrl } from '@/lib/config';
 import { signIn } from 'next-auth/react';
 import { User } from '@prisma/client';
 
-
 export default function Login() {
   const [userData, setUserData] = useState({
     email: '',
     password: '',
   });
-  const [showUsernameWarning, setShowUsernameWarning] = useState(false);
-
-  const { setIsLoggedIn } = useAuthStore();
+  const { setIsLoggedIn, setJwt } = useAuthStore();
 
   const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement, SubmitEvent>) => {
     e.preventDefault();
@@ -47,7 +44,9 @@ export default function Login() {
       const data:User = await res.json();
 
       console.log('registerUser - data :>> ', data);
-      signIn('credentials', {...userData, redirect: false})
+      const login = await signIn('credentials', {...userData, redirect: false})
+      if (!login || !login.ok) throw new Error(login?.error || 'Login failed');
+      
       setIsLoggedIn(true);
     } catch (error) {
       console.error(error);
@@ -55,8 +54,17 @@ export default function Login() {
   }
   
   const loginUser = async () => {
-    signIn('credentials', {...userData, redirect: false})
-    setIsLoggedIn(true);
+
+    try {
+      // NEXT: add sign in logic from the promises in https://next-auth.js.org/getting-started/client#using-the-redirect-false-option
+      const login = await signIn('credentials', {...userData, redirect: false});
+      if (!login || !login.ok) throw new Error(login?.error || 'Login failed');
+
+      setIsLoggedIn(true);
+
+    } catch (error) {
+      console.error(error);
+    }
   }
 
 

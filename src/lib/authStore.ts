@@ -2,6 +2,7 @@ import { create } from 'zustand';
 
 type State = {
   isLoggedIn: boolean;
+  jwt: string;
   spotifyAccessToken: string;
   spotifyRefreshToken: string;
   discogsAccessToken: string;
@@ -9,6 +10,7 @@ type State = {
 
 type Actions = {
   setIsLoggedIn: (state: boolean) => void;
+  setJwt: (token: string) => void;
   setSpotifyAccessToken: (token: string) => void;
   setSpotifyRefreshToken: (token: string) => void;
   setDiscogsAccessToken: (token: string) => void;
@@ -17,6 +19,7 @@ type Actions = {
 
 const initialState: State = {
   isLoggedIn: false,
+  jwt: ',',
   spotifyAccessToken: '',
   spotifyRefreshToken: '',
   discogsAccessToken: '',
@@ -24,6 +27,7 @@ const initialState: State = {
 
 export const useAuthStore = create<State & Actions>(set => ({
   ...initialState,
+  setJwt: token => set(() => ({ jwt: token })),
   setSpotifyAccessToken: token => set(() => ({ spotifyAccessToken: token })),
   setSpotifyRefreshToken: token => set(() => ({ spotifyRefreshToken: token })),
   setIsLoggedIn: bool => set(() => ({ isLoggedIn: bool })),
