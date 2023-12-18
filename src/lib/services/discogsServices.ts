@@ -8,13 +8,14 @@ import { accessTokenUrl } from '@/app/api/discogs/callback/route';
 
 const baseUrl = 'https://api.discogs.com/';
 const redirect_uri = process.env.DISCOGS_REDIRECT_URI!;
+const requestTokenUrl = `${baseUrl}oauth/request_token`;
 const ACCESS_TOKEN = process.env.DISCOGS_TOKEN;
+
 const CURRENCY = 'GBP';
 
 
 export async function getDiscogsAuthToken(discogsNonce: string) {
   try {
-    const requestTokenUrl = `${baseUrl}oauth/request_token`;    
     let headerString = writeDiscogsAuthBaseHeader(Date.now(), discogsNonce);
     headerString += `,oauth_callback="${redirect_uri}"`;
 
@@ -25,7 +26,7 @@ export async function getDiscogsAuthToken(discogsNonce: string) {
       },
     });
 
-    if (res.status !== 200) throw new Error('Response not ok');
+    if (!res.ok) throw new Error('Response not ok');
 
     const {
       oauth_token, oauth_token_secret, oauth_callback_confirmed
@@ -76,33 +77,30 @@ export const getDiscogsReleases = () => {
   return discogsColJson.releases;
 };
 
-export const fetchDiscogs = async (path: string) => {
+export const fetchDiscogs = async <T>(path: string) => {
   const res = await fetch(baseUrl + path);
-  const data = await res.json();
+  const data: T = await res.json();
 
   return data;
 };
 
-export const fetchDiscogsRelease = async (
-  id: string | number
-): Promise<IDiscogsRelease> => {
+export const fetchDiscogsRelease = async (id: string | number): Promise<IDiscogsRelease> => {
   const query = querystring.stringify({
     curr_abbr: CURRENCY,
     token: ACCESS_TOKEN,
   });
   const path = `releases/${id}?${query}`;
-
-  const data = await fetchDiscogs(path);
+  const data = await fetchDiscogs<IDiscogsRelease>(path);
 
   return data;
 };
+
 
 export const fetchDiscogsMasterRelease = async (
   id: number
 ): Promise<IMasterRelease> => {
   const path = `masters/${id}`;
-
-  const data = await fetchDiscogs(path);
+  const data = await fetchDiscogs<IMasterRelease>(path);
 
   return data;
 };
@@ -118,24 +116,26 @@ export const searchDiscogsRelease = async (
   });
   const path = `database/search?${query}`;
 
-  const { results } = await fetchDiscogs(path);
-
+  //TODO change for the right type returned
+  const { results } = await fetchDiscogs<any>(path);
+  
   return results;
 };
 
 export const searchDiscogsMasterRelease = async (
   artist: string,
   album: string
-): Promise<IDiscogsRelease[]> => {
-  const query = querystring.stringify({
-    artist,
-    type: 'master',
-    release_title: album,
-    token: ACCESS_TOKEN,
-  });
-  const path = `database/search?${query}`;
-
-  const { results } = await fetchDiscogs(path);
+  ): Promise<IDiscogsRelease[]> => {
+    const query = querystring.stringify({
+      artist,
+      type: 'master',
+      release_title: album,
+      token: ACCESS_TOKEN,
+    });
+    const path = `database/search?${query}`;
+    
+    //TODO change for the right type returned
+  const { results } = await fetchDiscogs<any>(path);
 
   return results;
 };
