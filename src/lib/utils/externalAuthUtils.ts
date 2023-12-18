@@ -1,7 +1,9 @@
+
+
 const consumer_key = process.env.DISCOGS_CONSUMER_KEY!;
 const client_secret = process.env.DISCOGS_CLIENT_SECRET!;
 
-export const generateRandomString = function (length: number = 64): string {
+export function generateRandomString (length: number = 64): string {
   let text = '';
   const possible =
     'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -12,10 +14,7 @@ export const generateRandomString = function (length: number = 64): string {
   return encodeURIComponent(text);
 };
 
-export const writeDiscogsAuthBaseHeader = (
-  timestamp: number,
-  nonce: string
-) => {
+export function writeDiscogsAuthBaseHeader (timestamp: number, nonce: string) {
   return (
     `OAuth oauth_consumer_key="${consumer_key}", ` +
     `oauth_nonce="${nonce}", ` +
@@ -24,3 +23,14 @@ export const writeDiscogsAuthBaseHeader = (
     `oauth_timestamp="${timestamp}"`
   );
 };
+
+
+export function writeDiscogsAuthFullHeader(discogsNonce: string, token: string, verifier: string, authSecret: string) {
+  // Refer to this for the below: https://www.discogs.com/forum/thread/785104?message_id=8307207#7793236
+  const clientSecret = client_secret + '&';
+  let headerString = writeDiscogsAuthBaseHeader(Date.now(), discogsNonce);
+  headerString += `,oauth_token="${token}",oauth_verifier="${verifier}"`;
+  headerString = headerString.replace(clientSecret, clientSecret + authSecret);
+  return headerString;
+}
+

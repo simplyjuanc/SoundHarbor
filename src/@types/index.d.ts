@@ -1,6 +1,12 @@
-export interface IMasterRelease {
-  main_release: number;
-}
+
+export type ISpotifyToken = {
+  access_token: string;
+  token_type: string;
+  expires_in: number;
+  refresh_token: string;
+  scope: string;
+};
+
 
 // https://developer.spotify.com/documentation/web-api/reference/get-an-album
 export interface ISpotifyAlbum {
@@ -22,7 +28,13 @@ export interface ISpotifyAlbum {
   images: {
     url: string;
   }[];
-}
+};
+
+
+
+export interface IMasterRelease {
+  main_release: number;
+};
 
 
 export interface IDiscogsRelease {
@@ -39,4 +51,6 @@ export interface IDiscogsRelease {
   formats: any[];
   year: number;
   cover_image?: string;
-}
+};
+
+

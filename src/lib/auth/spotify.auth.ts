@@ -1,14 +1,9 @@
+import { ISpotifyToken } from "@/@types";
+
 const client_id = process.env.SPOTIFY_CLIENT_ID!;
 const client_secret = process.env.SPOTIFY_CLIENT_SECRET!;
 const redirect_uri = process.env.SPOTIFY_REDIRECT_URI!;
 
-type IAuthToken = {
-  access_token: string;
-  token_type: string;
-  expires_in: number;
-  refresh_token: string;
-  scope: string;
-};
 
 export async function getAuthToken(code: string) {
   try {
@@ -30,16 +25,14 @@ export async function getAuthToken(code: string) {
       }
     );
 
-    const authToken: IAuthToken = await authTokenResponse.json();
+    const authToken: ISpotifyToken = await authTokenResponse.json();
     return authToken;
-    // TODO: add logic or function to handle and record refresh token
   } catch (e) {
     console.log(e);
   }
 }
 
 export async function refreshToken(refresh_token: string) {
-  // TODO: change refresh token to be retrieved from server-side (DB?)
 
   try {
     const refreshResponse = await fetch(
