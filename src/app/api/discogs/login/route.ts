@@ -22,7 +22,7 @@ export const GET = async (req: Request) => {
     message: 'Error retrieving Discogs auth token' 
     })
   }
-
+  console.log('discogsLogin - tokenPayload', tokenPayload)
   const { oauth_token, oauth_token_secret } = tokenPayload
 
   cookies().set('discogs_secret', oauth_token_secret, {

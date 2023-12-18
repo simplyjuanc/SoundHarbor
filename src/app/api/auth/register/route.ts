@@ -28,6 +28,6 @@ export async function POST(request: NextRequest) {
       email,
       password: hashedPassword
     }
-  })
+  });
   return NextResponse.json(user);
 }

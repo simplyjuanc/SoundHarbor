@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation';
 import { getRelease, updateRelease } from '@/lib/models/releases.model';
 import Header from '@/components/Header';
 import Button from '@/components/Button';
+import { getServerSession } from 'next-auth';
 
 type Props = {
   params: { id: string };
@@ -9,6 +10,13 @@ type Props = {
 
 const RecordEdit = async ({ params }: Props) => {
   const { id } = params;
+  
+  const session = getServerSession();
+  const path = `/collection/edit/${id}/`
+  if (!session) {
+    redirect(`/api/auth/signin?callback?url=${path}`);
+  }
+  
   const record = await getRelease(id);
 
   const releaseDate = record.releaseDate
@@ -24,9 +32,7 @@ const RecordEdit = async ({ params }: Props) => {
     const updateFields: { [k: string]: string | string[] } = {};
 
     for (const pair of args.entries()) {
-      if (!pair[1]) {
-        continue;
-      }
+      if (!pair[1]) continue;
 
       if (pair[0] === 'artists') {
         updateFields[pair[0]] = pair[1].toString().split(',');

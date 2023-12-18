@@ -6,17 +6,21 @@ import Login from '@/components/Login';
 import LoginDiscogs from '@/components/LoginDiscogs';
 import LoginSpotify from '@/components/LoginSpotify';
 import LogoView from '@/components/LogoView';
+import { useSession } from 'next-auth/react';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const {
     isLoggedIn,
+    setJwt,
     setIsLoggedIn,
     spotifyAccessToken,
     setSpotifyAccessToken,
     discogsAccessToken,
     setDiscogsAccessToken,
   } = useAuthStore();
+  // const { data: session, status } = useSession();
+
 
   useEffect(() => {
     const cookieJar = parseCookies(document.cookie);
@@ -33,8 +37,12 @@ export default function App() {
 
       if (!spotifyAccessToken && spotifyCookie) {
         setSpotifyAccessToken(spotifyCookie);
-        setIsLoggedIn(true);
       }
+      /* 
+      if (status === 'authenticated') {
+        // setJwt(session?.user?.jwt);
+        setIsLoggedIn(true);
+      } */
     }
 
     setIsLoading(false);

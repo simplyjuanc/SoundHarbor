@@ -2,8 +2,17 @@ import { cookies } from 'next/headers';
 import createRecord from '@/lib/actions/createManualRecord';
 import Button from '@/components/Button';
 import LogoView from '@/components/LogoView';
+import { getServerSession } from 'next-auth';
+import { redirect } from 'next/navigation';
 
 export default function AddRecord() {
+
+  const session = getServerSession();
+  const path = `/collection/add-record`
+  if (!session) {
+    redirect(`/api/auth/signin?callback?url=${path}`);
+  }
+
   const cookieJar = cookies();
   const spotifyToken = cookieJar.get('spotify_access_token')?.value;
   const boundCreateRecord = createRecord.bind(null, spotifyToken!);

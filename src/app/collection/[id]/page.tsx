@@ -3,6 +3,7 @@ import { deleteRelease, getRelease } from '@/lib/models/releases.model';
 import Header from '@/components/Header';
 import RecordActions from '@/components/RecordActions';
 import RecordView from '@/components/RecordView';
+import { getServerSession } from 'next-auth';
 
 type Props = {
   params: {
@@ -11,8 +12,14 @@ type Props = {
 };
 
 const IndividualRecord = async ({ params: { id: recordId } }: Props) => {
-  const record = await getRelease(recordId);
+  const session = getServerSession();
+  const path = `/collection/${recordId}/`
+  if (!session) {
+    redirect(`/api/auth/signin?callback?url=${path}`);
+  }
+  
 
+  const record = await getRelease(recordId);
   if (!record) {
     return <p>Apologies, something went wrong</p>;
   }
@@ -22,7 +29,6 @@ const IndividualRecord = async ({ params: { id: recordId } }: Props) => {
   const deleteRecord = async () => {
     'use server';
     const deleted = await deleteRelease(id);
-
     if (deleted) {
       redirect('/collection');
     }
