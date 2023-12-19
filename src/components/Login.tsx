@@ -5,13 +5,14 @@ import { useState } from 'react';
 import { baseUrl } from '@/lib/config';
 import { signIn } from 'next-auth/react';
 import { User } from '@prisma/client';
+import { getUserIdFromEmail } from '@/lib/models/users.model';
 
 export default function Login() {
   const [userData, setUserData] = useState({
     email: '',
     password: '',
   });
-  const { setIsLoggedIn, setJwt } = useAuthStore();
+  const { setIsLoggedIn, setUserId } = useAuthStore();
 
   const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement, SubmitEvent>) => {
     e.preventDefault();
@@ -47,6 +48,7 @@ export default function Login() {
       const login = await signIn('credentials', {...userData, redirect: false})
       if (!login || !login.ok) throw new Error(login?.error || 'Login failed');
       
+
       setIsLoggedIn(true);
     } catch (error) {
       console.error(error);
@@ -60,6 +62,9 @@ export default function Login() {
       const login = await signIn('credentials', {...userData, redirect: false});
       if (!login || !login.ok) throw new Error(login?.error || 'Login failed');
 
+      const userId = await getUserIdFromEmail(userData.email);
+      console.log('loginUser - userId :>> ', userId);
+      setUserId(userId.id);
       setIsLoggedIn(true);
 
     } catch (error) {

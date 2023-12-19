@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
 import { writeDiscogsAuthFullHeader } from '@/lib/utils/externalAuthUtils';
 import { getDiscogsAccessToken } from '@/lib/services/discogsServices';
+import { postDiscogsTokens } from '@/lib/models/accounts.model';
 
 const authUrl = 'https://api.discogs.com/oauth/';
 export const accessTokenUrl = authUrl + 'access_token';
@@ -36,6 +37,9 @@ export const GET = async (req: NextRequest) => {
   }
   
   const {oauth_token, oauth_token_secret} = tokenPayload;
+
+  // postDiscogsTokens(req.locals.userId, oauth_token, oauth_token_secret);
+
   const oneDay = 24 * 60 * 60 * 1000;
 
   cookies().set('discogs_access_token', oauth_token, {

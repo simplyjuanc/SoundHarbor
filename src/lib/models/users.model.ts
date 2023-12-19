@@ -10,8 +10,15 @@ export const postUser = async (user: User) => {
   else throw new Error('Issues in error creation');
 };
 
-export const getUser = async (username: string) => {
-  const user = await prisma.user.findFirst({ where: { username } });
+export const getUser = async (email: string) => {
+  const user = await prisma.user.findUnique({ where: { email }});
+  if (user) return user;
+  else throw new Error('Issue retrieving user');
+};
+
+
+export const getUserIdFromEmail = async (email: string) => {
+  const user = await prisma.user.findUnique({ where: { email }, select: { id: true }});
   if (user) return user;
   else throw new Error('Issue retrieving user');
 };

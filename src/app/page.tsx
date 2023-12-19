@@ -12,7 +12,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const {
     isLoggedIn,
-    setJwt,
+    setUserId: setJwt,
     setIsLoggedIn,
     spotifyAccessToken,
     setSpotifyAccessToken,
