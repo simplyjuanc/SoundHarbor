@@ -1,3 +1,4 @@
+import { ISpotifyAlbum, ISpotifySearchResults } from '@/@types';
 import querystring from 'querystring';
 
 const baseURL = 'https://api.spotify.com/v1/';
@@ -74,11 +75,12 @@ export const fetchAlbum = async (id: string, accessToken: string) => {
     const headers = generateSpotifyHeader(accessToken);
 
     const res = await fetch(url, { headers });
-    const album = await res.json();
+    const album:ISpotifyAlbum = await res.json();
 
     return album;
   } catch (error) {
     console.log('FETCH ERROR - fetchAlbum', error);
+    return null;
   }
 };
 
@@ -92,7 +94,7 @@ export const fetchAlbums = async (ids: string[], accessToken: string) => {
     const headers = generateSpotifyHeader(accessToken);
 
     const res = await fetch(url, { headers });
-    const { albums } = await res.json();
+    const { albums }:{albums:ISpotifyAlbum[]} = await res.json();
 
     return albums;
   } catch (error) {
@@ -105,9 +107,10 @@ export const searchAlbum = async (
   album: string,
   artist: string,
   accessToken: string
-): Promise<any> => {
+) => {
   try {
     const query = encodeURIComponent(`${album} ${artist}`);
+    console.log('spotifyServices - searchAlbum - query :>>', query)
     const qDefault = querystring.stringify({
       type: 'album',
       market,
@@ -117,11 +120,15 @@ export const searchAlbum = async (
     const url = `${baseURL}search?q=${query}&${qDefault}`;
     const headers = generateSpotifyHeader(accessToken);
 
+    // console.log('searchAlbum :>> \n\n', {url, headers})
     const res = await fetch(url, { headers });
-    const { albums } = await res.json();
+
+    // console.log('searchAlbum - res :>> ', res)
+    const { albums }:{albums: ISpotifySearchResults<ISpotifyAlbum>}  = await res.json();
+    if (!albums || !albums.items) throw new Error('No albums found');
 
     return albums.items[0];
   } catch (error) {
-    console.log('FETCH ERROR - searchAlbums', error);
+    console.error('FETCH ERROR - searchAlbums', error);
   }
 };

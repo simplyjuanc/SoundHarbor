@@ -103,16 +103,25 @@ export async function searchSpotifyAlbum(
   album: string,
   artist: string,
   accessToken: string
-): Promise<Release> {
-  const topAlbum = await searchAlbum(album, artist, accessToken);
-  const topAlbumDetail = await fetchAlbum(topAlbum.id, accessToken);
+): Promise<Release | null> {
+  try {
+    const topAlbum = await searchAlbum(album, artist, accessToken);
+    if (!topAlbum) throw new Error('No album found');
+  
+    const topAlbumDetail = await fetchAlbum(topAlbum.id, accessToken);
+    if (!topAlbumDetail) throw new Error('No album detail found');
 
-  return parseSpotifyAlbumToRelease(topAlbumDetail);
+    return parseSpotifyAlbumToRelease(topAlbumDetail);
+    
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
 }
 
 export const getSpotifyUserAlbums = async (
   accessToken: string
-): Promise<Release[] | void> => {
+): Promise<Release[] | null> => {
   try {
     const tracks = await getTopItems('tracks', accessToken, 10);
     const trackIds = extractItemIds(tracks);
@@ -137,6 +146,8 @@ export const getSpotifyUserAlbums = async (
     );
 
     const userAlbums = await getAlbums(albumIds, accessToken);
+    
+    if (!userAlbums) throw new Error('No albums retrieved');
 
     const userReleases: Release[] = userAlbums.map((album: any) =>
       parseSpotifyAlbumToRelease(album)
@@ -145,5 +156,6 @@ export const getSpotifyUserAlbums = async (
     return userReleases;
   } catch (error) {
     console.log('ERROR - getSpotifyUserAlbums', error);
+    return null;
   }
 };
