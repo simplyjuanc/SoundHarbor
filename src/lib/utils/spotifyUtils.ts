@@ -55,7 +55,7 @@ export async function getTopItems(
     const items = await fetchTopItems(type, accessToken, limit);
 
     if (items) return items;
-    else throw new Error('empty items');
+    else throw new Error('Empty items');
   } catch (error) {
     console.log('ERROR - getTopItems', error);
   }

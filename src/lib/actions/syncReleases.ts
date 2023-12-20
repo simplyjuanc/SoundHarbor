@@ -1,22 +1,25 @@
 import type { Release } from '@prisma/client';
 import { postReleases } from '@/lib/models/releases.model';
 import { getDiscogsReleases } from '@/lib/services/discogsServices';
-import { getDiscogsReleasesBasicInfo } from '@/lib/utils/discogsUtils';
+import { extractDiscogsReleasesBasicInfo } from '@/lib/utils/discogsUtils';
 import { getFullReleaseData } from '@/lib/utils/releaseUtils';
 
 //TODO currently  working with mock data, need to make sure I can get all the info from both services
 export async function syncReleases(spotifyToken: string): Promise<Release[]> {
   const newReleasesResponse = getDiscogsReleases();
-  const newReleases = getDiscogsReleasesBasicInfo(newReleasesResponse);
+  const newReleases = extractDiscogsReleasesBasicInfo(newReleasesResponse);
 
-  const newReleasesData: Release[] = await Promise.all(
-    newReleases.map((release: { artists: { name: string }[]; title: string }) =>
+  const newReleasesData = await Promise.all(
+    newReleases.map((release: { artists: { name: string }[]; title: string }) => (
       getFullReleaseData(release.artists[0].name, release.title, spotifyToken)
-    )
-  );
+    ))
+  ) as (Release | null)[];
 
-  await postReleases(newReleasesData);
+  const filteredReleases = newReleasesData.filter((el): el is Release => el !== null);
 
-  return newReleasesData;
+
+  await postReleases(filteredReleases);
+
+  return filteredReleases;
   // TODO create connection between user and records
 }

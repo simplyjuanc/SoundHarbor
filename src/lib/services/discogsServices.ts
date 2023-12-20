@@ -1,6 +1,6 @@
 import querystring from 'querystring';
 import discogsColJson from '@/lib/mocks/discogs.collection.abridged.json';
-import { IMasterRelease, IDiscogsRelease } from '@/@types';
+import { IDiscogsAuthToken, IDiscogsMasterRelease, IDiscogsMetadata, IDiscogsRelease, IDiscogsToken } from '@/@types';
 import { writeDiscogsAuthBaseHeader } from "@/lib/utils/externalAuthUtils";
 import { accessTokenUrl } from '@/app/api/discogs/callback/route';
 
@@ -14,7 +14,7 @@ const ACCESS_TOKEN = process.env.DISCOGS_TOKEN;
 const CURRENCY = 'GBP';
 
 
-export async function getDiscogsAuthToken(discogsNonce: string) {
+export async function getDiscogsAuthToken(discogsNonce: string):Promise<IDiscogsAuthToken | null> {
   try {
     let headerString = writeDiscogsAuthBaseHeader(Date.now(), discogsNonce);
     headerString += `,oauth_callback="${redirect_uri}"`;
@@ -43,10 +43,11 @@ export async function getDiscogsAuthToken(discogsNonce: string) {
     };
   } catch (error) {
     console.log(error);
+    return null;
   }
 }
 
-export async function getDiscogsAccessToken(headerString: string) {
+export async function getDiscogsAccessToken(headerString: string):Promise<IDiscogsToken | null> {
   try {
     const response = await fetch(accessTokenUrl, {
       method: 'POST',
@@ -68,13 +69,14 @@ export async function getDiscogsAccessToken(headerString: string) {
     };
   } catch (error) {
     console.log(error);
-
+    return null;
   }
 }
 
 //TODO currently  working with mock data, need to make sure I can get all the info from both services
-export const getDiscogsReleases = () => {
-  return discogsColJson.releases;
+export const getDiscogsReleases = ():IDiscogsMetadata[] => {
+  const releases = discogsColJson.releases.filter((el): el is IDiscogsMetadata => el !== null);
+  return releases;
 };
 
 export const fetchDiscogs = async <T>(path: string) => {
@@ -84,23 +86,28 @@ export const fetchDiscogs = async <T>(path: string) => {
   return data;
 };
 
-export const fetchDiscogsRelease = async (id: string | number): Promise<IDiscogsRelease> => {
-  const query = querystring.stringify({
-    curr_abbr: CURRENCY,
-    token: ACCESS_TOKEN,
-  });
-  const path = `releases/${id}?${query}`;
-  const data = await fetchDiscogs<IDiscogsRelease>(path);
-
-  return data;
+export const fetchDiscogsRelease = async (id: string | number): Promise<IDiscogsRelease | null> => {
+  try {
+    const query = querystring.stringify({
+      curr_abbr: CURRENCY,
+      token: ACCESS_TOKEN,
+    });
+    const path = `releases/${id}?${query}`;
+    const data = await fetchDiscogs<IDiscogsRelease>(path);
+  
+    return data;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
 };
 
 
 export const fetchDiscogsMasterRelease = async (
   id: number
-): Promise<IMasterRelease> => {
+): Promise<IDiscogsMasterRelease> => {
   const path = `masters/${id}`;
-  const data = await fetchDiscogs<IMasterRelease>(path);
+  const data = await fetchDiscogs<IDiscogsMasterRelease>(path);
 
   return data;
 };

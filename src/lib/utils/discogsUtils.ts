@@ -110,7 +110,7 @@ export async function getDiscogsRecommendations(
     const searchTuples = userAlbums.map(album => [album.artists[0], album.title]);
     shuffleArray(searchTuples);
   
-    const searchDiscogs = [];
+    const searchDiscogs:IDiscogsRelease[] = [];
     for (let tuple of searchTuples) {
       const searchDiscog = await throttledSearchDiscogs(...tuple);
   

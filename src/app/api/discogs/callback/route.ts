@@ -3,7 +3,6 @@ import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
 import { writeDiscogsAuthFullHeader } from '@/lib/utils/externalAuthUtils';
 import { getDiscogsAccessToken } from '@/lib/services/discogsServices';
-import { postDiscogsTokens } from '@/lib/models/accounts.model';
 import { getServerApiAuthToken } from '@/lib/auth/api.auth';
 
 const authUrl = 'https://api.discogs.com/oauth/';

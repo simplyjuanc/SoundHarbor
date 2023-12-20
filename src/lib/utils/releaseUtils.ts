@@ -1,11 +1,10 @@
 import type { Release } from '@prisma/client';
 import {
-  IDiscogsRelease,
   searchDiscogsAlbum,
   searchDiscogsForManualRecord,
 } from '@/lib/utils/discogsUtils';
 import { searchSpotifyAlbum } from '@/lib/utils/spotifyUtils';
-import { ISpotifyAlbum } from '@/@types';
+import { IDiscogsRelease, ISpotifyAlbum } from '@/@types';
 
 export const parseSpotifyAlbumToRelease = (album: ISpotifyAlbum): Release => {
   const artists = album.artists.map(artist => artist.name);
@@ -84,13 +83,26 @@ export const getFullReleaseData = async (
   name: string,
   title: string,
   spotifyToken: string
-) => {
-  const discogsAlbum = await searchDiscogsAlbum(name);
-  const spotifyAlbum = await searchSpotifyAlbum(name, title, spotifyToken);
+):Promise<Release | null> => {
+  try {
+    const discogsAlbum = await searchDiscogsAlbum(name);
+    const spotifyAlbum = await searchSpotifyAlbum(name, title, spotifyToken);
+    
+    if (!discogsAlbum || !spotifyAlbum) throw new Error('No release found on external services');
 
-  const fullReleaseData = normaliseReleaseData(discogsAlbum, spotifyAlbum);
+    // TODO: get the full release data from discogs from the album data already fetched
+    // start by checking what data is missing
+    // then 
 
-  return fullReleaseData;
+
+    const fullReleaseData = normaliseReleaseData(discogsAlbum, spotifyAlbum);
+  
+    return fullReleaseData;
+    
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
 };
 
 export const getFullReleaseDataForManualRecord = async (
@@ -98,10 +110,15 @@ export const getFullReleaseDataForManualRecord = async (
   title: string,
   spotifyToken: string
 ) => {
-  const discogsAlbum = await searchDiscogsForManualRecord(name, title);
-  const spotifyAlbum = await searchSpotifyAlbum(name, title, spotifyToken);
-
-  const fullReleaseData = normaliseReleaseData(discogsAlbum, spotifyAlbum);
-
-  return fullReleaseData;
+  try {
+    const discogsAlbum = await searchDiscogsForManualRecord(name, title);
+    const spotifyAlbum = await searchSpotifyAlbum(name, title, spotifyToken);
+    if (!discogsAlbum || !spotifyAlbum) throw new Error('No release found on external services');
+    
+    const fullReleaseData = normaliseReleaseData(discogsAlbum, spotifyAlbum);
+    return fullReleaseData;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
 };
