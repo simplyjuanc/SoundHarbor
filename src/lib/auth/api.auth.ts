@@ -19,6 +19,7 @@ import { JWT, getToken } from "next-auth/jwt";
 async function getServerApiAuthToken(req: NextRequest):Promise<JWT | null> {
   try {
     const token = await getToken({ req });
+    console.log('getServerApiAuthToken - token', token)
     if (!token) throw new Error('No token found');
     return token;
   } catch (error) {

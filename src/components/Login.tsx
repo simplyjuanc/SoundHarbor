@@ -12,7 +12,7 @@ export default function Login() {
     email: '',
     password: '',
   });
-  const { setIsLoggedIn, setUserId } = useAuthStore();
+  const { setIsLoggedIn } = useAuthStore();
 
   const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement, SubmitEvent>) => {
     e.preventDefault();
@@ -64,7 +64,6 @@ export default function Login() {
 
       const userId = await getUserIdFromEmail(userData.email);
       console.log('loginUser - userId :>> ', userId);
-      setUserId(userId.id);
       setIsLoggedIn(true);
 
     } catch (error) {

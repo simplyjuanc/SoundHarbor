@@ -4,6 +4,7 @@ import { cookies } from 'next/headers';
 import { writeDiscogsAuthFullHeader } from '@/lib/utils/externalAuthUtils';
 import { getDiscogsAccessToken } from '@/lib/services/discogsServices';
 import { postDiscogsTokens } from '@/lib/models/accounts.model';
+import { getServerApiAuthToken } from '@/lib/auth/api.auth';
 
 const authUrl = 'https://api.discogs.com/oauth/';
 export const accessTokenUrl = authUrl + 'access_token';
@@ -27,6 +28,11 @@ export const GET = async (req: NextRequest) => {
     return NextResponse.json({ message: 'Incomplete params in Discogs response' });
   }
 
+
+  const jwt = await getServerApiAuthToken(req);
+  if (!jwt) return Response.json({ status: 401, message: 'GET/discogs/callback - ERROR :>> No jwt found' });
+
+
   const headerString = writeDiscogsAuthFullHeader(discogsNonce, token, verifier, authSecret);
   const tokenPayload = await getDiscogsAccessToken(headerString);
   if (!tokenPayload) {
@@ -38,7 +44,10 @@ export const GET = async (req: NextRequest) => {
   
   const {oauth_token, oauth_token_secret} = tokenPayload;
 
-  // postDiscogsTokens(req.locals.userId, oauth_token, oauth_token_secret);
+  // NEXT: Get the userId from the Zustand store and pass it to the postDiscogsTokens function
+
+
+  // postDiscogsTokens(, oauth_token, oauth_token_secret);
 
   const oneDay = 24 * 60 * 60 * 1000;
 

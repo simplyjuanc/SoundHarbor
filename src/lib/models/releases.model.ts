@@ -33,11 +33,16 @@ export const updateRelease = async (
 type BatchPayload = { count: number };
 export const postReleases = async (
   releases: Release[]
-): Promise<BatchPayload | void> => {
-  return await prisma.release.createMany({
-    data: releases,
-    skipDuplicates: true,
-  });
+): Promise<BatchPayload | null> => {
+  try {
+    return await prisma.release.createMany({
+      data: releases,
+      skipDuplicates: true,
+    });
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
 };
 
 // keep for imports path in other use cases
@@ -48,6 +53,8 @@ export const getFullReleaseData = async (
 ) => {
   const discogsAlbum = await searchDiscogsAlbum(name);
   const spotifyAlbum = await searchSpotifyAlbum(name, title, spotifyToken);
+
+  if (!discogsAlbum || !spotifyAlbum) throw new Error('No release found on external services');
 
   const fullReleaseData = normaliseReleaseData(discogsAlbum, spotifyAlbum);
 

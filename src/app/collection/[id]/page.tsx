@@ -13,6 +13,7 @@ type Props = {
 
 const IndividualRecord = async ({ params: { id: recordId } }: Props) => {
   const session = getServerSession();
+  console.log('session :>> ', session)
   const path = `/collection/${recordId}/`
   if (!session) {
     redirect(`/api/auth/signin?callback?url=${path}`);
