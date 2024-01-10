@@ -7,7 +7,7 @@ import {
   fetchDiscogsMasterRelease,
   searchDiscogsMasterRelease,
 } from '@/lib/services/discogsServices';
-import { IDiscogsRelease } from '@/@types';
+import { Release as DiscogsRelease } from '@/@types/discogs.types';
 
 
 // TODO: no priority - implement pagination (search, getUserItems methods)
@@ -18,7 +18,7 @@ export const getUserItems = () => discogsColJson;
 
 export const getDiscogsRelease = async (
   id: string
-): Promise<IDiscogsRelease> => {
+): Promise<DiscogsRelease> => {
   const res = await fetchDiscogsRelease(id);
 
   return res;
@@ -27,7 +27,7 @@ export const getDiscogsRelease = async (
 export const searchDiscogs = async (
   artist: string,
   album: string
-): Promise<IDiscogsRelease> => {
+): Promise<DiscogsRelease> => {
   artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ');
   album = album.replace(/[^a-zA-Z0-9]+/g, ' ');
 
@@ -39,7 +39,7 @@ export const searchDiscogs = async (
 export const searchDiscogsForManualRecord = async (
   artist: string,
   album: string
-): Promise<IDiscogsRelease> => {
+): Promise<DiscogsRelease> => {
   artist = artist.replace(/[^a-zA-Z0-9]+/g, ' ');
   album = album.replace(/[^a-zA-Z0-9]+/g, ' ');
 
@@ -61,14 +61,14 @@ export const searchDiscogsForManualRecord = async (
   return release;
 };
 
-export const throttledSearchDiscogs = throttle<IDiscogsRelease>(
+export const throttledSearchDiscogs = throttle<DiscogsRelease>(
   searchDiscogs,
   1000
 );
 
 export async function getDiscogsRecommendations(
   userAlbums: Release[]
-): Promise<IDiscogsRelease[]> {
+): Promise<DiscogsRelease[]> {
   const searchTuples = userAlbums.map(album => [album.artists[0], album.title]);
   shuffleArray(searchTuples);
 

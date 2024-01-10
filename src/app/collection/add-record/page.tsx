@@ -1,5 +1,5 @@
 import { cookies } from 'next/headers';
-import createRecord from '@/lib/actions/createManualRecord';
+import createRecord from '@/lib/utils/createManualRecord';
 import Button from '@/components/Button';
 import LogoView from '@/components/LogoView';
 
