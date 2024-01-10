@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import { syncReleases } from '@/lib/actions/syncReleases';
+import { syncReleases } from '@/lib/utils/syncReleases';
 import { getSpotifyToken } from '@/lib/utils/spotifyUtils';
 import Button from '@/components/Button';
 import LogoView from '@/components/LogoView';

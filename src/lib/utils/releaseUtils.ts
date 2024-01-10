@@ -1,6 +1,6 @@
 import type { Release } from '@prisma/client';
+import { Release as DiscogsRelease } from '@/@types/discogs.types';
 import {
-  IDiscogsRelease,
   searchDiscogsAlbum,
   searchDiscogsForManualRecord,
 } from '@/lib/utils/discogsUtils';
@@ -31,18 +31,14 @@ export const parseSpotifyAlbumToRelease = (album: ISpotifyAlbum): Release => {
   return release;
 };
 
-export const parseDiscogsAlbumToRelease = (album: IDiscogsRelease): Release => {
+export const parseDiscogsAlbumToRelease = (album: DiscogsRelease): Release => {
   const artists: string[] = album.artists.map(
     (artist: { name: string }) => artist.name
   );
   const barcode = album['identifiers'] ? album.identifiers[0].value : '';
-  const label = album.labels ? album.labels[0].name : null;
-  const releaseType = album.formats
-    ? album.formats[0]['descriptions'][0]
-    : null;
-  const releaseDate = album.year
-    ? new Date(album.year)
-    : new Date('1970-01-01');
+  const label = album.labels ? album.labels[0].name : '';
+  const releaseType = album.formats ? album.formats[0]['descriptions'][0] : null;
+  const releaseDate = album.year ? new Date(album.year) : new Date('1970-01-01');
 
   const release: Release = {
     id: album.id.toString(),
@@ -64,7 +60,7 @@ export const parseDiscogsAlbumToRelease = (album: IDiscogsRelease): Release => {
 };
 
 export const normaliseReleaseData = (
-  discogsAlbum: IDiscogsRelease,
+  discogsAlbum: DiscogsRelease,
   spotifyAlbum: Release
 ): Release => {
   const { imgUrl, spotifyUri, releaseDate, barcode } = spotifyAlbum;
